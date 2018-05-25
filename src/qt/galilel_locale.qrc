@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/galilel_bg.qm</file>
+        <file alias="de">locale/galilel_de.qm</file>
+        <file alias="en">locale/galilel_en.qm</file>
+        <file alias="es">locale/galilel_es.qm</file>
+        <file alias="fi">locale/galilel_fi.qm</file>
+        <file alias="fr">locale/galilel_fr.qm</file>
+        <file alias="it">locale/galilel_it.qm</file>
+        <file alias="ja">locale/galilel_ja.qm</file>
+        <file alias="pl">locale/galilel_pl.qm</file>
+        <file alias="pt">locale/galilel_pt.qm</file>
+        <file alias="ru">locale/galilel_ru.qm</file>
+        <file alias="sk">locale/galilel_sk.qm</file>
+        <file alias="sv">locale/galilel_sv.qm</file>
+        <file alias="vi">locale/galilel_vi.qm</file>
+        <file alias="zh_CN">locale/galilel_zh_CN.qm</file>
+        <file alias="zh_TW">locale/galilel_zh_TW.qm</file>
+    </qresource>
+</RCC>

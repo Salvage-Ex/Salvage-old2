@@ -1,0 +1,26 @@
+# /etc/conf.d/galileld: config file for /etc/init.d/galileld
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/galilel/galilel.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/galileld"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/galileld.pid"
+
+# Where to write galileld data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/galileld"
+
+# User and group to own galileld process
+#BITCOIND_USER="galilel"
+#BITCOIND_GROUP="galilel"
+
+# Path to galileld executable
+#BITCOIND_BIN="/usr/bin/galileld"
+
+# Nice value to run galileld under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

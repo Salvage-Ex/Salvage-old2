@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=GALILEL
+Comment=GALILEL P2P Cryptocurrency
+Exec=galilel-qt %u
+Terminal=false
+Type=Application
+Icon=galilel128
+MimeType=x-scheme-handler/galilel;
+Categories=Office;Finance;
+Name[en_US]=galilel-qt.desktop
