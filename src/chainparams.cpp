@@ -112,7 +112,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60;
         nTargetSpacing = 1 * 60;
-        nLastPOWBlock = 3000;
+        nLastPOWBlock = 1500;
         nMaturity = 99;
         nMasternodeCountDrift = 20;
 	    nMasternodeColleteralLimxDev = 5000; //Params().MasternodeColleteralLimxDev()
