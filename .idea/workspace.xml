@@ -9,10 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa69c21f-7170-496a-be6f-c6fe75669c7d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/chainparams.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qt/splashscreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/qt/splashscreen.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="fa69c21f-7170-496a-be6f-c6fe75669c7d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="splashscreen.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="splashscreen.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1028">
-              <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+            <state relative-caret-position="1593">
+              <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -44,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2756">
-              <caret line="1623" column="43" lean-forward="true" selection-start-line="1623" selection-start-column="43" selection-end-line="1623" selection-end-column="43" />
+              <caret line="1623" column="43" selection-start-line="1623" selection-start-column="43" selection-end-line="1623" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -52,8 +49,40 @@
       <file leaf-file-name="amount.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/amount.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
+            <state relative-caret-position="580">
               <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/version.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clientversion.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="984">
+              <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+              <folding>
+                <element signature="e#2259#2405#0" expanded="true" />
+                <element signature="e#2589#2722#0" expanded="true" />
+                <element signature="e#2821#2862#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wallet.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="740">
+              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -67,9 +96,14 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1500</find>
       <find>v1.0</find>
+      <find>Version</find>
+      <find>v</find>
+      <find>1500</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,6 +113,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/chainparams.cpp" />
         <option value="$PROJECT_DIR$/src/qt/splashscreen.cpp" />
+        <option value="$PROJECT_DIR$/src/version.h" />
       </list>
     </option>
   </component>
@@ -92,8 +127,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="734" />
-    <option name="y" value="64" />
+    <option name="x" value="969" />
+    <option name="y" value="79" />
     <option name="width" value="2096" />
     <option name="height" value="1926" />
   </component>
@@ -150,17 +185,18 @@
       <updated>1527237712475</updated>
       <workItem from="1527237714290" duration="353000" />
       <workItem from="1527238075823" duration="447000" />
-      <workItem from="1527239377791" duration="868000" />
+      <workItem from="1527239377791" duration="1431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1668000" />
+    <option name="totallyTimeSpent" value="2231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="3862" height="2126" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29791668" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -213,20 +249,6 @@
     <entry file="file://$PROJECT_DIR$/src/base58.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/amount.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2756">
-          <caret line="1623" column="43" lean-forward="true" selection-start-line="1623" selection-start-column="43" selection-end-line="1623" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="845">
@@ -236,8 +258,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1028">
-          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        <state relative-caret-position="1593">
+          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2756">
+          <caret line="1623" column="43" selection-start-line="1623" selection-start-column="43" selection-end-line="1623" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amount.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="e#2259#2405#0" expanded="true" />
+            <element signature="e#2589#2722#0" expanded="true" />
+            <element signature="e#2821#2862#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/version.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
         </state>
       </provider>
     </entry>
