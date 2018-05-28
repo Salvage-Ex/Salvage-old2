@@ -1,5 +1,3 @@
-by GALILEL.NETWORK TEAM
-
 -----------------------------------------------------
  OFFICIAL LINKS
 -----------------------------------------------------
@@ -37,3 +35,6 @@ Promotion's
 
 Masternode.online
 https://masternodes.online/currencies/GALI/
+
+
+by GALILEL.NETWORK TEAM
