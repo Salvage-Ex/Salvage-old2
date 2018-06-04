@@ -11,10 +11,15 @@
   <component name="ChangeListManager">
     <list default="true" id="fa69c21f-7170-496a-be6f-c6fe75669c7d" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/chainparams.cpp" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
+=======
+      <change beforePath="$PROJECT_DIR$/src/clientversion.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientversion.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qt/splashscreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/qt/splashscreen.cpp" afterDir="false" />
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +36,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="2400">
+=======
+            <state relative-caret-position="1824">
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
               <caret line="120" selection-start-line="120" selection-end-line="120" />
 =======
             <state relative-caret-position="1025">
@@ -57,12 +66,20 @@
         <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="424">
               <caret line="25" column="60" lean-forward="true" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
 =======
             <state relative-caret-position="1720">
               <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
+=======
+            <state relative-caret-position="705">
+              <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+              <folding>
+                <element signature="e#524#543#0" expanded="true" />
+              </folding>
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
             </state>
           </provider>
         </entry>
@@ -70,6 +87,7 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -87,6 +105,10 @@
             <state relative-caret-position="461">
               <caret line="1637" column="56" lean-forward="true" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
+=======
+            <state relative-caret-position="761">
+              <caret line="1637" column="56" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
             </state>
           </provider>
         </entry>
@@ -103,8 +125,8 @@
       <file leaf-file-name="clientversion.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="820">
+              <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
               <folding>
                 <element signature="e#2259#2405#0" expanded="true" />
                 <element signature="e#2589#2722#0" expanded="true" />
@@ -114,7 +136,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clientversion.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="clientversion.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/clientversion.h">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -130,6 +152,7 @@
         <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
 >>>>>>> 6fdca9a... New Logos
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="680">
               <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
@@ -151,6 +174,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
               <caret line="756" column="1" lean-forward="true" selection-start-line="756" selection-start-column="1" selection-end-line="756" selection-end-column="1" />
+=======
+            <state relative-caret-position="380">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
             </state>
           </provider>
         </entry>
@@ -180,11 +207,15 @@
       <find>COINBASE_MATURITY</find>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <find>nMasternodeColleteralLimxDev</find>
 >>>>>>> 6fdca9a... New Logos
 =======
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
+=======
+      <find>dirty</find>
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
     </findStrings>
     <replaceStrings>
       <replace />
@@ -197,8 +228,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/chainparams.cpp" />
-        <option value="$PROJECT_DIR$/src/qt/splashscreen.cpp" />
         <option value="$PROJECT_DIR$/src/version.h" />
+        <option value="$PROJECT_DIR$/src/qt/splashscreen.cpp" />
+        <option value="$PROJECT_DIR$/src/clientversion.h" />
       </list>
     </option>
   </component>
@@ -211,6 +243,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <component name="ProjectFrameBounds">
@@ -231,6 +264,11 @@
 >>>>>>> 579ab38... Version Changes v1.0.0.3
 =======
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="636" />
+    <option name="y" value="86" />
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
     <option name="width" value="2096" />
     <option name="height" value="1926" />
   </component>
@@ -239,6 +277,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,7 +294,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,6 +338,7 @@
       <workItem from="1527308235640" duration="2059000" />
       <workItem from="1528146626207" duration="415000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <workItem from="1527696190688" duration="245000" />
       <workItem from="1527965464376" duration="3000" />
@@ -315,6 +354,9 @@
 >>>>>>> 78316bb... Collaterial Change Test
 =======
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
+=======
+      <workItem from="1528147871321" duration="1774000" />
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
     </task>
     <servers />
   </component>
@@ -323,14 +365,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
     <option name="totallyTimeSpent" value="6842000" />
+=======
+    <option name="totallyTimeSpent" value="8616000" />
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
   </component>
   <component name="ToolWindowManager">
-    <frame x="394" y="74" width="2096" height="1926" extended-state="0" />
+    <frame x="-11" y="-11" width="3862" height="2126" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36885247" />
 <<<<<<< HEAD
@@ -355,6 +402,13 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19921875" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -365,6 +419,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
@@ -376,6 +431,56 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1720">
+          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+          <folding>
+            <element signature="e#524#543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32740">
+          <caret line="1637" column="56" lean-forward="true" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/version.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="e#2259#2405#0" expanded="true" />
+            <element signature="e#2589#2722#0" expanded="true" />
+            <element signature="e#2821#2862#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clientversion.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masternode-payments.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15120">
+          <caret line="756" column="1" lean-forward="true" selection-start-line="756" selection-start-column="1" selection-end-line="756" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2400">
@@ -676,11 +781,21 @@
     </entry>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
+=======
+    <entry file="file://$PROJECT_DIR$/src/qt/locale/galilel_de.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="4380" column="14" selection-start-line="4380" selection-start-column="14" selection-end-line="4380" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
     <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
+        <state relative-caret-position="1824">
           <caret line="120" selection-start-line="120" selection-end-line="120" />
 <<<<<<< HEAD
 =======
@@ -731,18 +846,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/masternode-payments.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="756" column="1" selection-start-line="756" selection-start-column="1" selection-end-line="756" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1720">
-          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+        <state relative-caret-position="705">
+          <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <element signature="e#524#543#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="461">
           <caret line="1637" column="56" lean-forward="true" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
+=======
+        <state relative-caret-position="761">
+          <caret line="1637" column="56" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
         </state>
       </provider>
     </entry>
@@ -755,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="820">
+          <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
           <folding>
             <element signature="e#2259#2405#0" expanded="true" />
             <element signature="e#2589#2722#0" expanded="true" />
@@ -767,6 +897,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clientversion.h">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -818,6 +949,10 @@
 >>>>>>> 78316bb... Collaterial Change Test
 =======
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
+=======
+        <state relative-caret-position="380">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+>>>>>>> 11889d7... Logo Changes & MN Collaterial Test
         </state>
       </provider>
     </entry>
