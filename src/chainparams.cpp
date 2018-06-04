@@ -115,7 +115,7 @@ public:
         nLastPOWBlock = 1500;
         nMaturity = 99;
         nMasternodeCountDrift = 20;
-	    nMasternodeColleteralLimxDev = 5000; //Params().MasternodeColleteralLimxDev()
+	    // nMasternodeColleteralLimxDev = 5000; //Params().MasternodeColleteralLimxDev()
         nModifierUpdateBlock = 1; // we use the version 2 for dmd
         nMaxMoneyOut = 100000000 * COIN;
 

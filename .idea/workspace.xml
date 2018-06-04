@@ -11,6 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fa69c21f-7170-496a-be6f-c6fe75669c7d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/chainparams.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clientversion.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientversion.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qt/splashscreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/qt/splashscreen.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,9 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="chainparams.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chainparams.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="2400">
               <caret line="120" selection-start-line="120" selection-end-line="120" />
@@ -31,6 +35,10 @@
             <state relative-caret-position="1025">
               <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
 >>>>>>> 6fdca9a... New Logos
+=======
+            <state relative-caret-position="651">
+              <caret line="117" column="15" lean-forward="true" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
+>>>>>>> 579ab38... Version Changes v1.0.0.3
             </state>
           </provider>
         </entry>
@@ -38,15 +46,16 @@
       <file leaf-file-name="splashscreen.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1720">
-              <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+            <state relative-caret-position="424">
+              <caret line="25" column="60" lean-forward="true" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="461">
               <caret line="1637" column="56" lean-forward="true" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
@@ -54,6 +63,10 @@
             <state relative-caret-position="32840">
               <caret line="1642" column="4" selection-start-line="1642" selection-start-column="4" selection-end-line="1642" selection-end-column="4" />
 >>>>>>> 6fdca9a... New Logos
+=======
+            <state relative-caret-position="904">
+              <caret line="1632" column="33" lean-forward="true" selection-start-line="1632" selection-start-column="33" selection-end-line="1632" selection-end-column="33" />
+>>>>>>> 579ab38... Version Changes v1.0.0.3
             </state>
           </provider>
         </entry>
@@ -86,26 +99,8 @@
 <<<<<<< HEAD
 =======
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="masternode-payments.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/masternode-payments.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17040">
-              <caret line="852" selection-start-line="852" selection-end-line="852" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="galilel_de.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/qt/locale/galilel_de.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87600">
-              <caret line="4380" column="14" selection-start-line="4380" selection-start-column="14" selection-end-line="4380" selection-end-column="14" />
+            <state relative-caret-position="380">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -114,8 +109,13 @@
         <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
 >>>>>>> 6fdca9a... New Logos
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="680">
               <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+=======
+            <state relative-caret-position="20">
+              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+>>>>>>> 579ab38... Version Changes v1.0.0.3
             </state>
           </provider>
         </entry>
@@ -165,9 +165,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/chainparams.cpp" />
-        <option value="$PROJECT_DIR$/src/qt/splashscreen.cpp" />
         <option value="$PROJECT_DIR$/src/version.h" />
+        <option value="$PROJECT_DIR$/src/qt/splashscreen.cpp" />
+        <option value="$PROJECT_DIR$/src/clientversion.h" />
+        <option value="$PROJECT_DIR$/src/chainparams.cpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
       </list>
     </option>
   </component>
@@ -180,6 +182,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
 <<<<<<< HEAD
     <option name="x" value="794" />
@@ -188,6 +191,11 @@
     <option name="x" value="310" />
     <option name="y" value="122" />
 >>>>>>> 6fdca9a... New Logos
+=======
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="163" />
+    <option name="y" value="114" />
+>>>>>>> 579ab38... Version Changes v1.0.0.3
     <option name="width" value="2096" />
     <option name="height" value="1926" />
   </component>
@@ -260,11 +268,16 @@
       <workItem from="1527696190688" duration="245000" />
       <workItem from="1527965464376" duration="3000" />
       <workItem from="1527965482987" duration="344000" />
+<<<<<<< HEAD
 >>>>>>> 6fdca9a... New Logos
+=======
+      <workItem from="1528078113741" duration="221000" />
+>>>>>>> 579ab38... Version Changes v1.0.0.3
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="6842000" />
   </component>
@@ -276,28 +289,32 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36885247" />
 =======
     <option name="totallyTimeSpent" value="7019000" />
+=======
+    <option name="totallyTimeSpent" value="7240000" />
+>>>>>>> 579ab38... Version Changes v1.0.0.3
   </component>
   <component name="ToolWindowManager">
-    <frame x="310" y="122" width="2096" height="1926" extended-state="0" />
+    <frame x="163" y="114" width="2096" height="1926" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19913211" />
 >>>>>>> 6fdca9a... New Logos
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,13 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/amount.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -654,21 +664,22 @@
 =======
     <entry file="file://$PROJECT_DIR$/src/qt/locale/galilel_de.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87600">
+        <state relative-caret-position="20">
           <caret line="4380" column="14" selection-start-line="4380" selection-start-column="14" selection-end-line="4380" selection-end-column="14" />
 >>>>>>> 6fdca9a... New Logos
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
+    <entry file="file://$PROJECT_DIR$/src/masternode-payments.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1720">
-          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+        <state relative-caret-position="1644">
+          <caret line="852" selection-start-line="852" selection-end-line="852" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+    <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="461">
           <caret line="1637" column="56" lean-forward="true" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
@@ -676,6 +687,24 @@
         <state relative-caret-position="32840">
           <caret line="1642" column="4" selection-start-line="1642" selection-start-column="4" selection-end-line="1642" selection-end-column="4" />
 >>>>>>> 6fdca9a... New Logos
+=======
+        <state relative-caret-position="20">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="117" column="15" lean-forward="true" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="25" column="60" lean-forward="true" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+>>>>>>> 579ab38... Version Changes v1.0.0.3
         </state>
       </provider>
     </entry>
@@ -700,6 +729,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clientversion.h">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="680">
           <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
         </state>
@@ -722,14 +752,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17040">
           <caret line="852" selection-start-line="852" selection-end-line="852" />
+=======
+        <state relative-caret-position="380">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+>>>>>>> 579ab38... Version Changes v1.0.0.3
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1025">
           <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
 >>>>>>> 6fdca9a... New Logos
+=======
+        <state relative-caret-position="904">
+          <caret line="1632" column="33" lean-forward="true" selection-start-line="1632" selection-start-column="33" selection-end-line="1632" selection-end-column="33" />
+>>>>>>> 579ab38... Version Changes v1.0.0.3
         </state>
       </provider>
     </entry>
