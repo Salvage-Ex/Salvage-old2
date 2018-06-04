@@ -21,11 +21,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="chainparams.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="chainparams.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="2400">
               <caret line="120" selection-start-line="120" selection-end-line="120" />
+=======
+            <state relative-caret-position="1025">
+              <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
+>>>>>>> 6fdca9a... New Logos
             </state>
           </provider>
         </entry>
@@ -42,8 +47,13 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="461">
               <caret line="1637" column="56" lean-forward="true" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
+=======
+            <state relative-caret-position="32840">
+              <caret line="1642" column="4" selection-start-line="1642" selection-start-column="4" selection-end-line="1642" selection-end-column="4" />
+>>>>>>> 6fdca9a... New Logos
             </state>
           </provider>
         </entry>
@@ -73,6 +83,8 @@
       </file>
       <file leaf-file-name="clientversion.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clientversion.h">
+<<<<<<< HEAD
+=======
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
               <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
@@ -80,6 +92,35 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="masternode-payments.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/masternode-payments.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17040">
+              <caret line="852" selection-start-line="852" selection-end-line="852" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="galilel_de.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/qt/locale/galilel_de.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87600">
+              <caret line="4380" column="14" selection-start-line="4380" selection-start-column="14" selection-end-line="4380" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wallet.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
+>>>>>>> 6fdca9a... New Logos
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="masternode-payments.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/masternode-payments.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,6 +130,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> 6fdca9a... New Logos
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -107,6 +150,10 @@
       <find>bnProofOfWorkLimit</find>
       <find>nLastPOWBlock</find>
       <find>COINBASE_MATURITY</find>
+<<<<<<< HEAD
+=======
+      <find>nMasternodeColleteralLimxDev</find>
+>>>>>>> 6fdca9a... New Logos
     </findStrings>
     <replaceStrings>
       <replace />
@@ -134,8 +181,13 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="794" />
     <option name="y" value="77" />
+=======
+    <option name="x" value="310" />
+    <option name="y" value="122" />
+>>>>>>> 6fdca9a... New Logos
     <option name="width" value="2096" />
     <option name="height" value="1926" />
   </component>
@@ -144,6 +196,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,14 +213,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Create My Own Coin/2. exotic.io/Source/exotic" />
+>>>>>>> 6fdca9a... New Logos
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -197,11 +254,18 @@
       <workItem from="1527254357756" duration="342000" />
       <workItem from="1527284668035" duration="503000" />
       <workItem from="1527308235640" duration="2059000" />
+<<<<<<< HEAD
       <workItem from="1528146626207" duration="415000" />
+=======
+      <workItem from="1527696190688" duration="245000" />
+      <workItem from="1527965464376" duration="3000" />
+      <workItem from="1527965482987" duration="344000" />
+>>>>>>> 6fdca9a... New Logos
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="6842000" />
   </component>
   <component name="ToolWindowManager">
@@ -210,6 +274,14 @@
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36885247" />
+=======
+    <option name="totallyTimeSpent" value="7019000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="310" y="122" width="2096" height="1926" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19913211" />
+>>>>>>> 6fdca9a... New Logos
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -222,6 +294,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -234,6 +307,53 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/version.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="e#2259#2405#0" expanded="true" />
+            <element signature="e#2589#2722#0" expanded="true" />
+            <element signature="e#2821#2862#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clientversion.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masternode-payments.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17040">
+          <caret line="852" lean-forward="true" selection-start-line="852" selection-end-line="852" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/qt/locale/galilel_de.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87600">
+          <caret line="4380" column="14" selection-start-line="4380" selection-start-column="14" selection-end-line="4380" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2400">
@@ -339,6 +459,7 @@
             <element signature="e#2589#2722#0" expanded="true" />
             <element signature="e#2821#2862#0" expanded="true" />
           </folding>
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -349,6 +470,18 @@
         </state>
       </provider>
     </entry>
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/qt/locale/galilel_de.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87600">
+          <caret line="4380" column="14" selection-start-line="4380" selection-start-column="14" selection-end-line="4380" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 6fdca9a... New Logos
     <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
@@ -513,10 +646,17 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2400">
           <caret line="120" selection-start-line="120" selection-end-line="120" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/qt/locale/galilel_de.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87600">
+          <caret line="4380" column="14" selection-start-line="4380" selection-start-column="14" selection-end-line="4380" selection-end-column="14" />
+>>>>>>> 6fdca9a... New Logos
         </state>
       </provider>
     </entry>
@@ -529,8 +669,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="461">
           <caret line="1637" column="56" lean-forward="true" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
+=======
+        <state relative-caret-position="32840">
+          <caret line="1642" column="4" selection-start-line="1642" selection-start-column="4" selection-end-line="1642" selection-end-column="4" />
+>>>>>>> 6fdca9a... New Logos
         </state>
       </provider>
     </entry>
@@ -560,6 +705,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/qt/locale/galilel_de.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -571,6 +717,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="756" column="1" lean-forward="true" selection-start-line="756" selection-start-column="1" selection-end-line="756" selection-end-column="1" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/masternode-payments.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17040">
+          <caret line="852" selection-start-line="852" selection-end-line="852" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
+>>>>>>> 6fdca9a... New Logos
         </state>
       </provider>
     </entry>
