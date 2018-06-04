@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa69c21f-7170-496a-be6f-c6fe75669c7d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/chainparams.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clientversion.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientversion.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qt/splashscreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/qt/splashscreen.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="chainparams.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="chainparams.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -37,8 +34,12 @@
 >>>>>>> 6fdca9a... New Logos
 =======
             <state relative-caret-position="651">
+<<<<<<< HEAD
               <caret line="117" column="15" lean-forward="true" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
 >>>>>>> 579ab38... Version Changes v1.0.0.3
+=======
+              <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+>>>>>>> 78316bb... Collaterial Change Test
             </state>
           </provider>
         </entry>
@@ -52,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -168,8 +169,8 @@
         <option value="$PROJECT_DIR$/src/version.h" />
         <option value="$PROJECT_DIR$/src/qt/splashscreen.cpp" />
         <option value="$PROJECT_DIR$/src/clientversion.h" />
-        <option value="$PROJECT_DIR$/src/chainparams.cpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/chainparams.cpp" />
       </list>
     </option>
   </component>
@@ -183,6 +184,7 @@
     <packageJsonPaths />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
 <<<<<<< HEAD
     <option name="x" value="794" />
@@ -193,6 +195,9 @@
 >>>>>>> 6fdca9a... New Logos
 =======
   <component name="ProjectFrameBounds" extendedState="1">
+=======
+  <component name="ProjectFrameBounds">
+>>>>>>> 78316bb... Collaterial Change Test
     <option name="x" value="163" />
     <option name="y" value="114" />
 >>>>>>> 579ab38... Version Changes v1.0.0.3
@@ -269,14 +274,19 @@
       <workItem from="1527965464376" duration="3000" />
       <workItem from="1527965482987" duration="344000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6fdca9a... New Logos
 =======
       <workItem from="1528078113741" duration="221000" />
 >>>>>>> 579ab38... Version Changes v1.0.0.3
+=======
+      <workItem from="1528078113741" duration="852000" />
+>>>>>>> 78316bb... Collaterial Change Test
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="6842000" />
@@ -292,6 +302,9 @@
 =======
     <option name="totallyTimeSpent" value="7240000" />
 >>>>>>> 579ab38... Version Changes v1.0.0.3
+=======
+    <option name="totallyTimeSpent" value="7871000" />
+>>>>>>> 78316bb... Collaterial Change Test
   </component>
   <component name="ToolWindowManager">
     <frame x="163" y="114" width="2096" height="1926" extended-state="0" />
@@ -693,10 +706,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="117" column="15" lean-forward="true" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
+        <state relative-caret-position="904">
+          <caret line="1632" column="33" lean-forward="true" selection-start-line="1632" selection-start-column="33" selection-end-line="1632" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -759,8 +772,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+    <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="1025">
           <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
@@ -769,6 +783,10 @@
         <state relative-caret-position="904">
           <caret line="1632" column="33" lean-forward="true" selection-start-line="1632" selection-start-column="33" selection-end-line="1632" selection-end-column="33" />
 >>>>>>> 579ab38... Version Changes v1.0.0.3
+=======
+        <state relative-caret-position="651">
+          <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+>>>>>>> 78316bb... Collaterial Change Test
         </state>
       </provider>
     </entry>
