@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/chainparams.cpp" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -25,6 +26,14 @@
       <change beforePath="$PROJECT_DIR$/src/qt/res/icons/bitcoin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/qt/res/icons/bitcoin.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/qt/res/icons/bitcoin_testnet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/qt/res/icons/bitcoin_testnet.png" afterDir="false" />
 >>>>>>> 9d0a722... Smaller Logos
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/chainparams.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clientversion.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientversion.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qt/splashscreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/qt/splashscreen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/version.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/version.h" afterDir="false" />
+>>>>>>> 724e2c2... mn collaterial change
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,9 +44,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="chainparams.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chainparams.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -90,6 +100,10 @@
                 <element signature="e#524#543#0" expanded="true" />
               </folding>
 >>>>>>> 11889d7... Logo Changes & MN Collaterial Test
+=======
+            <state relative-caret-position="640">
+              <caret line="66" column="78" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
+>>>>>>> 724e2c2... mn collaterial change
             </state>
           </provider>
         </entry>
@@ -97,6 +111,7 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -119,29 +134,19 @@
             <state relative-caret-position="761">
               <caret line="1637" column="56" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
 >>>>>>> 11889d7... Logo Changes & MN Collaterial Test
+=======
+            <state relative-caret-position="696">
+              <caret line="1641" column="4" selection-start-line="1641" selection-start-column="4" selection-end-line="1641" selection-end-column="4" />
+>>>>>>> 724e2c2... mn collaterial change
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="version.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/version.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clientversion.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-              <folding>
-                <element signature="e#2259#2405#0" expanded="true" />
-                <element signature="e#2589#2722#0" expanded="true" />
-                <element signature="e#2821#2862#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -152,8 +157,8 @@
 <<<<<<< HEAD
 =======
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="400">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -237,10 +242,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/chainparams.cpp" />
-        <option value="$PROJECT_DIR$/src/version.h" />
         <option value="$PROJECT_DIR$/src/qt/splashscreen.cpp" />
         <option value="$PROJECT_DIR$/src/clientversion.h" />
+        <option value="$PROJECT_DIR$/src/chainparams.cpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/version.h" />
       </list>
     </option>
   </component>
@@ -253,6 +259,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -285,15 +292,19 @@
     <option name="x" value="335" />
     <option name="y" value="98" />
 >>>>>>> 9d0a722... Smaller Logos
+=======
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1157" />
+    <option name="y" value="94" />
+>>>>>>> 724e2c2... mn collaterial change
     <option name="width" value="2096" />
-    <option name="height" value="1926" />
+    <option name="height" value="1918" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -310,6 +321,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,11 +388,17 @@
 >>>>>>> 11889d7... Logo Changes & MN Collaterial Test
 =======
       <workItem from="1528147871321" duration="2763000" />
+<<<<<<< HEAD
 >>>>>>> 9d0a722... Smaller Logos
+=======
+      <workItem from="1528259872852" duration="2000" />
+      <workItem from="1528818987453" duration="845000" />
+>>>>>>> 724e2c2... mn collaterial change
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -396,9 +414,12 @@
 =======
     <option name="totallyTimeSpent" value="9605000" />
 >>>>>>> 9d0a722... Smaller Logos
+=======
+    <option name="totallyTimeSpent" value="10452000" />
+>>>>>>> 724e2c2... mn collaterial change
   </component>
   <component name="ToolWindowManager">
-    <frame x="335" y="98" width="2096" height="1926" extended-state="1" />
+    <frame x="1157" y="94" width="2096" height="1918" extended-state="0" />
     <editor active="true" />
     <layout>
 <<<<<<< HEAD
@@ -435,8 +456,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Version Control" order="7" />
 >>>>>>> 11889d7... Logo Changes & MN Collaterial Test
+=======
+>>>>>>> 724e2c2... mn collaterial change
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -444,11 +468,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
@@ -459,56 +483,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1720">
-          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
-          <folding>
-            <element signature="e#524#543#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32740">
-          <caret line="1637" column="56" lean-forward="true" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/version.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="e#2259#2405#0" expanded="true" />
-            <element signature="e#2589#2722#0" expanded="true" />
-            <element signature="e#2821#2862#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clientversion.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/masternode-payments.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15120">
-          <caret line="756" column="1" lean-forward="true" selection-start-line="756" selection-start-column="1" selection-end-line="756" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2400">
@@ -799,6 +773,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
     <entry file="file://$PROJECT_DIR$/src/amount.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -813,6 +788,8 @@
 =======
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
 =======
+=======
+>>>>>>> 724e2c2... mn collaterial change
     <entry file="file://$PROJECT_DIR$/src/qt/locale/galilel_de.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -886,16 +863,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        <state relative-caret-position="360">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding>
             <element signature="e#524#543#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/compressor.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/compressor.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core_io.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/activemasternode.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amount.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bip38.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2796" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bip38.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="461">
           <caret line="1637" column="56" lean-forward="true" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
@@ -904,13 +911,17 @@
         <state relative-caret-position="761">
           <caret line="1637" column="56" selection-start-line="1637" selection-start-column="56" selection-end-line="1637" selection-end-column="56" />
 >>>>>>> 11889d7... Logo Changes & MN Collaterial Test
+=======
+        <state relative-caret-position="696">
+          <caret line="1641" column="4" selection-start-line="1641" selection-start-column="4" selection-end-line="1641" selection-end-column="4" />
+>>>>>>> 724e2c2... mn collaterial change
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/version.h">
+    <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        <state relative-caret-position="640">
+          <caret line="66" column="78" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -928,6 +939,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clientversion.h">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -984,13 +996,17 @@
         <state relative-caret-position="380">
           <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
 >>>>>>> 11889d7... Logo Changes & MN Collaterial Test
+=======
+        <state relative-caret-position="400">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+>>>>>>> 724e2c2... mn collaterial change
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
+    <entry file="file://$PROJECT_DIR$/src/version.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+        <state relative-caret-position="220">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>

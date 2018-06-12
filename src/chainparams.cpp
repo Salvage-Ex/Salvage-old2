@@ -115,7 +115,7 @@ public:
         nLastPOWBlock = 1500;
         nMaturity = 99;
         nMasternodeCountDrift = 20;
-	    nMasternodeColleteralLimxDev = 5000; //Params().MasternodeColleteralLimxDev()
+	    nMasternodeColleteralLimxDev = 15000;
         nModifierUpdateBlock = 1; // we use the version 2 for dmd
         nMaxMoneyOut = 100000000 * COIN;
 
@@ -143,10 +143,6 @@ public:
         vSeeds.push_back(CDNSSeedData("seed2.galilel.network", "seed2.galilel.network"));
         vSeeds.push_back(CDNSSeedData("seed3.galilel.network", "seed3.galilel.network"));
         vSeeds.push_back(CDNSSeedData("seed4.galilel.network", "seed4.galilel.network"));
-        vSeeds.push_back(CDNSSeedData("seed5.galilel.network", "seed5.galilel.network"));
-        vSeeds.push_back(CDNSSeedData("seed6.galilel.network", "seed6.galilel.network"));
-        vSeeds.push_back(CDNSSeedData("seed7.galilel.network", "seed7.galilel.network"));
-        vSeeds.push_back(CDNSSeedData("seed8.galilel.network", "seed8.galilel.network"));
 
         //vFixedSeeds.clear();
         //vSeeds.clear();
