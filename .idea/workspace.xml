@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/chainparams.cpp" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -38,6 +39,9 @@
 =======
       <change beforePath="$PROJECT_DIR$/src/spork.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/spork.h" afterDir="false" />
 >>>>>>> 68033fa... Sporks
+=======
+      <change beforePath="$PROJECT_DIR$/src/clientversion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientversion.cpp" afterDir="false" />
+>>>>>>> 2f51a1e... version
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,9 +52,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="activemasternode.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/activemasternode.h">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="version.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/version.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="masternode.cpp" pinned="false" current-in-tab="false">
@@ -122,9 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spork.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="spork.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/spork.h">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -157,6 +166,10 @@
             <state relative-caret-position="376">
               <caret line="50" column="52" lean-forward="true" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
 >>>>>>> 68033fa... Sporks
+=======
+            <state relative-caret-position="396">
+              <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+>>>>>>> 2f51a1e... version
             </state>
           </provider>
         </entry>
@@ -181,12 +194,13 @@
         <entry file="file://$PROJECT_DIR$/src/masternode.h">
 >>>>>>> 68033fa... Sporks
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
+            <state relative-caret-position="2140">
+              <caret line="113" column="7" lean-forward="true" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="wallet.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
@@ -246,11 +260,29 @@
       <file leaf-file-name="Makefile.test.include" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Makefile.test.include">
           <provider selected="true" editor-type-id="text-editor" />
+=======
+      <file leaf-file-name="clientversion.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <folding>
+                <element signature="e#2259#2405#0" expanded="true" />
+                <element signature="e#2589#2722#0" expanded="true" />
+                <element signature="e#2821#2862#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+>>>>>>> 2f51a1e... version
         </entry>
       </file>
-      <file leaf-file-name="masternode-payments.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/masternode-payments.h">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="clientversion.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clientversion.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            </state>
+          </provider>
         </entry>
       </file>
 >>>>>>> 68033fa... Sporks
@@ -258,9 +290,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>v1.0</find>
-      <find>Version</find>
-      <find>v</find>
       <find>1500</find>
       <find>synchronisier</find>
       <find>fehlge</find>
@@ -275,6 +304,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <find>nMasternodeColleteralLimxDev</find>
 >>>>>>> 6fdca9a... New Logos
@@ -285,11 +315,13 @@
 <<<<<<< HEAD
 >>>>>>> 11889d7... Logo Changes & MN Collaterial Test
 =======
+=======
+>>>>>>> 2f51a1e... version
       <find>version</find>
       <find>force</find>
       <find>MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT</find>
       <find>wallet</find>
-      <find>Galilel Core</find>
+      <find />
       <find>MASTERNODE_REMOVE</find>
       <find>protocolVersion</find>
       <find>SER_NETWORK</find>
@@ -297,10 +329,17 @@
       <find>SPORK_14_NEW_PROTOCOL_ENFORCEMENT</find>
       <find>MASTERNODE_REMOVAL_SECONDS</find>
       <find>MASTERNODE_REMOVAL_SECONDSMASTERNODE_REMOVAL_SECONDS</find>
-      <find>SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT</find>
       <find>SPORK_16_MN_WINNER_MINIMUM_AGE</find>
       <find>SPORK_11_RESET_BUDGET_DEFAULT</find>
+<<<<<<< HEAD
 >>>>>>> 68033fa... Sporks
+=======
+      <find>dirty</find>
+      <find />
+      <find>-dirty</find>
+      <find>SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT</find>
+      <find>CLIENT_VERSION_SUFFIX</find>
+>>>>>>> 2f51a1e... version
     </findStrings>
     <replaceStrings>
       <replace />
@@ -318,6 +357,7 @@
         <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/version.h" />
         <option value="$PROJECT_DIR$/src/spork.h" />
+        <option value="$PROJECT_DIR$/src/clientversion.cpp" />
       </list>
     </option>
   </component>
@@ -366,6 +406,7 @@
 =======
   <component name="ProjectFrameBounds">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="x" value="1157" />
     <option name="y" value="94" />
 >>>>>>> 724e2c2... mn collaterial change
@@ -373,8 +414,12 @@
     <option name="x" value="999" />
     <option name="y" value="52" />
 >>>>>>> 68033fa... Sporks
+=======
+    <option name="x" value="681" />
+    <option name="y" value="81" />
+>>>>>>> 2f51a1e... version
     <option name="width" value="2096" />
-    <option name="height" value="1918" />
+    <option name="height" value="1885" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -392,6 +437,12 @@
               <item name="Galilel" type="b2602c69:ProjectViewProjectNode" />
               <item name="Galilel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galilel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galilel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qt" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -479,12 +530,17 @@
       <workItem from="1528991961148" duration="623000" />
       <workItem from="1528998053421" duration="151000" />
       <workItem from="1529068470820" duration="327000" />
+<<<<<<< HEAD
       <workItem from="1529157464441" duration="2072000" />
 >>>>>>> 68033fa... Sporks
+=======
+      <workItem from="1529157464441" duration="4018000" />
+>>>>>>> 2f51a1e... version
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -508,11 +564,15 @@
 =======
     <option name="totallyTimeSpent" value="15558000" />
 >>>>>>> 68033fa... Sporks
+=======
+    <option name="totallyTimeSpent" value="17504000" />
+>>>>>>> 2f51a1e... version
   </component>
   <component name="ToolWindowManager">
-    <frame x="999" y="52" width="2096" height="1918" extended-state="0" />
+    <frame x="-11" y="-11" width="3862" height="2126" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <window_info anchor="bottom" id="TypeScript" order="7" />
@@ -545,6 +605,10 @@
 =======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36885247" />
 >>>>>>> 9d0a722... Smaller Logos
+=======
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19921875" />
+>>>>>>> 2f51a1e... version
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -566,7 +630,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
@@ -719,48 +782,6 @@
     </entry>
 =======
 >>>>>>> 68033fa... Sporks
-    <entry file="file://$PROJECT_DIR$/src/clientversion.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1720">
-          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32460">
-          <caret line="1623" column="43" selection-start-line="1623" selection-start-column="43" selection-end-line="1623" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/version.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clientversion.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -983,24 +1004,10 @@
     <entry file="file://$PROJECT_DIR$/src/bip38.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/addrman.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clientversion.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1056,6 +1063,7 @@
     <entry file="file://$PROJECT_DIR$/src/wallet.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/version.h">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1127,6 +1135,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 2f51a1e... version
     <entry file="file://$PROJECT_DIR$/src/activemasternode.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1135,6 +1145,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/masternode-budget.cpp">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masternodeman.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="834" column="26" selection-start-line="834" selection-start-column="26" selection-end-line="834" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validationinterface.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/genbuild.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Makefile.am">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1145,10 +1172,26 @@
     <entry file="file://$PROJECT_DIR$/src/Makefile.test.include">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/masternodeman.cpp">
+    <entry file="file://$PROJECT_DIR$/src/util.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="834" column="26" selection-start-line="834" selection-start-column="26" selection-end-line="834" selection-end-column="26" />
+        <state relative-caret-position="-1260" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/qt/galilel.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/qt/intro.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-840" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/version.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
@@ -1159,10 +1202,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/masternode.h">
+    <entry file="file://$PROJECT_DIR$/src/spork.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
+        <state relative-caret-position="396">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1173,10 +1216,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spork.h">
+    <entry file="file://$PROJECT_DIR$/src/masternode.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="50" column="52" lean-forward="true" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
+        <state relative-caret-position="2140">
+          <caret line="113" column="7" lean-forward="true" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clientversion.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="e#2259#2405#0" expanded="true" />
+            <element signature="e#2589#2722#0" expanded="true" />
+            <element signature="e#2821#2862#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

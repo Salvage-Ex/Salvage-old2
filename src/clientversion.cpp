@@ -18,7 +18,7 @@ const std::string CLIENT_NAME("Galilel Core");
 /**
  * Client version number
  */
-#define CLIENT_VERSION_SUFFIX ""
+#define CLIENT_VERSION_SUFFIX "1.0.0.5"
 
 
 /**
