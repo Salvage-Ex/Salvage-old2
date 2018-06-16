@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/chainparams.cpp" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -54,6 +55,9 @@
 =======
       <change beforePath="$PROJECT_DIR$/src/qt/splashscreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/qt/splashscreen.cpp" afterDir="false" />
 >>>>>>> a5dbed7... v1.0.0.5
+=======
+      <change beforePath="$PROJECT_DIR$/src/spork.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/spork.h" afterDir="false" />
+>>>>>>> 45c5814... settings enforcement
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="splashscreen.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="splashscreen.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="52" column="45" lean-forward="true" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+            <state relative-caret-position="860">
+              <caret line="62" column="58" lean-forward="true" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -155,9 +159,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spork.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="spork.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/spork.h">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -199,6 +204,10 @@
 =======
               <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
 >>>>>>> a5dbed7... v1.0.0.5
+=======
+            <state relative-caret-position="836">
+              <caret line="55" column="89" selection-start-line="55" selection-start-column="89" selection-end-line="55" selection-end-column="89" />
+>>>>>>> 45c5814... settings enforcement
             </state>
           </provider>
         </entry>
@@ -365,7 +374,7 @@
       <find>force</find>
       <find>MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT</find>
       <find>wallet</find>
-      <find>Galilel Core</find>
+      <find />
       <find>MASTERNODE_REMOVE</find>
       <find>protocolVersion</find>
       <find>SER_NETWORK</find>
@@ -375,6 +384,7 @@
       <find>MASTERNODE_REMOVAL_SECONDSMASTERNODE_REMOVAL_SECONDS</find>
       <find>SPORK_16_MN_WINNER_MINIMUM_AGE</find>
       <find>SPORK_11_RESET_BUDGET_DEFAULT</find>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 68033fa... Sporks
@@ -387,6 +397,9 @@
 >>>>>>> 2f51a1e... version
 =======
       <find>Galilel Core:</find>
+=======
+      <find />
+>>>>>>> 45c5814... settings enforcement
       <find>-dirty</find>
       <find>CLIENT_VERSION_SUFFIX</find>
       <find>$SUFFIX</find>
@@ -416,12 +429,12 @@
         <option value="$PROJECT_DIR$/src/chainparams.cpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/version.h" />
-        <option value="$PROJECT_DIR$/src/spork.h" />
         <option value="$PROJECT_DIR$/src/clientversion.cpp" />
         <option value="$PROJECT_DIR$/src/config/galilel-config.h" />
         <option value="$PROJECT_DIR$/configure.ac" />
         <option value="$PROJECT_DIR$/src/clientversion.h" />
         <option value="$PROJECT_DIR$/src/qt/splashscreen.cpp" />
+        <option value="$PROJECT_DIR$/src/spork.h" />
       </list>
     </option>
   </component>
@@ -434,6 +447,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -483,6 +497,9 @@
 =======
   <component name="ProjectFrameBounds" extendedState="6">
 >>>>>>> 70d80c3... Version Change
+=======
+  <component name="ProjectFrameBounds">
+>>>>>>> 45c5814... settings enforcement
     <option name="x" value="681" />
     <option name="y" value="81" />
 >>>>>>> 2f51a1e... version
@@ -601,6 +618,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1529157464441" duration="2072000" />
 >>>>>>> 68033fa... Sporks
 =======
@@ -612,10 +630,14 @@
 =======
       <workItem from="1529157464441" duration="5843000" />
 >>>>>>> a5dbed7... v1.0.0.5
+=======
+      <workItem from="1529157464441" duration="7075000" />
+>>>>>>> 45c5814... settings enforcement
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -651,6 +673,9 @@
 =======
     <option name="totallyTimeSpent" value="19329000" />
 >>>>>>> a5dbed7... v1.0.0.5
+=======
+    <option name="totallyTimeSpent" value="20561000" />
+>>>>>>> 45c5814... settings enforcement
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="3862" height="2126" extended-state="6" />
@@ -1261,13 +1286,6 @@
         <state relative-caret-position="-840" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/masternode.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="286" column="9" selection-start-line="286" selection-start-column="9" selection-end-line="286" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
@@ -1301,13 +1319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spork.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/spork.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
@@ -1329,6 +1340,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="62" column="58" lean-forward="true" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/version.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1336,10 +1354,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/qt/splashscreen.cpp">
+    <entry file="file://$PROJECT_DIR$/src/masternode.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="52" column="45" lean-forward="true" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+        <state relative-caret-position="825">
+          <caret line="286" column="9" selection-start-line="286" selection-start-column="9" selection-end-line="286" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spork.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="55" column="89" selection-start-line="55" selection-start-column="89" selection-end-line="55" selection-end-column="89" />
         </state>
       </provider>
     </entry>
