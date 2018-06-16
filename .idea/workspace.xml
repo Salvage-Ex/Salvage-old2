@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/chainparams.cpp" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -42,6 +43,13 @@
 =======
       <change beforePath="$PROJECT_DIR$/src/clientversion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientversion.cpp" afterDir="false" />
 >>>>>>> 2f51a1e... version
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configure.ac" beforeDir="false" afterPath="$PROJECT_DIR$/configure.ac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clientversion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientversion.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clientversion.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientversion.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/galilel-config.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/galilel-config.h" afterDir="false" />
+>>>>>>> 70d80c3... Version Change
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -202,6 +210,7 @@
       </file>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="wallet.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
 >>>>>>> 6fdca9a... New Logos
@@ -262,10 +271,13 @@
           <provider selected="true" editor-type-id="text-editor" />
 =======
       <file leaf-file-name="clientversion.cpp" pinned="false" current-in-tab="true">
+=======
+      <file leaf-file-name="clientversion.cpp" pinned="false" current-in-tab="false">
+>>>>>>> 70d80c3... Version Change
         <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="1309">
+              <caret line="91" column="23" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="23" />
               <folding>
                 <element signature="e#2259#2405#0" expanded="true" />
                 <element signature="e#2589#2722#0" expanded="true" />
@@ -276,11 +288,29 @@
 >>>>>>> 2f51a1e... version
         </entry>
       </file>
-      <file leaf-file-name="clientversion.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="galilel-config.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/galilel-config.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configure.ac" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configure.ac">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clientversion.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/clientversion.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="380">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -290,11 +320,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1500</find>
-      <find>synchronisier</find>
-      <find>fehlge</find>
-      <find>MASTERNODE_SYNC_FAILED</find>
-      <find>998</find>
       <find>MASTERNODE_SYNC_SPORKS</find>
       <find>payments</find>
       <find>masternode_paym</find>
@@ -321,7 +346,7 @@
       <find>force</find>
       <find>MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT</find>
       <find>wallet</find>
-      <find />
+      <find>Galilel Core</find>
       <find>MASTERNODE_REMOVE</find>
       <find>protocolVersion</find>
       <find>SER_NETWORK</find>
@@ -332,6 +357,7 @@
       <find>SPORK_16_MN_WINNER_MINIMUM_AGE</find>
       <find>SPORK_11_RESET_BUDGET_DEFAULT</find>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 68033fa... Sporks
 =======
       <find>dirty</find>
@@ -340,6 +366,18 @@
       <find>SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT</find>
       <find>CLIENT_VERSION_SUFFIX</find>
 >>>>>>> 2f51a1e... version
+=======
+      <find>Galilel Core:</find>
+      <find>-dirty</find>
+      <find>SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT</find>
+      <find>CLIENT_VERSION_SUFFIX</find>
+      <find>$SUFFIX</find>
+      <find>dirty</find>
+      <find>FormatVersion</find>
+      <find>CLIENT_VERSION</find>
+      <find>CLIENT_BUILD</find>
+      <find>CLIENT_VERSION_BUILD</find>
+>>>>>>> 70d80c3... Version Change
     </findStrings>
     <replaceStrings>
       <replace />
@@ -352,12 +390,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/qt/splashscreen.cpp" />
-        <option value="$PROJECT_DIR$/src/clientversion.h" />
         <option value="$PROJECT_DIR$/src/chainparams.cpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/version.h" />
         <option value="$PROJECT_DIR$/src/spork.h" />
         <option value="$PROJECT_DIR$/src/clientversion.cpp" />
+        <option value="$PROJECT_DIR$/src/config/galilel-config.h" />
+        <option value="$PROJECT_DIR$/configure.ac" />
+        <option value="$PROJECT_DIR$/src/clientversion.h" />
       </list>
     </option>
   </component>
@@ -370,6 +410,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -415,6 +456,9 @@
     <option name="y" value="52" />
 >>>>>>> 68033fa... Sporks
 =======
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+>>>>>>> 70d80c3... Version Change
     <option name="x" value="681" />
     <option name="y" value="81" />
 >>>>>>> 2f51a1e... version
@@ -531,15 +575,20 @@
       <workItem from="1528998053421" duration="151000" />
       <workItem from="1529068470820" duration="327000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1529157464441" duration="2072000" />
 >>>>>>> 68033fa... Sporks
 =======
       <workItem from="1529157464441" duration="4018000" />
 >>>>>>> 2f51a1e... version
+=======
+      <workItem from="1529157464441" duration="5176000" />
+>>>>>>> 70d80c3... Version Change
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -567,6 +616,9 @@
 =======
     <option name="totallyTimeSpent" value="17504000" />
 >>>>>>> 2f51a1e... version
+=======
+    <option name="totallyTimeSpent" value="18662000" />
+>>>>>>> 70d80c3... Version Change
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="3862" height="2126" extended-state="6" />
@@ -641,6 +693,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -796,6 +849,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 70d80c3... Version Change
     <entry file="file://$PROJECT_DIR$/src/qt/locale/galilel_de.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87600">
@@ -1156,13 +1211,6 @@
     <entry file="file://$PROJECT_DIR$/src/validationinterface.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/genbuild.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Makefile.am">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1223,22 +1271,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clientversion.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        <state relative-caret-position="1309">
+          <caret line="91" column="23" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="23" />
           <folding>
             <element signature="e#2259#2405#0" expanded="true" />
             <element signature="e#2589#2722#0" expanded="true" />
             <element signature="e#2821#2862#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/galilel-config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/genbuild.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="33" column="53" lean-forward="true" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configure.ac">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clientversion.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>
