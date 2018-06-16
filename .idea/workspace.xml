@@ -28,12 +28,16 @@
 >>>>>>> 9d0a722... Smaller Logos
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/chainparams.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clientversion.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientversion.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/qt/splashscreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/qt/splashscreen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/version.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/version.h" afterDir="false" />
 >>>>>>> 724e2c2... mn collaterial change
+=======
+      <change beforePath="$PROJECT_DIR$/src/spork.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/spork.h" afterDir="false" />
+>>>>>>> 68033fa... Sporks
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,9 +48,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="chainparams.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
+      <file leaf-file-name="activemasternode.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/activemasternode.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="masternode.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/masternode.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -104,13 +114,18 @@
             <state relative-caret-position="640">
               <caret line="66" column="78" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
 >>>>>>> 724e2c2... mn collaterial change
+=======
+            <state relative-caret-position="825">
+              <caret line="286" column="9" lean-forward="true" selection-start-line="286" selection-start-column="9" selection-end-line="286" selection-end-column="9" />
+>>>>>>> 68033fa... Sporks
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <file leaf-file-name="spork.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/spork.h">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -138,31 +153,41 @@
             <state relative-caret-position="696">
               <caret line="1641" column="4" selection-start-line="1641" selection-start-column="4" selection-end-line="1641" selection-end-column="4" />
 >>>>>>> 724e2c2... mn collaterial change
+=======
+            <state relative-caret-position="376">
+              <caret line="50" column="52" lean-forward="true" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
+>>>>>>> 68033fa... Sporks
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/version.h">
+      <file leaf-file-name="spork.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spork.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="1100">
+              <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="clientversion.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clientversion.h">
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+      <file leaf-file-name="masternode.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/masternode.h">
+>>>>>>> 68033fa... Sporks
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="20">
+              <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="wallet.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
 >>>>>>> 6fdca9a... New Logos
@@ -202,6 +227,33 @@
 >>>>>>> 6fdca9a... New Logos
 =======
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
+=======
+      <file leaf-file-name="masternode-budget.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/masternode-budget.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile.am" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Makefile.am">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile.qt.include" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Makefile.qt.include">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile.test.include" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Makefile.test.include">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="masternode-payments.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/masternode-payments.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+>>>>>>> 68033fa... Sporks
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -230,7 +282,25 @@
 >>>>>>> bb6c5b7... Revert "Merge branch 'master' of https://github.com/GalilelDEV/Galilel"
 =======
       <find>dirty</find>
+<<<<<<< HEAD
 >>>>>>> 11889d7... Logo Changes & MN Collaterial Test
+=======
+      <find>version</find>
+      <find>force</find>
+      <find>MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT</find>
+      <find>wallet</find>
+      <find>Galilel Core</find>
+      <find>MASTERNODE_REMOVE</find>
+      <find>protocolVersion</find>
+      <find>SER_NETWORK</find>
+      <find>SPORK</find>
+      <find>SPORK_14_NEW_PROTOCOL_ENFORCEMENT</find>
+      <find>MASTERNODE_REMOVAL_SECONDS</find>
+      <find>MASTERNODE_REMOVAL_SECONDSMASTERNODE_REMOVAL_SECONDS</find>
+      <find>SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT</find>
+      <find>SPORK_16_MN_WINNER_MINIMUM_AGE</find>
+      <find>SPORK_11_RESET_BUDGET_DEFAULT</find>
+>>>>>>> 68033fa... Sporks
     </findStrings>
     <replaceStrings>
       <replace />
@@ -247,6 +317,7 @@
         <option value="$PROJECT_DIR$/src/chainparams.cpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/version.h" />
+        <option value="$PROJECT_DIR$/src/spork.h" />
       </list>
     </option>
   </component>
@@ -294,9 +365,14 @@
 >>>>>>> 9d0a722... Smaller Logos
 =======
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="1157" />
     <option name="y" value="94" />
 >>>>>>> 724e2c2... mn collaterial change
+=======
+    <option name="x" value="999" />
+    <option name="y" value="52" />
+>>>>>>> 68033fa... Sporks
     <option name="width" value="2096" />
     <option name="height" value="1918" />
   </component>
@@ -393,11 +469,23 @@
 =======
       <workItem from="1528259872852" duration="2000" />
       <workItem from="1528818987453" duration="845000" />
+<<<<<<< HEAD
 >>>>>>> 724e2c2... mn collaterial change
+=======
+      <workItem from="1528973604222" duration="998000" />
+      <workItem from="1528985847345" duration="221000" />
+      <workItem from="1528986158986" duration="524000" />
+      <workItem from="1528990473629" duration="190000" />
+      <workItem from="1528991961148" duration="623000" />
+      <workItem from="1528998053421" duration="151000" />
+      <workItem from="1529068470820" duration="327000" />
+      <workItem from="1529157464441" duration="2072000" />
+>>>>>>> 68033fa... Sporks
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -417,9 +505,12 @@
 =======
     <option name="totallyTimeSpent" value="10452000" />
 >>>>>>> 724e2c2... mn collaterial change
+=======
+    <option name="totallyTimeSpent" value="15558000" />
+>>>>>>> 68033fa... Sporks
   </component>
   <component name="ToolWindowManager">
-    <frame x="1157" y="94" width="2096" height="1918" extended-state="0" />
+    <frame x="999" y="52" width="2096" height="1918" extended-state="0" />
     <editor active="true" />
     <layout>
 <<<<<<< HEAD
@@ -448,6 +539,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
 =======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19921875" />
 =======
@@ -462,17 +554,20 @@
 =======
 >>>>>>> 724e2c2... mn collaterial change
       <window_info anchor="bottom" id="Run" order="2" />
+=======
+>>>>>>> 68033fa... Sporks
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
@@ -483,6 +578,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2400">
@@ -621,6 +717,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 68033fa... Sporks
     <entry file="file://$PROJECT_DIR$/src/clientversion.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -660,11 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="e#2259#2405#0" expanded="true" />
-            <element signature="e#2589#2722#0" expanded="true" />
-            <element signature="e#2821#2862#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,11 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="e#2259#2405#0" expanded="true" />
-            <element signature="e#2589#2722#0" expanded="true" />
-            <element signature="e#2821#2862#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,6 +852,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
@@ -805,6 +894,8 @@
           <caret line="120" selection-start-line="120" selection-end-line="120" />
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 68033fa... Sporks
     <entry file="file://$PROJECT_DIR$/src/qt/locale/galilel_de.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -865,9 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#524#543#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -879,11 +967,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core_io.h">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/activemasternode.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/amount.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -900,8 +983,39 @@
     <entry file="file://$PROJECT_DIR$/src/bip38.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/addrman.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clientversion.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/addrman.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/.clang-format">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/activemasternode.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="461">
@@ -915,30 +1029,36 @@
         <state relative-caret-position="696">
           <caret line="1641" column="4" selection-start-line="1641" selection-start-column="4" selection-end-line="1641" selection-end-column="4" />
 >>>>>>> 724e2c2... mn collaterial change
+=======
+        <state relative-caret-position="32800">
+          <caret line="1640" column="5" selection-start-line="1640" selection-start-column="5" selection-end-line="1640" selection-end-column="5" />
+>>>>>>> 68033fa... Sporks
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="66" column="78" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
+        <state relative-caret-position="700">
+          <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clientversion.cpp">
+    <entry file="file://$PROJECT_DIR$/src/wallet.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-          <folding>
-            <element signature="e#2259#2405#0" expanded="true" />
-            <element signature="e#2589#2722#0" expanded="true" />
-            <element signature="e#2821#2862#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="740">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clientversion.h">
+    <entry file="file://$PROJECT_DIR$/src/wallet_ismine.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wallet.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/version.h">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1000,13 +1120,63 @@
         <state relative-caret-position="400">
           <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
 >>>>>>> 724e2c2... mn collaterial change
+=======
+        <state relative-caret-position="900">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+>>>>>>> 68033fa... Sporks
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/version.h">
+    <entry file="file://$PROJECT_DIR$/src/activemasternode.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masternode-payments.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masternode-budget.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Makefile.am">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Makefile.qt.include">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Makefile.test.include">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masternodeman.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="648">
+          <caret line="834" column="26" selection-start-line="834" selection-start-column="26" selection-end-line="834" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masternode.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="286" column="9" lean-forward="true" selection-start-line="286" selection-start-column="9" selection-end-line="286" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masternode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spork.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spork.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="50" column="52" lean-forward="true" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
         </state>
       </provider>
     </entry>
