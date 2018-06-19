@@ -1,25 +1,44 @@
-OFFICIAL LINKS
+-----------------------------------------------------
+ OFFICIAL LINKS
+-----------------------------------------------------
+Website
+https://galilel.network/
 
-Website https://galilel.network/
+Github
+https://github.com/GalilelDEV/Galilel/
 
-Github https://github.com/GalilelDEV/Galilel/
+Block Explorer
+https://explorer.galilel.network/
 
-Block Explorer https://explorer.galilel.network/
+ANN Thread
+https://bitcointalk.org/index.php?topic=4238243
 
-ANN Thread https://bitcointalk.org/index.php?topic=4238243
+Telegram
+https://t.me/Galilel
 
-Telegram https://t.me/Galilel
+Twitter
+https://twitter.com/GalilelEN
 
-Twitter https://twitter.com/GalilelEN
+-----------------------------------------------------
+ EXCHANGE's
+-----------------------------------------------------
 
-EXCHANGE's
+Graviex
+https://graviex.net/markets/galibtc
 
-Graviex https://graviex.net/markets/galibtc
+Crypto-Bridge
+TBA
 
-Crypto-Bridge TBA
-
+-----------------------------------------------------
 Promotion's
+-----------------------------------------------------
 
-Masternode.online https://masternodes.online/currencies/GALI/
+Masternode.online
+https://masternodes.online/currencies/GALI/
 
-by https://galilel.network TEAM
+-----------------------------------------------------
+Setting up a Masternode
+-----------------------------------------------------
+
+
+by GALILEL.NETWORK TEAM
