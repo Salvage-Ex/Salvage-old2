@@ -15,6 +15,7 @@ Twitter https://twitter.com/GalilelEN
 EXCHANGE's
 
 Graviex https://graviex.net/markets/galibtc
+
 Crypto-Bridge TBA
 
 Promotion's
