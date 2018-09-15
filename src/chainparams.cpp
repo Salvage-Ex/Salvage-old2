@@ -141,11 +141,9 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x1dd81cdda448e9346a94f82e0d6c9fa7a876b59124da4dc49b66531d3ef11822"));
         assert(hashGenesisBlock == uint256("0x00000a15f1dd0b452c85b89d7e8a2968205e19550b1c2f12909367a04afc2855"));
 
-        vSeeds.push_back(CDNSSeedData("dnsseed.galilel.network", "dnsseed.galilel.network"));
-        vSeeds.push_back(CDNSSeedData("seed1.galilel.network", "seed1.galilel.network"));
-        vSeeds.push_back(CDNSSeedData("seed2.galilel.network", "seed2.galilel.network"));
-        vSeeds.push_back(CDNSSeedData("seed3.galilel.network", "seed3.galilel.network"));
-        vSeeds.push_back(CDNSSeedData("seed4.galilel.network", "seed4.galilel.network"));
+        vSeeds.push_back(CDNSSeedData("seed1.galilel.cloud", "seed1.galilel.cloud"));
+        vSeeds.push_back(CDNSSeedData("seed2.galilel.cloud", "seed2.galilel.cloud"));
+        vSeeds.push_back(CDNSSeedData("seed3.galilel.cloud", "seed3.galilel.cloud"));
 
         //vFixedSeeds.clear();
         //vSeeds.clear();
