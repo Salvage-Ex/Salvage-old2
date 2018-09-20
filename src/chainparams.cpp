@@ -120,7 +120,7 @@ public:
         nMasternodeCountDrift = 20;
 	    nMasternodeColleteralLimxDev = 15000;
         nModifierUpdateBlock = 1; // we use the version 2 for dmd
-        nMaxMoneyOut = 100000000 * COIN;
+        nMaxMoneyOut = 25000000 * COIN;
 
         const char* pszTimestamp = "Galilel Coin Start @ Friday, 25. May 2018 04:00:00 GMT.";
         CMutableTransaction txNew;
@@ -206,7 +206,7 @@ public:
         nLastPOWBlock = 200;
         nMaturity = 15;
         nModifierUpdateBlock = 51197; //approx Mon, 30 Apr 2018 04:00:00 GMT
-        nMaxMoneyOut = 90000000 * COIN;
+        nMaxMoneyOut = 24000000 * COIN;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1527217409;
