@@ -2,7 +2,7 @@
 
 Galilel (GALI) is an open-source Proof-of-Work digital cryptocurrency for fast (using SwiftX), private (Zerocoin protocol) and secure microtransactions. Our main goal is to create a decentralized fully secure and anonymous network to run applications which do not rely on any central body control. By having a distributed system, thousands of users will be responsible for maintaining the application and data so that there is no single point of failure.
 
-Galilel (GALI) will differentiate from other Masternode hosting platforms by its kind of automation. New Masternode/PoS coins can be added automatically to the platform by the coin developer and paying the listing fee in GALI. New coins will run in a sandbox mode until they have been verified that no backdoors have been implemented to clear wallets from other coins. Isolation of different users and their wallets are managed via LXC (Linux Containers). Our customers will get a fully automated solution to run with simple clicks a fully managed Masternode and Staking platform. Beside Masternode/PoS hosting we will implement Block Explorer as a Service to allow new coins and their teams to focus on their important work while we will deliver the block explorer to their users.
+Galilel Cloud will differentiate from other masternode hosting platforms by its kind of automation. New masternode and proof-of-stake coins can be added automatically to the platform by the coin developer and paying the listing fee in GALI. New coins will run in a sandbox mode until they have been verified that no backdoors have been implemented to clear wallets from other coins. Isolation of different users and their wallets are managed via Linux Containers (LXC). Our customers will get a fully automated solution to run with simple clicks a fully managed masternode and staking platform. Beside Masternode as a Service (MaaS) and Proof-of-Stake as a Service (PoSaaS) we will implement Block Explorer as a Service (BEaaS) to allow new coins and their teams to focus on their important work while we will deliver the block explorer to their users.
 
 # Coin Specifications
 
@@ -17,7 +17,7 @@ Galilel (GALI) will differentiate from other Masternode hosting platforms by its
 * Masternode Collateral: 15.000
 * Premine: 220.000 (0,88%)
 * Premine Address (Old Developer): https://explorer.galilel.cloud/address/Uet6x6BHW8a2Ckr2dNfzKgM6VJTgyUGuBZ
-* Community Donation Addresses: https://explorer.galilel.cloud/address/UUr5nDmykhun1HWM7mJAqLVeLzoGtx19dX
+* Community Donation Address: https://explorer.galilel.cloud/address/UUr5nDmykhun1HWM7mJAqLVeLzoGtx19dX
 
 # Proof-of-Work Rewards
 
