@@ -214,7 +214,9 @@ Proof-of-Stake will start at block 1501 until max coin emission is reached.
 
 Website: https://galilel.cloud/
 
-GitHub: https://github.com/GalilelDEV/Galilel/
+GitHub (Wallet): https://github.com/Galilel-Project/galilel/
+
+GitHub (Project): https://github.com/Galilel-Project/
 
 Block Explorer: https://explorer.galilel.cloud/
 
