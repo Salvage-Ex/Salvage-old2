@@ -11,7 +11,8 @@ Galilel Cloud will differentiate from other masternode hosting platforms by its 
 * Hash Algo: Quark
 * Type: PoW / PoS / MN
 * Minimum Staking Age: 2 Hours
-* Rewards: MN 70%, PoS 30%
+* Rewards (till block 205000): MN 60%, PoS 40%
+* Rewards (from block 205001): MN 70%, PoS 30%
 * Last PoW Block: 1.500
 * Max Coin Supply: 25.000.000
 * Masternode Collateral: 15.000
