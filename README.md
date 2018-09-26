@@ -29,7 +29,7 @@ Proof-of-Work is used as instamine protection and will end at block 1500.
 <table>
   <tr>
     <td><b>Block Height</b></td>
-    <td><b>Reward Amount</b></td>
+    <td><b>Reward</b></td>
     <td><b>MN</b></td>
     <td><b>PoW</b></td>
     <td><b>Supply</b></td>
