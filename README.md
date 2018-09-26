@@ -9,6 +9,8 @@ Galilel Cloud will differentiate from other masternode hosting platforms by its 
 * Coin Name: Galilel
 * Coin Ticker: GALI
 * Hash Algo: Quark
+* RPC Port: 36002
+* P2P Port: 36001
 * Type: PoW / PoS / MN
 * Minimum Staking Age: 2 Hours
 * Rewards (till block 205000): MN 60%, PoS 40%
