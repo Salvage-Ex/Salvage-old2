@@ -37,7 +37,7 @@ Proof-of-Work is used as instamine protection and will end at block 1500.
     <td><b>Stage End</b></td>
   </tr>
   <tr>
-    <td>Block 1</td>
+    <td>1</td>
     <td>220.000 GALI (premine)</td>
     <td>60%</td>
     <td>40%</td>
@@ -46,7 +46,7 @@ Proof-of-Work is used as instamine protection and will end at block 1500.
     <td>2018-05-25</td>
   </tr>
   <tr>
-    <td>Block 2 - 1500</td>
+    <td>2 - 1500</td>
     <td>1 GALI</td>
     <td>60%</td>
     <td>40%</td>
