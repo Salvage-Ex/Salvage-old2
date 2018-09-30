@@ -223,7 +223,7 @@ GitHub (Project): https://github.com/Galilel-Project/
 
 Block Explorer: https://explorer.galilel.cloud/
 
-Bitcointalk Announcement: https://bitcointalk.org/index.php?topic=4238243
+BitcoinTalk Announcement: https://bitcointalk.org/index.php?topic=4238243
 
 Twitter: https://twitter.com/GalilelEN
 
