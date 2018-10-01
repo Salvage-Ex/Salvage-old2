@@ -227,7 +227,7 @@ BitcoinTalk Announcement: https://bitcointalk.org/index.php?topic=4238243
 
 Twitter: https://twitter.com/GalilelEN
 
-Discord: https://discord.gg/M6cN8h7
+Discord: https://discord.galilel.cloud
 
 # Exchanges
 
