@@ -1,8 +1,24 @@
 # Introduction
 
-Galilel (GALI) is an open-source Proof-of-Work digital cryptocurrency for fast (using SwiftX), private (Zerocoin protocol) and secure microtransactions. Our main goal is to create a decentralized fully secure and anonymous network to run applications which do not rely on any central body control. By having a distributed system, thousands of users will be responsible for maintaining the application and data so that there is no single point of failure.
+Galilel (GALI) is an open-source Proof-of-Work digital cryptocurrency for fast
+(using SwiftX), private (Zerocoin protocol) and secure microtransactions. Our
+main goal is to create a decentralized fully secure and anonymous network to
+run applications which do not rely on any central body control. By having a
+distributed system, thousands of users will be responsible for maintaining the
+application and data so that there is no single point of failure.
 
-Galilel Cloud is a service hosting platform. It differentiates from other masternode hosting platforms by its kind of automation. New masternode and proof-of-stake coins can be added automatically to the platform by the coin developer and paying the listing fee in GALI. New coins run in a sandbox mode until they have been verified that no backdoors have been implemented to clear wallets from other coins. Isolation of different users and their wallets are managed via Linux Containers (LXC). Our customers get a fully automated solution to run with simple clicks a fully managed masternode and staking platform. Beside Masternode as a Service (MaaS) and Proof-of-Stake as a Service (PoSaaS) we implement Block Explorer as a Service (BEaaS) to allow new coins and their teams to focus on their important work while we deliver the block explorer to their users.
+Galilel Cloud is a service hosting platform. It differentiates from other
+masternode hosting platforms by its kind of automation. New masternode and
+proof-of-stake coins can be added automatically to the platform by the coin
+developer and paying the listing fee in GALI. New coins run in a sandbox mode
+until they have been verified that no backdoors have been implemented to clear
+wallets from other coins. Isolation of different users and their wallets are
+managed via Linux Containers (LXC). Our customers get a fully automated
+solution to run with simple clicks a fully managed masternode and staking
+platform. Beside Masternode as a Service (MaaS) and Proof-of-Stake as a Service
+(PoSaaS) we implement Block Explorer as a Service (BEaaS) to allow new coins
+and their teams to focus on their important work while we deliver the block
+explorer to their users.
 
 # Coin Specifications
 
@@ -26,192 +42,31 @@ Galilel Cloud is a service hosting platform. It differentiates from other master
 
 Proof-of-Work is used as instamine protection and will end at block 1500.
 
-<table>
-  <tr>
-    <td><b>Block Height</b></td>
-    <td><b>Reward</b></td>
-    <td><b>MN</b></td>
-    <td><b>PoW</b></td>
-    <td><b>Supply</b></td>
-    <td><b>Runtime</b></td>
-    <td><b>Stage End</b></td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>220.000 GALI (premine)</td>
-    <td>60%</td>
-    <td>40%</td>
-    <td>220.000</td>
-    <td>0 days</td>
-    <td>2018-05-25</td>
-  </tr>
-  <tr>
-    <td>2 - 1500</td>
-    <td>1 GALI</td>
-    <td>60%</td>
-    <td>40%</td>
-    <td>221.499</td>
-    <td>1 day</td>
-    <td>2018-05-26</td>
-  </tr>
-</table>
+Block Height   | Reward                 | MN  | PoS | Supply  | Runtime | Stage End
+---------------|------------------------|-----|-----|---------|---------|-----------
+Block 1        | 220.000 GALI (premine) | 60% | 40% | 220.000 | 0 days  | 2018-05-25
+Block 2 - 1500 |       1 GALI           | 60% | 40% | 221.499 | 1 day   | 2018-05-26
 
 # Proof-of-Stake Rewards
 
 Proof-of-Stake will start at block 1501 until max coin emission is reached.
 
-<table>
-  <tr>
-    <td><b>Stages</b></td>
-    <td><b>Block Height</b></td>
-    <td><b>Reward</b></td>
-    <td><b>MN</b></td>
-    <td><b>PoS</b></td>
-    <td><b>Supply</b></td>
-    <td><b>Runtime</b></td>
-    <td><b>Stage End</b></td>
-  </tr>
-  <tr>
-    <td>Stage 1</td>
-    <td>1501-12000</td>
-    <td>100 GALI</td>
-    <td>60%</td>
-    <td>40%</td>
-    <td>1.271.399</td>
-    <td>7 days</td>
-    <td>2018-06-02</td>
-  </tr>
-  <tr>
-    <td>Stage 2</td>
-    <td>12001-22000</td>
-    <td>90 GALI</td>
-    <td>60%</td>
-    <td>40%</td>
-    <td>2.171.309</td>
-    <td>7 days</td>
-    <td>2018-06-09</td>
-  </tr>
-  <tr>
-    <td>Stage 3</td>
-    <td>22001-42000</td>
-    <td>80 GALI</td>
-    <td>60%</td>
-    <td>40%</td>
-    <td>3.771.229</td>
-    <td>14 days</td>
-    <td>2018-06-23</td>
-  </tr>
-  <tr>
-    <td>Stage 4</td>
-    <td>42001-100000</td>
-    <td>70 GALI</td>
-    <td>60%</td>
-    <td>40%</td>
-    <td>7.831.159</td>
-    <td>40 days</td>
-    <td>2018-08-02</td>
-  </tr>
-  <tr>
-    <td>Stage 5</td>
-    <td>100001-160000</td>
-    <td>60 GALI</td>
-    <td>60%</td>
-    <td>40%</td>
-    <td>11.431.099</td>
-    <td>42 days</td>
-    <td>2018-09-13</td>
-  </tr>
-  <tr>
-    <td>Stage 6</td>
-    <td>160001-205000</td>
-    <td>50 GALI</td>
-    <td>60%</td>
-    <td>40%</td>
-    <td>13.681.049</td>
-    <td>31 days</td>
-    <td>2018-10-14</td>
-  </tr>
-  <tr>
-    <td>Stage 7</td>
-    <td>205001-250000</td>
-    <td>25 GALI</td>
-    <td>70%</td>
-    <td>30%</td>
-    <td>14.806.024</td>
-    <td>31 days</td>
-    <td>2018-11-14</td>
-  </tr>
-  <tr>
-    <td>Stage 8</td>
-    <td>250001-340000</td>
-    <td>15 GALI</td>
-    <td>70%</td>
-    <td>30%</td>
-    <td>16.156.009</td>
-    <td>62 days</td>
-    <td>2019-01-15</td>
-  </tr>
-  <tr>
-    <td>Stage 9</td>
-    <td>340001-430000</td>
-    <td>10 GALI</td>
-    <td>70%</td>
-    <td>30%</td>
-    <td>17.055.999</td>
-    <td>62 days</td>
-    <td>2019-03-18</td>
-  </tr>
-  <tr>
-    <td>Stage 10</td>
-    <td>430001-956000</td>
-    <td>5 GALI</td>
-    <td>70%</td>
-    <td>30%</td>
-    <td>19.685.994</td>
-    <td>365 days</td>
-    <td>2020-03-17</td>
-  </tr>
-  <tr>
-    <td>Stage 11</td>
-    <td>956001-1482000</td>
-    <td>4 GALI</td>
-    <td>70%</td>
-    <td>30%</td>
-    <td>21.789.990</td>
-    <td>365 days</td>
-    <td>2021-03-17</td>
-  </tr>
-  <tr>
-    <td>Stage 12</td>
-    <td>1482001-2008000</td>
-    <td>3 GALI</td>
-    <td>70%</td>
-    <td>30%</td>
-    <td>23.367.987</td>
-    <td>365 days</td>
-    <td>2022-03-17</td>
-  </tr>
-  <tr>
-    <td>Stage 13</td>
-    <td>2008001-2534000</td>
-    <td>2 GALI</td>
-    <td>70%</td>
-    <td>30%</td>
-    <td>24.419.985</td>
-    <td>365 days</td>
-    <td>2023-03-17</td>
-  </tr>
-  <tr>
-    <td>Stage 14</td>
-    <td>2534001-3114016</td>
-    <td>1 GALI</td>
-    <td>70%</td>
-    <td>30%</td>
-    <td>25.000.000</td>
-    <td>403 days</td>
-    <td>2024-04-23</td>
-  </tr>
-</table>
+Stages   | Block Height    | Reward   | MN  | PoS | Supply     | Runtime  | Stage End
+---------|-----------------|----------|-----|-----|------------|----------|-----------
+Stage 1  |      1501-12000 | 100 GALI | 60% | 40% |  1.271.399 |   7 days | 2018-06-02
+Stage 2  |     12001-22000 |  90 GALI | 60% | 40% |  2.171.309 |   7 days | 2018-06-09
+Stage 3  |     22001-42000 |  80 GALI | 60% | 40% |  3.771.229 |  14 days | 2018-06-23
+Stage 4  |    42001-100000 |  70 GALI | 60% | 40% |  7.831.159 |  40 days | 2018-08-02
+Stage 5  |   100001-160000 |  60 GALI | 60% | 40% | 11.431.099 |  42 days | 2018-09-13
+Stage 6  |   160001-205000 |  50 GALI | 60% | 40% | 13.681.049 |  31 days | 2018-10-14
+Stage 7  |   205001-250000 |  25 GALI | 70% | 30% | 14.806.024 |  31 days | 2018-11-14
+Stage 8  |   250001-340000 |  15 GALI | 70% | 30% | 16.156.009 |  62 days | 2019-01-15
+Stage 9  |   340001-430000 |  10 GALI | 70% | 30% | 17.055.999 |  62 days | 2019-03-18
+Stage 10 |   430001-956000 |   5 GALI | 70% | 30% | 19.685.994 | 365 days | 2020-03-17
+Stage 11 |  956001-1482000 |   4 GALI | 70% | 30% | 21.789.990 | 365 days | 2021-03-17
+Stage 12 | 1482001-2008000 |   3 GALI | 70% | 30% | 23.367.987 | 365 days | 2022-03-17
+Stage 13 | 2008001-2534000 |   2 GALI | 70% | 30% | 24.419.985 | 365 days | 2023-03-17
+Stage 14 | 2534001-3114016 |   1 GALI | 70% | 30% | 25.000.000 | 403 days | 2024-04-23
 
 # Official Links
 
