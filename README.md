@@ -229,6 +229,8 @@ Twitter: https://twitter.com/GalilelEN
 
 Discord: https://discord.galilel.cloud
 
+Know Your Developer (KYD): https://review.kydcoin.io/galicoin/
+
 # Exchanges
 
 Graviex: https://graviex.net/markets/galibtc
