@@ -2,7 +2,7 @@
 
 Before every release candidate:
 
-* Update translations which is a manual process.
+* Update translations, see [translation_process.md](https://github.com/Galilel-Project/galilel/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
