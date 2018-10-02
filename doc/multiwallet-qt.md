@@ -14,7 +14,7 @@ bitcoingui.cpp, as the BitcoinGUI class will require some major retrofitting.
 Only requiring some minor changes is galilel.cpp.
 
 Finally, two new headers and source files will have to be added to
-bitcoin-qt.pro.
+galilel-qt.pro.
 
 ## Changes to class BitcoinGUI
 
