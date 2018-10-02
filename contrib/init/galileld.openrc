@@ -17,7 +17,7 @@ BITCOIND_GROUP=${BITCOIND_GROUP:-galilel}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/galileld}
 
 name="Galilel Core Daemon"
-description="GALILEL crypto-currency p2p network daemon"
+description="Galilel crypto-currency p2p network daemon"
 
 command="/usr/bin/galileld"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"GALILEL Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Galilel Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

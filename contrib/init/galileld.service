@@ -1,5 +1,5 @@
 [Unit]
-Description=GALILEL's distributed currency daemon
+Description=Galilel's distributed currency daemon
 After=network.target
 
 [Service]
