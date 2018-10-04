@@ -93,3 +93,5 @@ Graviex: https://graviex.net/markets/galibtc
 # Promotions
 
 Masternodes.online: https://masternodes.online/currencies/GALI/
+
+Coinlib.io: https://coinlib.io/coin/GALI/Galilel
