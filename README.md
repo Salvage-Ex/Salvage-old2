@@ -1,6 +1,6 @@
 # Introduction
 
-Galilel (GALI) is an open-source Proof-of-Work digital cryptocurrency for fast
+Galilel (GALI) is an open-source Proof-of-Stake digital cryptocurrency for fast
 (using SwiftX), private (Zerocoin protocol) and secure microtransactions. Our
 main goal is to create a decentralized fully secure and anonymous network to
 run applications which do not rely on any central body control. By having a
