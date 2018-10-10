@@ -42,7 +42,7 @@ explorer to their users.
 
 Proof-of-Work is used as instamine protection and will end at block 1500.
 
-Block Height   | Reward                 | MN  | PoS | Supply  | Runtime | Stage End
+Block Height   | Reward                 | MN  | PoW | Supply  | Runtime | Stage End
 ---------------|------------------------|-----|-----|---------|---------|-----------
 Block 1        | 220.000 GALI (premine) | 60% | 40% | 220.000 | 0 days  | 2018-05-25
 Block 2 - 1500 |       1 GALI           | 60% | 40% | 221.499 | 1 day   | 2018-05-26
