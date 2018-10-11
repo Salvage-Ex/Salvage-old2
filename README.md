@@ -29,6 +29,7 @@ explorer to their users.
 * P2P Port: 36001
 * Type: PoW / PoS / MN
 * Minimum Staking Age: 2 Hours
+* Rewards (till block 1500): MN 60%, PoW 40%
 * Rewards (till block 205000): MN 60%, PoS 40%
 * Rewards (from block 205001): MN 70%, PoS 30%
 * Last PoW Block: 1.500
