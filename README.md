@@ -1,16 +1,16 @@
 # Introduction
 
-Galilel (GALI) is an open-source Proof-of-Stake digital cryptocurrency for fast
-(using SwiftX), private (Zerocoin protocol) and secure microtransactions. Our
-main goal is to create a decentralized fully secure and anonymous network to
-run applications which do not rely on any central body control. By having a
+Galilel (GALI) is an open-source Proof-of-Stake digital crypto currency for
+fast (using SwiftX), private (Zerocoin protocol) and secure microtransactions.
+Our main goal is to create a decentralized fully secure and anonymous network
+to run applications which do not rely on any central body control. By having a
 distributed system, thousands of users will be responsible for maintaining the
 application and data so that there is no single point of failure.
 
 Galilel Cloud is a service-hosting platform. It provides a complete automated
 solution to run fully managed and highly available multi-redundant Masternode
 as a Service (MaaS) and Proof-of-Stake as a Service (PoSaaS) to customers. It
-is a simple solution, manageable by anybody without any cryptocurrency
+is a simple solution, manageable by anybody without any crypto currency
 knowledge. While market competitors require local wallet installation, it is
 not necessary in Galilel Cloud. You can run masternodes from local wallets,
 cloud wallets, paper wallets, web wallets or mobile wallets. While this is more
