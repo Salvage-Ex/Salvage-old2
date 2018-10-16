@@ -9,23 +9,23 @@ application and data so that there is no single point of failure.
 
 Galilel Cloud is a service-hosting platform. It provides a complete automated
 solution to run fully managed and highly available multi-redundant Masternode
-as a Service (MaaS) and Proof-of-Stake as a Service (PoSaaS) to customers. It
-is a simple solution, manageable by anybody without any crypto currency
-knowledge. While market competitors require local wallet installation, it is
-not necessary in Galilel Cloud. You can run masternodes from local wallets,
-cloud wallets, paper wallets, web wallets or mobile wallets. While this is more
-challenging task from infrastructure and security point of view, it will
-improve mainstream adoption and knowledge of masternodes. Adding new crypto
-currencies to the platform does not require any manual intervention, neither
-from the currency project team nor from the Galilel team. This process is
-automated and new crypto currencies work in sandbox mode for some period until
-verification completed. Linux containers (LXC) manages isolation of different
-users and their wallets. The verification process and using securely isolated
-containers eliminates potential security breaches if crypto currency include
-backdoors to withdraw foreign wallets. Beside Masternode as a Service (MaaS)
-and Proof-of-Stake as a Service (PoSaaS) we implement Block Explorer as a
-Service (BEaaS). It will significantly reduce service time to delivery for any
-new crypto currency as we will deploy, run and maintain the block explorer. The
+as a Service (MaaS) and Proof-of-Stake as a Service (PoSaaS). It is a simple
+solution, manageable by anybody without any crypto currency knowledge. While
+market competitors require local wallet installation, it is not necessary in
+Galilel Cloud. You can run masternodes from local wallets, cloud wallets, paper
+wallets, web wallets or mobile wallets. While this is more challenging task
+from infrastructure and security point of view, it will improve mainstream
+adoption and knowledge of masternodes. Adding new crypto currencies to the
+platform does not require any manual intervention, neither from the currency
+project team nor from the Galilel team. This process is automated and new
+crypto currencies work in sandbox mode for some period until verification
+completed. Linux containers (LXC) manages isolation of different users and
+their wallets. The verification process and using securely isolated containers
+eliminates potential security breaches if crypto currency include backdoors to
+withdraw foreign wallets. Beside Masternode as a Service (MaaS) and
+Proof-of-Stake as a Service (PoSaaS) we implement Block Explorer as a Service
+(BEaaS). It will significantly reduce service time to delivery for any new
+crypto currency as we will deploy, run and maintain the block explorer. The
 project and development teams can sharpen their focus on more important tasks.
 
 # Coin Specifications
