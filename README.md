@@ -43,8 +43,6 @@ project and development teams can sharpen their focus on more important tasks.
 * Last PoW Block: 1.500
 * Max Coin Supply: 25.000.000
 * Masternode Collateral: 15.000
-* Premine: 220.000 (0,88%)
-* Premine Address (Old Developer): https://explorer.galilel.cloud/address/Uet6x6BHW8a2Ckr2dNfzKgM6VJTgyUGuBZ
 * Community Donation Address: https://explorer.galilel.cloud/address/UUr5nDmykhun1HWM7mJAqLVeLzoGtx19dX
 
 # Proof-of-Work Rewards
@@ -104,3 +102,7 @@ Graviex: https://graviex.net/markets/galibtc
 Masternodes.online: https://masternodes.online/currencies/GALI/
 
 Coinlib.io: https://coinlib.io/coin/GALI/Galilel
+
+Satoshi Solutions: https://satoshisolutions.online/
+
+Chopcoin.io: https://gali.chopcoin.io/
