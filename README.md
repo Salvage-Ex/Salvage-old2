@@ -103,6 +103,12 @@ Masternodes.online: https://masternodes.online/currencies/GALI/
 
 Coinlib.io: https://coinlib.io/coin/GALI/Galilel
 
+MNtop: https://mntop.co.in/
+
+mnode.club: https://mnode.club/g/info/GALI
+
+Beam: https://beam.works/user/galilel/
+
 Satoshi Solutions: https://satoshisolutions.online/
 
 Chopcoin.io: https://gali.chopcoin.io/
