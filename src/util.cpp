@@ -1,8 +1,9 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2017-2018 The Galilel developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -106,22 +107,28 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-//Galilel only features
+// GALI only features
+// Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
 string strMasterNodeAddr = "";
 bool fLiteMode = false;
-bool fEnableInstantX = true;
-int nInstantXDepth = 5;
-int nDarksendRounds = 2;
-int nAnonymizeGALILELAmount = 1000;
+// SwiftX
+bool fEnableSwiftTX = true;
+int nSwiftTXDepth = 5;
+// Automatic Zerocoin minting
+bool fEnableZeromint = true;
+int nZeromintPercentage = 10;
+int nPreferredDenom = 0;
+const int64_t AUTOMINT_DELAY = (60 * 5); // Wait at least 5 minutes until Automint starts
+
+int nAnonymizeGalilelAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
 bool fSucessfullyLoaded = false;
-bool fEnableDarksend = false;
-/** All denominations used by Darksend */
-std::vector<int64_t> DarKsendDenominations;
+/** All denominations used by obfuscation */
+std::vector<int64_t> obfuScationDenominations;
 string strBudgetMode = "";
 
 map<string, string> mapArgs;
@@ -138,7 +145,7 @@ volatile bool fReopenDebugLog = false;
 
 /** Init OpenSSL library multithreading support */
 static CCriticalSection** ppmutexOpenSSL;
-void locking_callback(int mode, int i, const char* file, int line)
+void locking_callback(int mode, int i, const char* file, int line) NO_THREAD_SAFETY_ANALYSIS
 {
     if (mode & CRYPTO_LOCK) {
         ENTER_CRITICAL_SECTION(*ppmutexOpenSSL[i]);
@@ -232,12 +239,13 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "galilel" is a composite category enabling all Galilel-related debug output
+            // "galilel" is a composite category enabling all GALI-related debug output
             if (ptrCategory->count(string("galilel"))) {
-                ptrCategory->insert(string("Darksend"));
-                ptrCategory->insert(string("Instantx"));
+                ptrCategory->insert(string("obfuscation"));
+                ptrCategory->insert(string("swiftx"));
                 ptrCategory->insert(string("masternode"));
                 ptrCategory->insert(string("mnpayments"));
+                ptrCategory->insert(string("zero"));
                 ptrCategory->insert(string("mnbudget"));
             }
         }
@@ -732,6 +740,26 @@ boost::filesystem::path GetTempPath()
 #endif
 }
 
+double double_safe_addition(double fValue, double fIncrement)
+{
+    double fLimit = std::numeric_limits<double>::max() - fValue;
+
+    if (fLimit > fIncrement)
+        return fValue + fIncrement;
+    else
+        return std::numeric_limits<double>::max();
+}
+
+double double_safe_multiplication(double fValue, double fmultiplicator)
+{
+    double fLimit = std::numeric_limits<double>::max() / fmultiplicator;
+
+    if (fLimit > fmultiplicator)
+        return fValue * fmultiplicator;
+    else
+        return std::numeric_limits<double>::max();
+}
+
 void runCommand(std::string strCommand)
 {
     int nErr = ::system(strCommand.c_str());
@@ -780,6 +808,18 @@ void SetupEnvironment()
     // boost::filesystem::path, which is then used to explicitly imbue the path.
     std::locale loc = boost::filesystem::path::imbue(std::locale::classic());
     boost::filesystem::path::imbue(loc);
+}
+
+bool SetupNetworking()
+{
+#ifdef WIN32
+    // Initialize Windows Sockets
+    WSADATA wsadata;
+    int ret = WSAStartup(MAKEWORD(2,2), &wsadata);
+    if (ret != NO_ERROR || LOBYTE(wsadata.wVersion ) != 2 || HIBYTE(wsadata.wVersion) != 2)
+        return false;
+#endif
+    return true;
 }
 
 void SetThreadPriority(int nPriority)

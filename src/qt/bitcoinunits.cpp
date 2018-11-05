@@ -1,8 +1,9 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2017-2018 The Galilel developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "bitcoinunits.h"
@@ -20,18 +21,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(GALILEL);
-    unitlist.append(mGALILEL);
-    unitlist.append(uGALILEL);
+    unitlist.append(GALI);
+    unitlist.append(mGALI);
+    unitlist.append(uGALI);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case GALILEL:
-    case mGALILEL:
-    case uGALILEL:
+    case GALI:
+    case mGALI:
+    case uGALI:
         return true;
     default:
         return false;
@@ -41,11 +42,11 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case GALILEL:
+    case GALI:
         return QString("galilel");
-    case mGALILEL:
+    case mGALI:
         return QString("mgalilel");
-    case uGALILEL:
+    case uGALI:
         return QString::fromUtf8("ugalilel");
     default:
         return QString("???");
@@ -56,23 +57,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case GALILEL:
-            return QString("GALILEL");
-        case mGALILEL:
-            return QString("mGALILEL");
-        case uGALILEL:
-            return QString::fromUtf8("μGALILEL");
+        case GALI:
+            return QString("GALI");
+        case mGALI:
+            return QString("mGALI");
+        case uGALI:
+            return QString::fromUtf8("μGALI");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case GALILEL:
-            return QString("tGALILEL");
-        case mGALILEL:
-            return QString("mtGALILEL");
-        case uGALILEL:
-            return QString::fromUtf8("μtGALILEL");
+        case GALI:
+            return QString("tGALI");
+        case mGALI:
+            return QString("mtGALI");
+        case uGALI:
+            return QString::fromUtf8("μtGALI");
         default:
             return QString("???");
         }
@@ -83,23 +84,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case GALILEL:
-            return QString("GALILEL");
-        case mGALILEL:
-            return QString("Milli-GALILEL (1 / 1" THIN_SP_UTF8 "000)");
-        case uGALILEL:
-            return QString("Micro-GALILEL (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case GALI:
+            return QString("GALI");
+        case mGALI:
+            return QString("Milli-GALI (1 / 1" THIN_SP_UTF8 "000)");
+        case uGALI:
+            return QString("Micro-GALI (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case GALILEL:
-            return QString("TestGALILELs");
-        case mGALILEL:
-            return QString("Milli-TestGALILEL (1 / 1" THIN_SP_UTF8 "000)");
-        case uGALILEL:
-            return QString("Micro-TestGALILEL (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case GALI:
+            return QString("TestGALIs");
+        case mGALI:
+            return QString("Milli-TestGALI (1 / 1" THIN_SP_UTF8 "000)");
+        case uGALI:
+            return QString("Micro-TestGALI (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +110,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case GALILEL:
+    case GALI:
         return 100000000;
-    case mGALILEL:
+    case mGALI:
         return 100000;
-    case uGALILEL:
+    case uGALI:
         return 100;
     default:
         return 100000000;
@@ -123,11 +124,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case GALILEL:
+    case GALI:
         return 8;
-    case mGALILEL:
+    case mGALI:
         return 5;
-    case uGALILEL:
+    case uGALI:
         return 2;
     default:
         return 0;

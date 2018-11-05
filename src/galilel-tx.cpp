@@ -1,5 +1,10 @@
+// Copyright (c) 2009-2009 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "base58.h"
@@ -12,7 +17,7 @@
 #include "script/script.h"
 #include "script/sign.h"
 #include "ui_interface.h" // for _(...)
-#include "univalue/univalue.h"
+#include <univalue.h>
 #include "util.h"
 #include "utilmoneystr.h"
 #include "utilstrencodings.h"
@@ -190,7 +195,8 @@ static void MutateTxAddInput(CMutableTransaction& tx, const string& strInput)
     uint256 txid(strTxid);
 
     static const unsigned int minTxOutSz = 9;
-    static const unsigned int maxVout = MAX_BLOCK_SIZE / minTxOutSz;
+    unsigned int nMaxSize = MAX_BLOCK_SIZE_LEGACY;
+    static const unsigned int maxVout = nMaxSize / minTxOutSz;
 
     // extract and validate vout
     string strVout = strInput.substr(pos + 1, string::npos);
@@ -349,7 +355,7 @@ static void MutateTxSign(CMutableTransaction& tx, const string& flagStr)
     UniValue keysObj = registers["privatekeys"];
     fGivenKeys = true;
 
-    for (unsigned int kidx = 0; kidx < keysObj.count(); kidx++) {
+    for (unsigned int kidx = 0; kidx < keysObj.size(); kidx++) {
         if (!keysObj[kidx].isStr())
             throw runtime_error("privatekey not a string");
         CBitcoinSecret vchSecret;
@@ -366,7 +372,7 @@ static void MutateTxSign(CMutableTransaction& tx, const string& flagStr)
         throw runtime_error("prevtxs register variable must be set.");
     UniValue prevtxsObj = registers["prevtxs"];
     {
-        for (unsigned int previdx = 0; previdx < prevtxsObj.count(); previdx++) {
+        for (unsigned int previdx = 0; previdx < prevtxsObj.size(); previdx++) {
             UniValue prevOut = prevtxsObj[previdx];
             if (!prevOut.isObject())
                 throw runtime_error("expected prevtxs internal object");
@@ -445,8 +451,22 @@ static void MutateTxSign(CMutableTransaction& tx, const string& flagStr)
     tx = mergedTx;
 }
 
+class Secp256k1Init
+{
+    ECCVerifyHandle globalVerifyHandle;
+
+public:
+    Secp256k1Init() {
+        ECC_Start();
+    }
+    ~Secp256k1Init() {
+        ECC_Stop();
+    }
+};
+
 static void MutateTx(CMutableTransaction& tx, const string& command, const string& commandVal)
 {
+    boost::scoped_ptr<Secp256k1Init> ecc;
     if (command == "nversion")
         MutateTxVersion(tx, commandVal);
     else if (command == "locktime")
@@ -464,8 +484,10 @@ static void MutateTx(CMutableTransaction& tx, const string& command, const strin
     else if (command == "outscript")
         MutateTxAddOutScript(tx, commandVal);
 
-    else if (command == "sign")
+    else if (command == "sign"){
+        if (!ecc) { ecc.reset(new Secp256k1Init()); }
         MutateTxSign(tx, commandVal);
+    }
 
     else if (command == "load")
         RegisterLoad(commandVal);

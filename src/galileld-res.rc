@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "GALILEL"
-            VALUE "FileDescription",    "galileld (OSS daemon/client for GALILEL)"
+            VALUE "CompanyName",        "Galilel"
+            VALUE "FileDescription",    "galileld (OSS daemon/client for Galilel)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "galileld"
             VALUE "LegalCopyright",     COPYRIGHT_STR

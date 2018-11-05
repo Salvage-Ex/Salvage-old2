@@ -1,5 +1,9 @@
-// Copyright (c) 2011-2013 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_COINCONTROL_H
@@ -13,8 +17,8 @@ class CCoinControl
 {
 public:
     CTxDestination destChange;
-    bool useDarKsend;
-    bool useInstantX;
+    bool useObfuScation;
+    bool useSwiftTX;
     bool fSplitBlock;
     int nSplitBlock;
     //! If false, allows unselected inputs, but requires all selected inputs be used
@@ -33,10 +37,10 @@ public:
     {
         destChange = CNoDestination();
         setSelected.clear();
-        useInstantX = false;
-        useDarKsend = true;
+        useSwiftTX = false;
+        useObfuScation = false;
         fAllowOtherInputs = false;
-        fAllowWatchOnly = false;
+        fAllowWatchOnly = true;
         nMinimumTotalFee = 0;
         fSplitBlock = false;
         nSplitBlock = 1;
@@ -71,6 +75,17 @@ public:
     void ListSelected(std::vector<COutPoint>& vOutpoints)
     {
         vOutpoints.assign(setSelected.begin(), setSelected.end());
+    }
+
+    unsigned int QuantitySelected()
+    {
+        return setSelected.size();
+    }
+
+    void SetSelection(std::set<COutPoint> setSelected)
+    {
+        this->setSelected.clear();
+        this->setSelected = setSelected;
     }
 
 private:

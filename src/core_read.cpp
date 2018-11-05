@@ -1,5 +1,10 @@
+// Copyright (c) 2009-2009 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "core_io.h"
@@ -9,7 +14,7 @@
 #include "script/script.h"
 #include "serialize.h"
 #include "streams.h"
-#include "univalue/univalue.h"
+#include <univalue.h>
 #include "util.h"
 #include "utilstrencodings.h"
 #include "version.h"
@@ -31,7 +36,7 @@ CScript ParseScript(std::string s)
     static map<string, opcodetype> mapOpNames;
 
     if (mapOpNames.empty()) {
-        for (int op = 0; op <= OP_NOP10; op++) {
+        for (int op = 0; op <= OP_ZEROCOINSPEND; op++) {
             // Allow OP_RESERVED to get into mapOpNames
             if (op < OP_NOP && op != OP_RESERVED)
                 continue;

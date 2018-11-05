@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "GALILEL"
-            VALUE "FileDescription",    "GALILEL-cli (OSS RPC client for GALILEL)"
+            VALUE "CompanyName",        "Galilel"
+            VALUE "FileDescription",    "galilel-cli (OSS RPC client for Galilel)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "galilel-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "galilel-cli.exe"
-            VALUE "ProductName",        "GALILEL-cli"
+            VALUE "ProductName",        "galilel-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

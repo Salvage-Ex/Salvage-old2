@@ -1,5 +1,9 @@
-// Copyright (c) 2011-2013 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_OPTIONSMODEL_H
@@ -43,10 +47,15 @@ public:
         ThreadsScriptVerif,  // int
         DatabaseCache,       // int
         SpendZeroConfChange, // bool
-        DarksendRounds,   // int
-        AnonymizeGALILELAmount, //int
+        ZeromintEnable,      // bool
+        ZeromintPercentage,  // int
+        ZeromintPrefDenom,   // int
+        HideZeroBalances,    // bool
+        HideOrphans,         // bool
+        AnonymizeGaliAmount, //int
         ShowMasternodesTab,  // bool
         Listen,              // bool
+        StakeSplitThreshold, // int
         OptionIDRowCount,
     };
 
@@ -58,6 +67,8 @@ public:
     bool setData(const QModelIndex& index, const QVariant& value, int role = Qt::EditRole);
     /** Updates current unit in memory, settings and emits displayUnitChanged(newUnit) signal */
     void setDisplayUnit(const QVariant& value);
+    /* Update StakeSplitThreshold's value in wallet */
+    void setStakeSplitThreshold(int value);
 
     /* Explicit getters */
     bool getMinimizeToTray() { return fMinimizeToTray; }
@@ -81,6 +92,8 @@ private:
     int nDisplayUnit;
     QString strThirdPartyTxUrls;
     bool fCoinControlFeatures;
+    bool fHideZeroBalances;
+    bool fHideOrphans;
     /* settings that were overriden by command-line */
     QString strOverriddenByCommandLine;
 
@@ -89,9 +102,13 @@ private:
 
 signals:
     void displayUnitChanged(int unit);
-    void DarksendRoundsChanged(int);
-    void anonymizeGALILELAmountChanged(int);
+    void zeromintEnableChanged(bool);
+    void zeromintPercentageChanged(int);
+    void preferredDenomChanged(int);
+    void anonymizeGaliAmountChanged(int);
     void coinControlFeaturesChanged(bool);
+    void hideZeroBalancesChanged(bool);
+    void hideOrphansChanged(bool);
 };
 
 #endif // BITCOIN_QT_OPTIONSMODEL_H

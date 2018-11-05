@@ -83,7 +83,7 @@ GitHub (Wallet): https://github.com/Galilel-Project/galilel/
 
 GitHub (Project): https://github.com/Galilel-Project/
 
-Block Explorer: https://explorer.galilel.cloud/
+Block Explorer (Mainnet) : https://explorer.galilel.cloud/
 
 BitcoinTalk Announcement: https://bitcointalk.org/index.php?topic=4238243
 

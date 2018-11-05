@@ -1,10 +1,14 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
+// Copyright (c) 2009-2009 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_SERIALIZE_H
-#define BITCOIN_SERIALIZE_H
+#ifndef GALI_SERIALIZE_H
+#define GALI_SERIALIZE_H
 
 #include <algorithm>
 #include <assert.h>
@@ -17,6 +21,8 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include "libzerocoin/Denominations.h"
+#include "libzerocoin/SpendType.h"
 
 class CScript;
 
@@ -273,12 +279,47 @@ inline void Serialize(Stream& s, bool a, int, int = 0)
     char f = a;
     WRITEDATA(s, f);
 }
+
+
 template <typename Stream>
 inline void Unserialize(Stream& s, bool& a, int, int = 0)
 {
     char f;
     READDATA(s, f);
     a = f;
+}
+// Serializatin for libzerocoin::CoinDenomination
+inline unsigned int GetSerializeSize(libzerocoin::CoinDenomination a, int, int = 0) { return sizeof(libzerocoin::CoinDenomination); }
+template <typename Stream>
+inline void Serialize(Stream& s, libzerocoin::CoinDenomination a, int, int = 0)
+{
+    int f = libzerocoin::ZerocoinDenominationToInt(a);
+    WRITEDATA(s, f);
+}
+
+template <typename Stream>
+inline void Unserialize(Stream& s, libzerocoin::CoinDenomination& a, int, int = 0)
+{
+    int f=0;
+    READDATA(s, f);
+    a = libzerocoin::IntToZerocoinDenomination(f);
+}
+
+// Serialization for libzerocoin::SpendType
+inline unsigned int GetSerializedSize(libzerocoin::SpendType a, int, int = 0) { return sizeof(libzerocoin::SpendType); }
+template <typename Stream>
+inline void Serialize(Stream& s, libzerocoin::SpendType a, int, int = 0)
+{
+    uint8_t f = static_cast<uint8_t>(a);
+    WRITEDATA(s, f);
+}
+
+template <typename Stream>
+inline void Unserialize(Stream& s, libzerocoin::SpendType & a, int, int = 0)
+{
+    uint8_t f=0;
+    READDATA(s, f);
+    a = static_cast<libzerocoin::SpendType>(f);
 }
 
 
@@ -908,6 +949,12 @@ public:
         return *this;
     }
 
+    /** Pretend _nSize bytes are written, without specifying them. */
+    void seek(size_t _nSize)
+    {
+        this->nSize += _nSize;
+    }
+
     template <typename T>
     CSizeComputer& operator<<(const T& obj)
     {
@@ -921,4 +968,4 @@ public:
     }
 };
 
-#endif // BITCOIN_SERIALIZE_H
+#endif // GALI_SERIALIZE_H
