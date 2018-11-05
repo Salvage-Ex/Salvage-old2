@@ -1,11 +1,12 @@
 # Introduction
 
-Galilel (GALI) is an open-source Proof-of-Stake digital crypto currency for
-fast (using SwiftX), private (Zerocoin protocol) and secure microtransactions.
-Our main goal is to create a decentralized fully secure and anonymous network
-to run applications which do not rely on any central body control. By having a
-distributed system, thousands of users will be responsible for maintaining the
-application and data so that there is no single point of failure.
+Galilel Coin (GALI and zGALI) is an open-source public and private
+Proof-of-Stake digital crypto currency for fast (using SwiftX), private
+(Zerocoin protocol) and secure microtransactions. Our main goal is to create a
+decentralized fully secure and anonymous network to run applications which do
+not rely on any central body control. By having a distributed system, thousands
+of users will be responsible for maintaining the application and data so that
+there is no single point of failure.
 
 Galilel Cloud is a service-hosting platform. It provides a complete automated
 solution to run fully managed and highly available multi-redundant Masternode
@@ -69,11 +70,7 @@ Stage 6  |   160001-205000 |  50 GALI | 60% | 40% | 13.681.049 |  31 days | 2018
 Stage 7  |   205001-250000 |  25 GALI | 70% | 30% | 14.806.024 |  31 days | 2018-11-14
 Stage 8  |   250001-340000 |  15 GALI | 70% | 30% | 16.156.009 |  62 days | 2019-01-15
 Stage 9  |   340001-430000 |  10 GALI | 70% | 30% | 17.055.999 |  62 days | 2019-03-18
-Stage 10 |   430001-956000 |   5 GALI | 70% | 30% | 19.685.994 | 365 days | 2020-03-17
-Stage 11 |  956001-1482000 |   4 GALI | 70% | 30% | 21.789.990 | 365 days | 2021-03-17
-Stage 12 | 1482001-2008000 |   3 GALI | 70% | 30% | 23.367.987 | 365 days | 2022-03-17
-Stage 13 | 2008001-2534000 |   2 GALI | 70% | 30% | 24.419.985 | 365 days | 2023-03-17
-Stage 14 | 2534001-3114016 |   1 GALI | 70% | 30% | 25.000.000 | 403 days | 2024-04-23
+Stage 10 | 430001-infinite |   5 GALI | 70% | 30% |   infinite | infinite |   infinite
 
 # Official Links
 
@@ -84,6 +81,10 @@ GitHub (Wallet): https://github.com/Galilel-Project/galilel/
 GitHub (Project): https://github.com/Galilel-Project/
 
 Block Explorer (Mainnet) : https://explorer.galilel.cloud/
+
+Block Explorer 2 (Mainnet Aiodex): https://explorer.aiodex.com/GALI
+
+Block Explorer (Testnet): https://explorer.testnet.galilel.cloud/
 
 BitcoinTalk Announcement: https://bitcointalk.org/index.php?topic=4238243
 
@@ -96,6 +97,10 @@ Know Your Developer (KYD): https://review.kydcoin.io/galicoin/
 # Exchanges
 
 Graviex: https://graviex.net/markets/galibtc
+
+Raisex: https://raisex.io/trade/GALI_BTC
+
+Aiodex: https://aiodex.com/exchange/GALI_BTC
 
 # Promotions
 
@@ -112,3 +117,5 @@ Beam: https://beam.works/user/galilel/
 Satoshi Solutions: https://satoshisolutions.online/
 
 Chopcoin.io: https://gali.chopcoin.io/
+
+NodeCheck.io: https://nodecheck.io/currency/GALI
