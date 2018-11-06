@@ -147,3 +147,5 @@ Satoshi Solutions: https://satoshisolutions.online/
 Chopcoin.io: https://gali.chopcoin.io/
 
 NodeCheck.io: https://nodecheck.io/currency/GALI
+
+CoinCodex: https://coincodex.com/crypto/galilel/
