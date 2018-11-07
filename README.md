@@ -54,6 +54,7 @@ project and development teams can sharpen their focus on more important tasks.
 * Max Coin Supply (January 2050): 97.875.999 GALI
 * Dynamic Coin Supply: All transaction fees & zGALI minting fees are burnt
 * Community Donation Address: https://explorer.galilel.cloud/address/UUr5nDmykhun1HWM7mJAqLVeLzoGtx19dX
+* Dev Budget (from block 250001): 10% in monthly superblock
 
 # Zerocoin Specifications
 
