@@ -945,8 +945,16 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
         nSubsidy = 220000 * COIN;
     }
 
-    /* Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30) */
-    return ((nSubsidy / 100) * 10) * 1440 * 30;
+    /* enable budget system after block 250000. */
+    if (nHeight > 250000) {
+
+        /* Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30) */
+        return ((nSubsidy / 100) * 10) * 1440 * 30;
+    } else {
+
+        /* No dev budget. */
+        return nSubsidy;
+    }
 }
 
 void CBudgetManager::NewBlock()
