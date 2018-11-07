@@ -68,20 +68,22 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x0000056df1ad72118321bd9baaa2bbba0f9a7b3f4dd484222c1113451de97fa4"));
+    boost::assign::map_list_of
+    (0, uint256("0x000008e4c24baa9a3503e6dc2f3b459843441a0d56677b1e4bd0b9a381ca987f"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
+    1540587600,
     0,
-    0,
-    0};
+    250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x7efc7852063bf1df9faa80bcc5a2572a3be0e975d4c35fc7ba82b16b1693052d"));
+    boost::assign::map_list_of
+    (0, uint256("0x7efc7852063bf1df9faa80bcc5a2572a3be0e975d4c35fc7ba82b16b1693052d"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
+    1527217410,
     0,
-    0,
-    0};
+    100};
 
 libzerocoin::ZerocoinParams* CChainParams::Zerocoin_Params(bool useModulusV1) const
 {
@@ -138,9 +140,9 @@ public:
         nZerocoinStartHeight = 250000;
         nZerocoinStartTime = 1543611600; // Fri Nov 30 21:00:00 UTC 2018
         nBlockEnforceSerialRange = 250000; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 250000; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 250000; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 250000; //Last valid accumulator checkpoint
+        nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = ~1; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = 250000; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = 275000; // The block that zerocoin v2 becomes active - roughly Sat Dec 15 08:00:00 UTC 2018
@@ -258,15 +260,15 @@ public:
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197;
         nMaxMoneyOut = 25000000 * COIN;
-        nZerocoinStartHeight = 1000;
+        nZerocoinStartHeight = 250;
         nZerocoinStartTime = 1541797200; // Fri Nov  9 21:00:00 UTC 2018
-        nBlockEnforceSerialRange = 1000; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 1000; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 1000; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 1000; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 1000; //Start enforcing the invalid UTXO's
+        nBlockEnforceSerialRange = 250; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = ~1; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = 250; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 2000; // The block that zerocoin v2 becomes active
+        nBlockZerocoinV2 = 500; // The block that zerocoin v2 becomes active
         nEnforceNewSporkKey = 1540760400; // Sun Oct 28 21:00:00 UTC 2018: sporks signed after must use the new spork key
         nRejectOldSporkKey = 1541325600; // Sun Nov  4 21:00:00 UTC 2018: after that reject old spork key
 
