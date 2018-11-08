@@ -138,16 +138,16 @@ public:
         nLastPOWBlock = 1500;
         nModifierUpdateBlock = 1;
         nZerocoinStartHeight = 250000;
-        nZerocoinStartTime = 1543611600; // Fri Nov 30 21:00:00 UTC 2018
-        nBlockEnforceSerialRange = 250000; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = ~1; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 250000; //Start enforcing the invalid UTXO's
-        nInvalidAmountFiltered = 0; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 275000; // The block that zerocoin v2 becomes active - roughly Sat Dec 15 08:00:00 UTC 2018
-        nEnforceNewSporkKey = 1527822208; // Fri Jun  1 05:03:28 CEST 2018: sporks signed after must use the new spork key
-        nRejectOldSporkKey = 1528427008; // Fri Jun  8 05:03:28 CEST 2018: after that reject old spork key
+        nZerocoinStartTime = 1543611600;		/* Fri Nov 30 21:00:00 UTC 2018 */
+        nBlockEnforceSerialRange = 2147483646;		/* (disabled) Enforce serial range starting this block */
+        nBlockRecalculateAccumulators = 2147483646;	/* (disabled) Trigger a recalculation of accumulators */
+        nBlockFirstFraudulent = 2147483646;		/* (disabled) First block that bad serials emerged */
+        nBlockLastGoodCheckpoint = 2147483646;		/* (disabled) Last valid accumulator checkpoint */
+        nBlockEnforceInvalidUTXO = 2147483646;		/* (disabled) Start enforcing the invalid UTXO's */
+        nInvalidAmountFiltered = 0;			/* Amount of invalid coins filtered through exchanges, that should be considered valid */
+        nBlockZerocoinV2 = 2147483646;			/* (disabled) The block that zerocoin v2 becomes active - roughly Sat Dec 15 08:00:00 UTC 2018 */
+        nEnforceNewSporkKey = 1527822208;		/* Fri Jun  1 05:03:28 CEST 2018: sporks signed after must use the new spork key */
+        nRejectOldSporkKey = 1528427008;		/* Fri Jun  8 05:03:28 CEST 2018: after that reject old spork key */
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -261,19 +261,19 @@ public:
         nModifierUpdateBlock = 51197;
         nMaxMoneyOut = 25000000 * COIN;
         nZerocoinStartHeight = 250;
-        nZerocoinStartTime = 1541797200; // Fri Nov  9 21:00:00 UTC 2018
-        nBlockEnforceSerialRange = 250; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = ~1; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 250; //Start enforcing the invalid UTXO's
-        nInvalidAmountFiltered = 0; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 500; // The block that zerocoin v2 becomes active
-        nEnforceNewSporkKey = 1540760400; // Sun Oct 28 21:00:00 UTC 2018: sporks signed after must use the new spork key
-        nRejectOldSporkKey = 1541325600; // Sun Nov  4 21:00:00 UTC 2018: after that reject old spork key
+        nZerocoinStartTime = 1541797200;		/* Fri Nov  9 21:00:00 UTC 2018 */
+        nBlockEnforceSerialRange = 2147483646;		/* (disabled) Enforce serial range starting this block */
+        nBlockRecalculateAccumulators = 2147483646;	/* (disabled) Trigger a recalculation of accumulators */
+        nBlockFirstFraudulent = ~1;			/* (disabled) First block that bad serials emerged */
+        nBlockLastGoodCheckpoint = 2147483646;		/* (disabled) Last valid accumulator checkpoint */
+        nBlockEnforceInvalidUTXO = 2147483646;		/* (disabled) Start enforcing the invalid UTXO's */
+        nInvalidAmountFiltered = 0;			/* Amount of invalid coins filtered through exchanges, that should be considered valid */
+        nBlockZerocoinV2 = 2147483646;			/* (disabled) The block that zerocoin v2 becomes active */
+        nEnforceNewSporkKey = 1540760400;		/* Sun Oct 28 21:00:00 UTC 2018: sporks signed after must use the new spork key */
+        nRejectOldSporkKey = 1541325600;		/* Sun Nov  4 21:00:00 UTC 2018: after that reject old spork key */
 
-        //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1540587600;
+        /* Testnet genesis block. */
+        genesis.nTime = 1540587600;			/* Testnet started: Fri Oct 26 21:00:00 UTC 2018 */
         genesis.nNonce = 1745260;
 
         hashGenesisBlock = genesis.GetHash();
