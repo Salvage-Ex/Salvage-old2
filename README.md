@@ -59,9 +59,9 @@ project and development teams can sharpen their focus on more important tasks.
 # Zerocoin Specifications
 
 * Zerocoin v1 activation: block 250000
-* Zerocoin v2 activation: block 275000
+* Zerocoin v2 activation: block 340000 (planned)
 * zGALI Automint: 10%
-* zGALI Rewards (from block 275001): MN 50%, zPoS 50%
+* zGALI Rewards (from block 340001): MN 50%, zPoS 50%
 * zGALI Denominators: 1, 5, 10, 50, 100, 500, 1000, 5000
 * Accumulator Modulus: RSA-2048
 * Maturity: 240 confirmations
@@ -69,7 +69,7 @@ project and development teams can sharpen their focus on more important tasks.
 * Fees (mint): 0.01 GALI per minted zGALI denomination
 * Fees (spend): No fee
 
-With Zerocoin v2 activation at block 275001 the reward structure becomes
+With Zerocoin v2 activation at block 340001 the reward structure becomes
 dependent from the staking type. If public Proof-of-Stake (GALI) and staker
 finds a block, 70% paid to masternode and 30% to staker. If private
 Proof-of-Stake (zGALI) and staker finds a block, 50% paid to masternode and 50%
@@ -88,18 +88,18 @@ Block 2 - 1500 |       1 GALI           | 60% | 40% | 221.499 | 1 day   | 2018-0
 
 Proof-of-Stake will start at block 1501.
 
-Stages   | Block Height    | Reward   | MN  | PoS | Supply     | Runtime | Stage End
----------|-----------------|----------|-----|-----|------------|---------|-----------
-Stage 1  |      1501-12000 | 100 GALI | 60% | 40% |  1.271.399 |  7 days | 2018-06-02
-Stage 2  |     12001-22000 |  90 GALI | 60% | 40% |  2.171.309 |  7 days | 2018-06-09
-Stage 3  |     22001-42000 |  80 GALI | 60% | 40% |  3.771.229 | 14 days | 2018-06-23
-Stage 4  |    42001-100000 |  70 GALI | 60% | 40% |  7.831.159 | 40 days | 2018-08-02
-Stage 5  |   100001-160000 |  60 GALI | 60% | 40% | 11.431.099 | 42 days | 2018-09-13
-Stage 6  |   160001-205000 |  50 GALI | 60% | 40% | 13.681.049 | 31 days | 2018-10-14
-Stage 7  |   205001-250000 |  25 GALI | 70% | 30% | 14.806.024 | 31 days | 2018-11-14
-Stage 8  |   250001-340000 |  15 GALI | 70% | 30% | 16.156.009 | 62 days | 2019-01-15
-Stage 9  |   340001-430000 |  10 GALI | 70% | 30% | 17.055.999 | 62 days | 2019-03-18
-Stage 10 |  430001-ongoing |   5 GALI | 70% | 30% |    ongoing | ongoing |    ongoing
+Stages  | Block Height    | Reward   | MN  | PoS | Supply     | Runtime | Stage End
+--------|-----------------|----------|-----|-----|------------|---------|-----------
+Stage 1 |      1501-12000 | 100 GALI | 60% | 40% |  1.271.399 |  7 days | 2018-06-02
+Stage 2 |     12001-22000 |  90 GALI | 60% | 40% |  2.171.309 |  7 days | 2018-06-09
+Stage 3 |     22001-42000 |  80 GALI | 60% | 40% |  3.771.229 | 14 days | 2018-06-23
+Stage 4 |    42001-100000 |  70 GALI | 60% | 40% |  7.831.159 | 40 days | 2018-08-02
+Stage 5 |   100001-160000 |  60 GALI | 60% | 40% | 11.431.099 | 42 days | 2018-09-13
+Stage 6 |   160001-205000 |  50 GALI | 60% | 40% | 13.681.049 | 31 days | 2018-10-14
+Stage 7 |   205001-250000 |  25 GALI | 70% | 30% | 14.806.024 | 31 days | 2018-11-14
+Stage 8 |   250001-340000 |  15 GALI | 70% | 30% | 16.156.009 | 62 days | 2019-01-15
+Stage 9 |   340001-430000 |  10 GALI | 70% | 30% | 17.055.999 | 62 days | 2019-03-18
+Stage X |  430001-ongoing |   5 GALI | 70% | 30% |    ongoing | ongoing |    ongoing
 
 # Official Links
 
@@ -131,6 +131,8 @@ Raisex: https://raisex.io/trade/GALI_BTC
 
 Aiodex: https://aiodex.com/exchange/GALI_BTC
 
+AltMarkets: https://altmarkets.cc/market/BTC-GALI
+
 # Promotions
 
 Masternodes.online: https://masternodes.online/currencies/GALI/
@@ -150,3 +152,5 @@ Chopcoin.io: https://gali.chopcoin.io/
 NodeCheck.io: https://nodecheck.io/currency/GALI
 
 CoinCodex: https://coincodex.com/crypto/galilel/
+
+CoinGecko: https://www.coingecko.com/en/coins/galilel
