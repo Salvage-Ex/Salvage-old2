@@ -1,5 +1,5 @@
 ---
-name: "gailel-win-2.0"
+name: "gailel-win-3.0"
 enable_cache: true
 suites:
 - "bionic"
