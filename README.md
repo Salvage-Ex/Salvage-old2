@@ -115,7 +115,7 @@ Block Explorer 2 (Mainnet Aiodex): https://explorer.aiodex.com/GALI
 
 Block Explorer (Testnet): https://explorer.testnet.galilel.cloud/
 
-BitcoinTalk Announcement: https://bitcointalk.org/index.php?topic=4238243
+BitcoinTalk Announcement: https://bittcointalk.galilel.cloud
 
 Twitter: https://twitter.com/GalilelEN
 
@@ -154,3 +154,12 @@ NodeCheck.io: https://nodecheck.io/currency/GALI
 CoinCodex: https://coincodex.com/crypto/galilel/
 
 CoinGecko: https://www.coingecko.com/en/coins/galilel
+
+# Wallet Screenshots
+
+Since refactoring of Galilel v3.x with PIVX 3.1.1 codebase, the wallet supports
+zGALIv1 minting and spending. Wallet and Zerocoin privacy screenshot:
+
+![](doc/img/wallet1.png)
+
+![](doc/img/wallet2.png)
