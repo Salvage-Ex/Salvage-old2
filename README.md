@@ -1,5 +1,9 @@
 # Introduction
 
+The first Proof-of-Work, Proof-of-Stake, Proof-of-Burn crypto currency with
+Hybrid Consensus Algorithm and Masternode voting for period based reward
+burning.
+
 Galilel Coin (GALI and zGALI) is an open-source public and private
 Proof-of-Stake digital crypto currency for fast (using SwiftX), private
 (Zerocoin protocol) and secure micro transactions. Our main goal is to create a
@@ -8,26 +12,19 @@ not rely on any central body control. By having a distributed system, thousands
 of users will be responsible for maintaining the application and data so that
 there is no single point of failure.
 
-Galilel Cloud is a service-hosting platform. It provides a complete automated
-solution to run fully managed and highly available multi-redundant Masternode
-as a Service (MaaS) and Proof-of-Stake as a Service (PoSaaS) to customers. It
-is a simple solution, manageable by anybody without any cryptocurrency
-knowledge. While market competitors require local wallet installation, it is
-not necessary in Galilel Cloud. You can run masternodes from local wallets,
-cloud wallets, paper wallets, web wallets or mobile wallets. While this is more
-challenging task from infrastructure and security point of view, it will
-improve mainstream adoption and knowledge of masternodes. Adding new crypto
-currencies to the platform does not require any manual intervention, neither
-from the currency project team nor from the Galilel team. This process is
-automated and new crypto currencies work in sandbox mode for some period until
-verification completed. Linux containers (LXC) manages isolation of different
-users and their wallets. The verification process and using securely isolated
-containers eliminates potential security breaches if crypto currency include
-backdoors to withdraw foreign wallets. Beside Masternode as a Service (MaaS)
-and Proof-of-Stake as a Service (PoSaaS), we implement Block Explorer as a
-Service (BEaaS). It will significantly reduce service time to delivery for any
-new crypto currency as we will deploy, run and maintain the block explorer. The
-project and development teams can sharpen their focus on more important tasks.
+While Zerocoin solves the traceable reward generation problem, Galilel will
+implement hybrid offline Proof-of-Stake (ghPoS) for public and private coins
+which is always on with 5% of the block reward paid out if offline wallet finds
+a block. The Term Deposit (gTD) function allow to lock coins for a certain
+period and generate predictable rewards. Masternode owners get the possibility
+to vote for reward reduction or complete burning for a specific period to
+reduce coin generation. The Galilel Money Supply Control (gMSC), effectively
+Proof-of-Burn v2 burns only rewards, never term deposits and development
+budget. The period for coin burning will be 1 month with a range between 0% -
+100%. Every month is applicable for voting. Galilel Instant On Masternode
+(gIOMN) implements a shared blockchain to run one-to-many wallet daemons in a
+client server model. It is comparable to "Instant On" model available in
+Electrum client.
 
 # Coin Specifications
 
@@ -154,6 +151,20 @@ NodeCheck.io: https://nodecheck.io/currency/GALI
 CoinCodex: https://coincodex.com/crypto/galilel/
 
 CoinGecko: https://www.coingecko.com/en/coins/galilel
+
+WorldCoinIndex: https://coinpaprika.com/coin/gali-galilel/
+
+Coinpaprika: https://coinpaprika.com/coin/gali-galilel/
+
+# Donations
+
+Galilel (GALI): UUr5nDmykhun1HWM7mJAqLVeLzoGtx19dX
+
+Bitcoin (BTC): 13vZmvxWcpMxZPr2gtf4QBS8Q2En6kB3mo
+
+Litecoin (LTC): MAfouCFTBX4hJWTmAvTpFSuwzUZr4gtxDv
+
+Dogecoin (DOGE): DFY1iAcbX8uQDaFAFQckSGJfYBb6QzTuMi
 
 # Wallet Screenshots
 
