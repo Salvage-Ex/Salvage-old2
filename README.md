@@ -1,6 +1,6 @@
 # Introduction
 
-The first Proof-of-Work, Proof-of-Stake, Proof-of-Burn crypto currency with
+The first Proof-of-Work, Proof-of-Stake and Proof-of-Burn crypto currency with
 Hybrid Consensus Algorithm and Masternode voting for period based reward
 burning.
 
