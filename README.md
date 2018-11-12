@@ -150,9 +150,9 @@ NodeCheck.io: https://nodecheck.io/currency/GALI
 
 CoinCodex: https://coincodex.com/crypto/galilel/
 
-CoinGecko: https://www.coingecko.com/en/coins/galilel
+CoinGecko: https://coingecko.com/en/coins/galilel
 
-WorldCoinIndex: https://coinpaprika.com/coin/gali-galilel/
+WorldCoinIndex: https://worldcoinindex.com/coin/galilel
 
 Coinpaprika: https://coinpaprika.com/coin/gali-galilel/
 
