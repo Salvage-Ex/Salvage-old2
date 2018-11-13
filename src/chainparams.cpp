@@ -264,7 +264,7 @@ public:
         nZerocoinStartTime = 1541797200;		/* Fri Nov  9 21:00:00 UTC 2018 */
         nBlockEnforceSerialRange = 2147483646;		/* (disabled) Enforce serial range starting this block */
         nBlockRecalculateAccumulators = 2147483646;	/* (disabled) Trigger a recalculation of accumulators */
-        nBlockFirstFraudulent = ~1;			/* (disabled) First block that bad serials emerged */
+        nBlockFirstFraudulent = 2147483646;		/* (disabled) First block that bad serials emerged */
         nBlockLastGoodCheckpoint = 2147483646;		/* (disabled) Last valid accumulator checkpoint */
         nBlockEnforceInvalidUTXO = 2147483646;		/* (disabled) Start enforcing the invalid UTXO's */
         nInvalidAmountFiltered = 0;			/* Amount of invalid coins filtered through exchanges, that should be considered valid */

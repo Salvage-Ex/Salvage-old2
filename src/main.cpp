@@ -4065,7 +4065,7 @@ bool ContextualCheckZerocoinStake(int nHeight, CStakeInput* stake)
         uint256 nCheckpoint = chainActive[nHeight - Params().Zerocoin_RequiredStakeDepth()]->nAccumulatorCheckpoint;
         uint32_t nChecksum = ParseChecksum(nCheckpoint, libzerocoin::AmountToZerocoinDenomination(zGALI->GetValue()));
         if (nChecksum != zGALI->GetChecksum())
-            return error("%s: accumulator checksum is different than the block %d blocks previous. stake=%d block200=%d", __func__, Params().Zerocoin_RequiredStakeDepth(), zGALI->GetChecksum(), nChecksum);
+            return error("%s: accumulator checksum is different than the block %d blocks previous. stake=%d block240=%d", __func__, Params().Zerocoin_RequiredStakeDepth(), zGALI->GetChecksum(), nChecksum);
     } else {
         return error("%s: dynamic_cast of stake ptr failed", __func__);
     }
