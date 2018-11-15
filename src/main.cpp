@@ -2393,8 +2393,10 @@ bool RecalculateGALISupply(int nHeightStart)
 
     CBlockIndex* pindex = chainActive[nHeightStart];
     CAmount nSupplyPrev = pindex->pprev->nMoneySupply;
-    if (nHeightStart == Params().Zerocoin_StartHeight())
-        nSupplyPrev = CAmount(5449796547496199);
+
+    /* disabled because this is PIVX related. */
+//    if (nHeightStart == Params().Zerocoin_StartHeight())
+//        nSupplyPrev = CAmount(5449796547496199);
 
     while (true) {
         if (pindex->nHeight % 1000 == 0)

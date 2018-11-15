@@ -1191,7 +1191,7 @@ CAmount CWalletTx::GetUnlockedCredit() const
     return nCredit;
 }
 
-    // Return sum of unlocked coins
+// Return sum of unlocked coins
 CAmount CWalletTx::GetLockedCredit() const
 {
     if (pwallet == 0)
@@ -1214,7 +1214,7 @@ CAmount CWalletTx::GetLockedCredit() const
             nCredit += pwallet->GetCredit(txout, ISMINE_SPENDABLE);
         }
 
-        // Add masternode collaterals which are handled likc locked coins
+        // Add masternode collaterals which are handled like locked coins
         else if (fMasterNode && vout[i].nValue == 15000 * COIN) {
             nCredit += pwallet->GetCredit(txout, ISMINE_SPENDABLE);
         }
@@ -2385,6 +2385,7 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
     std::random_shuffle(vCoins.rbegin(), vCoins.rend());
 
     //keep track of each denomination that we have
+    bool fFound15000 = false;
     bool fFound10000 = false;
     bool fFound1000 = false;
     bool fFound100 = false;
@@ -2393,12 +2394,13 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
     bool fFoundDot1 = false;
 
     //Check to see if any of the denomination are off, in that case mark them as fulfilled
-    if (!(nDenom & (1 << 0))) fFound10000 = true;
-    if (!(nDenom & (1 << 1))) fFound1000 = true;
-    if (!(nDenom & (1 << 2))) fFound100 = true;
-    if (!(nDenom & (1 << 3))) fFound10 = true;
-    if (!(nDenom & (1 << 4))) fFound1 = true;
-    if (!(nDenom & (1 << 5))) fFoundDot1 = true;
+    if (!(nDenom & (1 << 0))) fFound15000 = true;
+    if (!(nDenom & (1 << 1))) fFound10000 = true;
+    if (!(nDenom & (1 << 2))) fFound1000 = true;
+    if (!(nDenom & (1 << 3))) fFound100 = true;
+    if (!(nDenom & (1 << 4))) fFound10 = true;
+    if (!(nDenom & (1 << 5))) fFound1 = true;
+    if (!(nDenom & (1 << 6))) fFoundDot1 = true;
 
     BOOST_FOREACH (const COutput& out, vCoins) {
         // masternode-like input should not be selected by AvailableCoins now anyway
@@ -2408,12 +2410,13 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
 
             // Function returns as follows:
             //
-            // bit 0 - 10000 GALI+1 ( bit on if present )
-            // bit 1 - 1000 GALI+1
-            // bit 2 - 100 GALI+1
-            // bit 3 - 10 GALI+1
-            // bit 4 - 1 GALI+1
-            // bit 5 - .1 GALI+1
+            // bit 0 - 15000 GALI+1 ( bit on if present )
+            // bit 1 - 10000 GALI+1
+            // bit 2 - 1000 GALI+1
+            // bit 3 - 100 GALI+1
+            // bit 4 - 10 GALI+1
+            // bit 5 - 1 GALI+1
+            // bit 6 - .1 GALI+1
 
             CTxIn vin = CTxIn(out.tx->GetHash(), out.i);
 
@@ -2421,47 +2424,52 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
             if (rounds >= nObfuscationRoundsMax) continue;
             if (rounds < nObfuscationRoundsMin) continue;
 
-            if (fFound10000 && fFound1000 && fFound100 && fFound10 && fFound1 && fFoundDot1) { //if fulfilled
+            if (fFound15000 && fFound10000 && fFound1000 && fFound100 && fFound10 && fFound1 && fFoundDot1) { //if fulfilled
                 //we can return this for submission
                 if (nValueRet >= nValueMin) {
                     //random reduce the max amount we'll submit for anonymity
-                    nValueMax -= (rand() % (nValueMax / 5));
+                    nValueMax -= (rand() % (nValueMax / 6));
                     //on average use 50% of the inputs or less
                     int r = (rand() % (int)vCoins.size());
                     if ((int)vCoinsRet.size() > r) return true;
                 }
                 //Denomination criterion has been met, we can take any matching denominations
-                if ((nDenom & (1 << 0)) && out.tx->vout[out.i].nValue == ((10000 * COIN) + 10000000)) {
+                if ((nDenom & (1 << 0)) && out.tx->vout[out.i].nValue == ((15000 * COIN) + 15000000)) {
                     fAccepted = true;
-                } else if ((nDenom & (1 << 1)) && out.tx->vout[out.i].nValue == ((1000 * COIN) + 1000000)) {
+                } else if ((nDenom & (1 << 1)) && out.tx->vout[out.i].nValue == ((10000 * COIN) + 10000000)) {
                     fAccepted = true;
-                } else if ((nDenom & (1 << 2)) && out.tx->vout[out.i].nValue == ((100 * COIN) + 100000)) {
+                } else if ((nDenom & (1 << 2)) && out.tx->vout[out.i].nValue == ((1000 * COIN) + 1000000)) {
                     fAccepted = true;
-                } else if ((nDenom & (1 << 3)) && out.tx->vout[out.i].nValue == ((10 * COIN) + 10000)) {
+                } else if ((nDenom & (1 << 3)) && out.tx->vout[out.i].nValue == ((100 * COIN) + 100000)) {
                     fAccepted = true;
-                } else if ((nDenom & (1 << 4)) && out.tx->vout[out.i].nValue == ((1 * COIN) + 1000)) {
+                } else if ((nDenom & (1 << 4)) && out.tx->vout[out.i].nValue == ((10 * COIN) + 10000)) {
                     fAccepted = true;
-                } else if ((nDenom & (1 << 5)) && out.tx->vout[out.i].nValue == ((.1 * COIN) + 100)) {
+                } else if ((nDenom & (1 << 5)) && out.tx->vout[out.i].nValue == ((1 * COIN) + 1000)) {
+                    fAccepted = true;
+                } else if ((nDenom & (1 << 6)) && out.tx->vout[out.i].nValue == ((.1 * COIN) + 100)) {
                     fAccepted = true;
                 }
             } else {
                 //Criterion has not been satisfied, we will only take 1 of each until it is.
-                if ((nDenom & (1 << 0)) && out.tx->vout[out.i].nValue == ((10000 * COIN) + 10000000)) {
+                if ((nDenom & (1 << 0)) && out.tx->vout[out.i].nValue == ((15000 * COIN) + 15000000)) {
+                    fAccepted = true;
+                    fFound15000 = true;
+                } else if ((nDenom & (1 << 1)) && out.tx->vout[out.i].nValue == ((10000 * COIN) + 10000000)) {
                     fAccepted = true;
                     fFound10000 = true;
-                } else if ((nDenom & (1 << 1)) && out.tx->vout[out.i].nValue == ((1000 * COIN) + 1000000)) {
+                } else if ((nDenom & (1 << 2)) && out.tx->vout[out.i].nValue == ((1000 * COIN) + 1000000)) {
                     fAccepted = true;
                     fFound1000 = true;
-                } else if ((nDenom & (1 << 2)) && out.tx->vout[out.i].nValue == ((100 * COIN) + 100000)) {
+                } else if ((nDenom & (1 << 3)) && out.tx->vout[out.i].nValue == ((100 * COIN) + 100000)) {
                     fAccepted = true;
                     fFound100 = true;
-                } else if ((nDenom & (1 << 3)) && out.tx->vout[out.i].nValue == ((10 * COIN) + 10000)) {
+                } else if ((nDenom & (1 << 4)) && out.tx->vout[out.i].nValue == ((10 * COIN) + 10000)) {
                     fAccepted = true;
                     fFound10 = true;
-                } else if ((nDenom & (1 << 4)) && out.tx->vout[out.i].nValue == ((1 * COIN) + 1000)) {
+                } else if ((nDenom & (1 << 5)) && out.tx->vout[out.i].nValue == ((1 * COIN) + 1000)) {
                     fAccepted = true;
                     fFound1 = true;
-                } else if ((nDenom & (1 << 5)) && out.tx->vout[out.i].nValue == ((.1 * COIN) + 100)) {
+                } else if ((nDenom & (1 << 6)) && out.tx->vout[out.i].nValue == ((.1 * COIN) + 100)) {
                     fAccepted = true;
                     fFoundDot1 = true;
                 }
@@ -2475,7 +2483,7 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
         }
     }
 
-    return (nValueRet >= nValueMin && fFound10000 && fFound1000 && fFound100 && fFound10 && fFound1 && fFoundDot1);
+    return (nValueRet >= nValueMin && fFound15000 && fFound10000 && fFound1000 && fFound100 && fFound10 && fFound1 && fFoundDot1);
 }
 
 bool CWallet::SelectCoinsDark(CAmount nValueMin, CAmount nValueMax, std::vector<CTxIn>& setCoinsRet, CAmount& nValueRet, int nObfuscationRoundsMin, int nObfuscationRoundsMax) const
@@ -3256,22 +3264,24 @@ string CWallet::PrepareObfuscationDenominate(int minRounds, int maxRounds)
     // NOTE: No need to randomize order of inputs because they were
     // initially shuffled in CWallet::SelectCoinsByDenominations already.
     int nStep = 0;
-    int nStepsMax = 5 + GetRandInt(5);
+    int nStepsMax = 6 + GetRandInt(6);
     while (nStep < nStepsMax) {
         BOOST_FOREACH (CAmount v, obfuScationDenominations) {
             // only use the ones that are approved
             bool fAccepted = false;
-            if ((obfuScationPool.sessionDenom & (1 << 0)) && v == ((10000 * COIN) + 10000000)) {
+            if ((obfuScationPool.sessionDenom & (1 << 0)) && v == ((15000 * COIN) + 10000000)) {
                 fAccepted = true;
-            } else if ((obfuScationPool.sessionDenom & (1 << 1)) && v == ((1000 * COIN) + 1000000)) {
+            } else if ((obfuScationPool.sessionDenom & (1 << 1)) && v == ((10000 * COIN) + 10000000)) {
                 fAccepted = true;
-            } else if ((obfuScationPool.sessionDenom & (1 << 2)) && v == ((100 * COIN) + 100000)) {
+            } else if ((obfuScationPool.sessionDenom & (1 << 2)) && v == ((1000 * COIN) + 1000000)) {
                 fAccepted = true;
-            } else if ((obfuScationPool.sessionDenom & (1 << 3)) && v == ((10 * COIN) + 10000)) {
+            } else if ((obfuScationPool.sessionDenom & (1 << 3)) && v == ((100 * COIN) + 100000)) {
                 fAccepted = true;
-            } else if ((obfuScationPool.sessionDenom & (1 << 4)) && v == ((1 * COIN) + 1000)) {
+            } else if ((obfuScationPool.sessionDenom & (1 << 4)) && v == ((10 * COIN) + 10000)) {
                 fAccepted = true;
-            } else if ((obfuScationPool.sessionDenom & (1 << 5)) && v == ((.1 * COIN) + 100)) {
+            } else if ((obfuScationPool.sessionDenom & (1 << 5)) && v == ((1 * COIN) + 1000)) {
+                fAccepted = true;
+            } else if ((obfuScationPool.sessionDenom & (1 << 6)) && v == ((.1 * COIN) + 100)) {
                 fAccepted = true;
             }
             if (!fAccepted) continue;
