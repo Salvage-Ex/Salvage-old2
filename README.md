@@ -128,8 +128,6 @@ Raisex: https://raisex.io/trade/GALI_BTC
 
 Aiodex: https://aiodex.com/exchange/GALI_BTC
 
-AltMarkets: https://altmarkets.cc/market/BTC-GALI
-
 # Promotions
 
 Masternodes.online: https://masternodes.online/currencies/GALI/
