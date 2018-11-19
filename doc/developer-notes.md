@@ -128,13 +128,13 @@ The Qt code routes qDebug() output to debug.log under category "qt": run with
 
 **testnet mode**
 
-Run with the -testnet option to run with "play GALIs (tGALI)" on the test
+Run with the -testnet option to run with "play SVGs (tSVG)" on the test
 network, if you are testing multi-machine code that needs to operate across the
 internet.
 
 **DEBUG_LOCKORDER**
 
-Galilel Core is a multithreaded application, and deadlocks or other
+Salvage Core is a multithreaded application, and deadlocks or other
 multithreading bugs can be very difficult to track down. Compiling with
 -DDEBUG_LOCKORDER (configure CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time
 checks to keep track of which locks are held, and adds warnings to the
@@ -193,7 +193,7 @@ lock for example).
 In closed-source environments in which everyone uses the same IDE it is common
 to add temporary files it produces to the project-wide `.gitignore` file.
 
-However, in open source software such as Galilel Core, where everyone uses
+However, in open source software such as Salvage Core, where everyone uses
 their own editors/IDE/tools, it is less common. Only you know what files your
 editor produces and this may change from version to version. The canonical way
 to do this is thus to create your local gitignore. Add this to `~/.gitconfig`:
@@ -223,9 +223,9 @@ commit them.
 # Development guidelines
 
 A few non-style-related recommendations for developers, as well as points to
-pay attention to for reviewers of Galilel Core code.
+pay attention to for reviewers of Salvage Core code.
 
-### General Galilel Core
+### General Salvage Core
 
 * New features should be exposed on RPC first, then can be made available in
   the GUI
@@ -344,7 +344,7 @@ pay attention to for reviewers of Galilel Core code.
 * For `strprintf`, `LogPrint`, `LogPrintf` formatting characters don't need
   size specifiers
 
-  * *Rationale*: Galilel Core uses tinyformat, which is type safe. Leave them
+  * *Rationale*: Salvage Core uses tinyformat, which is type safe. Leave them
     out to avoid confusion
 
 ### Threads and synchronization
@@ -447,7 +447,7 @@ pay attention to for reviewers of Galilel Core code.
   ```
   [remote "upstream-pull"]
           fetch = +refs/pull/*:refs/remotes/upstream-pull/*
-          url = git@github.com:Galilel-Project/galilel.git
+          url = git@github.com:Salvage-ex/Salvage.git
   ```
 
   This will add an `upstream-pull` remote to your git repository, which can be

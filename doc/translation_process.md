@@ -1,8 +1,8 @@
 # Translations
 
-The Galilel project has been designed to support multiple localisations. This
+The Salvage project has been designed to support multiple localisations. This
 makes adding new phrases, and completely new languages easily achievable. For
-managing all application translations, Galilel makes use of the Transifex
+managing all application translations, Salvage makes use of the Transifex
 online translation management tool.
 
 ### Helping to translate (using Transifex)
@@ -12,11 +12,11 @@ containing new translations is found, Transifex will process any changes. It
 may take several hours after a pull-request has been merged, to appear in the
 Transifex web interface.
 
-Multiple language support is critical in assisting Galilel's global adoption,
-and growth. One of Galilel's greatest strengths is cross-border money
+Multiple language support is critical in assisting Salvage's global adoption,
+and growth. One of Salvage's greatest strengths is cross-border money
 transfers, any help making that easier is greatly appreciated.
 
-See the [Transifex Galilel project](https://www.transifex.com/galilel-project/galilel-project-translations/)
+See the [Transifex Salvage project](https://www.transifex.com/salvage-project/salvage-project-translations/)
 to assist in translations.
 
 ### Writing code with translations
@@ -25,17 +25,17 @@ We use automated scripts to help extract translations in both Qt, and non-Qt
 source files. It is rarely necessary to manually edit the files in `src/qt/locale/`.
 The translation source files must adhere to the following format:
 
-`galilel_xx_YY.ts or galilel_xx.ts`
+`salvage_xx_YY.ts or salvage_xx.ts`
 
-`src/qt/locale/galilel_en.ts` is treated in a special way. It is used as the
+`src/qt/locale/salvage_en.ts` is treated in a special way. It is used as the
 source for all other translations. Whenever a string in the source code is
 changed, this file must be updated to reflect those changes. A custom script is
 used to extract strings from the non-Qt parts. This script makes use of
 `gettext`, so make sure that utility is installed (ie, `apt-get install gettext`
 on Ubuntu/Debian). Once this has been updated, `lupdate` (included in the Qt
-SDK) is used to update `galilel_en.ts`.
+SDK) is used to update `salvage_en.ts`.
 
-To automatically regenerate the `galilel_en.ts` file, run the following
+To automatically regenerate the `salvage_en.ts` file, run the following
 commands:
 
 ```sh
@@ -43,7 +43,7 @@ cd src/
 make translate
 ```
 
-`contrib/galilel-qt.pro` takes care of generating `.qm` (binary compiled) files
+`contrib/salvage-qt.pro` takes care of generating `.qm` (binary compiled) files
 from `.ts` (source files) files. It's mostly automated, and you shouldn't need
 to worry about it.
 
@@ -68,7 +68,7 @@ are ready for translators.
 To create the pull-request, use the following commands:
 
 ```
-git add src/qt/galilelstrings.cpp src/qt/locale/galilel_en.ts
+git add src/qt/salvagestrings.cpp src/qt/locale/salvage_en.ts
 git commit
 ```
 
@@ -78,7 +78,7 @@ Visit the [Transifex Signup](https://www.transifex.com/signup/) page to create
 an account. Take note of your username and password, as they will be required
 to configure the command-line tool.
 
-You can find the Galilel translation project at [https://www.transifex.com/galilel-project/galilel-project-translations/](https://www.transifex.com/galilel-project/galilel-project-translations/).
+You can find the Salvage translation project at [https://www.transifex.com/salvage-project/salvage-project-translations/](https://www.transifex.com/salvage-project/salvage-project-translations/).
 
 ### Installing the Transifex client command-line tool
 
@@ -106,7 +106,7 @@ username = USERNAME
 Please see [http://docs.transifex.com/developer/client/setup#windows](http://docs.transifex.com/developer/client/setup#windows)
 for details on installation.
 
-The Transifex Galilel project config file is included as part of the repo. It
+The Transifex Salvage project config file is included as part of the repo. It
 can be found at `.tx/config`, however you shouldn’t need change anything.
 
 ### Synchronising translations
@@ -114,8 +114,8 @@ can be found at `.tx/config`, however you shouldn’t need change anything.
 To assist in updating translations, we have created a script to help.
 
 1. `python contrib/devtools/update-translations.py`
-2. Update `src/qt/galilel_locale.qrc` manually or via `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(galilel_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'`
-3. Update `src/Makefile.qt.include` manually or via `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(galilel_\(.*\)\).ts/  qt\/locale\/\1.ts \\/'`
+2. Update `src/qt/salvage_locale.qrc` manually or via `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(salvage_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'`
+3. Update `src/Makefile.qt.include` manually or via `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(salvage_\(.*\)\).ts/  qt\/locale\/\1.ts \\/'`
 4. `git add` new translations from `src/qt/locale/`
 
 **Do not directly download translations** one by one from the Transifex
@@ -127,7 +127,7 @@ translations.
 When new plurals are added to the source file, it's important to do the
 following steps:
 
-1. Open `galilel_en.ts` in Qt Linguist (included in the Qt SDK)
+1. Open `salvage_en.ts` in Qt Linguist (included in the Qt SDK)
 2. Search for `%n`, which will take you to the parts in the translation that
    use plurals
 3. Look for empty `English Translation (Singular)` and `English Translation
@@ -142,12 +142,12 @@ following steps:
 ### Translating a new language
 
 To create a new language template, you will need to edit the languages manifest
-file `src/qt/galilel_locale.qrc` and add a new entry. Below is an example of
+file `src/qt/salvage_locale.qrc` and add a new entry. Below is an example of
 the English language entry.
 
 ```xml
 <qresource prefix="/translations">
-    <file alias="en">locale/galilel_en.qm</file>
+    <file alias="en">locale/salvage_en.qm</file>
     ...
 </qresource>
 ```
@@ -157,8 +157,8 @@ compiled extension), and not `.ts`.
 
 ### Questions and general assistance
 
-The Galilel translation maintainers include *mbroemme*. You can find them, and
-others, in the [Galilel Discord](https://discord.galilel.cloud).
+The Salvage translation maintainers include *mbroemme*. You can find them, and
+others, in the [Salvage Discord](https://discord.salvage.cloud).
 
 Announcements will be posted during application pre-releases to notify
 translators to check for updates.

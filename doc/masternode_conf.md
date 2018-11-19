@@ -5,9 +5,9 @@ single wallet. The wallet needs to have a valid collateral output of 15.000
 coins for each masternode. To use this, place a file named masternode.conf in
 the data directory of your install:
 
-* Windows: %APPDATA%\Galilel\
-* Mac OS: ~/Library/Application Support/Galilel/
-* Unix/Linux: ~/.galilel/
+* Windows: %APPDATA%\Salvage\
+* Mac OS: ~/Library/Application Support/Salvage/
+* Unix/Linux: ~/.salvage/
 
 The new masternode.conf format consists of a space seperated text file. Each
 line consisting of an alias, IP address followed by port, masternode private

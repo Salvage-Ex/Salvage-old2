@@ -1,6 +1,6 @@
 # Mac OS X Build Instructions and Notes
 
-This guide will show you how to build galileld (headless client) for OSX.
+This guide will show you how to build salvaged (headless client) for OSX.
 
 ## Notes
 
@@ -38,13 +38,13 @@ sections below.
 brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5 zmq libevent
 ```
 
-## Building galileld
+## Building salvaged
 
 1. Clone the github tree to get the source code and go into the directory.
 
    ```
-   git clone https://github.com/Galilel-Project/galilel.git
-   cd galilel
+   git clone https://github.com/Salvage-ex/Salvage.git
+   cd salvage
    ```
 
 2. Make the Homebrew OpenSSL headers visible to the configure script (do
@@ -56,7 +56,7 @@ brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-
    export CPPFLAGS+=-I/usr/local/opt/openssl/include
    ```
 
-3. Build galileld:
+3. Build salvaged:
 
    ```
    ./autogen.sh
@@ -70,7 +70,7 @@ brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-
    make check
    ```
 
-5. (Optional) You can also install galileld to your path:
+5. (Optional) You can also install salvaged to your path:
 
    ```
    make install
@@ -86,7 +86,7 @@ process).
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "galilel-qt" as project name, enter src/qt as location
+4. Enter "salvage-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -96,11 +96,11 @@ process).
 
 ## Creating a release build
 
-You can ignore this section if you are building `galileld` for your own use.
+You can ignore this section if you are building `salvaged` for your own use.
 
-galileld/galilel-cli binaries are not included in the Galilel-Qt.app bundle.
+salvaged/salvage-cli binaries are not included in the Salvage-Qt.app bundle.
 
-If you are building `galileld` or `galilel-qt` for others, your build machine
+If you are building `salvaged` or `salvage-qt` for others, your build machine
 should be set up as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -112,20 +112,20 @@ All dependencies should be compiled with these flags:
 ```
 
 Once dependencies are compiled, see release-process.md for how the
-Galilel-Qt.app bundle is packaged and signed to create the .dmg disk image that
+Salvage-Qt.app bundle is packaged and signed to create the .dmg disk image that
 is distributed.
 
 ## Running
 
-It's now available at `./galileld`, provided that you are still in the `src`
+It's now available at `./salvaged`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./galileld` to get the filename where it should be put, or just try these
+Run `./salvaged` to get the filename where it should be put, or just try these
 commands:
 
 ```
-echo -e "rpcuser=galilelrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Galilel/galilel.conf"
-chmod 600 "/Users/${USER}/Library/Application Support/Galilel/galilel.conf"
+echo -e "rpcuser=salvagerpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Salvage/salvage.conf"
+chmod 600 "/Users/${USER}/Library/Application Support/Salvage/salvage.conf"
 ```
 
 The next time you run it, it will start downloading the blockchain, but it
@@ -133,13 +133,13 @@ won't output anything while it's doing this. This process may take several
 hours; you can monitor its process by looking at the debug.log file, like this:
 
 ```
-tail -f $HOME/Library/Application\ Support/Galilel/debug.log
+tail -f $HOME/Library/Application\ Support/Salvage/debug.log
 ```
 
 ## Other commands:
 
 ```bash
-./galileld -daemon  # to start the galilel daemon
-./galilel-cli -help # for a list of command-line options
-./galilel-cli help  # When the daemon is running, to get a list of RPC commands
+./salvaged -daemon  # to start the salvage daemon
+./salvage-cli -help # for a list of command-line options
+./salvage-cli help  # When the daemon is running, to get a list of RPC commands
 ```

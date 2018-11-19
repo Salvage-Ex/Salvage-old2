@@ -1,9 +1,9 @@
 # Gitian building
 
-*Setup instructions for a gitian build of Galilel using a Debian VM or physical
+*Setup instructions for a gitian build of Salvage using a Debian VM or physical
 system.*
 
-Gitian is the deterministic build process that is used to build the Galilel
+Gitian is the deterministic build process that is used to build the Salvage
 Core executables. It provides a way to be reasonably sure that the executables
 are really built from source on GitHub. It also makes sure that the same,
 tested dependencies are used and statically built into the executable.
@@ -25,7 +25,7 @@ VM image to avoid 'contaminating' the build.
 * [Installing gitian](#installing-gitian)
 * [Setting up gitian images](#setting-up-gitian-images)
 * [Getting and building the inputs](#getting-and-building-the-inputs)
-* [Building Galilel](#building-galilel)
+* [Building Salvage](#building-salvage)
 * [Building an alternative repository](#building-an-alternative-repository)
 * [Signing externally](#signing-externally)
 * [Uploading signatures](#uploading-signatures)
@@ -299,13 +299,13 @@ cd ..
 **Note**: When sudo asks for a password, enter the password for the user
 *debian* not for *root*.
 
-Clone the git repositories for galilel and gitian and then checkout the galilel
+Clone the git repositories for salvage and gitian and then checkout the salvage
 version that you want to build.
 
 ```
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/Galilel-Project/galilel.git
-cd galilel
+git clone https://github.com/Salvage-ex/Salvage.git
+cd salvage
 git checkout v${VERSION}
 cd ..
 ```
@@ -347,16 +347,16 @@ found"* during this process you have to make the following change in file
 ### Getting and building the inputs
 
 Follow the instructions in [doc/release-process.md](release-process.md) in the
-galilel repository under 'Fetch and build inputs' to install sources which
+salvage repository under 'Fetch and build inputs' to install sources which
 require manual intervention. Also follow the next step: 'Seed the Gitian
 sources cache', which will fetch all necessary source files allowing for gitian
 to work offline.
 
-### Building Galilel
+### Building Salvage
 
-To build Galilel (for Linux, OSX and Windows) just follow the steps under
+To build Salvage (for Linux, OSX and Windows) just follow the steps under
 'perform gitian builds' in [doc/release-process.md](release-process.md) in the
-galilel repository.
+salvage repository.
 
 This may take a long time as it also builds the dependencies needed for each
 descriptor. These dependencies will be cached after a successful build to avoid
@@ -372,12 +372,12 @@ tail -f var/build.log
 Output from `gbuild` will look something like
 
 ```
-Initialized empty Git repository in /home/debian/gitian-builder/inputs/galilel/.git/
+Initialized empty Git repository in /home/debian/gitian-builder/inputs/salvage/.git/
 remote: Reusing existing pack: 35606, done.
 remote: Total 35606 (delta 0), reused 0 (delta 0)
 Receiving objects: 100% (35606/35606), 26.52 MiB | 4.28 MiB/s, done.
 Resolving deltas: 100% (25724/25724), done.
-From https://github.com/Galilel-Project/galilel
+From https://github.com/Salvage-ex/Salvage
 ... (new tags, new branch etc)
 --- Building for precise x86_64 ---
 Stopping target if it is up
@@ -404,11 +404,11 @@ inputs.
 For example:
 
 ```
-URL=https://github.com/mbroemme/galilel.git
+URL=https://github.com/mbroemme/salvage.git
 COMMIT=b616fb8ef0d49a919b72b0388b091aaec5849b96
-./bin/gbuild --commit galilel=${COMMIT} --url galilel=${URL} ../galilel/contrib/gitian-descriptors/gitian-linux.yml
-./bin/gbuild --commit galilel=${COMMIT} --url galilel=${URL} ../galilel/contrib/gitian-descriptors/gitian-win.yml
-./bin/gbuild --commit galilel=${COMMIT} --url galilel=${URL} ../galilel/contrib/gitian-descriptors/gitian-osx.yml
+./bin/gbuild --commit salvage=${COMMIT} --url salvage=${URL} ../salvage/contrib/gitian-descriptors/gitian-linux.yml
+./bin/gbuild --commit salvage=${COMMIT} --url salvage=${URL} ../salvage/contrib/gitian-descriptors/gitian-win.yml
+./bin/gbuild --commit salvage=${COMMIT} --url salvage=${URL} ../salvage/contrib/gitian-descriptors/gitian-osx.yml
 ```
 
 ### Signing externally
@@ -426,9 +426,9 @@ Copy the resulting `.assert` files in `gitian.sigs` to your signing machine and
 do
 
 ```
-gpg --detach-sign ${VERSION}-linux/${SIGNER}/galilel-build.assert
-gpg --detach-sign ${VERSION}-win/${SIGNER}/galilel-build.assert
-gpg --detach-sign ${VERSION}-osx/${SIGNER}/galilel-build.assert
+gpg --detach-sign ${VERSION}-linux/${SIGNER}/salvage-build.assert
+gpg --detach-sign ${VERSION}-win/${SIGNER}/salvage-build.assert
+gpg --detach-sign ${VERSION}-osx/${SIGNER}/salvage-build.assert
 ```
 
 This will create the `.sig` files that can be committed together with the
@@ -437,6 +437,6 @@ This will create the `.sig` files that can be committed together with the
 ### Uploading signatures (not yet implemented)
 
 In the future it will be possible to push your signatures (both the `.assert`
-and `.assert.sig` files) to the [galilel/gitian.sigs](https://github.com/Galilel-Project/gitian.sigs/)
+and `.assert.sig` files) to the [salvage/gitian.sigs](https://github.com/Salvage-ex/gitian.sigs/)
 repository, or if that's not possible to create a pull request. There will be
 an official announcement when this repository is online.

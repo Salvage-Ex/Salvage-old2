@@ -1,6 +1,6 @@
-# Tor support in Galilel
+# Tor support in Salvage
 
-It is possible to run Galilel as a Tor hidden service, and connect to such
+It is possible to run Salvage as a Tor hidden service, and connect to such
 services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
@@ -9,9 +9,9 @@ others may not. In particular, the Tor Browser Bundle defaults to listening on
 a random port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort)
 for how to properly configure Tor.
 
-### Run Galilel behind a Tor proxy
+### Run Salvage behind a Tor proxy
 
-The first step is running Galilel behind a Tor proxy. This will already make
+The first step is running Salvage behind a Tor proxy. This will already make
 all outgoing connections be anonymized, but more is possible.
 
 ```
@@ -41,16 +41,16 @@ An example how to start the client if the Tor proxy is running on local host on
 port 9050 and only allows .onion nodes to connect:
 
 ```
-./galileld -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=nvvgnxdfnlwdgbdn.onion:36001
+./salvaged -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=nvvgnxdfnlwdgbdn.onion:36001
 ```
 
 In a typical situation, this suffices to run behind a Tor proxy:
 
 ```
-./galileld -proxy=127.0.0.1:9050
+./salvaged -proxy=127.0.0.1:9050
 ```
 
-### Run a Galilel hidden server
+### Run a Salvage hidden server
 
 If you configure your Tor system accordingly, it is possible to make your node
 also reachable from the Tor network. Add these lines to your `/etc/tor/torrc`
@@ -73,13 +73,13 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be
-equal to your galileld's P2P listen port (36001 by default).
+equal to your salvaged's P2P listen port (36001 by default).
 
 ```
--externalip=X   You can tell galilel about its publicly reachable addressi
+-externalip=X   You can tell salvage about its publicly reachable addressi
                 using this option, and this can be a .onion address. Given the
                 above configuration, you can find your onion address in
-                `/var/lib/tor/galilel-service/hostname`. Onion addresses are
+                `/var/lib/tor/salvage-service/hostname`. Onion addresses are
                 given preference for your node to advertize itself with, for
                 connections coming from unroutable addresses (such as
                 127.0.0.1, where the Tor proxy typically runs).
@@ -100,7 +100,7 @@ In a typical situation, where you're only reachable via Tor, this should
 suffice:
 
 ```
-./galileld -proxy=127.0.0.1:9050 -externalip=nvvgnxdfnlwdgbdn.onion:36001 -listen
+./salvaged -proxy=127.0.0.1:9050 -externalip=nvvgnxdfnlwdgbdn.onion:36001 -listen
 ```
 
 (obviously, replace the Onion address with your own). If you don't care too
@@ -108,7 +108,7 @@ much about hiding your node, and want to be reachable on IPv4 as well,
 additionally specify:
 
 ```
-./galileld ... -discover
+./salvaged ... -discover
 ```
 
 and open port 36001 on your firewall (or use -upnp).
@@ -117,10 +117,10 @@ If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
 ```
-./galileld -onion=127.0.0.1:9050 -externalip=nvvgnxdfnlwdgbdn.onion:36001 -discover
+./salvaged -onion=127.0.0.1:9050 -externalip=nvvgnxdfnlwdgbdn.onion:36001 -discover
 ```
 
-### List of known Galilel Tor relays
+### List of known Salvage Tor relays
 
 ```
 nvvgnxdfnlwdgbdn.onion:36001
