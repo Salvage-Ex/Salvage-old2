@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -11,7 +11,7 @@
 #include "stakeinput.h"
 #include "wallet.h"
 
-CZGaliStake::CZGaliStake(const libzerocoin::CoinSpend& spend)
+CZSvgStake::CZSvgStake(const libzerocoin::CoinSpend& spend)
 {
     this->nChecksum = spend.getAccumulatorChecksum();
     this->denom = spend.getDenomination();
@@ -21,7 +21,7 @@ CZGaliStake::CZGaliStake(const libzerocoin::CoinSpend& spend)
     fMint = false;
 }
 
-int CZGaliStake::GetChecksumHeightFromMint()
+int CZSvgStake::GetChecksumHeightFromMint()
 {
     int nHeightChecksum = chainActive.Height() - Params().Zerocoin_RequiredStakeDepth();
 
@@ -32,20 +32,20 @@ int CZGaliStake::GetChecksumHeightFromMint()
     return GetChecksumHeight(nChecksum, denom);
 }
 
-int CZGaliStake::GetChecksumHeightFromSpend()
+int CZSvgStake::GetChecksumHeightFromSpend()
 {
     return GetChecksumHeight(nChecksum, denom);
 }
 
-uint32_t CZGaliStake::GetChecksum()
+uint32_t CZSvgStake::GetChecksum()
 {
     return nChecksum;
 }
 
-// The zGALI block index is the first appearance of the accumulator checksum that was used in the spend
+// The zSVG block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
-CBlockIndex* CZGaliStake::GetIndexFrom()
+CBlockIndex* CZSvgStake::GetIndexFrom()
 {
     if (pindexFrom)
         return pindexFrom;
@@ -67,13 +67,13 @@ CBlockIndex* CZGaliStake::GetIndexFrom()
     return pindexFrom;
 }
 
-CAmount CZGaliStake::GetValue()
+CAmount CZSvgStake::GetValue()
 {
     return denom * COIN;
 }
 
 //Use the first accumulator checkpoint that occurs 60 minutes after the block being staked from
-bool CZGaliStake::GetModifier(uint64_t& nStakeModifier)
+bool CZSvgStake::GetModifier(uint64_t& nStakeModifier)
 {
     CBlockIndex* pindex = GetIndexFrom();
     if (!pindex)
@@ -93,15 +93,15 @@ bool CZGaliStake::GetModifier(uint64_t& nStakeModifier)
     }
 }
 
-CDataStream CZGaliStake::GetUniqueness()
+CDataStream CZSvgStake::GetUniqueness()
 {
-    //The unique identifier for a zGALI is a hash of the serial
+    //The unique identifier for a zSVG is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
     ss << hashSerial;
     return ss;
 }
 
-bool CZGaliStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CZSvgStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     CBlockIndex* pindexCheckpoint = GetIndexFrom();
     if (!pindexCheckpoint)
@@ -122,25 +122,25 @@ bool CZGaliStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
     return true;
 }
 
-bool CZGaliStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
+bool CZSvgStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
-    //Create an output returning the zGALI that was staked
+    //Create an output returning the zSVG that was staked
     CTxOut outReward;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
-    if (!pwallet->CreateZGALIOutPut(denomStaked, outReward, dMint))
-        return error("%s: failed to create zGALI output", __func__);
+    if (!pwallet->CreateZSVGOutPut(denomStaked, outReward, dMint))
+        return error("%s: failed to create zSVG output", __func__);
     vout.emplace_back(outReward);
 
     //Add new staked denom to our wallet
     if (!pwallet->DatabaseMint(dMint))
-        return error("%s: failed to database the staked zGALI", __func__);
+        return error("%s: failed to database the staked zSVG", __func__);
 
     for (unsigned int i = 0; i < 3; i++) {
         CTxOut out;
         CDeterministicMint dMintReward;
-        if (!pwallet->CreateZGALIOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
-            return error("%s: failed to create zGALI output", __func__);
+        if (!pwallet->CreateZSVGOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
+            return error("%s: failed to create zSVG output", __func__);
         vout.emplace_back(out);
 
         if (!pwallet->DatabaseMint(dMintReward))
@@ -150,48 +150,48 @@ bool CZGaliStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount n
     return true;
 }
 
-bool CZGaliStake::GetTxFrom(CTransaction& tx)
+bool CZSvgStake::GetTxFrom(CTransaction& tx)
 {
     return false;
 }
 
-bool CZGaliStake::MarkSpent(CWallet *pwallet, const uint256& txid)
+bool CZSvgStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
-    CzGALITracker* zgaliTracker = pwallet->zgaliTracker.get();
+    CzSVGTracker* zsvgTracker = pwallet->zsvgTracker.get();
     CMintMeta meta;
-    if (!zgaliTracker->GetMetaFromStakeHash(hashSerial, meta))
+    if (!zsvgTracker->GetMetaFromStakeHash(hashSerial, meta))
         return error("%s: tracker does not have serialhash", __func__);
 
-    zgaliTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
+    zsvgTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
     return true;
 }
 
-//!GALI Stake
-bool CGaliStake::SetInput(CTransaction txPrev, unsigned int n)
+//!SVG Stake
+bool CSvgStake::SetInput(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
     this->nPosition = n;
     return true;
 }
 
-bool CGaliStake::GetTxFrom(CTransaction& tx)
+bool CSvgStake::GetTxFrom(CTransaction& tx)
 {
     tx = txFrom;
     return true;
 }
 
-bool CGaliStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CSvgStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     txIn = CTxIn(txFrom.GetHash(), nPosition);
     return true;
 }
 
-CAmount CGaliStake::GetValue()
+CAmount CSvgStake::GetValue()
 {
     return txFrom.vout[nPosition].nValue;
 }
 
-bool CGaliStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
+bool CSvgStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
     vector<valtype> vSolutions;
     txnouttype whichType;
@@ -226,7 +226,7 @@ bool CGaliStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nT
     return true;
 }
 
-bool CGaliStake::GetModifier(uint64_t& nStakeModifier)
+bool CSvgStake::GetModifier(uint64_t& nStakeModifier)
 {
     int nStakeModifierHeight = 0;
     int64_t nStakeModifierTime = 0;
@@ -240,16 +240,16 @@ bool CGaliStake::GetModifier(uint64_t& nStakeModifier)
     return true;
 }
 
-CDataStream CGaliStake::GetUniqueness()
+CDataStream CSvgStake::GetUniqueness()
 {
-    //The unique identifier for a GALI stake is the outpoint
+    //The unique identifier for a SVG stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;
 }
 
 //The block that the UTXO was added to the chain
-CBlockIndex* CGaliStake::GetIndexFrom()
+CBlockIndex* CSvgStake::GetIndexFrom()
 {
     uint256 hashBlock = 0;
     CTransaction tx;

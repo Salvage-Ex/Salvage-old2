@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -346,9 +346,9 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::SendToSelf:
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
-        return tr("GALI Stake");
-    case TransactionRecord::StakeZGALI:
-        return tr("zGALI Stake");
+        return tr("SVG Stake");
+    case TransactionRecord::StakeZSVG:
+        return tr("zSVG Stake");
     case TransactionRecord::Generated:
         return tr("Mined");
     case TransactionRecord::ObfuscationDenominate:
@@ -362,15 +362,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Obfuscated:
         return tr("Obfuscated");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted GALI to zGALI");
+        return tr("Converted SVG to zSVG");
     case TransactionRecord::ZerocoinSpend:
-        return tr("Spent zGALI");
+        return tr("Spent zSVG");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received GALI from zGALI");
-    case TransactionRecord::ZerocoinSpend_Change_zGali:
-        return tr("Minted Change as zGALI from zGALI Spend");
+        return tr("Received SVG from zSVG");
+    case TransactionRecord::ZerocoinSpend_Change_zSvg:
+        return tr("Minted Change as zSVG from zSVG Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zGALI to GALI");
+        return tr("Converted zSVG to SVG");
 
     default:
         return QString();
@@ -382,7 +382,7 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     switch (wtx->type) {
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
-    case TransactionRecord::StakeZGALI:
+    case TransactionRecord::StakeZSVG:
     case TransactionRecord::MNReward:
         return QIcon(":/icons/tx_mined");
     case TransactionRecord::RecvWithObfuscation:
@@ -425,10 +425,10 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
     case TransactionRecord::SendToOther:
         return QString::fromStdString(wtx->address) + watchAddress;
     case TransactionRecord::ZerocoinMint:
-    case TransactionRecord::ZerocoinSpend_Change_zGali:
-        return tr("Anonymous (zGALI Transaction)");
-    case TransactionRecord::StakeZGALI:
-        return tr("Anonymous (zGALI Stake)");
+    case TransactionRecord::ZerocoinSpend_Change_zSvg:
+        return tr("Anonymous (zSVG Transaction)");
+    case TransactionRecord::StakeZSVG:
+        return tr("Anonymous (zSVG Stake)");
     case TransactionRecord::SendToSelf:
     default:
         return tr("(n/a)") + watchAddress;
@@ -577,7 +577,7 @@ QVariant TransactionTableModel::data(const QModelIndex& index, int role) const
     case Qt::ForegroundRole:
         // Minted
         if (rec->type == TransactionRecord::Generated || rec->type == TransactionRecord::StakeMint ||
-                rec->type == TransactionRecord::StakeZGALI || rec->type == TransactionRecord::MNReward) {
+                rec->type == TransactionRecord::StakeZSVG || rec->type == TransactionRecord::MNReward) {
             if (rec->status.status == TransactionStatus::Conflicted || rec->status.status == TransactionStatus::NotAccepted)
                 return COLOR_ORPHAN;
             else

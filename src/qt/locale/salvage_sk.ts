@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše GALI adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše SVG adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše GALI adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše SVG adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Galilel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GALIs from being stolen by malware infecting your computer.</source>
-        <translation>Galilel sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše GALI pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>Salvage will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>Salvage sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše SVG pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GALI&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY GALI &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY SVG &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -569,16 +569,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
-        <source>Send coins to a GALI address</source>
-        <translation>Odoslať mince na adresu GALI</translation>
+        <source>Send coins to a SVG address</source>
+        <translation>Odoslať mince na adresu SVG</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and galilel: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a galilel: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and salvage: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a salvage: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -589,24 +589,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Galilel Core</source>
-        <translation>O Galilel Core</translation>
+        <source>&amp;About Salvage Core</source>
+        <translation>O Salvage Core</translation>
     </message>
     <message>
-        <source>Show information about Galilel Core</source>
-        <translation>Zobraziť informácie o Galilel Core</translation>
+        <source>Show information about Salvage Core</source>
+        <translation>Zobraziť informácie o Salvage Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for GALI</source>
-        <translation>Zmeňte možnosti konfigurácie pre GALI</translation>
+        <source>Modify configuration options for SVG</source>
+        <translation>Zmeňte možnosti konfigurácie pre SVG</translation>
     </message>
     <message>
-        <source>Sign messages with your GALI addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy GALI, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your SVG addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy SVG, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified GALI addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými GALI adresami</translation>
+        <source>Verify messages to ensure they were signed with specified SVG addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými SVG adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -637,8 +637,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a GALI: URI or payment request</source>
-        <translation>Otvorte GALI: URI alebo žiadosť o platbu</translation>
+        <source>Open a SVG: URI or payment request</source>
+        <translation>Otvorte SVG: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -649,12 +649,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Galilel Core help message to get a list with possible Galilel command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Galilel Core a získajte zoznam možností príkazového riadka Galilel</translation>
+        <source>Show the Salvage Core help message to get a list with possible Salvage command-line options</source>
+        <translation>Zobraziť pomocnú správu programu Salvage Core a získajte zoznam možností príkazového riadka Salvage</translation>
     </message>
     <message>
-        <source>Galilel Core client</source>
-        <translation>Galilel Core klient</translation>
+        <source>Salvage Core client</source>
+        <translation>Salvage Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -776,8 +776,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (galilel.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (galilel.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (salvage.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (salvage.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -867,15 +867,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1114,8 +1114,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The GALI address to sign the message with</source>
-        <translation>Adresa GALI, ktorou chcete správu podpísať</translation>
+        <source>The SVG address to sign the message with</source>
+        <translation>Adresa SVG, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1138,16 +1138,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this GALI address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto GALI adresy</translation>
+        <source>Sign the message to prove you own this SVG address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto SVG adresy</translation>
     </message>
     <message>
-        <source>The GALI address the message was signed with</source>
-        <translation>GALI adresa, ktorou bola správa podpísaná</translation>
+        <source>The SVG address the message was signed with</source>
+        <translation>SVG adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified GALI address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou GALI adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified SVG address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou SVG adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1185,8 +1185,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     </context>
 <context>
@@ -1281,10 +1281,10 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZGaliControlDialog</name>
+    <name>ZSvgControlDialog</name>
     </context>
 <context>
-    <name>galilel-core</name>
+    <name>salvage-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

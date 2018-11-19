@@ -2,13 +2,13 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/galilel-config.h"
+#include "config/salvage-config.h"
 #endif
 
 #include "tinyformat.h"

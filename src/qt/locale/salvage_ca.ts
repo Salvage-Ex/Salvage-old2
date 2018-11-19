@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces GALI per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces SVG per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces GALI per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces SVG per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>Galilel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GALIs from being stolen by malware infecting your computer.</source>
-        <translation>Galilel es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus GALI de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>Salvage will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>Salvage es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus SVG de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GALI&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES GALIS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES SVGS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -421,12 +421,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
-        <source>Send coins to a GALI address</source>
-        <translation>Envia monedes a una adreça GALI</translation>
+        <source>Send coins to a SVG address</source>
+        <translation>Envia monedes a una adreça SVG</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -437,8 +437,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Galilel Core</source>
-        <translation>&amp;Sobre Galilel Core</translation>
+        <source>&amp;About Salvage Core</source>
+        <translation>&amp;Sobre Salvage Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -461,8 +461,8 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>Galilel Core client</source>
-        <translation>Client Galilel core</translation>
+        <source>Salvage Core client</source>
+        <translation>Client Salvage core</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -805,8 +805,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid GALI address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça GALI vàlida.</translation>
+        <source>The entered address "%1" is not a valid SVG address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça SVG vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -851,16 +851,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Galilel Core</source>
-        <translation>Sobre Galilel Core</translation>
+        <source>About Salvage Core</source>
+        <translation>Sobre Salvage Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -906,12 +906,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Galilel Core.</source>
-        <translation>Benvingut a Galilel Core.</translation>
+        <source>Welcome to Salvage Core.</source>
+        <translation>Benvingut a Salvage Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Galilel Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Galilel Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where Salvage Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Salvage Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -922,8 +922,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1148,24 +1148,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 15000 GALI</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 15000 GALI</translation>
+        <source>Use 2 separate masternodes to mix funds up to 15000 SVG</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 15000 SVG</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 15000 GALI</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 15000 GALI</translation>
+        <source>Use 8 separate masternodes to mix funds up to 15000 SVG</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 15000 SVG</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 GALI to anonymize 15000 GALI</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 GALI per anonimitzar 15000 GALI</translation>
+        <source>This option is the quickest and will cost about ~0.025 SVG to anonymize 15000 SVG</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 SVG per anonimitzar 15000 SVG</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 GALI to anonymize 15000 GALI</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 GALI per anonimitzar 15000 GALI</translation>
+        <source>This option is moderately fast and will cost about 0.05 SVG to anonymize 15000 SVG</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 SVG per anonimitzar 15000 SVG</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1214,8 +1214,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start GALI after logging in to the system.</source>
-        <translation>Inicia GALI automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start SVG after logging in to the system.</source>
+        <translation>Inicia SVG automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1302,12 +1302,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zGALI</source>
-        <translation>zGALI</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     <message>
-        <source>0.000 000 00 GALI</source>
-        <translation>0.000 000 00 GALI</translation>
+        <source>0.000 000 00 SVG</source>
+        <translation>0.000 000 00 SVG</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1322,8 +1322,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zGALI</source>
-        <translation>0 zGALI</translation>
+        <source>0 zSVG</source>
+        <translation>0 zSVG</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1713,8 +1713,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Galilel Core is shutting down...</source>
-        <translation>Galilel Core s'està tancant...</translation>
+        <source>Salvage Core is shutting down...</source>
+        <translation>Salvage Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1779,8 +1779,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1959,7 +1959,7 @@
     </message>
     </context>
 <context>
-    <name>ZGaliControlDialog</name>
+    <name>ZSvgControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>
@@ -1969,12 +1969,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zGALI</source>
-        <translation>zGALI</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     </context>
 <context>
-    <name>galilel-core</name>
+    <name>salvage-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>

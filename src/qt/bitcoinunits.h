@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -46,7 +46,7 @@
 #define THIN_SP_HTML HTML_HACK_SP
 
 /*
- * GALI unit definitions. Encapsulates parsing and formatting
+ * SVG unit definitions. Encapsulates parsing and formatting
  * and serves as list model for drop-down selection boxes.
  */
 class BitcoinUnits : public QAbstractListModel
@@ -57,13 +57,13 @@ public:
     explicit BitcoinUnits(QObject* parent);
 
     /*
-     * GALI units.
+     * SVG units.
      * @note Source: 'https://en.bitcoin.it/wiki/Units'. Please add only sensible ones
      */
     enum Unit {
-        GALI,
-        mGALI,
-        uGALI
+        SVG,
+        mSVG,
+        uSVG
     };
 
     enum SeparatorStyle {

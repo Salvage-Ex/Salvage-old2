@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -38,7 +38,7 @@ map<uint256, CObfuscationBroadcastTx> mapObfuscationBroadcastTxes;
 // Keep track of the active Masternode
 CActiveMasternode activeMasternode;
 
-/* *** BEGIN OBFUSCATION MAGIC - GALI **********
+/* *** BEGIN OBFUSCATION MAGIC - SVG **********
     Copyright (c) 2014-2015, Dash Developers
         eduffield - evan@dashpay.io
         udjinm6   - udjinm6@dashpay.io
@@ -778,9 +778,9 @@ void CObfuscationPool::ChargeRandomFees()
 
                 Being that Obfuscation has "no fees" we need to have some kind of cost associated
                 with using it to stop abuse. Otherwise it could serve as an attack vector and
-                allow endless transaction that would bloat GALI and make it unusable. To
+                allow endless transaction that would bloat SVG and make it unusable. To
                 stop these kinds of attacks 1 in 10 successful transactions are charged. This
-                adds up to a cost of 0.001 GALI per transaction on average.
+                adds up to a cost of 0.001 SVG per transaction on average.
             */
             if (r <= 10) {
                 LogPrintf("CObfuscationPool::ChargeRandomFees -- charging random fees. %u\n", i);
@@ -1435,7 +1435,7 @@ bool CObfuscationPool::DoAutomaticDenominating(bool fDryRun)
         // should have some additional amount for them
         nLowestDenom += OBFUSCATION_COLLATERAL * 4;
 
-    CAmount nBalanceNeedsAnonymized = nAnonymizeGalilelAmount * COIN - pwalletMain->GetAnonymizedBalance();
+    CAmount nBalanceNeedsAnonymized = nAnonymizeSalvageAmount * COIN - pwalletMain->GetAnonymizedBalance();
 
     // if balanceNeedsAnonymized is more than pool max, take the pool max
     if (nBalanceNeedsAnonymized > OBFUSCATION_POOL_MAX) nBalanceNeedsAnonymized = OBFUSCATION_POOL_MAX;
@@ -1918,10 +1918,10 @@ void CObfuscationPool::GetDenominationsToString(int nDenom, std::string& strDeno
 {
     // Function returns as follows:
     //
-    // bit 0 - 100GALI+1 ( bit on if present )
-    // bit 1 - 10GALI+1
-    // bit 2 - 1GALI+1
-    // bit 3 - .1GALI+1
+    // bit 0 - 100SVG+1 ( bit on if present )
+    // bit 1 - 10SVG+1
+    // bit 2 - 1SVG+1
+    // bit 3 - .1SVG+1
     // bit 3 - non-denom
 
 
@@ -1991,10 +1991,10 @@ int CObfuscationPool::GetDenominations(const std::vector<CTxOut>& vout, bool fSi
 
     // Function returns as follows:
     //
-    // bit 0 - 100GALI+1 ( bit on if present )
-    // bit 1 - 10GALI+1
-    // bit 2 - 1GALI+1
-    // bit 3 - .1GALI+1
+    // bit 0 - 100SVG+1 ( bit on if present )
+    // bit 1 - 10SVG+1
+    // bit 2 - 1SVG+1
+    // bit 3 - .1SVG+1
 
     return denom;
 }
@@ -2287,7 +2287,7 @@ void ThreadCheckObfuScationPool()
     if (fLiteMode) return; //disable all Obfuscation/Masternode related functionality
 
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("galilel-obfuscation");
+    RenameThread("salvage-obfuscation");
 
     unsigned int c = 0;
 

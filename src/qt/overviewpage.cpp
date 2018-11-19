@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -37,7 +37,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::GALI)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::SVG)
     {
     }
 
@@ -149,7 +149,7 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sGALIPercentage, QString& szGALIPercentage)
+void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sSVGPercentage, QString& szSVGPercentage)
 {
     int nPrecision = 2;
     double dzPercentage = 0.0;
@@ -168,8 +168,8 @@ void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBala
 
     double dPercentage = 100.0 - dzPercentage;
 
-    szGALIPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
-    sGALIPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
+    szSVGPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
+    sSVGPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
 
 }
 
@@ -194,16 +194,16 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
 
-    // GALI Balance
+    // SVG Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
-    CAmount galiAvailableBalance = balance - immatureBalance - nLockedBalance;
+    CAmount svgAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
 
-    // GALI Watch-Only Balance
+    // SVG Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
     CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
 
-    // zGALI Balance
+    // zSVG Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
     // Percentages
@@ -211,11 +211,11 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     QString sPercentage = "";
     getPercentage(nUnlockedBalance, zerocoinBalance, sPercentage, szPercentage);
     // Combined balances
-    CAmount availableTotalBalance = galiAvailableBalance + matureZerocoinBalance;
+    CAmount availableTotalBalance = svgAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // GALI labels
-    ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, galiAvailableBalance, false, BitcoinUnits::separatorAlways));
+    // SVG labels
+    ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, svgAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
     ui->labelLockedBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nLockedBalance, false, BitcoinUnits::separatorAlways));
@@ -228,7 +228,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // zGALI labels
+    // zSVG labels
     ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedZerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceMature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, matureZerocoinBalance, false, BitcoinUnits::separatorAlways));
@@ -239,19 +239,19 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Percentage labels
-    ui->labelGALIPercent->setText(sPercentage);
-    ui->labelzGALIPercent->setText(szPercentage);
+    ui->labelSVGPercent->setText(sPercentage);
+    ui->labelzSVGPercent->setText(szPercentage);
 
     // Adjust bubble-help according to AutoMint settings
-    QString automintHelp = tr("Current percentage of zGALI.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
+    QString automintHelp = tr("Current percentage of zSVG.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
     bool fEnableZeromint = GetBoolArg("-enablezeromint", true);
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
         automintHelp += tr("AutoMint is currently enabled and set to ") + QString::number(nZeromintPercentage) + "%.\n";
-        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in galilel.conf.");
+        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in salvage.conf.");
     }
     else {
-        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in galilel.conf");
+        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in salvage.conf");
     }
 
     // Only show most balances if they are non-zero for the sake of simplicity
@@ -264,49 +264,49 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     bool showWatchOnly = nTotalWatchBalance != 0;
 
-    // GALI Available
-    bool showGALIAvailable = settingShowAllBalances || galiAvailableBalance != nTotalBalance;
-    bool showWatchOnlyGALIAvailable = showGALIAvailable || nAvailableWatchBalance != nTotalWatchBalance;
-    ui->labelBalanceText->setVisible(showGALIAvailable || showWatchOnlyGALIAvailable);
-    ui->labelBalance->setVisible(showGALIAvailable || showWatchOnlyGALIAvailable);
-    ui->labelWatchAvailable->setVisible(showWatchOnlyGALIAvailable && showWatchOnly);
+    // SVG Available
+    bool showSVGAvailable = settingShowAllBalances || svgAvailableBalance != nTotalBalance;
+    bool showWatchOnlySVGAvailable = showSVGAvailable || nAvailableWatchBalance != nTotalWatchBalance;
+    ui->labelBalanceText->setVisible(showSVGAvailable || showWatchOnlySVGAvailable);
+    ui->labelBalance->setVisible(showSVGAvailable || showWatchOnlySVGAvailable);
+    ui->labelWatchAvailable->setVisible(showWatchOnlySVGAvailable && showWatchOnly);
 
-    // GALI Pending
-    bool showGALIPending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlyGALIPending = showGALIPending || watchUnconfBalance != 0;
-    ui->labelPendingText->setVisible(showGALIPending || showWatchOnlyGALIPending);
-    ui->labelUnconfirmed->setVisible(showGALIPending || showWatchOnlyGALIPending);
-    ui->labelWatchPending->setVisible(showWatchOnlyGALIPending && showWatchOnly);
+    // SVG Pending
+    bool showSVGPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlySVGPending = showSVGPending || watchUnconfBalance != 0;
+    ui->labelPendingText->setVisible(showSVGPending || showWatchOnlySVGPending);
+    ui->labelUnconfirmed->setVisible(showSVGPending || showWatchOnlySVGPending);
+    ui->labelWatchPending->setVisible(showWatchOnlySVGPending && showWatchOnly);
 
-    // GALI Immature
-    bool showGALIImmature = settingShowAllBalances || immatureBalance != 0;
-    bool showWatchOnlyImmature = showGALIImmature || watchImmatureBalance != 0;
-    ui->labelImmatureText->setVisible(showGALIImmature || showWatchOnlyImmature);
-    ui->labelImmature->setVisible(showGALIImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
+    // SVG Immature
+    bool showSVGImmature = settingShowAllBalances || immatureBalance != 0;
+    bool showWatchOnlyImmature = showSVGImmature || watchImmatureBalance != 0;
+    ui->labelImmatureText->setVisible(showSVGImmature || showWatchOnlyImmature);
+    ui->labelImmature->setVisible(showSVGImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
 
-    // GALI Locked
-    bool showGALILocked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlyGALILocked = showGALILocked || nWatchOnlyLockedBalance != 0;
-    ui->labelLockedBalanceText->setVisible(showGALILocked || showWatchOnlyGALILocked);
-    ui->labelLockedBalance->setVisible(showGALILocked || showWatchOnlyGALILocked);
-    ui->labelWatchLocked->setVisible(showWatchOnlyGALILocked && showWatchOnly);
+    // SVG Locked
+    bool showSVGLocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlySVGLocked = showSVGLocked || nWatchOnlyLockedBalance != 0;
+    ui->labelLockedBalanceText->setVisible(showSVGLocked || showWatchOnlySVGLocked);
+    ui->labelLockedBalance->setVisible(showSVGLocked || showWatchOnlySVGLocked);
+    ui->labelWatchLocked->setVisible(showWatchOnlySVGLocked && showWatchOnly);
 
-    // zGALI
-    bool showzGALIAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
-    bool showzGALIUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
-    bool showzGALIImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
-    ui->labelzBalanceMature->setVisible(showzGALIAvailable);
-    ui->labelzBalanceMatureText->setVisible(showzGALIAvailable);
-    ui->labelzBalanceUnconfirmed->setVisible(showzGALIUnconfirmed);
-    ui->labelzBalanceUnconfirmedText->setVisible(showzGALIUnconfirmed);
-    ui->labelzBalanceImmature->setVisible(showzGALIImmature);
-    ui->labelzBalanceImmatureText->setVisible(showzGALIImmature);
+    // zSVG
+    bool showzSVGAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
+    bool showzSVGUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
+    bool showzSVGImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
+    ui->labelzBalanceMature->setVisible(showzSVGAvailable);
+    ui->labelzBalanceMatureText->setVisible(showzSVGAvailable);
+    ui->labelzBalanceUnconfirmed->setVisible(showzSVGUnconfirmed);
+    ui->labelzBalanceUnconfirmedText->setVisible(showzSVGUnconfirmed);
+    ui->labelzBalanceImmature->setVisible(showzSVGImmature);
+    ui->labelzBalanceImmatureText->setVisible(showzSVGImmature);
 
     // Percent split
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
-    ui->labelGALIPercent->setVisible(showPercentages);
-    ui->labelzGALIPercent->setVisible(showPercentages);
+    ui->labelSVGPercent->setVisible(showPercentages);
+    ui->labelzSVGPercent->setVisible(showPercentages);
 
     static int cachedTxLocks = 0;
 
@@ -378,7 +378,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("GALI")
+    // update the display unit, to not use the default ("SVG")
     updateDisplayUnit();
 
     // Hide orphans

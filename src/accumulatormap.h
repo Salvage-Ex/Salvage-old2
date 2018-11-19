@@ -1,11 +1,11 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_ACCUMULATORMAP_H
-#define GALI_ACCUMULATORMAP_H
+#ifndef SVG_ACCUMULATORMAP_H
+#define SVG_ACCUMULATORMAP_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -27,4 +27,4 @@ public:
     void Reset();
     void Reset(libzerocoin::ZerocoinParams* params2);
 };
-#endif //GALI_ACCUMULATORMAP_H
+#endif //SVG_ACCUMULATORMAP_H

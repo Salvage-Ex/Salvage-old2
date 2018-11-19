@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -48,7 +48,7 @@ void ObfuscationConfig::clickBasic()
         model->getOptionsModel()->getDisplayUnit(), 1000 * COIN));
     QMessageBox::information(this, tr("Obfuscation Configuration"),
         tr(
-            "Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Galilel's configuration screen.")
+            "Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Salvage's configuration screen.")
             .arg(strAmount));
 
     close();
@@ -62,7 +62,7 @@ void ObfuscationConfig::clickHigh()
         model->getOptionsModel()->getDisplayUnit(), 1000 * COIN));
     QMessageBox::information(this, tr("Obfuscation Configuration"),
         tr(
-            "Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Galilel's configuration screen.")
+            "Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Salvage's configuration screen.")
             .arg(strAmount));
 
     close();
@@ -76,7 +76,7 @@ void ObfuscationConfig::clickMax()
         model->getOptionsModel()->getDisplayUnit(), 1000 * COIN));
     QMessageBox::information(this, tr("Obfuscation Configuration"),
         tr(
-            "Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Galilel's configuration screen.")
+            "Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Salvage's configuration screen.")
             .arg(strAmount));
 
     close();
@@ -87,8 +87,8 @@ void ObfuscationConfig::configure(bool enabled, int coins, int rounds)
     QSettings settings;
 
     settings.setValue("nObfuscationRounds", rounds);
-    settings.setValue("nAnonymizeGalilelAmount", coins);
+    settings.setValue("nAnonymizeSalvageAmount", coins);
 
     nZeromintPercentage = rounds;
-    nAnonymizeGalilelAmount = coins;
+    nAnonymizeSalvageAmount = coins;
 }

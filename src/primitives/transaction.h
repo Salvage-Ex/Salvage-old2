@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -163,13 +163,13 @@ public:
 
     bool IsDust(CFeeRate minRelayTxFee) const
     {
-        // "Dust" is defined in terms of CTransaction::minRelayTxFee, which has units ugali-per-kilobyte.
+        // "Dust" is defined in terms of CTransaction::minRelayTxFee, which has units usvg-per-kilobyte.
         // If you'd pay more than 1/3 in fees to spend something, then we consider it dust.
         // A typical txout is 34 bytes big, and will need a CTxIn of at least 148 bytes to spend
-        // i.e. total is 148 + 32 = 182 bytes. Default -minrelaytxfee is 10000 ugali per kB
-        // and that means that fee per txout is 182 * 10000 / 1000 = 1820 ugali.
-        // So dust is a txout less than 1820 *3 = 5460 ugali
-        // with default -minrelaytxfee = minRelayTxFee = 10000 ugali per kB.
+        // i.e. total is 148 + 32 = 182 bytes. Default -minrelaytxfee is 10000 usvg per kB
+        // and that means that fee per txout is 182 * 10000 / 1000 = 1820 usvg.
+        // So dust is a txout less than 1820 *3 = 5460 usvg
+        // with default -minrelaytxfee = minRelayTxFee = 10000 usvg per kB.
         size_t nSize = GetSerializeSize(SER_DISK,0)+148u;
         return (nValue < 3*minRelayTxFee.GetFee(nSize));
     }

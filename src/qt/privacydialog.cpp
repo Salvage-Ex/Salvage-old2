@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -16,7 +16,7 @@
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
 #include "coincontrol.h"
-#include "zgalicontroldialog.h"
+#include "zsvgcontroldialog.h"
 #include "spork.h"
 #include "askpassphrasedialog.h"
 
@@ -36,14 +36,14 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystem
     nDisplayUnit = 0; // just make sure it's not unitialized
     ui->setupUi(this);
 
-    // "Spending 999999 zGALI ought to be enough for anybody." - Bill Gates, 2017
-    ui->zGALIpayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
+    // "Spending 999999 zSVG ought to be enough for anybody." - Bill Gates, 2017
+    ui->zSVGpayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
     ui->labelMintAmountValue->setValidator( new QIntValidator(0, 999999, this) );
 
     // Default texts for (mini-) coincontrol
     ui->labelCoinControlQuantity->setText (tr("Coins automatically selected"));
     ui->labelCoinControlAmount->setText (tr("Coins automatically selected"));
-    ui->labelzGALISyncStatus->setText("(" + tr("out of sync") + ")");
+    ui->labelzSVGSyncStatus->setText("(" + tr("out of sync") + ")");
 
     // Sunken frame for minting messages
     ui->TEMintStatus->setFrameStyle(QFrame::StyledPanel | QFrame::Sunken);
@@ -85,7 +85,7 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystem
     ui->labelZsupplyText1000->setText(tr("Denom. <b>1000</b>:"));
     ui->labelZsupplyText5000->setText(tr("Denom. <b>5000</b>:"));
 
-    // Galilel settings
+    // Salvage settings
     QSettings settings;
     if (!settings.contains("nSecurityLevel")){
         nSecurityLevel = 42;
@@ -161,18 +161,18 @@ void PrivacyDialog::on_addressBookButton_clicked()
     dlg.setModel(walletModel->getAddressTableModel());
     if (dlg.exec()) {
         ui->payTo->setText(dlg.getReturnValue());
-        ui->zGALIpayAmount->setFocus();
+        ui->zSVGpayAmount->setFocus();
     }
 }
 
-void PrivacyDialog::on_pushButtonMintzGALI_clicked()
+void PrivacyDialog::on_pushButtonMintzSVG_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zGALI is currently undergoing maintenance."), QMessageBox::Ok,
+                                 tr("zSVG is currently undergoing maintenance."), QMessageBox::Ok,
                                  QMessageBox::Ok);
         return;
     }
@@ -183,7 +183,7 @@ void PrivacyDialog::on_pushButtonMintzGALI_clicked()
     // Request unlock if wallet was locked or unlocked for mixing:
     WalletModel::EncryptionStatus encStatus = walletModel->getEncryptionStatus();
     if (encStatus == walletModel->Locked) {
-        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Mint_zGALI, true));
+        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Mint_zSVG, true));
         if (!ctx.isValid()) {
             // Unlock wallet was cancelled
             ui->TEMintStatus->setPlainText(tr("Error: Your wallet is locked. Please enter the wallet passphrase first."));
@@ -200,7 +200,7 @@ void PrivacyDialog::on_pushButtonMintzGALI_clicked()
         return;
     }
 
-    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " zGALI...");
+    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " zSVG...");
     ui->TEMintStatus->repaint ();
 
     int64_t nTime = GetTimeMillis();
@@ -218,7 +218,7 @@ void PrivacyDialog::on_pushButtonMintzGALI_clicked()
     double fDuration = (double)(GetTimeMillis() - nTime)/1000.0;
 
     // Minting successfully finished. Show some stats for entertainment.
-    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" zGALI in ") +
+    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" zSVG in ") +
                              QString::number(fDuration) + tr(" sec. Used denominations:\n");
 
     // Clear amount to avoid double spending when accidentally clicking twice
@@ -276,7 +276,7 @@ void PrivacyDialog::on_pushButtonSpentReset_clicked()
     return;
 }
 
-void PrivacyDialog::on_pushButtonSpendzGALI_clicked()
+void PrivacyDialog::on_pushButtonSpendzSVG_clicked()
 {
 
     if (!walletModel || !walletModel->getOptionsModel() || !pwalletMain)
@@ -284,39 +284,39 @@ void PrivacyDialog::on_pushButtonSpendzGALI_clicked()
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zGALI is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
+                                 tr("zSVG is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
         return;
     }
 
     // Request unlock if wallet was locked or unlocked for mixing:
     WalletModel::EncryptionStatus encStatus = walletModel->getEncryptionStatus();
     if (encStatus == walletModel->Locked || encStatus == walletModel->UnlockedForAnonymizationOnly) {
-        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Send_zGALI, true));
+        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Send_zSVG, true));
         if (!ctx.isValid()) {
             // Unlock wallet was cancelled
             return;
         }
-        // Wallet is unlocked now, sedn zGALI
-        sendzGALI();
+        // Wallet is unlocked now, sedn zSVG
+        sendzSVG();
         return;
     }
-    // Wallet already unlocked or not encrypted at all, send zGALI
-    sendzGALI();
+    // Wallet already unlocked or not encrypted at all, send zSVG
+    sendzSVG();
 }
 
-void PrivacyDialog::on_pushButtonZGaliControl_clicked()
+void PrivacyDialog::on_pushButtonZSvgControl_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
-    ZGaliControlDialog* zGaliControl = new ZGaliControlDialog(this);
-    zGaliControl->setModel(walletModel);
-    zGaliControl->exec();
+    ZSvgControlDialog* zSvgControl = new ZSvgControlDialog(this);
+    zSvgControl->setModel(walletModel);
+    zSvgControl->exec();
 }
 
-void PrivacyDialog::setZGaliControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setZSvgControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzGaliSelected_int->setText(QString::number(nAmount));
+    ui->labelzSvgSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -325,7 +325,7 @@ static inline int64_t roundint64(double d)
     return (int64_t)(d > 0 ? d + 0.5 : d - 0.5);
 }
 
-void PrivacyDialog::sendzGALI()
+void PrivacyDialog::sendzSVG()
 {
     QSettings settings;
 
@@ -336,31 +336,31 @@ void PrivacyDialog::sendzGALI()
     }
     else{
         if (!address.IsValid()) {
-            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid GALI Address"), QMessageBox::Ok, QMessageBox::Ok);
+            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid SVG Address"), QMessageBox::Ok, QMessageBox::Ok);
             ui->payTo->setFocus();
             return;
         }
     }
 
     // Double is allowed now
-    double dAmount = ui->zGALIpayAmount->text().toDouble();
+    double dAmount = ui->zSVGpayAmount->text().toDouble();
     CAmount nAmount = roundint64(dAmount* COIN);
 
     // Check amount validity
     if (!MoneyRange(nAmount) || nAmount <= 0.0) {
         QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Send Amount"), QMessageBox::Ok, QMessageBox::Ok);
-        ui->zGALIpayAmount->setFocus();
+        ui->zSVGpayAmount->setFocus();
         return;
     }
 
-    // Convert change to zGALI
+    // Convert change to zSVG
     bool fMintChange = ui->checkBoxMintChange->isChecked();
 
     // Persist minimize change setting
     fMinimizeChange = ui->checkBoxMinimizeChange->isChecked();
     settings.setValue("fMinimizeChange", fMinimizeChange);
 
-    // Warn for additional fees if amount is not an integer and change as zGALI is requested
+    // Warn for additional fees if amount is not an integer and change as zSVG is requested
     bool fWholeNumber = floor(dAmount) == dAmount;
     double dzFee = 0.0;
 
@@ -369,7 +369,7 @@ void PrivacyDialog::sendzGALI()
 
     if(!fWholeNumber && fMintChange){
         QString strFeeWarning = "You've entered an amount with fractional digits and want the change to be converted to Zerocoin.<br /><br /><b>";
-        strFeeWarning += QString::number(dzFee, 'f', 8) + " GALI </b>will be added to the standard transaction fees!<br />";
+        strFeeWarning += QString::number(dzFee, 'f', 8) + " SVG </b>will be added to the standard transaction fees!<br />";
         QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm additional Fees"),
             strFeeWarning,
             QMessageBox::Yes | QMessageBox::Cancel,
@@ -377,7 +377,7 @@ void PrivacyDialog::sendzGALI()
 
         if (retval != QMessageBox::Yes) {
             // Sending canceled
-            ui->zGALIpayAmount->setFocus();
+            ui->zSVGpayAmount->setFocus();
             return;
         }
     }
@@ -396,7 +396,7 @@ void PrivacyDialog::sendzGALI()
 
     // General info
     QString strQuestionString = tr("Are you sure you want to send?<br /><br />");
-    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " zGALI</b>";
+    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " zSVG</b>";
     QString strAddress = tr(" to address ") + QString::fromStdString(address.ToString()) + strAddressLabel + " <br />";
 
     if(ui->payTo->text().isEmpty()){
@@ -422,18 +422,18 @@ void PrivacyDialog::sendzGALI()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware.\nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from zGALI selector if applicable
+    // use mints from zSVG selector if applicable
     vector<CMintMeta> vMintsToFetch;
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZGaliControlDialog::setSelectedMints.empty()) {
-        vMintsToFetch = ZGaliControlDialog::GetSelectedMints();
+    if (!ZSvgControlDialog::setSelectedMints.empty()) {
+        vMintsToFetch = ZSvgControlDialog::GetSelectedMints();
 
         for (auto& meta : vMintsToFetch) {
             if (meta.nVersion < libzerocoin::PrivateCoin::PUBKEY_VERSION) {
                 //version 1 coins have to use full security level to successfully spend.
                 if (nSecurityLevel < 100) {
-                    QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zGALI require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
-                    ui->TEMintStatus->setPlainText(tr("Failed to spend zGALI"));
+                    QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zSVG require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
+                    ui->TEMintStatus->setPlainText(tr("Failed to spend zSVG"));
                     ui->TEMintStatus->repaint();
                     return;
                 }
@@ -448,7 +448,7 @@ void PrivacyDialog::sendzGALI()
         }
     }
 
-    // Spend zGALI
+    // Spend zSVG
     CWalletTx wtxNew;
     CZerocoinSpendReceipt receipt;
     bool fSuccess = false;
@@ -463,15 +463,15 @@ void PrivacyDialog::sendzGALI()
 
     // Display errors during spend
     if (!fSuccess) {
-        if (receipt.GetStatus() == ZGALI_SPEND_V1_SEC_LEVEL) {
-            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zGALI require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
-            ui->TEMintStatus->setPlainText(tr("Failed to spend zGALI"));
+        if (receipt.GetStatus() == ZSVG_SPEND_V1_SEC_LEVEL) {
+            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zSVG require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
+            ui->TEMintStatus->setPlainText(tr("Failed to spend zSVG"));
             ui->TEMintStatus->repaint();
             return;
         }
 
         int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zGALI transaction
+        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zSVG transaction
         if (nNeededSpends > nMaxSpends) {
             QString strStatusMessage = tr("Too much inputs (") + QString::number(nNeededSpends, 10) + tr(") needed.\nMaximum allowed: ") + QString::number(nMaxSpends, 10);
             strStatusMessage += tr("\nEither mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.");
@@ -482,14 +482,14 @@ void PrivacyDialog::sendzGALI()
             QMessageBox::warning(this, tr("Spend Zerocoin"), receipt.GetStatusMessage().c_str(), QMessageBox::Ok, QMessageBox::Ok);
             ui->TEMintStatus->setPlainText(tr("Spend Zerocoin failed with status = ") +QString::number(receipt.GetStatus(), 10) + "\n" + "Message: " + QString::fromStdString(receipt.GetStatusMessage()));
         }
-        ui->zGALIpayAmount->setFocus();
+        ui->zSVGpayAmount->setFocus();
         ui->TEMintStatus->repaint();
         ui->TEMintStatus->verticalScrollBar()->setValue(ui->TEMintStatus->verticalScrollBar()->maximum()); // Automatically scroll to end of text
         return;
     }
 
     if (walletModel && walletModel->getAddressTableModel()) {
-        // If zGALI was spent successfully update the addressbook with the label
+        // If zSVG was spent successfully update the addressbook with the label
         std::string labelText = ui->addAsLabel->text().toStdString();
         if (!labelText.empty())
             walletModel->updateAddressBookLabels(address.Get(), labelText, "send");
@@ -497,9 +497,9 @@ void PrivacyDialog::sendzGALI()
             walletModel->updateAddressBookLabels(address.Get(), "(no label)", "send");
     }
 
-    // Clear zgali selector in case it was used
-    ZGaliControlDialog::setSelectedMints.clear();
-    ui->labelzGaliSelected_int->setText(QString("0"));
+    // Clear zsvg selector in case it was used
+    ZSvgControlDialog::setSelectedMints.clear();
+    ui->labelzSvgSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
 
     // Some statistics for entertainment
@@ -507,7 +507,7 @@ void PrivacyDialog::sendzGALI()
     CAmount nValueIn = 0;
     int nCount = 0;
     for (CZerocoinSpend spend : receipt.GetSpends()) {
-        strStats += tr("zGALI Spend #: ") + QString::number(nCount) + ", ";
+        strStats += tr("zSVG Spend #: ") + QString::number(nCount) + ", ";
         strStats += tr("denomination: ") + QString::number(spend.GetDenomination()) + ", ";
         strStats += tr("serial: ") + spend.GetSerial().ToString().c_str() + "\n";
         strStats += tr("Spend is 1 of : ") + QString::number(spend.GetMintCount()) + " mints in the accumulator\n";
@@ -517,13 +517,13 @@ void PrivacyDialog::sendzGALI()
 
     CAmount nValueOut = 0;
     for (const CTxOut& txout: wtxNew.vout) {
-        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " GALI, ";
+        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " SVG, ";
         nValueOut += txout.nValue;
 
         strStats += tr("address: ");
         CTxDestination dest;
         if(txout.scriptPubKey.IsZerocoinMint())
-            strStats += tr("zGALI Mint");
+            strStats += tr("zSVG Mint");
         else if(ExtractDestination(txout.scriptPubKey, dest))
             strStats += tr(CBitcoinAddress(dest).ToString().c_str());
         strStats += "\n";
@@ -538,7 +538,7 @@ void PrivacyDialog::sendzGALI()
     strReturn += strStats;
 
     // Clear amount to avoid double spending when accidentally clicking twice
-    ui->zGALIpayAmount->setText ("0");
+    ui->zSVGpayAmount->setText ("0");
 
     ui->TEMintStatus->setPlainText(strReturn);
     ui->TEMintStatus->repaint();
@@ -653,7 +653,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         mapImmature.insert(make_pair(denom, 0));
     }
 
-    std::vector<CMintMeta> vMints = pwalletMain->zgaliTracker->GetMints(false);
+    std::vector<CMintMeta> vMints = pwalletMain->zsvgTracker->GetMints(false);
     map<libzerocoin::CoinDenomination, int> mapMaturityHeights = GetMintMaturityHeight();
     for (auto& meta : vMints){
         // All denominations
@@ -696,7 +696,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
 
         strDenomStats = strUnconfirmed + QString::number(mapDenomBalances.at(denom)) + " x " +
                         QString::number(nCoins) + " = <b>" +
-                        QString::number(nSumPerCoin) + " zGALI </b>";
+                        QString::number(nSumPerCoin) + " zSVG </b>";
 
         switch (nCoins) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
@@ -734,10 +734,10 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         nLockedBalance = walletModel->getLockedBalance();
     }
 
-    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zGALI "));
-    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zGALI "));
-    ui->labelzAvailableAmount_4->setText(QString::number(zerocoinBalance/COIN) + QString(" zGALI "));
-    ui->labelzGALIAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zSVG "));
+    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zSVG "));
+    ui->labelzAvailableAmount_4->setText(QString::number(zerocoinBalance/COIN) + QString(" zSVG "));
+    ui->labelzSVGAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
 
     // Display AutoMint status
     updateAutomintStatus();
@@ -746,13 +746,13 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
     updateSPORK16Status();
 
     // Display global supply
-    ui->labelZsupplyAmount->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>zGALI </b> "));
-    ui->labelZsupplyAmount_2->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>zGALI </b> "));
+    ui->labelZsupplyAmount->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>zSVG </b> "));
+    ui->labelZsupplyAmount_2->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>zSVG </b> "));
 
     for (auto denom : libzerocoin::zerocoinDenomList) {
         int64_t nSupply = chainActive.Tip()->mapZerocoinSupply.at(denom);
         QString strSupply = QString::number(nSupply) + " x " + QString::number(denom) + " = <b>" +
-                            QString::number(nSupply*denom) + " zGALI </b> ";
+                            QString::number(nSupply*denom) + " zSVG </b> ";
         switch (denom) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
                 ui->labelZsupplyAmount1->setText(strSupply);
@@ -798,7 +798,7 @@ void PrivacyDialog::updateDisplayUnit()
 
 void PrivacyDialog::showOutOfSyncWarning(bool fShow)
 {
-    ui->labelzGALISyncStatus->setVisible(fShow);
+    ui->labelzSVGSyncStatus->setVisible(fShow);
 }
 
 void PrivacyDialog::keyPressEvent(QKeyEvent* event)
@@ -829,23 +829,23 @@ void PrivacyDialog::updateAutomintStatus()
 void PrivacyDialog::updateSPORK16Status()
 {
     // Update/enable labels, buttons and tooltips depending on the current SPORK_16 status
-    bool fButtonsEnabled =  ui->pushButtonMintzGALI->isEnabled();
+    bool fButtonsEnabled =  ui->pushButtonMintzSVG->isEnabled();
     bool fMaintenanceMode = GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE);
     if (fMaintenanceMode && fButtonsEnabled) {
-        // Mint zGALI
-        ui->pushButtonMintzGALI->setEnabled(false);
-        ui->pushButtonMintzGALI->setToolTip(tr("zGALI is currently disabled due to maintenance."));
+        // Mint zSVG
+        ui->pushButtonMintzSVG->setEnabled(false);
+        ui->pushButtonMintzSVG->setToolTip(tr("zSVG is currently disabled due to maintenance."));
 
-        // Spend zGALI
-        ui->pushButtonSpendzGALI->setEnabled(false);
-        ui->pushButtonSpendzGALI->setToolTip(tr("zGALI is currently disabled due to maintenance."));
+        // Spend zSVG
+        ui->pushButtonSpendzSVG->setEnabled(false);
+        ui->pushButtonSpendzSVG->setToolTip(tr("zSVG is currently disabled due to maintenance."));
     } else if (!fMaintenanceMode && !fButtonsEnabled) {
-        // Mint zGALI
-        ui->pushButtonMintzGALI->setEnabled(true);
-        ui->pushButtonMintzGALI->setToolTip(tr("PrivacyDialog", "Enter an amount of GALI to convert to zGALI", 0));
+        // Mint zSVG
+        ui->pushButtonMintzSVG->setEnabled(true);
+        ui->pushButtonMintzSVG->setToolTip(tr("PrivacyDialog", "Enter an amount of SVG to convert to zSVG", 0));
 
-        // Spend zGALI
-        ui->pushButtonSpendzGALI->setEnabled(true);
-        ui->pushButtonSpendzGALI->setToolTip(tr("Spend Zerocoin. Without 'Pay To:' address creates payments to yourself."));
+        // Spend zSVG
+        ui->pushButtonSpendzSVG->setEnabled(true);
+        ui->pushButtonSpendzSVG->setToolTip(tr("Spend Zerocoin. Without 'Pay To:' address creates payments to yourself."));
     }
 }

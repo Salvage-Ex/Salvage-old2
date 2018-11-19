@@ -1,11 +1,11 @@
 // Copyright (c) 2018-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_ACCUMULATORCHECKPOINTS_JSON_H
-#define GALI_ACCUMULATORCHECKPOINTS_JSON_H
+#ifndef SVG_ACCUMULATORCHECKPOINTS_JSON_H
+#define SVG_ACCUMULATORCHECKPOINTS_JSON_H
 
 #include <string>
 std::string GetMainCheckpoints() {
@@ -59,4 +59,4 @@ std::string GetRegTestCheckpoints() {
     return strRegTestCheckpoints;
 }
 
-#endif //GALI_ACCUMULATORCHECKPOINTS_JSON_H
+#endif //SVG_ACCUMULATORCHECKPOINTS_JSON_H

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -25,8 +25,8 @@
 #include "validationinterface.h"
 #include "wallet_ismine.h"
 #include "walletdb.h"
-#include "zgaliwallet.h"
-#include "zgalitracker.h"
+#include "zsvgwallet.h"
+#include "zsvgtracker.h"
 
 #include <algorithm>
 #include <map>
@@ -86,30 +86,30 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT15000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT15000IFMN = 4, // ONLY_NONDENOMINATED and not 15000 GALI at the same time
+    ONLY_NONDENOMINATED_NOT15000IFMN = 4, // ONLY_NONDENOMINATED and not 15000 SVG at the same time
     ONLY_15000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for zGALI send
+// Possible states for zSVG send
 enum ZerocoinSpendStatus {
-    ZGALI_SPEND_OKAY = 0,                            // No error
-    ZGALI_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZGALI_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZGALI_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZGALI_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZGALI_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZGALI_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZGALI_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZGALI_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZGALI_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZGALI_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZGALI_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZGALI_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZGALI_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZGALI_SPENT_USED_ZGALI = 14,                     // Coin has already been spend
-    ZGALI_TX_TOO_LARGE = 15,                         // The transaction is larger than the max tx size
-    ZGALI_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
+    ZSVG_SPEND_OKAY = 0,                            // No error
+    ZSVG_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZSVG_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZSVG_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZSVG_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZSVG_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZSVG_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZSVG_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZSVG_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZSVG_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZSVG_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZSVG_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZSVG_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZSVG_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZSVG_SPENT_USED_ZSVG = 14,                     // Coin has already been spend
+    ZSVG_TX_TOO_LARGE = 15,                         // The transaction is larger than the max tx size
+    ZSVG_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
 };
 
 struct CompactTallyItem {
@@ -215,15 +215,15 @@ public:
     std::string ResetMintZerocoin();
     std::string ResetSpentZerocoin();
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored, std::list<CDeterministicMint>& listDMintsRestored);
-    void ZGaliBackupWallet();
+    void ZSvgBackupWallet();
     bool GetZerocoinKey(const CBigNum& bnSerial, CKey& key);
-    bool CreateZGALIOutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
+    bool CreateZSVGOutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
     bool GetMint(const uint256& hashSerial, CZerocoinMint& mint);
     bool GetMintFromStakeHash(const uint256& hashStake, CZerocoinMint& mint);
     bool DatabaseMint(CDeterministicMint& dMint);
     bool SetMintUnspent(const CBigNum& bnSerial);
     bool UpdateMint(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const libzerocoin::CoinDenomination& denom);
-    string GetUniqueWalletBackupName(bool fzgaliAuto) const;
+    string GetUniqueWalletBackupName(bool fzsvgAuto) const;
 
 
     /** Zerocin entry changed.
@@ -239,13 +239,13 @@ public:
      */
     mutable CCriticalSection cs_wallet;
 
-    CzGALIWallet* zwalletMain;
+    CzSVGWallet* zwalletMain;
 
     bool fFileBacked;
     bool fWalletUnlockAnonymizeOnly;
     std::string strWalletFile;
     bool fBackupMints;
-    std::unique_ptr<CzGALITracker> zgaliTracker;
+    std::unique_ptr<CzSVGTracker> zsvgTracker;
 
     std::set<int64_t> setKeyPool;
     std::map<CKeyID, CKeyMetadata> mapKeyMetadata;
@@ -330,20 +330,20 @@ public:
         return nZeromintPercentage;
     }
 
-    void setZWallet(CzGALIWallet* zwallet)
+    void setZWallet(CzSVGWallet* zwallet)
     {
         zwalletMain = zwallet;
-        zgaliTracker = std::unique_ptr<CzGALITracker>(new CzGALITracker(strWalletFile));
+        zsvgTracker = std::unique_ptr<CzSVGTracker>(new CzSVGTracker(strWalletFile));
     }
 
-    CzGALIWallet* getZWallet() { return zwalletMain; }
+    CzSVGWallet* getZWallet() { return zwalletMain; }
 
     bool isZeromintEnabled()
     {
         return fEnableZeromint;
     }
 
-    void setZGaliAutoBackups(bool fEnabled)
+    void setZSvgAutoBackups(bool fEnabled)
     {
         fBackupMints = fEnabled;
     }
@@ -673,8 +673,8 @@ public:
     /** MultiSig address added */
     boost::signals2::signal<void(bool fHaveMultiSig)> NotifyMultiSigChanged;
 
-    /** zGALI reset */
-    boost::signals2::signal<void()> NotifyzGALIReset;
+    /** zSVG reset */
+    boost::signals2::signal<void()> NotifyzSVGReset;
 
     /** notify wallet file backed up */
     boost::signals2::signal<void (const bool& fSuccess, const std::string& filename)> NotifyWalletBacked;

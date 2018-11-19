@@ -1,11 +1,11 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_STAKEINPUT_H
-#define GALI_STAKEINPUT_H
+#ifndef SVG_STAKEINPUT_H
+#define SVG_STAKEINPUT_H
 
 class CKeyStore;
 class CWallet;
@@ -24,15 +24,15 @@ public:
     virtual CAmount GetValue() = 0;
     virtual bool CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal) = 0;
     virtual bool GetModifier(uint64_t& nStakeModifier) = 0;
-    virtual bool IsZGALI() = 0;
+    virtual bool IsZSVG() = 0;
     virtual CDataStream GetUniqueness() = 0;
 };
 
 
-// zGALIStake can take two forms
+// zSVGStake can take two forms
 // 1) the stake candidate, which is a zcmint that is attempted to be staked
-// 2) a staked zgali, which is a zcspend that has successfully staked
-class CZGaliStake : public CStakeInput
+// 2) a staked zsvg, which is a zcspend that has successfully staked
+class CZSvgStake : public CStakeInput
 {
 private:
     uint32_t nChecksum;
@@ -41,7 +41,7 @@ private:
     uint256 hashSerial;
 
 public:
-    explicit CZGaliStake(libzerocoin::CoinDenomination denom, const uint256& hashSerial)
+    explicit CZSvgStake(libzerocoin::CoinDenomination denom, const uint256& hashSerial)
     {
         this->denom = denom;
         this->hashSerial = hashSerial;
@@ -49,7 +49,7 @@ public:
         fMint = true;
     }
 
-    explicit CZGaliStake(const libzerocoin::CoinSpend& spend);
+    explicit CZSvgStake(const libzerocoin::CoinSpend& spend);
 
     CBlockIndex* GetIndexFrom() override;
     bool GetTxFrom(CTransaction& tx) override;
@@ -59,19 +59,19 @@ public:
     bool CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut = 0) override;
     bool CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal) override;
     bool MarkSpent(CWallet* pwallet, const uint256& txid);
-    bool IsZGALI() override { return true; }
+    bool IsZSVG() override { return true; }
     int GetChecksumHeightFromMint();
     int GetChecksumHeightFromSpend();
     uint32_t GetChecksum();
 };
 
-class CGaliStake : public CStakeInput
+class CSvgStake : public CStakeInput
 {
 private:
     CTransaction txFrom;
     unsigned int nPosition;
 public:
-    CGaliStake()
+    CSvgStake()
     {
         this->pindexFrom = nullptr;
     }
@@ -85,8 +85,8 @@ public:
     CDataStream GetUniqueness() override;
     bool CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut = 0) override;
     bool CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal) override;
-    bool IsZGALI() override { return false; }
+    bool IsZSVG() override { return false; }
 };
 
 
-#endif //GALI_STAKEINPUT_H
+#endif //SVG_STAKEINPUT_H

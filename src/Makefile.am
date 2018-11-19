@@ -1,5 +1,5 @@
 # Copyright (c) 2013-2018 The Bitcoin developers
-# Copyright (c) 2018-2018 The Galilel developers
+# Copyright (c) 2018-2018 The Salvage developers
 
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -68,15 +68,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += galileld
+  bin_PROGRAMS += salvaged
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += galilel-cli galilel-tx
+  bin_PROGRAMS += salvage-cli salvage-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# galilel core #
+# salvage core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -182,9 +182,9 @@ BITCOIN_CORE_H = \
   wallet.h \
   wallet_ismine.h \
   walletdb.h \
-  zgalichain.h \
-  zgalitracker.h \
-  zgaliwallet.h \
+  zsvgchain.h \
+  zsvgtracker.h \
+  zsvgwallet.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -196,7 +196,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between galileld and galilel-qt
+# server: shared between salvaged and salvage-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -232,7 +232,7 @@ libbitcoin_server_a_SOURCES = \
   txdb.cpp \
   txmempool.cpp \
   validationinterface.cpp \
-  zgalichain.cpp \
+  zsvgchain.cpp \
   $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
@@ -244,7 +244,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between galileld and galilel-qt, but only linked
+# wallet: shared between salvaged and salvage-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -272,8 +272,8 @@ libbitcoin_wallet_a_SOURCES = \
   wallet.cpp \
   wallet_ismine.cpp \
   walletdb.cpp \
-  zgaliwallet.cpp \
-  zgalitracker.cpp \
+  zsvgwallet.cpp \
+  zsvgtracker.cpp \
   stakeinput.cpp \
   $(BITCOIN_CORE_H)
 
@@ -339,7 +339,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between galileld, and galilel-qt and non-server tools
+# common: shared between salvaged, and salvage-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -403,7 +403,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between galilel-cli and galilel-qt
+# cli: shared between salvage-cli and salvage-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -413,16 +413,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# galileld binary #
-galileld_SOURCES = galileld.cpp
-galileld_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-galileld_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-galileld_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# salvaged binary #
+salvaged_SOURCES = salvaged.cpp
+salvaged_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+salvaged_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+salvaged_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-galileld_SOURCES += galileld-res.rc
+salvaged_SOURCES += salvaged-res.rc
 endif
-galileld_LDADD = \
+salvaged_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
@@ -436,38 +436,38 @@ galileld_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-galileld_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+salvaged_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# galilel-cli binary #
-galilel_cli_SOURCES = galilel-cli.cpp
-galilel_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-galilel_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-galilel_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# salvage-cli binary #
+salvage_cli_SOURCES = salvage-cli.cpp
+salvage_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+salvage_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+salvage_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-galilel_cli_SOURCES += galilel-cli-res.rc
+salvage_cli_SOURCES += salvage-cli-res.rc
 endif
 
-galilel_cli_LDADD = \
+salvage_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-galilel_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+salvage_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# galilel-tx binary #
-galilel_tx_SOURCES = galilel-tx.cpp
-galilel_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-galilel_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-galilel_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# salvage-tx binary #
+salvage_tx_SOURCES = salvage-tx.cpp
+salvage_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+salvage_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+salvage_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-galilel_tx_SOURCES += galilel-tx-res.rc
+salvage_tx_SOURCES += salvage-tx-res.rc
 endif
 
-galilel_tx_LDADD = \
+salvage_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -475,7 +475,7 @@ galilel_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-galilel_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+salvage_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #
@@ -524,12 +524,12 @@ CLEANFILES += obj/build.h
 EXTRA_DIST =
 
 
-config/galilel-config.h: config/stamp-h1
+config/salvage-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/galilel-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/salvage-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/galilel-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/galilel-config.h.in
+$(top_srcdir)/$(subdir)/config/salvage-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/salvage-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean

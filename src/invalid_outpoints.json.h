@@ -1,11 +1,11 @@
 // Copyright (c) 2018-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_INVALID_OUTPOINTS_JSON_H
-#define GALI_INVALID_OUTPOINTS_JSON_H
+#ifndef SVG_INVALID_OUTPOINTS_JSON_H
+#define SVG_INVALID_OUTPOINTS_JSON_H
 #include <string>
 
 std::string LoadInvalidOutPoints()
@@ -6795,4 +6795,4 @@ std::string LoadInvalidOutPoints()
     return str;
 }
 
-#endif //GALI_INVALID_OUTPOINTS_JSON_H
+#endif //SVG_INVALID_OUTPOINTS_JSON_H

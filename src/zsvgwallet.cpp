@@ -1,21 +1,21 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zgaliwallet.h"
+#include "zsvgwallet.h"
 #include "main.h"
 #include "txdb.h"
 #include "walletdb.h"
 #include "init.h"
 #include "wallet.h"
 #include "primitives/deterministicmint.h"
-#include "zgalichain.h"
+#include "zsvgchain.h"
 
 using namespace libzerocoin;
 
-CzGALIWallet::CzGALIWallet(std::string strWalletFile)
+CzSVGWallet::CzSVGWallet(std::string strWalletFile)
 {
     this->strWalletFile = strWalletFile;
     CWalletDB walletdb(strWalletFile);
@@ -23,19 +23,19 @@ CzGALIWallet::CzGALIWallet(std::string strWalletFile)
     uint256 hashSeed;
     bool fFirstRun = !walletdb.ReadCurrentSeedHash(hashSeed);
 
-    //Check for old db version of storing zgali seed
+    //Check for old db version of storing zsvg seed
     if (fFirstRun) {
         uint256 seed;
-        if (walletdb.ReadZGALISeed_deprecated(seed)) {
+        if (walletdb.ReadZSVGSeed_deprecated(seed)) {
             //Update to new format, erase old
             seedMaster = seed;
             hashSeed = Hash(seed.begin(), seed.end());
             if (pwalletMain->AddDeterministicSeed(seed)) {
-                if (walletdb.EraseZGALISeed_deprecated()) {
-                    LogPrintf("%s: Updated zGALI seed databasing\n", __func__);
+                if (walletdb.EraseZSVGSeed_deprecated()) {
+                    LogPrintf("%s: Updated zSVG seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
-                    LogPrintf("%s: failed to remove old zgali seed\n", __func__);
+                    LogPrintf("%s: failed to remove old zsvg seed\n", __func__);
                 }
             }
         }
@@ -57,7 +57,7 @@ CzGALIWallet::CzGALIWallet(std::string strWalletFile)
         key.MakeNewKey(true);
         seed = key.GetPrivKey_256();
         seedMaster = seed;
-        LogPrintf("%s: first run of zgali wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
+        LogPrintf("%s: first run of zsvg wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
     } else if (!pwalletMain->GetDeterministicSeed(hashSeed, seed)) {
         LogPrintf("%s: failed to get deterministic seed for hashseed %s\n", __func__, hashSeed.GetHex());
         return;
@@ -70,7 +70,7 @@ CzGALIWallet::CzGALIWallet(std::string strWalletFile)
     this->mintPool = CMintPool(nCountLastUsed);
 }
 
-bool CzGALIWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
+bool CzSVGWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
 {
 
     CWalletDB walletdb(strWalletFile);
@@ -86,8 +86,8 @@ bool CzGALIWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
     nCountLastUsed = 0;
 
     if (fResetCount)
-        walletdb.WriteZGALICount(nCountLastUsed);
-    else if (!walletdb.ReadZGALICount(nCountLastUsed))
+        walletdb.WriteZSVGCount(nCountLastUsed);
+    else if (!walletdb.ReadZSVGCount(nCountLastUsed))
         nCountLastUsed = 0;
 
     mintPool.Reset();
@@ -95,18 +95,18 @@ bool CzGALIWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
     return true;
 }
 
-void CzGALIWallet::Lock()
+void CzSVGWallet::Lock()
 {
     seedMaster = 0;
 }
 
-void CzGALIWallet::AddToMintPool(const std::pair<uint256, uint32_t>& pMint, bool fVerbose)
+void CzSVGWallet::AddToMintPool(const std::pair<uint256, uint32_t>& pMint, bool fVerbose)
 {
     mintPool.Add(pMint, fVerbose);
 }
 
 //Add the next 20 mints to the mint pool
-void CzGALIWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
+void CzSVGWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
 {
 
     //Is locked
@@ -148,7 +148,7 @@ void CzGALIWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
         CBigNum bnSerial;
         CBigNum bnRandomness;
         CKey key;
-        SeedToZGALI(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+        SeedToZSVG(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
 
         mintPool.Add(bnValue, i);
         CWalletDB(strWalletFile).WriteMintPoolPair(hashSeed, GetPubCoinHash(bnValue), i);
@@ -157,7 +157,7 @@ void CzGALIWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
 }
 
 // pubcoin hashes are stored to db so that a full accounting of mints belonging to the seed can be tracked without regenerating
-bool CzGALIWallet::LoadMintPoolFromDB()
+bool CzSVGWallet::LoadMintPoolFromDB()
 {
     map<uint256, vector<pair<uint256, uint32_t> > > mapMintPool = CWalletDB(strWalletFile).MapMintPool();
 
@@ -168,20 +168,20 @@ bool CzGALIWallet::LoadMintPoolFromDB()
     return true;
 }
 
-void CzGALIWallet::RemoveMintsFromPool(const std::vector<uint256>& vPubcoinHashes)
+void CzSVGWallet::RemoveMintsFromPool(const std::vector<uint256>& vPubcoinHashes)
 {
     for (const uint256& hash : vPubcoinHashes)
         mintPool.Remove(hash);
 }
 
-void CzGALIWallet::GetState(int& nCount, int& nLastGenerated)
+void CzSVGWallet::GetState(int& nCount, int& nLastGenerated)
 {
     nCount = this->nCountLastUsed + 1;
     nLastGenerated = mintPool.CountOfLastGenerated();
 }
 
 //Catch the counter up with the chain
-void CzGALIWallet::SyncWithChain(bool fGenerateMintPool)
+void CzSVGWallet::SyncWithChain(bool fGenerateMintPool)
 {
     uint32_t nLastCountUsed = 0;
     bool found = true;
@@ -205,7 +205,7 @@ void CzGALIWallet::SyncWithChain(bool fGenerateMintPool)
             if (ShutdownRequested())
                 return;
 
-            if (pwalletMain->zgaliTracker->HasPubcoinHash(pMint.first)) {
+            if (pwalletMain->zsvgTracker->HasPubcoinHash(pMint.first)) {
                 mintPool.Remove(pMint.first);
                 continue;
             }
@@ -282,7 +282,7 @@ void CzGALIWallet::SyncWithChain(bool fGenerateMintPool)
     }
 }
 
-bool CzGALIWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const CoinDenomination& denom)
+bool CzSVGWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const CoinDenomination& denom)
 {
     if (!mintPool.Has(bnValue))
         return error("%s: value not in pool", __func__);
@@ -294,7 +294,7 @@ bool CzGALIWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZGALI(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
+    SeedToZSVG(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
 
     //Sanity check
     if (bnValueGen != bnValue)
@@ -328,14 +328,14 @@ bool CzGALIWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const
         pwalletMain->AddToWallet(wtx);
     }
 
-    // Add to zgaliTracker which also adds to database
-    pwalletMain->zgaliTracker->Add(dMint, true);
+    // Add to zsvgTracker which also adds to database
+    pwalletMain->zsvgTracker->Add(dMint, true);
 
     //Update the count if it is less than the mint's count
     if (nCountLastUsed < pMint.second) {
         CWalletDB walletdb(strWalletFile);
         nCountLastUsed = pMint.second;
-        walletdb.WriteZGALICount(nCountLastUsed);
+        walletdb.WriteZSVGCount(nCountLastUsed);
     }
 
     //remove from the pool
@@ -352,7 +352,7 @@ bool IsValidCoinValue(const CBigNum& bnValue)
     bnValue.isPrime();
 }
 
-void CzGALIWallet::SeedToZGALI(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
+void CzSVGWallet::SeedToZSVG(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
 {
     ZerocoinParams* params = Params().Zerocoin_Params(false);
 
@@ -401,7 +401,7 @@ void CzGALIWallet::SeedToZGALI(const uint512& seedZerocoin, CBigNum& bnValue, CB
     }
 }
 
-uint512 CzGALIWallet::GetZerocoinSeed(uint32_t n)
+uint512 CzSVGWallet::GetZerocoinSeed(uint32_t n)
 {
     CDataStream ss(SER_GETHASH, 0);
     ss << seedMaster << n;
@@ -409,14 +409,14 @@ uint512 CzGALIWallet::GetZerocoinSeed(uint32_t n)
     return zerocoinSeed;
 }
 
-void CzGALIWallet::UpdateCount()
+void CzSVGWallet::UpdateCount()
 {
     nCountLastUsed++;
     CWalletDB walletdb(strWalletFile);
-    walletdb.WriteZGALICount(nCountLastUsed);
+    walletdb.WriteZSVGCount(nCountLastUsed);
 }
 
-void CzGALIWallet::GenerateDeterministicZGALI(CoinDenomination denom, PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
+void CzSVGWallet::GenerateDeterministicZSVG(CoinDenomination denom, PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
 {
     GenerateMint(nCountLastUsed + 1, denom, coin, dMint);
     if (fGenerateOnly)
@@ -426,14 +426,14 @@ void CzGALIWallet::GenerateDeterministicZGALI(CoinDenomination denom, PrivateCoi
     //LogPrintf("%s : Generated new deterministic mint. Count=%d pubcoin=%s seed=%s\n", __func__, nCount, coin.getPublicCoin().getValue().GetHex().substr(0,6), seedZerocoin.GetHex().substr(0, 4));
 }
 
-void CzGALIWallet::GenerateMint(const uint32_t& nCount, const CoinDenomination denom, PrivateCoin& coin, CDeterministicMint& dMint)
+void CzSVGWallet::GenerateMint(const uint32_t& nCount, const CoinDenomination denom, PrivateCoin& coin, CDeterministicMint& dMint)
 {
     uint512 seedZerocoin = GetZerocoinSeed(nCount);
     CBigNum bnValue;
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZGALI(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+    SeedToZSVG(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
     coin = PrivateCoin(Params().Zerocoin_Params(false), denom, bnSerial, bnRandomness);
     coin.setPrivKey(key.GetPrivKey());
     coin.setVersion(PrivateCoin::CURRENT_VERSION);
@@ -447,7 +447,7 @@ void CzGALIWallet::GenerateMint(const uint32_t& nCount, const CoinDenomination d
     dMint.SetDenomination(denom);
 }
 
-bool CzGALIWallet::RegenerateMint(const CDeterministicMint& dMint, CZerocoinMint& mint)
+bool CzSVGWallet::RegenerateMint(const CDeterministicMint& dMint, CZerocoinMint& mint)
 {
     //Check that the seed is correct    todo:handling of incorrect, or multiple seeds
     uint256 hashSeed = Hash(seedMaster.begin(), seedMaster.end());

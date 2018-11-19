@@ -321,10 +321,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>ZGaliControlDialog</name>
+    <name>ZSvgControlDialog</name>
     </context>
 <context>
-    <name>galilel-core</name>
+    <name>salvage-core</name>
     <message>
         <source>Information</source>
         <translation>जानकारी</translation>

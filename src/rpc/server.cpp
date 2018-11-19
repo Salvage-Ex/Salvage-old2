@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -268,11 +268,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop GALI server.");
+            "\nStop SVG server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "GALI server stopping";
+    return "SVG server stopping";
 }
 
 
@@ -356,37 +356,37 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* GALI features */
-        {"galilel", "masternode", &masternode, true, true, false},
-        {"galilel", "listmasternodes", &listmasternodes, true, true, false},
-        {"galilel", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"galilel", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"galilel", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"galilel", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"galilel", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"galilel", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"galilel", "masternodedebug", &masternodedebug, true, true, false},
-        {"galilel", "startmasternode", &startmasternode, true, true, false},
-        {"galilel", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"galilel", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"galilel", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"galilel", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"galilel", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"galilel", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"galilel", "mnbudget", &mnbudget, true, true, false},
-        {"galilel", "preparebudget", &preparebudget, true, true, false},
-        {"galilel", "submitbudget", &submitbudget, true, true, false},
-        {"galilel", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"galilel", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"galilel", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"galilel", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"galilel", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"galilel", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"galilel", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"galilel", "checkbudgets", &checkbudgets, true, true, false},
-        {"galilel", "mnsync", &mnsync, true, true, false},
-        {"galilel", "spork", &spork, true, true, false},
-        {"galilel", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* SVG features */
+        {"salvage", "masternode", &masternode, true, true, false},
+        {"salvage", "listmasternodes", &listmasternodes, true, true, false},
+        {"salvage", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"salvage", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"salvage", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"salvage", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"salvage", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"salvage", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"salvage", "masternodedebug", &masternodedebug, true, true, false},
+        {"salvage", "startmasternode", &startmasternode, true, true, false},
+        {"salvage", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"salvage", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"salvage", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"salvage", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"salvage", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"salvage", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"salvage", "mnbudget", &mnbudget, true, true, false},
+        {"salvage", "preparebudget", &preparebudget, true, true, false},
+        {"salvage", "submitbudget", &submitbudget, true, true, false},
+        {"salvage", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"salvage", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"salvage", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"salvage", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"salvage", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"salvage", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"salvage", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"salvage", "checkbudgets", &checkbudgets, true, true, false},
+        {"salvage", "mnsync", &mnsync, true, true, false},
+        {"salvage", "spork", &spork, true, true, false},
+        {"salvage", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -452,11 +452,11 @@ static const CRPCCommand vRPCCommands[] =
         {"zerocoin", "exportzerocoins", &exportzerocoins, false, false, true},
         {"zerocoin", "reconsiderzerocoins", &reconsiderzerocoins, false, false, true},
         {"zerocoin", "getspentzerocoinamount", &getspentzerocoinamount, false, false, false},
-        {"zerocoin", "getzgaliseed", &getzgaliseed, false, false, true},
-        {"zerocoin", "setzgaliseed", &setzgaliseed, false, false, true},
+        {"zerocoin", "getzsvgseed", &getzsvgseed, false, false, true},
+        {"zerocoin", "setzsvgseed", &setzsvgseed, false, false, true},
         {"zerocoin", "generatemintlist", &generatemintlist, false, false, true},
-        {"zerocoin", "searchdzgali", &searchdzgali, false, false, true},
-        {"zerocoin", "dzgalistate", &dzgalistate, false, false, true}
+        {"zerocoin", "searchdzsvg", &searchdzsvg, false, false, true},
+        {"zerocoin", "dzsvgstate", &dzsvgstate, false, false, true}
 
 #endif // ENABLE_WALLET
 };
@@ -620,7 +620,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> galilel-cli " + methodname + " " + args + "\n";
+    return "> salvage-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

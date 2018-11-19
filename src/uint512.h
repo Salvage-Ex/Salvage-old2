@@ -1,11 +1,11 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_UINT512_H
-#define GALI_UINT512_H
+#ifndef SVG_UINT512_H
+#define SVG_UINT512_H
 
 #include "arith_uint256.h"
 #include "uint256.h"
@@ -44,4 +44,4 @@ inline uint512 uint512S(const char* str)
     return rv;
 }
 
-#endif // GALI_UINT512_H
+#endif // SVG_UINT512_H

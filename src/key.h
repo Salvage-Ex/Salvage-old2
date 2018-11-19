@@ -2,13 +2,13 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_KEY_H
-#define GALI_KEY_H
+#ifndef SVG_KEY_H
+#define SVG_KEY_H
 
 #include "allocators.h"
 #include "serialize.h"
@@ -184,4 +184,4 @@ void ECC_Stop(void);
 /** Check that required EC support is available at runtime. */
 bool ECC_InitSanityCheck(void);
 
-#endif // GALI_KEY_H
+#endif // SVG_KEY_H

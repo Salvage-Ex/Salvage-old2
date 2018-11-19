@@ -1,6 +1,6 @@
 // Copyright (c) 2012-2015 The PPCoin developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -13,7 +13,7 @@
 #include "timedata.h"
 #include "util.h"
 #include "stakeinput.h"
-#include "zgalichain.h"
+#include "zsvgchain.h"
 
 using namespace std;
 
@@ -359,7 +359,7 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
         if (spend.getSpendType() != libzerocoin::SpendType::STAKE)
             return error("%s: spend is using the wrong SpendType (%d)", __func__, (int)spend.getSpendType());
 
-        stake = std::unique_ptr<CStakeInput>(new CZGaliStake(spend));
+        stake = std::unique_ptr<CStakeInput>(new CZSvgStake(spend));
     } else {
         // First try finding the previous transaction in database
         uint256 hashBlock;
@@ -371,9 +371,9 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
         if (!VerifyScript(txin.scriptSig, txPrev.vout[txin.prevout.n].scriptPubKey, STANDARD_SCRIPT_VERIFY_FLAGS, TransactionSignatureChecker(&tx, 0)))
             return error("CheckProofOfStake() : VerifySignature failed on coinstake %s", tx.GetHash().ToString().c_str());
 
-        CGaliStake* galiInput = new CGaliStake();
-        galiInput->SetInput(txPrev, txin.prevout.n);
-        stake = std::unique_ptr<CStakeInput>(galiInput);
+        CSvgStake* svgInput = new CSvgStake();
+        svgInput->SetInput(txPrev, txin.prevout.n);
+        stake = std::unique_ptr<CStakeInput>(svgInput);
     }
 
     CBlockIndex* pindex = stake->GetIndexFrom();

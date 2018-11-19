@@ -1,46 +1,46 @@
 # Copyright (c) 2013-2018 The Bitcoin developers
-# Copyright (c) 2018-2018 The Galilel developers
+# Copyright (c) 2018-2018 The Salvage developers
 
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/galilel-qt
+bin_PROGRAMS += qt/salvage-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# galilel qt core #
+# salvage qt core #
 QT_TS = \
-  qt/locale/galilel_bg.ts \
-  qt/locale/galilel_ca.ts \
-  qt/locale/galilel_cs.ts \
-  qt/locale/galilel_da.ts \
-  qt/locale/galilel_de.ts \
-  qt/locale/galilel_en.ts \
-  qt/locale/galilel_en_US.ts \
-  qt/locale/galilel_eo.ts \
-  qt/locale/galilel_es.ts \
-  qt/locale/galilel_es_ES.ts \
-  qt/locale/galilel_fi.ts \
-  qt/locale/galilel_fr_FR.ts \
-  qt/locale/galilel_hi_IN.ts \
-  qt/locale/galilel_hr.ts \
-  qt/locale/galilel_hr_HR.ts \
-  qt/locale/galilel_it.ts \
-  qt/locale/galilel_ja.ts \
-  qt/locale/galilel_ko_KR.ts \
-  qt/locale/galilel_lt_LT.ts \
-  qt/locale/galilel_nl.ts \
-  qt/locale/galilel_pl.ts \
-  qt/locale/galilel_pt.ts \
-  qt/locale/galilel_pt_BR.ts \
-  qt/locale/galilel_ro_RO.ts \
-  qt/locale/galilel_ru.ts \
-  qt/locale/galilel_sk.ts \
-  qt/locale/galilel_sv.ts \
-  qt/locale/galilel_tr.ts \
-  qt/locale/galilel_uk.ts \
-  qt/locale/galilel_vi.ts \
-  qt/locale/galilel_zh_CN.ts \
-  qt/locale/galilel_zh_TW.ts
+  qt/locale/salvage_bg.ts \
+  qt/locale/salvage_ca.ts \
+  qt/locale/salvage_cs.ts \
+  qt/locale/salvage_da.ts \
+  qt/locale/salvage_de.ts \
+  qt/locale/salvage_en.ts \
+  qt/locale/salvage_en_US.ts \
+  qt/locale/salvage_eo.ts \
+  qt/locale/salvage_es.ts \
+  qt/locale/salvage_es_ES.ts \
+  qt/locale/salvage_fi.ts \
+  qt/locale/salvage_fr_FR.ts \
+  qt/locale/salvage_hi_IN.ts \
+  qt/locale/salvage_hr.ts \
+  qt/locale/salvage_hr_HR.ts \
+  qt/locale/salvage_it.ts \
+  qt/locale/salvage_ja.ts \
+  qt/locale/salvage_ko_KR.ts \
+  qt/locale/salvage_lt_LT.ts \
+  qt/locale/salvage_nl.ts \
+  qt/locale/salvage_pl.ts \
+  qt/locale/salvage_pt.ts \
+  qt/locale/salvage_pt_BR.ts \
+  qt/locale/salvage_ro_RO.ts \
+  qt/locale/salvage_ru.ts \
+  qt/locale/salvage_sk.ts \
+  qt/locale/salvage_sv.ts \
+  qt/locale/salvage_tr.ts \
+  qt/locale/salvage_uk.ts \
+  qt/locale/salvage_vi.ts \
+  qt/locale/salvage_zh_CN.ts \
+  qt/locale/salvage_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -66,7 +66,7 @@ QT_FORMS_UI = \
   qt/forms/sendcoinsentry.ui \
   qt/forms/signverifymessagedialog.ui \
   qt/forms/transactiondescdialog.ui \
-  qt/forms/zgalicontroldialog.ui
+  qt/forms/zsvgcontroldialog.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -120,23 +120,23 @@ QT_MOC_CPP = \
   qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp \
-  qt/moc_zgalicontroldialog.cpp
+  qt/moc_zsvgcontroldialog.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/galilel.moc \
+  qt/salvage.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_galilel.cpp
-QT_QRC = qt/galilel.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_galilel_locale.cpp
-QT_QRC_LOCALE = qt/galilel_locale.qrc
+QT_QRC_CPP = qt/qrc_salvage.cpp
+QT_QRC = qt/salvage.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_salvage_locale.cpp
+QT_QRC_LOCALE = qt/salvage_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -201,7 +201,7 @@ BITCOIN_QT_H = \
   qt/walletmodeltransaction.h \
   qt/walletview.h \
   qt/winshutdownmonitor.h \
-  qt/zgalicontroldialog.h
+  qt/zsvgcontroldialog.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -260,12 +260,12 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_galilel.png \
-  qt/res/icons/unit_mgalilel.png \
-  qt/res/icons/unit_ugalilel.png \
-  qt/res/icons/unit_tgalilel.png \
-  qt/res/icons/unit_tmgalilel.png \
-  qt/res/icons/unit_tugalilel.png
+  qt/res/icons/unit_salvage.png \
+  qt/res/icons/unit_msalvage.png \
+  qt/res/icons/unit_usalvage.png \
+  qt/res/icons/unit_tsalvage.png \
+  qt/res/icons/unit_tmsalvage.png \
+  qt/res/icons/unit_tusalvage.png
 
 BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
@@ -328,7 +328,7 @@ BITCOIN_QT_WALLET_CPP = \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp \
-  qt/zgalicontroldialog.cpp
+  qt/zsvgcontroldialog.cpp
 
 BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
 if TARGET_WINDOWS
@@ -359,7 +359,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/galilel-qt-res.rc
+BITCOIN_RC = qt/res/salvage-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -381,71 +381,71 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_galilel_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_salvage_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# galilel-qt binary #
-qt_galilel_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# salvage-qt binary #
+qt_salvage_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
-qt_galilel_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_salvage_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_galilel_qt_SOURCES = qt/galilel.cpp
+qt_salvage_qt_SOURCES = qt/salvage.cpp
 if TARGET_DARWIN
-  qt_galilel_qt_SOURCES += $(BITCOIN_MM)
+  qt_salvage_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_galilel_qt_SOURCES += $(BITCOIN_RC)
+  qt_salvage_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_galilel_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_salvage_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_galilel_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+qt_salvage_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_galilel_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_salvage_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_galilel_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+qt_salvage_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_galilel_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_galilel_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+qt_salvage_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_salvage_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/galilelstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+$(srcdir)/qt/salvagestrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/galilelstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/galilel.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/salvagestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/salvage.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/galilel_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/salvage_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name galilel_locale $(@D)/temp_$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name salvage_locale $(@D)/temp_$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name galilel $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name salvage $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_galilel_locale.qrc
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_salvage_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
-galilel_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_galilel_qt_OBJECTS) qt/galilel-qt$(EXEEXT) $(LIBBITCOINQT)
+salvage_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_salvage_qt_OBJECTS) qt/salvage-qt$(EXEEXT) $(LIBBITCOINQT)
 
-galilel_qt : qt/galilel-qt$(EXEEXT)
+salvage_qt : qt/salvage-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

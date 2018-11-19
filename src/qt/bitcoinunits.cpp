@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -21,18 +21,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(GALI);
-    unitlist.append(mGALI);
-    unitlist.append(uGALI);
+    unitlist.append(SVG);
+    unitlist.append(mSVG);
+    unitlist.append(uSVG);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case GALI:
-    case mGALI:
-    case uGALI:
+    case SVG:
+    case mSVG:
+    case uSVG:
         return true;
     default:
         return false;
@@ -42,12 +42,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case GALI:
-        return QString("galilel");
-    case mGALI:
-        return QString("mgalilel");
-    case uGALI:
-        return QString::fromUtf8("ugalilel");
+    case SVG:
+        return QString("salvage");
+    case mSVG:
+        return QString("msalvage");
+    case uSVG:
+        return QString::fromUtf8("usalvage");
     default:
         return QString("???");
     }
@@ -57,23 +57,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case GALI:
-            return QString("GALI");
-        case mGALI:
-            return QString("mGALI");
-        case uGALI:
-            return QString::fromUtf8("μGALI");
+        case SVG:
+            return QString("SVG");
+        case mSVG:
+            return QString("mSVG");
+        case uSVG:
+            return QString::fromUtf8("μSVG");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case GALI:
-            return QString("tGALI");
-        case mGALI:
-            return QString("mtGALI");
-        case uGALI:
-            return QString::fromUtf8("μtGALI");
+        case SVG:
+            return QString("tSVG");
+        case mSVG:
+            return QString("mtSVG");
+        case uSVG:
+            return QString::fromUtf8("μtSVG");
         default:
             return QString("???");
         }
@@ -84,23 +84,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case GALI:
-            return QString("GALI");
-        case mGALI:
-            return QString("Milli-GALI (1 / 1" THIN_SP_UTF8 "000)");
-        case uGALI:
-            return QString("Micro-GALI (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case SVG:
+            return QString("SVG");
+        case mSVG:
+            return QString("Milli-SVG (1 / 1" THIN_SP_UTF8 "000)");
+        case uSVG:
+            return QString("Micro-SVG (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case GALI:
-            return QString("TestGALIs");
-        case mGALI:
-            return QString("Milli-TestGALI (1 / 1" THIN_SP_UTF8 "000)");
-        case uGALI:
-            return QString("Micro-TestGALI (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case SVG:
+            return QString("TestSVGs");
+        case mSVG:
+            return QString("Milli-TestSVG (1 / 1" THIN_SP_UTF8 "000)");
+        case uSVG:
+            return QString("Micro-TestSVG (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -110,11 +110,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case GALI:
+    case SVG:
         return 100000000;
-    case mGALI:
+    case mSVG:
         return 100000;
-    case uGALI:
+    case uSVG:
         return 100;
     default:
         return 100000000;
@@ -124,11 +124,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case GALI:
+    case SVG:
         return 8;
-    case mGALI:
+    case mSVG:
         return 5;
-    case uGALI:
+    case uSVG:
         return 2;
     default:
         return 0;

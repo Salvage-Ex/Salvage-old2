@@ -62,12 +62,12 @@
         <translation>Adresa primatelja</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše GALI adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše SVG adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše GALI adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše SVG adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
-        <source>Galilel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GALIs from being stolen by malware infecting your computer.</source>
-        <translation>Galilel se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše GALI od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>Salvage will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>Salvage se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše SVG od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GALI&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše GALIove 1 !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše SVGove 1 !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>Enter a GALI Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Unesite GALI adresu koju želite šifrirati pomoću BIP 38. Unesite zaporku u srednjem okviru. Pritisnite šifriranje za izračunavanje šifriranog privatnog ključa.</translation>
+        <source>Enter a SVG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Unesite SVG adresu koju želite šifrirati pomoću BIP 38. Unesite zaporku u srednjem okviru. Pritisnite šifriranje za izračunavanje šifriranog privatnog ključa.</translation>
     </message>
     <message>
-        <source>The GALI address to encrypt</source>
-        <translation>GALI adresa za šifriranje</translation>
+        <source>The SVG address to encrypt</source>
+        <translation>SVG adresa za šifriranje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this GALI address</source>
-        <translation>Šifriranje privatnog ključa za ovu GALI adresu</translation>
+        <source>Encrypt the private key for this SVG address</source>
+        <translation>Šifriranje privatnog ključa za ovu SVG adresu</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Pregled povijesti transakcija</translation>
     </message>
     <message>
-        <source>Privacy Actions for zGALI</source>
-        <translation>Postavke privatnosti za zGALI</translation>
+        <source>Privacy Actions for zSVG</source>
+        <translation>Postavke privatnosti za zSVG</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -645,16 +645,16 @@
         <translation>Alatna traka kartica</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
-        <source>Send coins to a GALI address</source>
-        <translation>Pošaljite kovanice na GALI adresu</translation>
+        <source>Send coins to a SVG address</source>
+        <translation>Pošaljite kovanice na SVG adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and galilel: URIs)</source>
-        <translation>Zahtjev za plaćanje (generira QR kodove i galilel: URI)</translation>
+        <source>Request payments (generates QR codes and salvage: URIs)</source>
+        <translation>Zahtjev za plaćanje (generira QR kodove i salvage: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -669,24 +669,24 @@
         <translation>Pretraži masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Galilel Core</source>
-        <translation>O Galilel Core</translation>
+        <source>&amp;About Salvage Core</source>
+        <translation>O Salvage Core</translation>
     </message>
     <message>
-        <source>Show information about Galilel Core</source>
-        <translation>Prikaz informacija o Galilel Core-u</translation>
+        <source>Show information about Salvage Core</source>
+        <translation>Prikaz informacija o Salvage Core-u</translation>
     </message>
     <message>
-        <source>Modify configuration options for GALI</source>
-        <translation>Izmijenite konfiguracijske opcije za GALI</translation>
+        <source>Modify configuration options for SVG</source>
+        <translation>Izmijenite konfiguracijske opcije za SVG</translation>
     </message>
     <message>
-        <source>Sign messages with your GALI addresses to prove you own them</source>
-        <translation>Potpišite poruke s vašim GALI adresama kako biste dokazali da ih posjedujete</translation>
+        <source>Sign messages with your SVG addresses to prove you own them</source>
+        <translation>Potpišite poruke s vašim SVG adresama kako biste dokazali da ih posjedujete</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified GALI addresses</source>
-        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim GALI adresama</translation>
+        <source>Verify messages to ensure they were signed with specified SVG addresses</source>
+        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim SVG adresama</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Otvori Masternode konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>Open a GALI: URI or payment request</source>
-        <translation>Otvori GALI: URI zahtjev za plačanje</translation>
+        <source>Open a SVG: URI or payment request</source>
+        <translation>Otvori SVG: URI zahtjev za plačanje</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Prozor Block preglednika</translation>
     </message>
     <message>
-        <source>Show the Galilel Core help message to get a list with possible Galilel command-line options</source>
-        <translation>Pokažite poruku Galilel Core pomoći da biste dobili popis s mogućim Galilel opcijama naredbenog retka</translation>
+        <source>Show the Salvage Core help message to get a list with possible Salvage command-line options</source>
+        <translation>Pokažite poruku Salvage Core pomoći da biste dobili popis s mogućim Salvage opcijama naredbenog retka</translation>
     </message>
     <message>
-        <source>Galilel Core client</source>
-        <translation>GALIIX Core Klijent</translation>
+        <source>Salvage Core client</source>
+        <translation>SVGIX Core Klijent</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Galilel network</source>
-        <translation><numerusform>%n aktivne veze na Galilel mrežu</numerusform><numerusform>%n aktivne veze na Galilel mrežu</numerusform><numerusform>%n aktivne veze na Galilel mrežu</numerusform></translation>
+        <source>%n active connection(s) to Salvage network</source>
+        <translation><numerusform>%n aktivne veze na Salvage mrežu</numerusform><numerusform>%n aktivne veze na Salvage mrežu</numerusform><numerusform>%n aktivne veze na Salvage mrežu</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -892,8 +892,8 @@ Višestruko slanje: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (galilel.conf).</source>
-        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (galilel.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (salvage.conf).</source>
+        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (salvage.conf).</translation>
     </message>
 </context>
 <context>
@@ -1130,8 +1130,8 @@ Višestruko slanje: %1</translation>
         <translation>Ova oznaka postaje crvena ako neki primatelj prima iznos manji od %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ugali per input.</source>
-        <translation>Može varirati +/- %1 ugali po unosu.</translation>
+        <source>Can vary +/- %1 usvg per input.</source>
+        <translation>Može varirati +/- %1 usvg po unosu.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1185,8 +1185,8 @@ Višestruko slanje: %1</translation>
         <translation>Uređivanje adrese slanja</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid GALI address.</source>
-        <translation>Unesena adresa "%1" nije važeća GALI adresa.</translation>
+        <source>The entered address "%1" is not a valid SVG address.</source>
+        <translation>Unesena adresa "%1" nije važeća SVG adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1231,16 +1231,16 @@ Višestruko slanje: %1</translation>
         <translation>verzija</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Galilel Core</source>
-        <translation>O Galilel Core</translation>
+        <source>About Salvage Core</source>
+        <translation>O Salvage Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1286,16 +1286,16 @@ Višestruko slanje: %1</translation>
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to Galilel Core.</source>
-        <translation>Dobrodošli u Galilel Core.</translation>
+        <source>Welcome to Salvage Core.</source>
+        <translation>Dobrodošli u Salvage Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Galilel Core will store its data.</source>
-        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će Galilel Core pohraniti svoje podatke.</translation>
+        <source>As this is the first time the program is launched, you can choose where Salvage Core will store its data.</source>
+        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će Salvage Core pohraniti svoje podatke.</translation>
     </message>
     <message>
-        <source>Galilel Core will download and store a copy of the GALI block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Galilel Core preuzima i pohranjuje kopiju GALI blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
+        <source>Salvage Core will download and store a copy of the SVG block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Salvage Core preuzima i pohranjuje kopiju SVG blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1306,8 +1306,8 @@ Višestruko slanje: %1</translation>
         <translation>Koristite prilagođeni direktorij podataka:</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1448,12 +1448,12 @@ Višestruko slanje: %1</translation>
         <translation>Unesite adresu za slanje</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other GALI addresses after it matures.
-To Add: enter percentage to give and GALI address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SVG addresses after it matures.
+To Add: enter percentage to give and SVG address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend vam omogućuje da automatski pošaljete do 100% svoje nagrade za ulog ili masternode  nagrade na popis drugih GALI adresa nakon što sazrijete.
-Za Dodaj: unesite postotak za davanje i GALI adresu za dodavanje MultiSend vektoru.
+        <translation>MultiSend vam omogućuje da automatski pošaljete do 100% svoje nagrade za ulog ili masternode  nagrade na popis drugih SVG adresa nakon što sazrijete.
+Za Dodaj: unesite postotak za davanje i SVG adresu za dodavanje MultiSend vektoru.
 Za brisanje: Unesite adresu za brisanje i pritisnite Delete.
 MultiSend neće biti aktiviran dok ne kliknete Aktiviraj</translation>
     </message>
@@ -1679,8 +1679,8 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Adresa / iznos:</translation>
     </message>
     <message>
-        <source>Add destinations to send GALI to</source>
-        <translation>Dodajte odredišta za slanje GALI
+        <source>Add destinations to send SVG to</source>
+        <translation>Dodajte odredišta za slanje SVG
 </translation>
     </message>
     <message>
@@ -1779,48 +1779,48 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Odaberi razinu privatnosti.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 15000 GALI</source>
-        <translation>Koristite 2 odvojene masternode za miješanje sredstava do 15000 GALI</translation>
+        <source>Use 2 separate masternodes to mix funds up to 15000 SVG</source>
+        <translation>Koristite 2 odvojene masternode za miješanje sredstava do 15000 SVG</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 15000 GALI</source>
-        <translation>Koristite 8 zasebnih masternoda za miješanje sredstava do 15000 GALI</translation>
+        <source>Use 8 separate masternodes to mix funds up to 15000 SVG</source>
+        <translation>Koristite 8 zasebnih masternoda za miješanje sredstava do 15000 SVG</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Koristite 16 zasebnih masternodova</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 GALI to anonymize 15000 GALI</source>
-        <translation>Ova je opcija najbrža i košta oko 0,025 GALI da anonimizira 15000 GALI</translation>
+        <source>This option is the quickest and will cost about ~0.025 SVG to anonymize 15000 SVG</source>
+        <translation>Ova je opcija najbrža i košta oko 0,025 SVG da anonimizira 15000 SVG</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 GALI to anonymize 15000 GALI</source>
-        <translation>Ova je opcija umjereno brza i košta oko 0,05 GALI da anonimizira 15000 GALI</translation>
+        <source>This option is moderately fast and will cost about 0.05 SVG to anonymize 15000 SVG</source>
+        <translation>Ova je opcija umjereno brza i košta oko 0,05 SVG da anonimizira 15000 SVG</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Ovo je najsporiji i najsigurniji izbor. Korištenje maksimalne anonimnosti košta</translation>
     </message>
     <message>
-        <source>0.1 GALI per 15000 GALI you anonymize.</source>
-        <translation>0,1 GALI po 15000 GALI za anonimizaciju.</translation>
+        <source>0.1 SVG per 15000 SVG you anonymize.</source>
+        <translation>0,1 SVG po 15000 SVG za anonimizaciju.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Obfuscation Konfiguracija</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening GALI's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na osnovne (%1 i 2 runde). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju GALI-a.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na osnovne (%1 i 2 runde). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju SVG-a.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening GALI's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na visoku razinu (%1 i 8 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju GALI-a</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na visoku razinu (%1 i 8 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju SVG-a</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening GALI's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na maksimalnu razinu (%1 i 16 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju GALI-a.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na maksimalnu razinu (%1 i 16 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju SVG-a.</translation>
     </message>
 </context>
 <context>
@@ -1881,8 +1881,8 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Ako onemogućite potrošnju nepotvrđenih promjena, promjena s transakcijskog kanala bit će upotrijebljena sve dok ta transakcija nema barem jednu potvrdu. To također utječe na izračun salda.</translation>
     </message>
     <message>
-        <source>Automatically open the GALI client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvorite GALI klijentski priključak na rooteru. To funkcionira samo kada vaš rooter podržava UPnP i omogućen je.</translation>
+        <source>Automatically open the SVG client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatski otvorite SVG klijentski priključak na rooteru. To funkcionira samo kada vaš rooter podržava UPnP i omogućen je.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1901,12 +1901,12 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Stručnjak</translation>
     </message>
     <message>
-        <source>Automatically start GALI after logging in to the system.</source>
-        <translation>Automatski pokrenite GALI nakon prijave u sustav.</translation>
+        <source>Automatically start SVG after logging in to the system.</source>
+        <translation>Automatski pokrenite SVG nakon prijave u sustav.</translation>
     </message>
     <message>
-        <source>&amp;Start GALI on system login</source>
-        <translation>Pokrenite GALI na prijavi u sustav</translation>
+        <source>&amp;Start SVG on system login</source>
+        <translation>Pokrenite SVG na prijavi u sustav</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1933,14 +1933,14 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Mreža</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting GALI.</source>
-        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja GALI-a.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SVG.</source>
+        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja SVG-a.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/galilel-project/galilel-project-translations</source>
+https://www.transifex.com/salvage-project/salvage-project-translations</source>
         <translation>Jezik nedostaje ili prijevod nije potpun? Pomozite s prijevodima ovdje:
-https://www.transifex.com/galilel-project/galilel-project-translations</translation>
+https://www.transifex.com/salvage-project/salvage-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1948,36 +1948,36 @@ https://www.transifex.com/galilel-project/galilel-project-translations</translat
 </translation>
     </message>
     <message>
-        <source>Enable automatic minting of GALI units to zGALI</source>
-        <translation>Omogućite automint GALI jedinica na zGALI</translation>
+        <source>Enable automatic minting of SVG units to zSVG</source>
+        <translation>Omogućite automint SVG jedinica na zSVG</translation>
     </message>
     <message>
-        <source>Enable zGALI Automint</source>
-        <translation>Omogući zGALI Automint</translation>
+        <source>Enable zSVG Automint</source>
+        <translation>Omogući zSVG Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming GALI which get automatically converted to zGALI via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih GALI koji se automatski pretvara u zGALI putem protokola Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming SVG which get automatically converted to zSVG via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih SVG koji se automatski pretvara u zSVG putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zGALI</source>
-        <translation>Postotak automatiziranog zGALI</translation>
+        <source>Percentage of autominted zSVG</source>
+        <translation>Postotak automatiziranog zSVG</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough GALI for this denomination is available</source>
-        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno GALI za apoen</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SVG for this denomination is available</source>
+        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno SVG za apoen</translation>
     </message>
     <message>
-        <source>Preferred Automint zGALI Denomination</source>
-        <translation>Preferirana Automint zGALI denominacijad</translation>
+        <source>Preferred Automint zSVG Denomination</source>
+        <translation>Preferirana Automint zSVG denominacijad</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Prag razdvajanja Stake-a:</translation>
     </message>
     <message>
-        <source>Connect to the Galilel network through a SOCKS5 proxy.</source>
-        <translation>Povežite se s Galilel mrežom putem SOCKS5 proxy poslužitelja.</translation>
+        <source>Connect to the Salvage network through a SOCKS5 proxy.</source>
+        <translation>Povežite se s Salvage mrežom putem SOCKS5 proxy poslužitelja.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/galilel-project/galilel-project-translations</translat
         <translation>Ukupni saldo, uključujući sve nedostupne kovanice.</translation>
     </message>
     <message>
-        <source>GALI Balance</source>
-        <translation>GALI Saldo</translation>
+        <source>SVG Balance</source>
+        <translation>SVG Saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2155,18 +2155,18 @@ https://www.transifex.com/galilel-project/galilel-project-translations</translat
         <translation>Trenutačno zaključana ravnoteža u adresama samo za gledanje</translation>
     </message>
     <message>
-        <source>Your current GALI balance, unconfirmed and immature transactions included</source>
-        <translation>Uključena je vaša trenutna bilanca GALI, nepotvrđene i nezrele transakcije</translation>
+        <source>Your current SVG balance, unconfirmed and immature transactions included</source>
+        <translation>Uključena je vaša trenutna bilanca SVG, nepotvrđene i nezrele transakcije</translation>
     </message>
     <message>
-        <source>zGALI Balance</source>
-        <translation>zGALI Bilanca</translation>
+        <source>zSVG Balance</source>
+        <translation>zSVG Bilanca</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zGALI are spendable.</source>
+These zSVG are spendable.</source>
         <translation>Mature: više od 20 potvrda i više od 1 mint od iste denominacije nakon što je mintan.
-Ti zGALIs se mogu potrošiti.</translation>
+Ti zSVGs se mogu potrošiti.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2175,8 +2175,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Galilel network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazane informacije mogu biti zastarjele. Vaš se novčanik automatski sinkronizira s Galilel mrežom nakon uspostavljanja veze, ali taj postupak još nije dovršen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Salvage network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazane informacije mogu biti zastarjele. Vaš se novčanik automatski sinkronizira s Salvage mrežom nakon uspostavljanja veze, ali taj postupak još nije dovršen.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2219,8 +2219,8 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>Po potrošiti:</translation>
     </message>
     <message>
-        <source>Locked GALI or Masternode collaterals. These are excluded from zGALI minting.</source>
-        <translation>Zaključani GALI ili Masternode kolateral. Oni su isključeni iz zGALI kovanja.</translation>
+        <source>Locked SVG or Masternode collaterals. These are excluded from zSVG minting.</source>
+        <translation>Zaključani SVG ili Masternode kolateral. Oni su isključeni iz zSVG kovanja.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2231,8 +2231,8 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>Nepotvrđeno:</translation>
     </message>
     <message>
-        <source>Your current zGALI balance, unconfirmed and immature zGALI included.</source>
-        <translation>Vaša trenutačna zGALI bilanca, nepotvrđena i nezrela zGALI.</translation>
+        <source>Your current zSVG balance, unconfirmed and immature zSVG included.</source>
+        <translation>Vaša trenutačna zSVG bilanca, nepotvrđena i nezrela zSVG.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2243,10 +2243,10 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>nije sinkronizirano</translation>
     </message>
     <message>
-        <source>Current percentage of zGALI.
+        <source>Current percentage of zSVG.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Trenutni postotak zGALI.
+        <translation>Trenutni postotak zSVG.
 Ako je omogućeno automatsko navođenje, ovaj postotak će se podmiriti oko konfiguriranog postotka automatskog navođenja (zadano = 10%).
 </translation>
     </message>
@@ -2255,14 +2255,14 @@ Ako je omogućeno automatsko navođenje, ovaj postotak će se podmiriti oko konf
         <translation>AutoMint je trenutno omogućen i podešen na</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in galilel.conf.</source>
-        <translation>Da biste onemogućili AutoMint, dodajte 'enablezeromint=0' u galilel.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in salvage.conf.</source>
+        <translation>Da biste onemogućili AutoMint, dodajte 'enablezeromint=0' u salvage.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in galilel.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in salvage.conf</source>
         <translation>AutoMint je trenutno onemogućen.
-Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablezeromint=1' u galilel.conf</translation>
+Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablezeromint=1' u salvage.conf</translation>
     </message>
 </context>
 <context>
@@ -2288,12 +2288,12 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Nevažeća adresa za plaćanje %1</translation>
     </message>
     <message>
-        <source>Cannot start galilel: click-to-pay handler</source>
-        <translation>Ne može se pokrenuti galilel: clik-to-pay handler</translation>
+        <source>Cannot start salvage: click-to-pay handler</source>
+        <translation>Ne može se pokrenuti salvage: clik-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid GALI address or malformed URI parameters.</source>
-        <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom GALI adresom ili nepravilnim URI parametrima.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SVG address or malformed URI parameters.</source>
+        <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom SVG adresom ili nepravilnim URI parametrima.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2378,8 +2378,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Zerocoin radnje:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Galilel network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazane informacije mogu biti zastarjele. Vaš se novčanik automatski sinkronizira s Galilel mrežom nakon uspostavljanja veze, ali taj postupak još nije dovršen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Salvage network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazane informacije mogu biti zastarjele. Vaš se novčanik automatski sinkronizira s Salvage mrežom nakon uspostavljanja veze, ali taj postupak još nije dovršen.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2390,8 +2390,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>0</translation>
     </message>
     <message>
-        <source>zGALI</source>
-        <translation>zGALI</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2402,8 +2402,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Dostupno za Minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 GALI</source>
-        <translation>0.000 000 00 GALI</translation>
+        <source>0.000 000 00 SVG</source>
+        <translation>0.000 000 00 SVG</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2442,16 +2442,16 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>PRIVATNOST</translation>
     </message>
     <message>
-        <source>Enter an amount of GALI to convert to zGALI</source>
-        <translation>Unesite iznos GALI za pretvorbu u zGALI</translation>
+        <source>Enter an amount of SVG to convert to zSVG</source>
+        <translation>Unesite iznos SVG za pretvorbu u zSVG</translation>
     </message>
     <message>
-        <source>zGALI Control</source>
-        <translation>Upravljanje zGALI</translation>
+        <source>zSVG Control</source>
+        <translation>Upravljanje zSVG</translation>
     </message>
     <message>
-        <source>zGALI Selected:</source>
-        <translation>zGALI Odabrani:</translation>
+        <source>zSVG Selected:</source>
+        <translation>zSVG Odabrani:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2466,24 +2466,24 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Potroši Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zGALI for spending</source>
-        <translation>Dostupni (zreli) zGALI za potrošnju</translation>
+        <source>Available (mature and spendable) zSVG for spending</source>
+        <translation>Dostupni (zreli) zSVG za potrošnju</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Dostupna Bilanca:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zGALI for spending
+        <source>Available (mature and spendable) zSVG for spending
 
-zGALI are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Dostupni (zreli) zGALI za potrošnju
+zSVG are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Dostupni (zreli) zSVG za potrošnju
 
-zGALI su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominacije nakon što su bili mintani</translation>
+zSVG su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominacije nakon što su bili mintani</translation>
     </message>
     <message>
-        <source>0 zGALI</source>
-        <translation>0 zGALI</translation>
+        <source>0 zSVG</source>
+        <translation>0 zSVG</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2502,8 +2502,8 @@ zGALI su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denomina
         <translation>Platiti:</translation>
     </message>
     <message>
-        <source>The GALI address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>GALI adresa za slanje uplate. Stvara lokalno plaćanje za sebe kada je prazno.</translation>
+        <source>The SVG address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>SVG adresa za slanje uplate. Stvara lokalno plaćanje za sebe kada je prazno.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2554,8 +2554,8 @@ zGALI su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denomina
         <translation>Statistike Zerocoina:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zGALI</source>
-        <translation>Ukupni saldo uključujući nepotvrđeni i nedovršeni zGALI</translation>
+        <source>Total Balance including unconfirmed and immature zSVG</source>
+        <translation>Ukupni saldo uključujući nepotvrđeni i nedovršeni zSVG</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2576,24 +2576,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zGALI minting.
+        <source>Show the current status of automatic zSVG minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to galilel.conf
-- disable: add 'enablezeromint=0' to galilel.conf
+- enable: add 'enablezeromint=1' to salvage.conf
+- disable: add 'enablezeromint=0' to salvage.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zGALI
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSVG
 
 </source>
-        <translation>Pokažite trenutačni status automatskog zGALI mintanja.
+        <translation>Pokažite trenutačni status automatskog zSVG mintanja.
 
 Da biste promijenili status (potrebno je ponovno pokretanje):
-- omogući: dodajte 'enablezeromint = 1' u galilel.conf
-- onemogućiti: dodajte 'enablezeromint = 0' na galilel.conf
+- omogući: dodajte 'enablezeromint = 1' u salvage.conf
+- onemogućiti: dodajte 'enablezeromint = 0' na salvage.conf
 
 Promjena postotka (nije potrebno ponovno pokretanje):
-- izbornik Postavke-&gt; Opcije-&gt; Postotak zGALI</translation>
+- izbornik Postavke-&gt; Opcije-&gt; Postotak zSVG</translation>
     </message>
     <message>
         <source>AutoMint Status</source>
@@ -2787,12 +2787,12 @@ Maximum allowed: </source>
 Maksimalno dopušteno:</translation>
     </message>
     <message>
-        <source>zGALI Spend #: </source>
-        <translation>zGALI utrošeno #: </translation>
+        <source>zSVG Spend #: </source>
+        <translation>zSVG utrošeno #: </translation>
     </message>
     <message>
-        <source>zGALI Mint</source>
-        <translation>zGALI Mint</translation>
+        <source>zSVG Mint</source>
+        <translation>zSVG Mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2807,12 +2807,12 @@ Maksimalno dopušteno:</translation>
         <translation> Konfigirani ciljani postotak: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zGALI is currently disabled due to maintenance.</source>
-        <translation>Zbog održavanja zGALI je trenutačno onemogućen.</translation>
+        <source>zSVG is currently disabled due to maintenance.</source>
+        <translation>Zbog održavanja zSVG je trenutačno onemogućen.</translation>
     </message>
     <message>
-        <source>zGALI is currently undergoing maintenance.</source>
-        <translation>Radovi u tijeku na zGALI.</translation>
+        <source>zSVG is currently undergoing maintenance.</source>
+        <translation>Radovi u tijeku na zSVG.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2899,8 +2899,8 @@ Maksimalno dopušteno:</translation>
         <translation>Uspješno mintano</translation>
     </message>
     <message>
-        <source> zGALI in </source>
-        <translation> ulazni zGALI </translation>
+        <source> zSVG in </source>
+        <translation> ulazni zSVG </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2926,8 +2926,8 @@ Maksimalno dopušteno:</translation>
         <translation>Nije dodijeljena adresa "Plati", stvarajući lokalnu uplatu</translation>
     </message>
     <message>
-        <source>Invalid GALI Address</source>
-        <translation>Nevažeća GALI Adresa</translation>
+        <source>Invalid SVG Address</source>
+        <translation>Nevažeća SVG Adresa</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2958,12 +2958,12 @@ Maksimalno dopušteno:</translation>
         <translation>Potvrdite slanje novca</translation>
     </message>
     <message>
-        <source>Version 1 zGALI require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zGALI zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 zSVG require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 zSVG zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
-        <source>Failed to spend zGALI</source>
-        <translation>Neuspjelo trošenje zGALI</translation>
+        <source>Failed to spend zSVG</source>
+        <translation>Neuspjelo trošenje zSVG</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2984,7 +2984,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of GALI to convert to zGALI</comment>
+        <comment>Enter an amount of SVG to convert to zSVG</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3027,8 +3027,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>Enter a GALI address (e.g. %1)</source>
-        <translation>Unesite GALI adresu (npr., %1)</translation>
+        <source>Enter a SVG address (e.g. %1)</source>
+        <translation>Unesite SVG adresu (npr., %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3166,8 +3166,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the GALI debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorite GALI debug log datoteku iz aktualnog direktorija podataka. To može potrajati nekoliko sekundi za velike datoteke zapisnika.</translation>
+        <source>Open the SVG debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorite SVG debug log datoteku iz aktualnog direktorija podataka. To može potrajati nekoliko sekundi za velike datoteke zapisnika.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3302,8 +3302,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Put prilagođenog sigurnosnog kopiranja:</translation>
     </message>
     <message>
-        <source>Custom zGALI Backup Path:</source>
-        <translation>Prilagođeni put zGALI sigurnosne kopije:</translation>
+        <source>Custom zSVG Backup Path:</source>
+        <translation>Prilagođeni put zSVG sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3382,8 +3382,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Iz:</translation>
     </message>
     <message>
-        <source>Welcome to the GALI RPC console.</source>
-        <translation>Dobrodošli na GALI RPC konzolu.</translation>
+        <source>Welcome to the SVG RPC console.</source>
+        <translation>Dobrodošli na SVG RPC konzolu.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3509,16 +3509,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dodatna oznaka za povezivanje s novom adresom primatelja.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Galilel network.</source>
-        <translation>Dodatna poruka priložena zahtjevu za plaćanje, koji će se prikazati kada se zahtjev otvori. Napomena: poruka neće biti poslana s plaćanjem putem Galilel mreže.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Salvage network.</source>
+        <translation>Dodatna poruka priložena zahtjevu za plaćanje, koji će se prikazati kada se zahtjev otvori. Napomena: poruka neće biti poslana s plaćanjem putem Salvage mreže.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>PRIMI</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Galilel network.</source>
-        <translation>Dodatna poruka za pridruživanje zahtjevu za plaćanje koja će se prikazati kada se zahtjev otvori.Napomena: poruka neće biti poslana s plaćanjem putem Galilel mreže.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Salvage network.</source>
+        <translation>Dodatna poruka za pridruživanje zahtjevu za plaćanje koja će se prikazati kada se zahtjev otvori.Napomena: poruka neće biti poslana s plaćanjem putem Salvage mreže.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3747,8 +3747,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Veličina UTXO:</translation>
     </message>
     <message>
-        <source>0 GALI</source>
-        <translation>0 GALI</translation>
+        <source>0 SVG</source>
+        <translation>0 SVG</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3805,16 +3805,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Kovanice se automatski odabiru</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uGALIs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGALIs in fee,&lt;br /&gt;while "at least" pays 1000 uGALIs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ako je prilagođena naknada postavljena na 1000 uGALI-ova, a transakcija je samo 250 bajta, tada "po kilobajtu" se plaća samo 250 uGALI-a, dok se "barem" plaća 1000 uGALI-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
+        <source>If the custom fee is set to 1000 uSVGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSVGs in fee,&lt;br /&gt;while "at least" pays 1000 uSVGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uSVG-ova, a transakcija je samo 250 bajta, tada "po kilobajtu" se plaća samo 250 uSVG-a, dok se "barem" plaća 1000 uSVG-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uGALIs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGALIs in fee,&lt;br /&gt;while "total at least" pays 1000 uGALIs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ako je prilagođena naknada postavljena na 1000 uGALI, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uGALI-ova, a "ukupno barem" plaća 1000 uGALI-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
+        <source>If the custom fee is set to 1000 uSVGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSVGs in fee,&lt;br /&gt;while "total at least" pays 1000 uSVGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uSVG, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uSVG-ova, a "ukupno barem" plaća 1000 uSVG-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for GALI transactions than the network can process.</source>
-        <translation>Plaćanje samo minimalne naknade je sasvim u redu sve dok j obujma transakcija manji od prostora u blokovima. No, budite svjesni da to može dovesti do transakcije koja nikada se ne potvrđuje kada se pojavi više zahtjeva za GALI transakcijama nego što mreža može obraditi.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SVG transactions than the network can process.</source>
+        <translation>Plaćanje samo minimalne naknade je sasvim u redu sve dok j obujma transakcija manji od prostora u blokovima. No, budite svjesni da to može dovesti do transakcije koja nikada se ne potvrđuje kada se pojavi više zahtjeva za SVG transakcijama nego što mreža može obraditi.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3861,8 +3861,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dodaj primatelja</translation>
     </message>
     <message>
-        <source>Anonymized GALI</source>
-        <translation>Anonimiziran GALI</translation>
+        <source>Anonymized SVG</source>
+        <translation>Anonimiziran SVG</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3909,8 +3909,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Alat za podjelu blocka ne funkcionira s više adresa. Pokušajte ponovo.</translation>
     </message>
     <message>
-        <source>Warning: Invalid GALI address</source>
-        <translation>Upozorenje: Nevažeća GALI adresa</translation>
+        <source>Warning: Invalid SVG address</source>
+        <translation>Upozorenje: Nevažeća SVG adresa</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4012,8 +4012,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Platiti:</translation>
     </message>
     <message>
-        <source>The GALI address to send the payment to</source>
-        <translation>GALI adresa za slanje uplate</translation>
+        <source>The SVG address to send the payment to</source>
+        <translation>SVG adresa za slanje uplate</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4052,8 +4052,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Poruka:</translation>
     </message>
     <message>
-        <source>A message that was attached to the GALI: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Galilel network.</source>
-        <translation>Poruka koja je bila povezana s GALI: URI koji će biti pohranjen s transakcijom za vašu referencu. Napomena: ova poruka neće biti poslana preko Galilel mreže.</translation>
+        <source>A message that was attached to the SVG: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Salvage network.</source>
+        <translation>Poruka koja je bila povezana s SVG: URI koji će biti pohranjen s transakcijom za vašu referencu. Napomena: ova poruka neće biti poslana preko Salvage mreže.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4079,8 +4079,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Galilel Core is shutting down...</source>
-        <translation>Galilel Core se zatvara ...</translation>
+        <source>Salvage Core is shutting down...</source>
+        <translation>Salvage Core se zatvara ...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4102,8 +4102,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Možete potpisati poruke s vašim adresama kako biste dokazali da ih posjedujete. Pazite da ne potpišete ništa nejasno, jer napadi za krađu identiteta mogu Vas pokušati uvjeriti da vam potpišu identitet. Potpišite samo detalje oko kojih se slažete.</translation>
     </message>
     <message>
-        <source>The GALI address to sign the message with</source>
-        <translation>GALI adresa za potpisivanje poruke</translation>
+        <source>The SVG address to sign the message with</source>
+        <translation>SVG adresa za potpisivanje poruke</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4134,16 +4134,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this GALI address</source>
-        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove GALI adrese</translation>
+        <source>Sign the message to prove you own this SVG address</source>
+        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove SVG adrese</translation>
     </message>
     <message>
-        <source>The GALI address the message was signed with</source>
-        <translation>GALI adresa s kojom je potpisana poruka</translation>
+        <source>The SVG address the message was signed with</source>
+        <translation>SVG adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified GALI address</source>
-        <translation>Potvrdite poruku kako biste bili sigurni da je potpisana s navedenom GALI adresom</translation>
+        <source>Verify the message to ensure it was signed with the specified SVG address</source>
+        <translation>Potvrdite poruku kako biste bili sigurni da je potpisana s navedenom SVG adresom</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4229,8 +4229,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4249,8 +4249,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>PIVX Core programeri</translation>
     </message>
     <message>
-        <source>The Galilel Core developers</source>
-        <translation>Galilel Core programeri</translation>
+        <source>The Salvage Core developers</source>
+        <translation>Salvage Core programeri</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4530,12 +4530,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Zaprimljeno preko Zametanja</translation>
     </message>
     <message>
-        <source>GALI Stake</source>
-        <translation>GALI Stake</translation>
+        <source>SVG Stake</source>
+        <translation>SVG Stake</translation>
     </message>
     <message>
-        <source>zGALI Stake</source>
-        <translation>zGALI Stake</translation>
+        <source>zSVG Stake</source>
+        <translation>zSVG Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4554,32 +4554,32 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Converted GALI to zGALI</source>
-        <translation>Pretvoreni GALI u zGALI</translation>
+        <source>Converted SVG to zSVG</source>
+        <translation>Pretvoreni SVG u zSVG</translation>
     </message>
     <message>
-        <source>Spent zGALI</source>
-        <translation>Utrošeni zGALI</translation>
+        <source>Spent zSVG</source>
+        <translation>Utrošeni zSVG</translation>
     </message>
     <message>
-        <source>Received GALI from zGALI</source>
-        <translation>Primljeni GALI od zGALI</translation>
+        <source>Received SVG from zSVG</source>
+        <translation>Primljeni SVG od zSVG</translation>
     </message>
     <message>
-        <source>Minted Change as zGALI from zGALI Spend</source>
-        <translation>Mintana razlika zGALI od zGALI Utroška</translation>
+        <source>Minted Change as zSVG from zSVG Spend</source>
+        <translation>Mintana razlika zSVG od zSVG Utroška</translation>
     </message>
     <message>
-        <source>Converted zGALI to GALI</source>
-        <translation>Pretvoreni zGALI u GALI</translation>
+        <source>Converted zSVG to SVG</source>
+        <translation>Pretvoreni zSVG u SVG</translation>
     </message>
     <message>
-        <source>Anonymous (zGALI Transaction)</source>
-        <translation>Anonimno (zGALI Transakcija)</translation>
+        <source>Anonymous (zSVG Transaction)</source>
+        <translation>Anonimno (zSVG Transakcija)</translation>
     </message>
     <message>
-        <source>Anonymous (zGALI Stake)</source>
-        <translation>Anonimno (zGALI Stake)</translation>
+        <source>Anonymous (zSVG Stake)</source>
+        <translation>Anonimno (zSVG Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4789,12 +4789,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvoz uspješan</translation>
     </message>
     <message>
-        <source>Received GALI from zGALI</source>
-        <translation>Primljeni GALI od zGALI</translation>
+        <source>Received SVG from zSVG</source>
+        <translation>Primljeni SVG od zSVG</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zGALI</source>
-        <translation>Zerocoin Utrošeno, Razlika (ostatak) u zGALI</translation>
+        <source>Zerocoin Spend, Change in zSVG</source>
+        <translation>Zerocoin Utrošeno, Razlika (ostatak) u zSVG</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4830,8 +4830,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Salji novac</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 GALI.</source>
-        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 GALI.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SVG.</source>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 SVG.</translation>
     </message>
 </context>
 <context>
@@ -4862,10 +4862,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZGaliControlDialog</name>
+    <name>ZSvgControlDialog</name>
     <message>
-        <source>Select zGALI to Spend</source>
-        <translation>Odabrani zGALI za utrošiti</translation>
+        <source>Select zSVG to Spend</source>
+        <translation>Odabrani zSVG za utrošiti</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4876,8 +4876,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>zGALI</source>
-        <translation>zGALI</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4889,7 +4889,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>galilel-core</name>
+    <name>salvage-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = zadržite metapodatke tx, npr. Vlasnika računa i podatke o zahtjevu za plaćanje, 2 = odbaci meta podataka tx)</translation>
@@ -4915,8 +4915,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izračunata kontrolna točka akumulatora nije ono što se bilježi indeksom blokova</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Galilel Core is probably already running.</source>
-        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. Galilel Core vjerojatno već radi.</translation>
+        <source>Cannot obtain a lock on data directory %s. Salvage Core is probably already running.</source>
+        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. Salvage Core vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4943,16 +4943,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zGALI minting (0-1, default: %u)</source>
-        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zGALI mintanja (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSVG minting (0-1, default: %u)</source>
+        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zSVG mintanja (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for GALI inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za GALI unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for SVG inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za SVG unose (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zGALI inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za zGALI unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zSVG inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za zSVG unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4987,12 +4987,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
     </message>
     <message>
-        <source>Fees (in GALI/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Naknade (u GALI / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
+        <source>Fees (in SVG/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Naknade (u SVG / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
     </message>
     <message>
-        <source>Fees (in GALI/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Naknade (u GALI / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
+        <source>Fees (in SVG/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Naknade (u SVG / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5091,20 +5091,20 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ovaj proizvod uključuje softver razvijen od strane OpenSSL projekta za uporabu u OpenSSL Toolkitu i kriptografskom softveru kojeg je napisao Eric Young i UPnP softver koji je napisao Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Galilel Core is probably already running.</source>
-        <translation>Nije moguće vezati se na %s na ovom računalu. Galilel Core vjerojatno već radi.</translation>
+        <source>Unable to bind to %s on this computer. Salvage Core is probably already running.</source>
+        <translation>Nije moguće vezati se na %s na ovom računalu. Salvage Core vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 15000 GALI.</source>
-        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 15000 GALI.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 15000 SVG.</source>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 15000 SVG.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 15000 GALI.</source>
-        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 15000 GALI.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 15000 SVG.</source>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 15000 SVG.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5119,8 +5119,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Upozorenje: -paytxfee je vrlo visoka! To je transakcijska naknada koju ćete platiti ako šaljete transakciju.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Galilel Core will not work properly.</source>
-        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, Galilel Core neće raditi ispravno.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Salvage Core will not work properly.</source>
+        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, Salvage Core neće raditi ispravno.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5275,8 +5275,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Autorska prava (C) 2015-%i The PIVX Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2018-%i The Galilel Core Developers</source>
-        <translation>Autorska prava (C) 2018-%i The Galilel Core Developers</translation>
+        <source>Copyright (C) 2018-%i The Salvage Core Developers</source>
+        <translation>Autorska prava (C) 2018-%i The Salvage Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5364,8 +5364,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Pogreška pri učitavanju wallet.dat: novčanik oštećen</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Galilel Core</source>
-        <translation>Pogreška prilikom učitavanja wallet.dat: Novčanik zahtijeva noviju verziju GALI jezgre</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Salvage Core</source>
+        <translation>Pogreška prilikom učitavanja wallet.dat: Novčanik zahtijeva noviju verziju SVG jezgre</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5420,8 +5420,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Greška čitanja bloka</translation>
     </message>
     <message>
-        <source>Fee (in GALI/kB) to add to transactions you send (default: %s)</source>
-        <translation>Naknada (u GALI / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
+        <source>Fee (in SVG/kB) to add to transactions you send (default: %s)</source>
+        <translation>Naknada (u SVG / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5480,8 +5480,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Informacije</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Galilel Core is shutting down.</source>
-        <translation>Provjera ispravnosti inicijalizacije nije uspjela. Galilel Core se zatvara.</translation>
+        <source>Initialization sanity check failed. Salvage Core is shutting down.</source>
+        <translation>Provjera ispravnosti inicijalizacije nije uspjela. Salvage Core se zatvara.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5552,8 +5552,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the GALI and zGALI money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku GALI i zGALI ponude novca</translation>
+        <source>Reindex the SVG and zSVG money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku SVG i zSVG ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5591,8 +5591,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>uklonjene nepotvrđene transakcije</translation>
     </message>
     <message>
-        <source>Disable all GALI specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Onemogući sve specifične funkcije GALI (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
+        <source>Disable all SVG specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Onemogući sve specifične funkcije SVG (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5627,8 +5627,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zGALI backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zGALI sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSVG backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zSVG sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6127,8 +6127,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Sinkronizacija sporka...</translation>
     </message>
     <message>
-        <source>Syncing zGALI wallet...</source>
-        <translation>Sinkronizacija zGALI novčanika...</translation>
+        <source>Syncing zSVG wallet...</source>
+        <translation>Sinkronizacija zSVG novčanika...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6275,8 +6275,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Korisničko ime za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zGALI</source>
-        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zGALI-a</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSVG</source>
+        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zSVG-a</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -6291,8 +6291,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Provjera novčanika...</translation>
     </message>
     <message>
-        <source>Version 1 zGALI require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zGALI zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 zSVG require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 zSVG zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
@@ -6303,8 +6303,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Novčanik zaključan.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Galilel Core to complete</source>
-        <translation>Potrebno je prepisati novčanik: ponovo pokrenite Galilel Core</translation>
+        <source>Wallet needed to be rewritten: restart Salvage Core to complete</source>
+        <translation>Potrebno je prepisati novčanik: ponovo pokrenite Salvage Core</translation>
     </message>
     <message>
         <source>Wallet options:</source>

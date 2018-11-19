@@ -62,12 +62,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши GALI-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши SVG-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши GALI-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши SVG-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>Galilel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GALIs from being stolen by malware infecting your computer.</source>
-        <translation>Galilel сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши GALI от кражи с использованием вредоносного ПО.</translation>
+        <source>Salvage will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>Salvage сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши SVG от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GALI&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ GALI&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ SVG&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>Enter a GALI Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Введите GALI адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
+        <source>Enter a SVG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Введите SVG адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
     </message>
     <message>
-        <source>The GALI address to encrypt</source>
-        <translation>Адрес GALI для зашифровки</translation>
+        <source>The SVG address to encrypt</source>
+        <translation>Адрес SVG для зашифровки</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this GALI address</source>
-        <translation>Зашифровать личные ключи для этого GALI адреса </translation>
+        <source>Encrypt the private key for this SVG address</source>
+        <translation>Зашифровать личные ключи для этого SVG адреса </translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,7 +433,7 @@
         <translation>Просмотр истории транзакций</translation>
     </message>
     <message>
-        <source>Privacy Actions for zGALI</source>
+        <source>Privacy Actions for zSVG</source>
         <translation>Действия конфиденциальности для зпив</translation>
     </message>
     <message>
@@ -645,16 +645,16 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
-        <source>Send coins to a GALI address</source>
-        <translation>Отправить монеты на GALI адрес</translation>
+        <source>Send coins to a SVG address</source>
+        <translation>Отправить монеты на SVG адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and galilel: URIs)</source>
-        <translation>Запросить платежи (генерирует QR-код и GALI: URI)</translation>
+        <source>Request payments (generates QR codes and salvage: URIs)</source>
+        <translation>Запросить платежи (генерирует QR-код и SVG: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -669,24 +669,24 @@
         <translation>Обзор мастернод</translation>
     </message>
     <message>
-        <source>&amp;About Galilel Core</source>
-        <translation>&amp;О Galilel Core</translation>
+        <source>&amp;About Salvage Core</source>
+        <translation>&amp;О Salvage Core</translation>
     </message>
     <message>
-        <source>Show information about Galilel Core</source>
-        <translation>Показать информацию о Galilel Core</translation>
+        <source>Show information about Salvage Core</source>
+        <translation>Показать информацию о Salvage Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for GALI</source>
-        <translation>Изменение параметров конфигурации GALI</translation>
+        <source>Modify configuration options for SVG</source>
+        <translation>Изменение параметров конфигурации SVG</translation>
     </message>
     <message>
-        <source>Sign messages with your GALI addresses to prove you own them</source>
-        <translation>Подписывайте сообщения вашими GALI адресами, чтобы доказать, что вы их владелец</translation>
+        <source>Sign messages with your SVG addresses to prove you own them</source>
+        <translation>Подписывайте сообщения вашими SVG адресами, чтобы доказать, что вы их владелец</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified GALI addresses</source>
-        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным GALI адресом </translation>
+        <source>Verify messages to ensure they were signed with specified SVG addresses</source>
+        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным SVG адресом </translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Открыть файл настроек мастернод</translation>
     </message>
     <message>
-        <source>Open a GALI: URI or payment request</source>
-        <translation>Открыть GALI: URI или запрос платежа</translation>
+        <source>Open a SVG: URI or payment request</source>
+        <translation>Открыть SVG: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Окно обзора блока</translation>
     </message>
     <message>
-        <source>Show the Galilel Core help message to get a list with possible Galilel command-line options</source>
-        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды Galilel</translation>
+        <source>Show the Salvage Core help message to get a list with possible Salvage command-line options</source>
+        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды Salvage</translation>
     </message>
     <message>
-        <source>Galilel Core client</source>
-        <translation>Клиент Galilel Core</translation>
+        <source>Salvage Core client</source>
+        <translation>Клиент Salvage Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Galilel network</source>
-        <translation><numerusform>%n активных подключений к сети Galilel</numerusform><numerusform>%n активных подключений к сети Galilel</numerusform><numerusform>%n активных подключений к сети Galilel</numerusform><numerusform>%n активных подключений к сети Galilel</numerusform></translation>
+        <source>%n active connection(s) to Salvage network</source>
+        <translation><numerusform>%n активных подключений к сети Salvage</numerusform><numerusform>%n активных подключений к сети Salvage</numerusform><numerusform>%n активных подключений к сети Salvage</numerusform><numerusform>%n активных подключений к сети Salvage</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -892,8 +892,8 @@ MultiSend: %1</translation>
         <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (galilel.conf).</source>
-        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (galilel.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (salvage.conf).</source>
+        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (salvage.conf).</translation>
     </message>
 </context>
 <context>
@@ -1130,8 +1130,8 @@ MultiSend: %1</translation>
         <translation>Этот маркер становится красным если получаемая адресатом сумма меньше, чем %1</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ugali per input.</source>
-        <translation>Может вариироваться +/- %1 ugali при вводе</translation>
+        <source>Can vary +/- %1 usvg per input.</source>
+        <translation>Может вариироваться +/- %1 usvg при вводе</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1185,8 +1185,8 @@ MultiSend: %1</translation>
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid GALI address.</source>
-        <translation>Введенный адрес "%1" не является GALI адресом.</translation>
+        <source>The entered address "%1" is not a valid SVG address.</source>
+        <translation>Введенный адрес "%1" не является SVG адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1231,16 +1231,16 @@ MultiSend: %1</translation>
         <translation>версия</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About Galilel Core</source>
-        <translation>О Galilel Core</translation>
+        <source>About Salvage Core</source>
+        <translation>О Salvage Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1286,16 +1286,16 @@ MultiSend: %1</translation>
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to Galilel Core.</source>
-        <translation>Добро пожаловать в Galilel Core.</translation>
+        <source>Welcome to Salvage Core.</source>
+        <translation>Добро пожаловать в Salvage Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Galilel Core will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Galilel Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where Salvage Core will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Salvage Core.</translation>
     </message>
     <message>
-        <source>Galilel Core will download and store a copy of the GALI block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Galilel Core загрузит и сохранит копию цепочки блоков GALI. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>Salvage Core will download and store a copy of the SVG block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Salvage Core загрузит и сохранит копию цепочки блоков SVG. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1306,8 +1306,8 @@ MultiSend: %1</translation>
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1448,12 +1448,12 @@ MultiSend: %1</translation>
         <translation>Введите адрес для отправки</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other GALI addresses after it matures.
-To Add: enter percentage to give and GALI address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SVG addresses after it matures.
+To Add: enter percentage to give and SVG address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие GALI адреса.
-Для добавления: введите передаваемый процент и GALI адрес для добавления к вектору MultiSend.
+        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие SVG адреса.
+Для добавления: введите передаваемый процент и SVG адрес для добавления к вектору MultiSend.
 Для удаления: введите удаляемый адрес и нажмите удалить.
 MultiSend будет неактивен до тех пор, пока вы не нажмете Включить</translation>
     </message>
@@ -1681,8 +1681,8 @@ Please be patient after clicking import.</source>
         <translation>Адрес/ Сумма:</translation>
     </message>
     <message>
-        <source>Add destinations to send GALI to</source>
-        <translation>Добавить назначение куда отправить GALI</translation>
+        <source>Add destinations to send SVG to</source>
+        <translation>Добавить назначение куда отправить SVG</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,48 +1780,48 @@ Please be patient after clicking import.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 15000 GALI</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 15000 GALI</translation>
+        <source>Use 2 separate masternodes to mix funds up to 15000 SVG</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 15000 SVG</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 15000 GALI</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 15000 GALI</translation>
+        <source>Use 8 separate masternodes to mix funds up to 15000 SVG</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 15000 SVG</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 GALI to anonymize 15000 GALI</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 GALI для анонимизации 15000 GALI</translation>
+        <source>This option is the quickest and will cost about ~0.025 SVG to anonymize 15000 SVG</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 SVG для анонимизации 15000 SVG</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 GALI to anonymize 15000 GALI</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 GALI для анонимизации 15000 GALI</translation>
+        <source>This option is moderately fast and will cost about 0.05 SVG to anonymize 15000 SVG</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 SVG для анонимизации 15000 SVG</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 GALI per 15000 GALI you anonymize.</source>
-        <translation>0.1 GALI за 15000 GALI которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 SVG per 15000 SVG you anonymize.</source>
+        <translation>0.1 SVG за 15000 SVG которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Настройка Перемешивания</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening GALI's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки GALI.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки SVG.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening GALI's configuration screen.</source>
-        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки GALI.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки SVG.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening GALI's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки GALI.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки SVG.</translation>
     </message>
 </context>
 <context>
@@ -1882,8 +1882,8 @@ Please be patient after clicking import.</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the GALI client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт GALI через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the SVG client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт SVG через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1902,12 +1902,12 @@ Please be patient after clicking import.</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start GALI after logging in to the system.</source>
-        <translation>Автоматически запускать GALI после входа в систему.</translation>
+        <source>Automatically start SVG after logging in to the system.</source>
+        <translation>Автоматически запускать SVG после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start GALI on system login</source>
-        <translation>&amp;Запускать GALI при входе в систему</translation>
+        <source>&amp;Start SVG on system login</source>
+        <translation>&amp;Запускать SVG при входе в систему</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1934,50 +1934,50 @@ Please be patient after clicking import.</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting GALI.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска GALI.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SVG.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска SVG.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/galilel-project/galilel-project-translations</source>
+https://www.transifex.com/salvage-project/salvage-project-translations</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/galilel-project/galilel-project-translations</translation>
+https://www.transifex.com/salvage-project/salvage-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of GALI units to zGALI</source>
-        <translation>Невозможно автоматически отчеканить единицы GALI для zGALI</translation>
+        <source>Enable automatic minting of SVG units to zSVG</source>
+        <translation>Невозможно автоматически отчеканить единицы SVG для zSVG</translation>
     </message>
     <message>
-        <source>Enable zGALI Automint</source>
-        <translation>Невозможно авточеканка  zGALI</translation>
+        <source>Enable zSVG Automint</source>
+        <translation>Невозможно авточеканка  zSVG</translation>
     </message>
     <message>
-        <source>Percentage of incoming GALI which get automatically converted to zGALI via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих GALI, которые автоматически конвертируются в zGALI благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming SVG which get automatically converted to zSVG via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих SVG, которые автоматически конвертируются в zSVG благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zGALI</source>
-        <translation>Процент  авточеканненых zGALI</translation>
+        <source>Percentage of autominted zSVG</source>
+        <translation>Процент  авточеканненых zSVG</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough GALI for this denomination is available</source>
-        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно GALI для этой номинации.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SVG for this denomination is available</source>
+        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно SVG для этой номинации.</translation>
     </message>
     <message>
-        <source>Preferred Automint zGALI Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zGALI</translation>
+        <source>Preferred Automint zSVG Denomination</source>
+        <translation>Предпочитаемый номинал авточеканной  монеты  zSVG</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Порог разделения доли:</translation>
     </message>
     <message>
-        <source>Connect to the Galilel network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети Galilel через SOCKS5 прокси.</translation>
+        <source>Connect to the Salvage network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети Salvage через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/galilel-project/galilel-project-translations</translat
         <translation>Общий баланс включая все не доступные монеты</translation>
     </message>
     <message>
-        <source>GALI Balance</source>
-        <translation>Баланс GALI</translation>
+        <source>SVG Balance</source>
+        <translation>Баланс SVG</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2155,17 +2155,17 @@ https://www.transifex.com/galilel-project/galilel-project-translations</translat
         <translation>Текущий заблокированый баланс всех наблюдаемых адресов</translation>
     </message>
     <message>
-        <source>Your current GALI balance, unconfirmed and immature transactions included</source>
-        <translation>Ваш текущий GALI  баланс, включая неподтвержденные и незрелые транзакции</translation>
+        <source>Your current SVG balance, unconfirmed and immature transactions included</source>
+        <translation>Ваш текущий SVG  баланс, включая неподтвержденные и незрелые транзакции</translation>
     </message>
     <message>
-        <source>zGALI Balance</source>
-        <translation>Баланс zGALI</translation>
+        <source>zSVG Balance</source>
+        <translation>Баланс zSVG</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zGALI are spendable.</source>
-        <translation>Зрелые: более 20 подтверждений и более 1 чеканки одного и того же наименования после того, как оно было отчеканено. Эти zGALI можно потратить.</translation>
+These zSVG are spendable.</source>
+        <translation>Зрелые: более 20 подтверждений и более 1 чеканки одного и того же наименования после того, как оно было отчеканено. Эти zSVG можно потратить.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2174,8 +2174,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Незрелый: подтвержден, но менее 1 чеканок того же наименования после того, как он был отчеканен</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Galilel network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Galilel после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Salvage network after a connection is established, but this process has not completed yet.</source>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Salvage после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2218,8 +2218,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Расходуемый:</translation>
     </message>
     <message>
-        <source>Locked GALI or Masternode collaterals. These are excluded from zGALI minting.</source>
-        <translation>Заблокированно дополнительное обеспечение GALI или Masternode. Они исключены из чеканки zGALI.</translation>
+        <source>Locked SVG or Masternode collaterals. These are excluded from zSVG minting.</source>
+        <translation>Заблокированно дополнительное обеспечение SVG или Masternode. Они исключены из чеканки zSVG.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2230,8 +2230,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Неподтвержденный:</translation>
     </message>
     <message>
-        <source>Your current zGALI balance, unconfirmed and immature zGALI included.</source>
-        <translation>Ваш текущий zGALI баланс, включая неподтвержденные и незрелые транзакции</translation>
+        <source>Your current zSVG balance, unconfirmed and immature zSVG included.</source>
+        <translation>Ваш текущий zSVG баланс, включая неподтвержденные и незрелые транзакции</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2242,10 +2242,10 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>несинронизировано</translation>
     </message>
     <message>
-        <source>Current percentage of zGALI.
+        <source>Current percentage of zSVG.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Текущий процент от zGALI.
+        <translation>Текущий процент от zSVG.
 Если АвтоЧеканка включена, этот процент будет располагаться на настроенном проценте АвтоЧеканка  (по умолчанию = 10%).
 </translation>
     </message>
@@ -2254,14 +2254,14 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <translation>Авточеканка в данный момен включена и установлена в</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in galilel.conf.</source>
-        <translation>To disable AutoMint add 'enablezeromint=0' in galilel.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in salvage.conf.</source>
+        <translation>To disable AutoMint add 'enablezeromint=0' in salvage.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in galilel.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in salvage.conf</source>
         <translation>Авточеканка  в настоящее время отключена.
-Чтобы включить Авточеканку, измените 'enablezeromint = 0' на 'enablezeromint = 1' в файле galilel.conf</translation>
+Чтобы включить Авточеканку, измените 'enablezeromint = 0' на 'enablezeromint = 1' в файле salvage.conf</translation>
     </message>
 </context>
 <context>
@@ -2287,12 +2287,12 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in galilel.co
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start galilel: click-to-pay handler</source>
-        <translation>Не удалось запустить galilel: обработчик click-to-pay </translation>
+        <source>Cannot start salvage: click-to-pay handler</source>
+        <translation>Не удалось запустить salvage: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid GALI address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный GALI адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SVG address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный SVG адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2377,8 +2377,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in galilel.co
         <translation>Действия Zerocoin </translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Galilel network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Galilel после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Salvage network after a connection is established, but this process has not completed yet.</source>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Salvage после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2389,8 +2389,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in galilel.co
         <translation>0</translation>
     </message>
     <message>
-        <source>zGALI</source>
-        <translation>zGALI</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2401,8 +2401,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in galilel.co
         <translation>Доступный для чеканки</translation>
     </message>
     <message>
-        <source>0.000 000 00 GALI</source>
-        <translation>0.000 000 00 GALI</translation>
+        <source>0.000 000 00 SVG</source>
+        <translation>0.000 000 00 SVG</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2441,16 +2441,16 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in galilel.co
         <translation>КОНФИДЕНЦИАЛЬНОСТЬ</translation>
     </message>
     <message>
-        <source>Enter an amount of GALI to convert to zGALI</source>
-        <translation>Введите сумму в GALI для  конвертации в zGALI</translation>
+        <source>Enter an amount of SVG to convert to zSVG</source>
+        <translation>Введите сумму в SVG для  конвертации в zSVG</translation>
     </message>
     <message>
-        <source>zGALI Control</source>
-        <translation>Контроль zGALI</translation>
+        <source>zSVG Control</source>
+        <translation>Контроль zSVG</translation>
     </message>
     <message>
-        <source>zGALI Selected:</source>
-        <translation>Выбрано zGALI:</translation>
+        <source>zSVG Selected:</source>
+        <translation>Выбрано zSVG:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2465,24 +2465,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in galilel.co
         <translation>Потратить Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zGALI for spending</source>
-        <translation>Доступный (зрелый и расходуемый) zGALI для расходов</translation>
+        <source>Available (mature and spendable) zSVG for spending</source>
+        <translation>Доступный (зрелый и расходуемый) zSVG для расходов</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Доступный Баланс :</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zGALI for spending
+        <source>Available (mature and spendable) zSVG for spending
 
-zGALI are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Доступный (зрелый и затратный) zGALI для расходов
+zSVG are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Доступный (зрелый и затратный) zSVG для расходов
 
-zGALI are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</translation>
+zSVG are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</translation>
     </message>
     <message>
-        <source>0 zGALI</source>
-        <translation>0 zGALI</translation>
+        <source>0 zSVG</source>
+        <translation>0 zSVG</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2501,8 +2501,8 @@ zGALI are mature when they have more than 20 confirmations AND more than 2 mints
         <translation>Оплатить &amp;кому:</translation>
     </message>
     <message>
-        <source>The GALI address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Адрес GALI для отправки платежа. Создает локальный платеж себе, когда он пуст.</translation>
+        <source>The SVG address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Адрес SVG для отправки платежа. Создает локальный платеж себе, когда он пуст.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2553,8 +2553,8 @@ zGALI are mature when they have more than 20 confirmations AND more than 2 mints
         <translation>Zerocoin Stats:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zGALI</source>
-        <translation>Общий баланс, включая неподтвержденные и незрелые zGALI</translation>
+        <source>Total Balance including unconfirmed and immature zSVG</source>
+        <translation>Общий баланс, включая неподтвержденные и незрелые zSVG</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2575,24 +2575,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Незрелый: подтвержден, но менее 1 чеканок того же наименования после того, как он был отчеканен</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zGALI minting.
+        <source>Show the current status of automatic zSVG minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to galilel.conf
-- disable: add 'enablezeromint=0' to galilel.conf
+- enable: add 'enablezeromint=1' to salvage.conf
+- disable: add 'enablezeromint=0' to salvage.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zGALI
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSVG
 
 </source>
-        <translation>Показать текущий статус автоматической чеканки zGALI.
+        <translation>Показать текущий статус автоматической чеканки zSVG.
 
 Чтобы изменить статус (требуется перезагрузка):
-- включить: добавить 'enablezeromint = 1' в galilel.conf
-- отключить: добавить 'enablezeromint = 0' в galilel.conf
+- включить: добавить 'enablezeromint = 1' в salvage.conf
+- отключить: добавить 'enablezeromint = 0' в salvage.conf
 
 Чтобы изменить процент (не требуется перезагрузка):
-- меню Настройки-&gt; Параметры-&gt; Процент авторизованного zGALI</translation>
+- меню Настройки-&gt; Параметры-&gt; Процент авторизованного zSVG</translation>
     </message>
     <message>
         <source>AutoMint Status</source>
@@ -2787,12 +2787,12 @@ Maximum allowed: </source>
 Максимально допустимое:</translation>
     </message>
     <message>
-        <source>zGALI Spend #: </source>
-        <translation>zGALI Тратить #: </translation>
+        <source>zSVG Spend #: </source>
+        <translation>zSVG Тратить #: </translation>
     </message>
     <message>
-        <source>zGALI Mint</source>
-        <translation>чеканка zGALI</translation>
+        <source>zSVG Mint</source>
+        <translation>чеканка zSVG</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2807,12 +2807,12 @@ Maximum allowed: </source>
         <translation> Настроенный целевой процент: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zGALI is currently disabled due to maintenance.</source>
-        <translation>zGALI в настоящее время отключен от обслуживания.</translation>
+        <source>zSVG is currently disabled due to maintenance.</source>
+        <translation>zSVG в настоящее время отключен от обслуживания.</translation>
     </message>
     <message>
-        <source>zGALI is currently undergoing maintenance.</source>
-        <translation>В настоящее время zGALI проходит техническое обслуживание.</translation>
+        <source>zSVG is currently undergoing maintenance.</source>
+        <translation>В настоящее время zSVG проходит техническое обслуживание.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2899,8 +2899,8 @@ Maximum allowed: </source>
         <translation>Создан успешно</translation>
     </message>
     <message>
-        <source> zGALI in </source>
-        <translation> zGALI в</translation>
+        <source> zSVG in </source>
+        <translation> zSVG в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2927,8 +2927,8 @@ Maximum allowed: </source>
         <translation>Не предоставляется адрес «Pay To», создающий местный платеж</translation>
     </message>
     <message>
-        <source>Invalid GALI Address</source>
-        <translation>неправильный GALI адрес</translation>
+        <source>Invalid SVG Address</source>
+        <translation>неправильный SVG адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2959,12 +2959,12 @@ Maximum allowed: </source>
         <translation>Подтвердить отправку монет</translation>
     </message>
     <message>
-        <source>Version 1 zGALI require a security level of 100 to successfully spend.</source>
-        <translation>Для версии 1 zGALI требуется уровень безопасности 100, который можно успешно тратить.</translation>
+        <source>Version 1 zSVG require a security level of 100 to successfully spend.</source>
+        <translation>Для версии 1 zSVG требуется уровень безопасности 100, который можно успешно тратить.</translation>
     </message>
     <message>
-        <source>Failed to spend zGALI</source>
-        <translation>Не удалось провести zGALI</translation>
+        <source>Failed to spend zSVG</source>
+        <translation>Не удалось провести zSVG</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2986,7 +2986,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of GALI to convert to zGALI</comment>
+        <comment>Enter an amount of SVG to convert to zSVG</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3029,8 +3029,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter a GALI address (e.g. %1)</source>
-        <translation>Введите адрес GALI (например %1)</translation>
+        <source>Enter a SVG address (e.g. %1)</source>
+        <translation>Введите адрес SVG (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3167,8 +3167,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the GALI debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки GALI. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <source>Open the SVG debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть протокол отладки SVG. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3303,8 +3303,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Пользовательский путь резервного копирования:</translation>
     </message>
     <message>
-        <source>Custom zGALI Backup Path:</source>
-        <translation>Пользовательский путь резервного копирования zGALI:</translation>
+        <source>Custom zSVG Backup Path:</source>
+        <translation>Пользовательский путь резервного копирования zSVG:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3384,8 +3384,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Вывод:</translation>
     </message>
     <message>
-        <source>Welcome to the GALI RPC console.</source>
-        <translation>Добро пожаловать в окружение GALI RPC.</translation>
+        <source>Welcome to the SVG RPC console.</source>
+        <translation>Добро пожаловать в окружение SVG RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3511,16 +3511,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Дополнительный ярлык для связи с новым адресом приема.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Galilel network.</source>
-        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. Примечание. Сообщение не будет отправлено с оплатой через сеть Galilel.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Salvage network.</source>
+        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. Примечание. Сообщение не будет отправлено с оплатой через сеть Salvage.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>ПОЛУЧАТЬ</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Galilel network.</source>
-        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. &lt;br&gt;Примечание. Сообщение не будет отправлено с оплатой через сеть Galilel.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Salvage network.</source>
+        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. &lt;br&gt;Примечание. Сообщение не будет отправлено с оплатой через сеть Salvage.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3748,8 +3748,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>UTXO Размер:</translation>
     </message>
     <message>
-        <source>0 GALI</source>
-        <translation>0 GALI</translation>
+        <source>0 SVG</source>
+        <translation>0 SVG</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3804,16 +3804,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Монеты автоматически выбираются</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uGALIs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGALIs in fee,&lt;br /&gt;while "at least" pays 1000 uGALIs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Если пользовательская плата установлена в 1000 uGALIs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uGALIs,&lt;br /&gt;а «по крайней мере» платит 1000 uGALI. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
+        <source>If the custom fee is set to 1000 uSVGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSVGs in fee,&lt;br /&gt;while "at least" pays 1000 uSVGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Если пользовательская плата установлена в 1000 uSVGs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uSVGs,&lt;br /&gt;а «по крайней мере» платит 1000 uSVG. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uGALIs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGALIs in fee,&lt;br /&gt;while "total at least" pays 1000 uGALIs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Если пользовательская плата установлена в 1000 uGALIs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uGALIs,&lt;br /&gt;а «по крайней мере» платит 1000 uGALI. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
+        <source>If the custom fee is set to 1000 uSVGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSVGs in fee,&lt;br /&gt;while "total at least" pays 1000 uSVGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Если пользовательская плата установлена в 1000 uSVGs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uSVGs,&lt;br /&gt;а «по крайней мере» платит 1000 uSVG. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for GALI transactions than the network can process.</source>
-        <translation>Платить только минимальную плату просто отлично, если в блоке меньше объема транзакции, чем места в блоке.&lt;br /&gt; Но имейте в виду, что это может закончиться никогда не подтверждающей транзакцией, если будет больше спроса на транзакции GALI, чем сеть может обрабатывать.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SVG transactions than the network can process.</source>
+        <translation>Платить только минимальную плату просто отлично, если в блоке меньше объема транзакции, чем места в блоке.&lt;br /&gt; Но имейте в виду, что это может закончиться никогда не подтверждающей транзакцией, если будет больше спроса на транзакции SVG, чем сеть может обрабатывать.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3860,8 +3860,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Добавить &amp;Получателя</translation>
     </message>
     <message>
-        <source>Anonymized GALI</source>
-        <translation>Анонимный GALI</translation>
+        <source>Anonymized SVG</source>
+        <translation>Анонимный SVG</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3908,8 +3908,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Инструмент разделения блоков не работает с несколькими адресами. Попробуй еще раз.</translation>
     </message>
     <message>
-        <source>Warning: Invalid GALI address</source>
-        <translation>Предупреждение: неправильный GALI адрес</translation>
+        <source>Warning: Invalid SVG address</source>
+        <translation>Предупреждение: неправильный SVG адрес</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4011,8 +4011,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Оплатить &amp;кому:</translation>
     </message>
     <message>
-        <source>The GALI address to send the payment to</source>
-        <translation>Адрес GALI для отправки платежа</translation>
+        <source>The SVG address to send the payment to</source>
+        <translation>Адрес SVG для отправки платежа</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4051,8 +4051,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Сообщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the GALI: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Galilel network.</source>
-        <translation>Сообщение, которое было прикреплено к URI GALI: URI, который будет сохранен с транзакцией для вашей справки. Примечание. Это сообщение не будет отправлено через сеть Galilel.</translation>
+        <source>A message that was attached to the SVG: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Salvage network.</source>
+        <translation>Сообщение, которое было прикреплено к URI SVG: URI, который будет сохранен с транзакцией для вашей справки. Примечание. Это сообщение не будет отправлено через сеть Salvage.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4078,8 +4078,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Galilel Core is shutting down...</source>
-        <translation>Galilel Core выключается...</translation>
+        <source>Salvage Core is shutting down...</source>
+        <translation>Salvage Core выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4101,8 +4101,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Вы можете подписывать сообщения с вашими адресами, чтобы доказать, что вы ими владеете. Будьте осторожны, чтобы не подписывать ничего неопределенного, поскольку фишинг-атаки могут попытаться обмануть вас, подписав вашу личность на них. Подпишите только полные подробные заявления, с которыми вы согласны.</translation>
     </message>
     <message>
-        <source>The GALI address to sign the message with</source>
-        <translation>Адрес GALI для подписи сообщения с помощью</translation>
+        <source>The SVG address to sign the message with</source>
+        <translation>Адрес SVG для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4133,16 +4133,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this GALI address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес GALI</translation>
+        <source>Sign the message to prove you own this SVG address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес SVG</translation>
     </message>
     <message>
-        <source>The GALI address the message was signed with</source>
-        <translation>Адрес GALI, которым подписано сообщение</translation>
+        <source>The SVG address the message was signed with</source>
+        <translation>Адрес SVG, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified GALI address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным GALI адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified SVG address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным SVG адресом </translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4228,8 +4228,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4248,8 +4248,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Разработчики PIVX Core</translation>
     </message>
     <message>
-        <source>The Galilel Core developers</source>
-        <translation>Разработчики Galilel Core</translation>
+        <source>The Salvage Core developers</source>
+        <translation>Разработчики Salvage Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4528,12 +4528,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Получено через обфускацию</translation>
     </message>
     <message>
-        <source>GALI Stake</source>
-        <translation>Доля GALI</translation>
+        <source>SVG Stake</source>
+        <translation>Доля SVG</translation>
     </message>
     <message>
-        <source>zGALI Stake</source>
-        <translation>Доля zGALI</translation>
+        <source>zSVG Stake</source>
+        <translation>Доля zSVG</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4552,32 +4552,32 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Обфускация Создание конфессий</translation>
     </message>
     <message>
-        <source>Converted GALI to zGALI</source>
-        <translation>Преобразованный GALI в zGALI</translation>
+        <source>Converted SVG to zSVG</source>
+        <translation>Преобразованный SVG в zSVG</translation>
     </message>
     <message>
-        <source>Spent zGALI</source>
-        <translation>потраченный zGALI</translation>
+        <source>Spent zSVG</source>
+        <translation>потраченный zSVG</translation>
     </message>
     <message>
-        <source>Received GALI from zGALI</source>
-        <translation>Полученный GALI от zGALI</translation>
+        <source>Received SVG from zSVG</source>
+        <translation>Полученный SVG от zSVG</translation>
     </message>
     <message>
-        <source>Minted Change as zGALI from zGALI Spend</source>
-        <translation>созданная  замена  zGALI из потраенного zGALI </translation>
+        <source>Minted Change as zSVG from zSVG Spend</source>
+        <translation>созданная  замена  zSVG из потраенного zSVG </translation>
     </message>
     <message>
-        <source>Converted zGALI to GALI</source>
-        <translation>Преобразованный zGALI to GALI</translation>
+        <source>Converted zSVG to SVG</source>
+        <translation>Преобразованный zSVG to SVG</translation>
     </message>
     <message>
-        <source>Anonymous (zGALI Transaction)</source>
-        <translation>Анонимный (транзакция zGALI)</translation>
+        <source>Anonymous (zSVG Transaction)</source>
+        <translation>Анонимный (транзакция zSVG)</translation>
     </message>
     <message>
-        <source>Anonymous (zGALI Stake)</source>
-        <translation>Анонимный (ставка zGALI)</translation>
+        <source>Anonymous (zSVG Stake)</source>
+        <translation>Анонимный (ставка zSVG)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4787,12 +4787,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Экспортирование произошло успешно</translation>
     </message>
     <message>
-        <source>Received GALI from zGALI</source>
-        <translation>Полученный GALI от zGALI</translation>
+        <source>Received SVG from zSVG</source>
+        <translation>Полученный SVG от zSVG</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zGALI</source>
-        <translation>Потратить Zerocoin, Преобразовать в zGALI</translation>
+        <source>Zerocoin Spend, Change in zSVG</source>
+        <translation>Потратить Zerocoin, Преобразовать в zSVG</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4828,8 +4828,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Отправить Монеты</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 GALI.</source>
-        <translation>SwiftX не поддерживает отправку значений, которые еще высоки. В настоящее время транзакции ограничены %1 GALI.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SVG.</source>
+        <translation>SwiftX не поддерживает отправку значений, которые еще высоки. В настоящее время транзакции ограничены %1 SVG.</translation>
     </message>
 </context>
 <context>
@@ -4860,10 +4860,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZGaliControlDialog</name>
+    <name>ZSvgControlDialog</name>
     <message>
-        <source>Select zGALI to Spend</source>
-        <translation>Выберите zGALI чтобы потратить</translation>
+        <source>Select zSVG to Spend</source>
+        <translation>Выберите zSVG чтобы потратить</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4874,8 +4874,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>zGALI</source>
-        <translation>zGALI</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4887,7 +4887,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>galilel-core</name>
+    <name>salvage-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = сохранить tx метаданные, например, владельца учетной записи и информацию о запросе платежа, 2 = удалить tx метаданные)</translation>
@@ -4913,8 +4913,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Расчетная контрольная точка  не является тем, что регистрируется блочным индексом</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Galilel Core is probably already running.</source>
-        <translation>Не удается получить блокировку в каталоге данных %s. Galilel Core, вероятно, уже запущен.</translation>
+        <source>Cannot obtain a lock on data directory %s. Salvage Core is probably already running.</source>
+        <translation>Не удается получить блокировку в каталоге данных %s. Salvage Core, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4941,16 +4941,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Распространяется по лицензии программного обеспечения MIT, см. Сопроводительный файл COPYING или &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zGALI minting (0-1, default: %u)</source>
-        <translation>Включить автоматическое резервное копирование кошелька, запускаемое после каждого чеканки zGALI (0-1, по умолчанию: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSVG minting (0-1, default: %u)</source>
+        <translation>Включить автоматическое резервное копирование кошелька, запускаемое после каждого чеканки zSVG (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for GALI inputs (0-1, default: %u)</source>
-        <translation>Включение или отключение функций разбивки для входов GALI (0-1, по умолчанию: %u)</translation>
+        <source>Enable or disable staking functionality for SVG inputs (0-1, default: %u)</source>
+        <translation>Включение или отключение функций разбивки для входов SVG (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zGALI inputs (0-1, default: %u)</source>
-        <translation>Включение или отключение функций разбивки для входов zGALI (0-1, по умолчанию: %u)</translation>
+        <source>Enable or disable staking functionality for zSVG inputs (0-1, default: %u)</source>
+        <translation>Включение или отключение функций разбивки для входов zSVG (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4985,12 +4985,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Выполнить команду, когда лучший блок изменяется (%s в cmd заменяется блочным хэшем)</translation>
     </message>
     <message>
-        <source>Fees (in GALI/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Тарифы (в GALI / Kb), меньшие, чем это, считаются нулевой комиссией за ретрансляцию (по умолчанию: %s)</translation>
+        <source>Fees (in SVG/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Тарифы (в SVG / Kb), меньшие, чем это, считаются нулевой комиссией за ретрансляцию (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Fees (in GALI/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Плата (в GALI / Kb) меньше этого считается нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
+        <source>Fees (in SVG/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Плата (в SVG / Kb) меньше этого считается нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5089,20 +5089,20 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Этот продукт включает программное обеспечение, разработанное OpenSSL Project для использования в OpenSSL Toolkit &lt;https://www.openssl.org/&gt; и криптографическом программном обеспечении, написанном Эриком Яном и программным обеспечением UPnP, написанным Томасом Бернардом.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Galilel Core is probably already running.</source>
-        <translation>Не удалось привязать к %s на этом компьютере. Galilel Core, вероятно, уже запущен.</translation>
+        <source>Unable to bind to %s on this computer. Salvage Core is probably already running.</source>
+        <translation>Не удалось привязать к %s на этом компьютере. Salvage Core, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Не удалось найти достаточное количество средств, предназначенных для обфускации, для этой транзакции.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 15000 GALI.</source>
-        <translation>Невозможно найти достаточное количество средств, не предназначенных для обфускации, для этой транзакции, которые не равны 15000 GALI.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 15000 SVG.</source>
+        <translation>Невозможно найти достаточное количество средств, не предназначенных для обфускации, для этой транзакции, которые не равны 15000 SVG.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 15000 GALI.</source>
-        <translation>Не удалось найти достаточное количество средств для этой транзакции, которые не равны 15000 GALI.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 15000 SVG.</source>
+        <translation>Не удалось найти достаточное количество средств для этой транзакции, которые не равны 15000 SVG.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5117,8 +5117,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Предупреждение: -paytxfee установлен очень высоко! Это комиссия за транзакцию, которую вы заплатите, если вы отправляете транзакцию.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Galilel Core will not work properly.</source>
-        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, Galilel Core не будет работать должным образом.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Salvage Core will not work properly.</source>
+        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, Salvage Core не будет работать должным образом.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5273,8 +5273,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Copyright (C) 2015-%i Разработчики PIVX Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2018-%i The Galilel Core Developers</source>
-        <translation>Copyright (C) 2018-%i Разработчики Galilel Core</translation>
+        <source>Copyright (C) 2018-%i The Salvage Core Developers</source>
+        <translation>Copyright (C) 2018-%i Разработчики Salvage Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5361,8 +5361,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ошибка при загрузке wallet.dat: Кошелек поврежден</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Galilel Core</source>
-        <translation>Ошибка загрузки wallet.dat: Кошелек требует более новой версии Galilel Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Salvage Core</source>
+        <translation>Ошибка загрузки wallet.dat: Кошелек требует более новой версии Salvage Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5417,8 +5417,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Не удалось прочитать блок</translation>
     </message>
     <message>
-        <source>Fee (in GALI/kB) to add to transactions you send (default: %s)</source>
-        <translation>Плата (в GALI / kB) для добавления к транзакциям, которые вы отправляете (по умолчанию: %s)</translation>
+        <source>Fee (in SVG/kB) to add to transactions you send (default: %s)</source>
+        <translation>Плата (в SVG / kB) для добавления к транзакциям, которые вы отправляете (по умолчанию: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5477,8 +5477,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Galilel Core is shutting down.</source>
-        <translation>Инициализация проверки работоспособности не удалась. Galilel Core отключается.</translation>
+        <source>Initialization sanity check failed. Salvage Core is shutting down.</source>
+        <translation>Инициализация проверки работоспособности не удалась. Salvage Core отключается.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5549,8 +5549,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Процент автоматически отчеканенного Zerocoin (1-100, по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Reindex the GALI and zGALI money supply statistics</source>
-        <translation>Reindex статистика денежной массы GALI и zGALI</translation>
+        <source>Reindex the SVG and zSVG money supply statistics</source>
+        <translation>Reindex статистика денежной массы SVG и zSVG</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5589,8 +5589,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </translation>
     </message>
     <message>
-        <source>Disable all GALI specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Отключите все специфические функции GALI (Masternodes, Zerocoin, SwiftX, Бюджетирование) (0-1, по умолчанию: %u)</translation>
+        <source>Disable all SVG specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Отключите все специфические функции SVG (Masternodes, Zerocoin, SwiftX, Бюджетирование) (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5625,8 +5625,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Предпочтительный номинал для автоматически чеканившегося Zerocoin (1/5/10/50/100/500/1000/5000), 0 без предпочтений. default: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zGALI backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой автоматической резервной копии zGALI. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию. Если также установлен резервный путь, произойдет 4 резервных копии</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSVG backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой автоматической резервной копии zSVG. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию. Если также установлен резервный путь, произойдет 4 резервных копии</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6125,8 +6125,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Синхронизация спорков ...</translation>
     </message>
     <message>
-        <source>Syncing zGALI wallet...</source>
-        <translation>Синхронизация zGALI кошелька ...</translation>
+        <source>Syncing zSVG wallet...</source>
+        <translation>Синхронизация zSVG кошелька ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6273,8 +6273,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Имя пользователя для соединений JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zGALI</source>
-        <translation>Значение ниже наименьшего доступного номинала (= 1) zGALI</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSVG</source>
+        <translation>Значение ниже наименьшего доступного номинала (= 1) zSVG</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -6289,8 +6289,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Проверка кошелька ...</translation>
     </message>
     <message>
-        <source>Version 1 zGALI require a security level of 100 to successfully spend.</source>
-        <translation>Для версии 1 zGALI требуется уровень безопасности 100, который можно успешно тратить.</translation>
+        <source>Version 1 zSVG require a security level of 100 to successfully spend.</source>
+        <translation>Для версии 1 zSVG требуется уровень безопасности 100, который можно успешно тратить.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
@@ -6301,8 +6301,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Кошелек заблокирован.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Galilel Core to complete</source>
-        <translation>Кошелек необходимо переписать: перезапустите Galilel Core, чтобы завершить</translation>
+        <source>Wallet needed to be rewritten: restart Salvage Core to complete</source>
+        <translation>Кошелек необходимо переписать: перезапустите Salvage Core, чтобы завершить</translation>
     </message>
     <message>
         <source>Wallet options:</source>

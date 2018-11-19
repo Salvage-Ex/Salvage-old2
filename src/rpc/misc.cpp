@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -58,7 +58,7 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"version\": xxxxx,           (numeric) the server version\n"
             "  \"protocolversion\": xxxxx,   (numeric) the protocol version\n"
             "  \"walletversion\": xxxxx,     (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,         (numeric) the total galilel balance of the wallet (excluding zerocoins)\n"
+            "  \"balance\": xxxxxxx,         (numeric) the total salvage balance of the wallet (excluding zerocoins)\n"
             "  \"zerocoinbalance\": xxxxxxx, (numeric) the total zerocoin balance of the wallet\n"
             "  \"blocks\": xxxxxx,           (numeric) the current number of blocks processed in the server\n"
             "  \"timeoffset\": xxxxx,        (numeric) the time offset\n"
@@ -67,23 +67,23 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"difficulty\": xxxxxx,       (numeric) the current difficulty\n"
             "  \"testnet\": true|false,      (boolean) if the server is using testnet or not\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zGALIsupply\" :\n"
+            "  \"zSVGsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zGALI denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zGALI denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zGALI denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zGALI denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zGALI denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zGALI denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zGALI denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zGALI denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zGALI denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zSVG denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zSVG denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zSVG denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zSVG denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zSVG denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zSVG denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zSVG denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zSVG denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zSVG denominations\n"
             "  }\n"
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated\n"
             "  \"unlocked_until\": ttt,      (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n"
-            "  \"paytxfee\": x.xxxx,         (numeric) the transaction fee set in galilel/kb\n"
-            "  \"relayfee\": x.xxxx,         (numeric) minimum relay fee for non-free transactions in galilel/kb\n"
+            "  \"paytxfee\": x.xxxx,         (numeric) the transaction fee set in salvage/kb\n"
+            "  \"relayfee\": x.xxxx,         (numeric) minimum relay fee for non-free transactions in salvage/kb\n"
             "  \"staking status\": true|false,  (boolean) if the wallet is staking or not\n"
             "  \"errors\": \"...\"           (string) any error messages\n"
             "}\n"
@@ -124,12 +124,12 @@ UniValue getinfo(const UniValue& params, bool fHelp)
     }
 
     obj.push_back(Pair("moneysupply",ValueFromAmount(chainActive.Tip()->nMoneySupply)));
-    UniValue zgaliObj(UniValue::VOBJ);
+    UniValue zsvgObj(UniValue::VOBJ);
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        zgaliObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom*COIN))));
+        zsvgObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
-    zgaliObj.push_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
-    obj.push_back(Pair("zGALIsupply", zgaliObj));
+    zsvgObj.push_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
+    obj.push_back(Pair("zSVGsupply", zsvgObj));
 
 #ifdef ENABLE_WALLET
     if (pwalletMain) {
@@ -335,16 +335,16 @@ UniValue validateaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress \"galileladdress\"\n"
-            "\nReturn information about the given galilel address.\n"
+            "validateaddress \"salvageaddress\"\n"
+            "\nReturn information about the given salvage address.\n"
 
             "\nArguments:\n"
-            "1. \"galileladdress\"     (string, required) The galilel address to validate\n"
+            "1. \"salvageaddress\"     (string, required) The salvage address to validate\n"
 
             "\nResult:\n"
             "{\n"
             "  \"isvalid\" : true|false,         (boolean) If the address is valid or not. If not, this is the only property returned.\n"
-            "  \"address\" : \"galileladdress\", (string) The galilel address validated\n"
+            "  \"address\" : \"salvageaddress\", (string) The salvage address validated\n"
             "  \"scriptPubKey\" : \"hex\",       (string) The hex encoded scriptPubKey generated by the address\n"
             "  \"ismine\" : true|false,          (boolean) If the address is yours or not\n"
             "  \"iswatchonly\" : true|false,   (boolean) If the address is watchonly\n"
@@ -412,7 +412,7 @@ CScript _createmultisig_redeemScript(const UniValue& params)
     for (unsigned int i = 0; i < keys.size(); i++) {
         const std::string& ks = keys[i].get_str();
 #ifdef ENABLE_WALLET
-        // Case 1: GALI address and we have full public key:
+        // Case 1: SVG address and we have full public key:
         CBitcoinAddress address(ks);
         if (pwalletMain && address.IsValid()) {
             CKeyID keyID;
@@ -459,9 +459,9 @@ UniValue createmultisig(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. nrequired      (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-            "2. \"keys\"       (string, required) A json array of keys which are galilel addresses or hex-encoded public keys\n"
+            "2. \"keys\"       (string, required) A json array of keys which are salvage addresses or hex-encoded public keys\n"
             "     [\n"
-            "       \"key\"    (string) galilel address or hex-encoded public key\n"
+            "       \"key\"    (string) salvage address or hex-encoded public key\n"
             "       ,...\n"
             "     ]\n"
 
@@ -493,11 +493,11 @@ UniValue verifymessage(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage \"galileladdress\" \"signature\" \"message\"\n"
+            "verifymessage \"salvageaddress\" \"signature\" \"message\"\n"
             "\nVerify a signed message\n"
 
             "\nArguments:\n"
-            "1. \"galileladdress\"  (string, required) The galilel address to use for the signature.\n"
+            "1. \"salvageaddress\"  (string, required) The salvage address to use for the signature.\n"
             "2. \"signature\"       (string, required) The signature provided by the signer in base 64 encoding (see signmessage).\n"
             "3. \"message\"         (string, required) The message that was signed.\n"
 

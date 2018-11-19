@@ -1,11 +1,11 @@
 // Copyright (c) 2018-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_ACCUMULATORCHECKPOINTS_H
-#define GALI_ACCUMULATORCHECKPOINTS_H
+#ifndef SVG_ACCUMULATORCHECKPOINTS_H
+#define SVG_ACCUMULATORCHECKPOINTS_H
 
 #include <libzerocoin/bignum.h>
 #include <univalue/include/univalue.h>
@@ -20,4 +20,4 @@ namespace AccumulatorCheckpoints
     Checkpoint GetClosestCheckpoint(const int& nHeight, int& nHeightCheckpoint);
 }
 
-#endif //GALI_ACCUMULATORCHECKPOINTS_H
+#endif //SVG_ACCUMULATORCHECKPOINTS_H

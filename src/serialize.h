@@ -2,13 +2,13 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_SERIALIZE_H
-#define GALI_SERIALIZE_H
+#ifndef SVG_SERIALIZE_H
+#define SVG_SERIALIZE_H
 
 #include <algorithm>
 #include <assert.h>
@@ -968,4 +968,4 @@ public:
     }
 };
 
-#endif // GALI_SERIALIZE_H
+#endif // SVG_SERIALIZE_H

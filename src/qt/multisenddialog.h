@@ -1,11 +1,11 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_QT_MULTISENDDIALOG_H
-#define GALI_QT_MULTISENDDIALOG_H
+#ifndef SVG_QT_MULTISENDDIALOG_H
+#define SVG_QT_MULTISENDDIALOG_H
 
 #include <QDialog>
 
@@ -40,4 +40,4 @@ private:
     WalletModel* model;
 };
 
-#endif // GALI_QT_MULTISENDDIALOG_H
+#endif // SVG_QT_MULTISENDDIALOG_H

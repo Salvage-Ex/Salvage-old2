@@ -1,13 +1,13 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/galilel-config.h"
+#include "config/salvage-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -64,7 +64,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::GALI);
+        settings.setValue("nDisplayUnit", BitcoinUnits::SVG);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -95,10 +95,10 @@ void OptionsModel::Init()
         settings.setValue("nPreferredDenom", 0);
     nPreferredDenom = settings.value("nPreferredDenom", "0").toLongLong();
 
-    if (!settings.contains("nAnonymizeGalilelAmount"))
-        settings.setValue("nAnonymizeGalilelAmount", 1000);
+    if (!settings.contains("nAnonymizeSalvageAmount"))
+        settings.setValue("nAnonymizeSalvageAmount", 1000);
 
-    nAnonymizeGalilelAmount = settings.value("nAnonymizeGalilelAmount").toLongLong();
+    nAnonymizeSalvageAmount = settings.value("nAnonymizeSalvageAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -172,8 +172,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeGalilelAmount"))
-        SoftSetArg("-anonymizegalilelamount", settings.value("nAnonymizeGalilelAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeSalvageAmount"))
+        SoftSetArg("-anonymizesalvageamount", settings.value("nAnonymizeSalvageAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -184,7 +184,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in galilel.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in salvage.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -266,8 +266,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeGaliAmount:
-            return QVariant(nAnonymizeGalilelAmount);
+        case AnonymizeSvgAmount:
+            return QVariant(nAnonymizeSalvageAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -400,10 +400,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             settings.setValue("fHideOrphans", fHideOrphans);
             emit hideOrphansChanged(fHideOrphans);
             break;
-        case AnonymizeGaliAmount:
-            nAnonymizeGalilelAmount = value.toInt();
-            settings.setValue("nAnonymizeGalilelAmount", nAnonymizeGalilelAmount);
-            emit anonymizeGaliAmountChanged(nAnonymizeGalilelAmount);
+        case AnonymizeSvgAmount:
+            nAnonymizeSalvageAmount = value.toInt();
+            settings.setValue("nAnonymizeSalvageAmount", nAnonymizeSalvageAmount);
+            emit anonymizeSvgAmountChanged(nAnonymizeSalvageAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

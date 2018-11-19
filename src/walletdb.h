@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -17,7 +17,7 @@
 #include "primitives/zerocoin.h"
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Denominations.h"
-#include "zgalitracker.h"
+#include "zsvgtracker.h"
 
 #include <list>
 #include <stdint.h>
@@ -178,14 +178,14 @@ public:
     bool ReadZerocoinSpendSerialEntry(const CBigNum& bnSerial);
     bool WriteCurrentSeedHash(const uint256& hashSeed);
     bool ReadCurrentSeedHash(uint256& hashSeed);
-    bool WriteZGALISeed(const uint256& hashSeed, const vector<unsigned char>& seed);
-    bool ReadZGALISeed(const uint256& hashSeed, vector<unsigned char>& seed);
-    bool ReadZGALISeed_deprecated(uint256& seed);
-    bool EraseZGALISeed();
-    bool EraseZGALISeed_deprecated();
+    bool WriteZSVGSeed(const uint256& hashSeed, const vector<unsigned char>& seed);
+    bool ReadZSVGSeed(const uint256& hashSeed, vector<unsigned char>& seed);
+    bool ReadZSVGSeed_deprecated(uint256& seed);
+    bool EraseZSVGSeed();
+    bool EraseZSVGSeed_deprecated();
 
-    bool WriteZGALICount(const uint32_t& nCount);
-    bool ReadZGALICount(uint32_t& nCount);
+    bool WriteZSVGCount(const uint32_t& nCount);
+    bool ReadZSVGCount(uint32_t& nCount);
     std::map<uint256, std::vector<pair<uint256, uint32_t> > > MapMintPool();
     bool WriteMintPoolPair(const uint256& hashMasterSeed, const uint256& hashPubcoin, const uint32_t& nCount);
 

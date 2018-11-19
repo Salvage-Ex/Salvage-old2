@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -17,8 +17,8 @@
 #include <iostream>
 #include <accumulators.h>
 #include "wallet.h"
-#include "zgaliwallet.h"
-#include "zgalichain.h"
+#include "zsvgwallet.h"
+#include "zsvgchain.h"
 
 using namespace libzerocoin;
 
@@ -515,7 +515,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     CWalletDB walletdb(strWalletFile, "cr+");
 
     CWallet wallet(strWalletFile);
-    CzGALIWallet zWallet(wallet.strWalletFile);
+    CzSVGWallet zWallet(wallet.strWalletFile);
     zWallet.SetMasterSeed(seedMaster);
     wallet.setZWallet(&zWallet);
 
@@ -527,7 +527,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     for (int i = 0; i < nTests; i++) {
         PrivateCoin coin(Params().Zerocoin_Params(false), denom, false);
         CDeterministicMint dMint;
-        zWallet.GenerateDeterministicZGALI(denom, coin, dMint);
+        zWallet.GenerateDeterministicZSVG(denom, coin, dMint);
         vCoins.emplace_back(coin);
     }
 

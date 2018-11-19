@@ -1,11 +1,11 @@
 // Copyright (c) 2018-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_DETERMINISTICMINT_H
-#define GALI_DETERMINISTICMINT_H
+#ifndef SVG_DETERMINISTICMINT_H
+#define SVG_DETERMINISTICMINT_H
 
 #include <libzerocoin/Denominations.h>
 #include <uint256.h>
@@ -66,4 +66,4 @@ public:
     };
 };
 
-#endif //GALI_DETERMINISTICMINT_H
+#endif //SVG_DETERMINISTICMINT_H

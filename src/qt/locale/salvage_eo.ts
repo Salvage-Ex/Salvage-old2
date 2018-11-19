@@ -62,11 +62,11 @@
         <translation>Ricevanta adresojn</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ĉi tiuj estas viaj GALI adreso por sendi pagojn. Ĉiam kontroku la kvanto kaj la ricevanta antaŭ ol sendi monerojn.</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ĉi tiuj estas viaj SVG adreso por sendi pagojn. Ĉiam kontroku la kvanto kaj la ricevanta antaŭ ol sendi monerojn.</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Ĉi tiuj estas vian adreson por ricevi pagojn. Ĝi rekomendas uzi novajn ricenvantan adreson por ĉiu nova transakcio.</translation>
     </message>
     <message>
@@ -176,15 +176,15 @@
         <translation>Konfirmi monerĉifrado</translation>
     </message>
     <message>
-        <source>Galilel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GALIs from being stolen by malware infecting your computer.</source>
-        <translation>Galilel fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn GALIs de esti ŝtelita per malware infektanta vian komputilon.</translation>
+        <source>Salvage will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>Salvage fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn SVGs de esti ŝtelita per malware infektanta vian komputilon.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ĉu vi certas ke vi volas ĉifri vian monujon?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GALI&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
         <translation>Averto: se vi ĉifras vian monujo kaj perdi vian pasfrazon, vi &lt;b&gt;PERDOS VIAN TUTAN MONON&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -254,11 +254,11 @@
         <translation>Adreso:</translation>
     </message>
     <message>
-        <source>Enter a GALI Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Eniri unu GALI adreso ke vi volus ĉifri per BIP 38. Eniri unu pasfrazon meze skatolo. Klaku ĉifri por komputi la ĉifrita privata ŝlosilo.</translation>
+        <source>Enter a SVG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Eniri unu SVG adreso ke vi volus ĉifri per BIP 38. Eniri unu pasfrazon meze skatolo. Klaku ĉifri por komputi la ĉifrita privata ŝlosilo.</translation>
     </message>
     <message>
-        <source>The GALI address to encrypt</source>
+        <source>The SVG address to encrypt</source>
         <translation>Adreson por ĉifri</translation>
     </message>
     <message>
@@ -290,8 +290,8 @@
         <translation>Kopiu la aktualan subskribo al la sistemo-poŝo</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this GALI address</source>
-        <translation>Ĉifri la privata ŝlosilo por ĉi tiu GALI adreso</translation>
+        <source>Encrypt the private key for this SVG address</source>
+        <translation>Ĉifri la privata ŝlosilo por ĉi tiu SVG adreso</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>&amp;Foliumi transakcio historio</translation>
     </message>
     <message>
-        <source>Privacy Actions for zGALI</source>
-        <translation>Privataj agoj por zGALI</translation>
+        <source>Privacy Actions for zSVG</source>
+        <translation>Privataj agoj por zSVG</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -645,16 +645,16 @@
         <translation>Iloj langeto</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>GALI kerno</translation>
+        <source>Salvage Core</source>
+        <translation>SVG kerno</translation>
     </message>
     <message>
-        <source>Send coins to a GALI address</source>
-        <translation>Sendu mono al GALI addreso</translation>
+        <source>Send coins to a SVG address</source>
+        <translation>Sendu mono al SVG addreso</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and galilel: URIs)</source>
-        <translation>Peto pagojn (generas QR kodojn kaj galilel: URIs)</translation>
+        <source>Request payments (generates QR codes and salvage: URIs)</source>
+        <translation>Peto pagojn (generas QR kodojn kaj salvage: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -669,24 +669,24 @@
         <translation>Foliumi mastro-nodo</translation>
     </message>
     <message>
-        <source>&amp;About Galilel Core</source>
-        <translation>&amp;Pri GALI Kerno</translation>
+        <source>&amp;About Salvage Core</source>
+        <translation>&amp;Pri SVG Kerno</translation>
     </message>
     <message>
-        <source>Show information about Galilel Core</source>
-        <translation>Montri informon pri GALI Kerno</translation>
+        <source>Show information about Salvage Core</source>
+        <translation>Montri informon pri SVG Kerno</translation>
     </message>
     <message>
-        <source>Modify configuration options for GALI</source>
-        <translation>Modifi agordajn opciojn por GALI</translation>
+        <source>Modify configuration options for SVG</source>
+        <translation>Modifi agordajn opciojn por SVG</translation>
     </message>
     <message>
-        <source>Sign messages with your GALI addresses to prove you own them</source>
-        <translation>Subskribu mesaĝo per via GALI adreso por pruvi vi posedas ĝin</translation>
+        <source>Sign messages with your SVG addresses to prove you own them</source>
+        <translation>Subskribu mesaĝo per via SVG adreso por pruvi vi posedas ĝin</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified GALI addresses</source>
-        <translation>Kontrolu mesaĝojn por certigi ke ili estas subskribita kun specifita GALI adreso</translation>
+        <source>Verify messages to ensure they were signed with specified SVG addresses</source>
+        <translation>Kontrolu mesaĝojn por certigi ke ili estas subskribita kun specifita SVG adreso</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Malfermi mastro-nodo agord-dosieron</translation>
     </message>
     <message>
-        <source>Open a GALI: URI or payment request</source>
-        <translation>Malfermi unu GALI: URI aŭ pago peto</translation>
+        <source>Open a SVG: URI or payment request</source>
+        <translation>Malfermi unu SVG: URI aŭ pago peto</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Bloko esplorilo fenestro</translation>
     </message>
     <message>
-        <source>Show the Galilel Core help message to get a list with possible Galilel command-line options</source>
-        <translation>Montri la GALI Kore help-mesaĝo por havi liston de havebla Galilel komandlinion opciojn</translation>
+        <source>Show the Salvage Core help message to get a list with possible Salvage command-line options</source>
+        <translation>Montri la SVG Kore help-mesaĝo por havi liston de havebla Salvage komandlinion opciojn</translation>
     </message>
     <message>
-        <source>Galilel Core client</source>
-        <translation>GALI Kerno kliento</translation>
+        <source>Salvage Core client</source>
+        <translation>SVG Kerno kliento</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Galilel network</source>
-        <translation><numerusform>%n aktiva ligo(j) al la Galilel reto</numerusform><numerusform>%n aktiva ligo(j) al la Galilel reto</numerusform></translation>
+        <source>%n active connection(s) to Salvage network</source>
+        <translation><numerusform>%n aktiva ligo(j) al la Salvage reto</numerusform><numerusform>%n aktiva ligo(j) al la Salvage reto</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -892,8 +892,8 @@ Muktisendi: %1</translation>
         <translation>Tekstetikedo</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (galilel.conf).</source>
-        <translation>Ĉiuj transakcio ne estos montri. Peor vidi ĉiuj transakcio bezonas agordi txindekso=1 en la agordo dosiero (galilel.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (salvage.conf).</source>
+        <translation>Ĉiuj transakcio ne estos montri. Peor vidi ĉiuj transakcio bezonas agordi txindekso=1 en la agordo dosiero (salvage.conf).</translation>
     </message>
 </context>
 <context>
@@ -1122,8 +1122,8 @@ Muktisendi: %1</translation>
         <translation>Ĉi tiun etikedo ruĝiĝas se iu ajna ricevanto ricevas totalo pli malgranda ol %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ugali per input.</source>
-        <translation>Povas varii +/- %1 ugali per enigo.</translation>
+        <source>Can vary +/- %1 usvg per input.</source>
+        <translation>Povas varii +/- %1 usvg per enigo.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1177,8 +1177,8 @@ Muktisendi: %1</translation>
         <translation>Redaktu sendantan adreson</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid GALI address.</source>
-        <translation>La enirita "%1" adreso ne estas validan GALI adreson.</translation>
+        <source>The entered address "%1" is not a valid SVG address.</source>
+        <translation>La enirita "%1" adreso ne estas validan SVG adreson.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1223,16 +1223,16 @@ Muktisendi: %1</translation>
         <translation>versio</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>GALI kerno</translation>
+        <source>Salvage Core</source>
+        <translation>SVG kerno</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bajto)</translation>
     </message>
     <message>
-        <source>About Galilel Core</source>
-        <translation>Pri GALI Kerno</translation>
+        <source>About Salvage Core</source>
+        <translation>Pri SVG Kerno</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1274,16 +1274,16 @@ Muktisendi: %1</translation>
         <translation>Bonvenon</translation>
     </message>
     <message>
-        <source>Welcome to Galilel Core.</source>
-        <translation>Bonvenon al la GALI Kerno.</translation>
+        <source>Welcome to Salvage Core.</source>
+        <translation>Bonvenon al la SVG Kerno.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Galilel Core will store its data.</source>
-        <translation>Ĉar estas la unuan fojon ke la programo estas lanĉita, vi povas elekti kie GALI kernk storigis sian datumojn. </translation>
+        <source>As this is the first time the program is launched, you can choose where Salvage Core will store its data.</source>
+        <translation>Ĉar estas la unuan fojon ke la programo estas lanĉita, vi povas elekti kie SVG kernk storigis sian datumojn. </translation>
     </message>
     <message>
-        <source>Galilel Core will download and store a copy of the GALI block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>GALI kerno elŝutos kaj konservi kopion de la GALI blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
+        <source>Salvage Core will download and store a copy of the SVG block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>SVG kerno elŝutos kaj konservi kopion de la SVG blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1294,8 +1294,8 @@ Muktisendi: %1</translation>
         <translation>Uzi kutimon datumojn dosierujo:</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>GALI kerno</translation>
+        <source>Salvage Core</source>
+        <translation>SVG kerno</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1561,8 +1561,8 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Adreso / Kvanto:</translation>
     </message>
     <message>
-        <source>Add destinations to send GALI to</source>
-        <translation>Aldonu destinoj por sendi GALI al</translation>
+        <source>Add destinations to send SVG to</source>
+        <translation>Aldonu destinoj por sendi SVG al</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1628,12 +1628,12 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Bonvolu elekti privata nivelo.</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 GALI to anonymize 15000 GALI</source>
-        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 GALI por anonimigi 15000 GALI</translation>
+        <source>This option is the quickest and will cost about ~0.025 SVG to anonymize 15000 SVG</source>
+        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 SVG por anonimigi 15000 SVG</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 GALI to anonymize 15000 GALI</source>
-        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 GALI por anonimigi 15000 GALI</translation>
+        <source>This option is moderately fast and will cost about 0.05 SVG to anonymize 15000 SVG</source>
+        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 SVG por anonimigi 15000 SVG</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1682,8 +1682,8 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>&amp;Monujo</translation>
     </message>
     <message>
-        <source>Automatically open the GALI client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aŭtomate malfermi GALI klienton havenon en la enkursigilo. Tio nur laboras kiam via enkursigilo subtenas UPnP kaj estas ebligita.</translation>
+        <source>Automatically open the SVG client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aŭtomate malfermi SVG klienton havenon en la enkursigilo. Tio nur laboras kiam via enkursigilo subtenas UPnP kaj estas ebligita.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1694,8 +1694,8 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Sperta</translation>
     </message>
     <message>
-        <source>&amp;Start GALI on system login</source>
-        <translation>&amp;Komencu GALI en sistem-ensaluto</translation>
+        <source>&amp;Start SVG on system login</source>
+        <translation>&amp;Komencu SVG en sistem-ensaluto</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -1706,18 +1706,18 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>&amp;Reto</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting GALI.</source>
-        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci GALI.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SVG.</source>
+        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci SVG.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/galilel-project/galilel-project-translations</source>
+https://www.transifex.com/salvage-project/salvage-project-translations</source>
         <translation>Ĉu mankas lingvon aŭ nekompleta tradukado? Helpu la  tradukcio ĉi tie:
-https://www.transifex.com/galilel-project/galilel-project-translations</translation>
+https://www.transifex.com/salvage-project/salvage-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the Galilel network through a SOCKS5 proxy.</source>
-        <translation>Konekti al la Galilel reto per SOCKS5 prokurilo.</translation>
+        <source>Connect to the Salvage network through a SOCKS5 proxy.</source>
+        <translation>Konekti al la Salvage reto per SOCKS5 prokurilo.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1787,20 +1787,20 @@ https://www.transifex.com/galilel-project/galilel-project-translations</translat
         <translation>Via aktuala elspezebla saldo</translation>
     </message>
     <message>
-        <source>GALI Balance</source>
-        <translation>GALI kvanto</translation>
+        <source>SVG Balance</source>
+        <translation>SVG kvanto</translation>
     </message>
     <message>
         <source>Immature:</source>
         <translation>Nematura:</translation>
     </message>
     <message>
-        <source>Your current GALI balance, unconfirmed and immature transactions included</source>
-        <translation>Via aktuala GALI totalo, nekonformita kaj nematurita transakcioj inkluzivita</translation>
+        <source>Your current SVG balance, unconfirmed and immature transactions included</source>
+        <translation>Via aktuala SVG totalo, nekonformita kaj nematurita transakcioj inkluzivita</translation>
     </message>
     <message>
-        <source>zGALI Balance</source>
-        <translation>zGALI kvanto</translation>
+        <source>zSVG Balance</source>
+        <translation>zSVG kvanto</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -1809,8 +1809,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mintita</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Galilel network after a connection is established, but this process has not completed yet.</source>
-        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la Galilel reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Salvage network after a connection is established, but this process has not completed yet.</source>
+        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la Salvage reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -1862,20 +1862,20 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Galilel network after a connection is established, but this process has not completed yet.</source>
-        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la Galilel reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Salvage network after a connection is established, but this process has not completed yet.</source>
+        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la Salvage reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zGALI</source>
-        <translation>zGALI</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     <message>
-        <source>0.000 000 00 GALI</source>
-        <translation>0.000 000 00 GALI</translation>
+        <source>0.000 000 00 SVG</source>
+        <translation>0.000 000 00 SVG</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1890,12 +1890,12 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Kvanto</translation>
     </message>
     <message>
-        <source>zGALI Control</source>
-        <translation>zGALI kontrolu</translation>
+        <source>zSVG Control</source>
+        <translation>zSVG kontrolu</translation>
     </message>
     <message>
-        <source>zGALI Selected:</source>
-        <translation>Elektita zGALI</translation>
+        <source>zSVG Selected:</source>
+        <translation>Elektita zSVG</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1906,20 +1906,20 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Elspezi zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zGALI for spending</source>
-        <translation>Havebla (matura kaj elspezebla) zGALI por elspezi</translation>
+        <source>Available (mature and spendable) zSVG for spending</source>
+        <translation>Havebla (matura kaj elspezebla) zSVG por elspezi</translation>
     </message>
     <message>
-        <source>0 zGALI</source>
-        <translation>0 zGALI</translation>
+        <source>0 zSVG</source>
+        <translation>0 zSVG</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
         <translation>Pagu &amp;Al:</translation>
     </message>
     <message>
-        <source>The GALI address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>GALI adreso por alsendi la pago. Kreas lokala pago al vi mem kiam malplenija.</translation>
+        <source>The SVG address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>SVG adreso por alsendi la pago. Kreas lokala pago al vi mem kiam malplenija.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2004,8 +2004,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Mesaĝo: eniri kvanto &gt; 0.</translation>
     </message>
     <message>
-        <source>Invalid GALI Address</source>
-        <translation>Nevalida GALI adreso</translation>
+        <source>Invalid SVG Address</source>
+        <translation>Nevalida SVG adreso</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -2101,8 +2101,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Rekonstrui indekson</translation>
     </message>
     <message>
-        <source>Welcome to the GALI RPC console.</source>
-        <translation>Bonvenon al la GALI RPC konzolo.</translation>
+        <source>Welcome to the SVG RPC console.</source>
+        <translation>Bonvenon al la SVG RPC konzolo.</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
@@ -2297,8 +2297,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Se estas aktiva sed ŝanĝo-adreso estas malpleniĝa au nevalida, ŝanĝo sendos al nova generita adreson.</translation>
     </message>
     <message>
-        <source>0 GALI</source>
-        <translation>0 GALI</translation>
+        <source>0 SVG</source>
+        <translation>0 SVG</translation>
     </message>
     <message>
         <source>Open Coin Control...</source>
@@ -2345,8 +2345,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Kopi ŝanĝo</translation>
     </message>
     <message>
-        <source>Warning: Invalid GALI address</source>
-        <translation>Averto: nevalida GALI adreson</translation>
+        <source>Warning: Invalid SVG address</source>
+        <translation>Averto: nevalida SVG adreson</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2372,8 +2372,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Pagu &amp;Al:</translation>
     </message>
     <message>
-        <source>The GALI address to send the payment to</source>
-        <translation>GALIC adreso por sendi la pago al</translation>
+        <source>The SVG address to send the payment to</source>
+        <translation>SVGC adreso por sendi la pago al</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2407,8 +2407,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Galilel Core is shutting down...</source>
-        <translation>GALI kerno fermanta...</translation>
+        <source>Salvage Core is shutting down...</source>
+        <translation>SVG kerno fermanta...</translation>
     </message>
     </context>
 <context>
@@ -2461,8 +2461,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Galilel Core</source>
-        <translation>GALI kerno</translation>
+        <source>Salvage Core</source>
+        <translation>SVG kerno</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
@@ -2477,8 +2477,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>La PIVX kerno programistoj</translation>
     </message>
     <message>
-        <source>The Galilel Core developers</source>
-        <translation>La Galilel kerno programistoj</translation>
+        <source>The Salvage Core developers</source>
+        <translation>La Salvage kerno programistoj</translation>
     </message>
     </context>
 <context>
@@ -2653,14 +2653,14 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     </context>
 <context>
-    <name>ZGaliControlDialog</name>
+    <name>ZSvgControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zGALI</source>
-        <translation>zGALI</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     <message>
         <source>Is Spendable</source>
@@ -2668,7 +2668,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
 </context>
 <context>
-    <name>galilel-core</name>
+    <name>salvage-core</name>
     <message>
         <source>Connect through SOCKS5 proxy</source>
         <translation>Konekti per SOCKS5 prokurilo</translation>

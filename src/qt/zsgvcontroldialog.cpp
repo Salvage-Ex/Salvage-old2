@@ -1,11 +1,11 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zgalicontroldialog.h"
-#include "ui_zgalicontroldialog.h"
+#include "zsvgcontroldialog.h"
+#include "ui_zsvgcontroldialog.h"
 
 #include "accumulators.h"
 #include "main.h"
@@ -14,20 +14,20 @@
 using namespace std;
 using namespace libzerocoin;
 
-std::set<std::string> ZGaliControlDialog::setSelectedMints;
-std::set<CMintMeta> ZGaliControlDialog::setMints;
+std::set<std::string> ZSvgControlDialog::setSelectedMints;
+std::set<CMintMeta> ZSvgControlDialog::setMints;
 
-bool CZGaliControlWidgetItem::operator<(const QTreeWidgetItem &other) const {
+bool CZSvgControlWidgetItem::operator<(const QTreeWidgetItem &other) const {
     int column = treeWidget()->sortColumn();
-    if (column == ZGaliControlDialog::COLUMN_DENOMINATION || column == ZGaliControlDialog::COLUMN_VERSION || column == ZGaliControlDialog::COLUMN_CONFIRMATIONS)
+    if (column == ZSvgControlDialog::COLUMN_DENOMINATION || column == ZSvgControlDialog::COLUMN_VERSION || column == ZSvgControlDialog::COLUMN_CONFIRMATIONS)
         return data(column, Qt::UserRole).toLongLong() < other.data(column, Qt::UserRole).toLongLong();
     return QTreeWidgetItem::operator<(other);
 }
 
 
-ZGaliControlDialog::ZGaliControlDialog(QWidget *parent) :
+ZSvgControlDialog::ZSvgControlDialog(QWidget *parent) :
     QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint),
-    ui(new Ui::ZGaliControlDialog),
+    ui(new Ui::ZSvgControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -41,12 +41,12 @@ ZGaliControlDialog::ZGaliControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-ZGaliControlDialog::~ZGaliControlDialog()
+ZSvgControlDialog::~ZSvgControlDialog()
 {
     delete ui;
 }
 
-void ZGaliControlDialog::setModel(WalletModel *model)
+void ZSvgControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
@@ -54,7 +54,7 @@ void ZGaliControlDialog::setModel(WalletModel *model)
 
 
 //Update the tree widget
-void ZGaliControlDialog::updateList()
+void ZSvgControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -64,7 +64,7 @@ void ZGaliControlDialog::updateList()
     QFlags<Qt::ItemFlag> flgTristate = Qt::ItemIsEnabled | Qt::ItemIsUserCheckable | Qt::ItemIsTristate;
     map<libzerocoin::CoinDenomination, int> mapDenomPosition;
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        CZGaliControlWidgetItem* itemDenom(new CZGaliControlWidgetItem);
+        CZSvgControlWidgetItem* itemDenom(new CZSvgControlWidgetItem);
         ui->treeWidget->addTopLevelItem(itemDenom);
 
         //keep track of where this is positioned in tree widget
@@ -86,7 +86,7 @@ void ZGaliControlDialog::updateList()
     for (const CMintMeta& mint : setMints) {
         // assign this mint to the correct denomination in the tree view
         libzerocoin::CoinDenomination denom = mint.denom;
-        CZGaliControlWidgetItem *itemMint = new CZGaliControlWidgetItem(ui->treeWidget->topLevelItem(mapDenomPosition.at(denom)));
+        CZSvgControlWidgetItem *itemMint = new CZSvgControlWidgetItem(ui->treeWidget->topLevelItem(mapDenomPosition.at(denom)));
 
         // if the mint is already selected, then it needs to have the checkbox checked
         std::string strPubCoinHash = mint.hashPubcoin.GetHex();
@@ -143,7 +143,7 @@ void ZGaliControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZGaliControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZSvgControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -165,7 +165,7 @@ void ZGaliControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZGaliControlDialog::updateLabels()
+void ZSvgControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CMintMeta& mint : setMints) {
@@ -174,14 +174,14 @@ void ZGaliControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZGali_int->setText(QString::number(nAmount));
+    ui->labelZSvg_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(setSelectedMints.size()));
 
     //update PrivacyDialog labels
-    privacyDialog->setZGaliControlLabels(nAmount, setSelectedMints.size());
+    privacyDialog->setZSvgControlLabels(nAmount, setSelectedMints.size());
 }
 
-std::vector<CMintMeta> ZGaliControlDialog::GetSelectedMints()
+std::vector<CMintMeta> ZSvgControlDialog::GetSelectedMints()
 {
     std::vector<CMintMeta> listReturn;
     for (const CMintMeta& mint : setMints) {
@@ -193,7 +193,7 @@ std::vector<CMintMeta> ZGaliControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZGaliControlDialog::ButtonAllClicked()
+void ZSvgControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

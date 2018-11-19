@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -19,7 +19,7 @@
 #include "utilmoneystr.h"
 #include "wallet.h"
 #include "walletdb.h"
-#include "zgalichain.h"
+#include "zsvgchain.h"
 
 #include <stdint.h>
 
@@ -87,7 +87,7 @@ UniValue getnewaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getnewaddress ( \"account\" )\n"
-            "\nReturns a new GALI address for receiving payments.\n"
+            "\nReturns a new SVG address for receiving payments.\n"
             "If 'account' is specified (recommended), it is added to the address book \n"
             "so payments received with the address will be credited to 'account'.\n"
 
@@ -95,7 +95,7 @@ UniValue getnewaddress(const UniValue& params, bool fHelp)
             "1. \"account\"        (string, optional) The account name for the address to be linked to. if not provided, the default account \"\" is used. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created if there is no account by the given name.\n"
 
             "\nResult:\n"
-            "\"galileladdress\"    (string) The new galilel address\n"
+            "\"salvageaddress\"    (string) The new salvage address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getnewaddress", "") + HelpExampleCli("getnewaddress", "\"\"") +
@@ -162,13 +162,13 @@ UniValue getaccountaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
             "getaccountaddress \"account\"\n"
-            "\nReturns the current GALI address for receiving payments to this account.\n"
+            "\nReturns the current SVG address for receiving payments to this account.\n"
 
             "\nArguments:\n"
             "1. \"account\"       (string, required) The account name for the address. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created and a new address created  if there is no account by the given name.\n"
 
             "\nResult:\n"
-            "\"galileladdress\"   (string) The account galilel address\n"
+            "\"salvageaddress\"   (string) The account salvage address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getaccountaddress", "") + HelpExampleCli("getaccountaddress", "\"\"") +
@@ -191,7 +191,7 @@ UniValue getrawchangeaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getrawchangeaddress\n"
-            "\nReturns a new GALI address, for receiving change.\n"
+            "\nReturns a new SVG address, for receiving change.\n"
             "This is for use with raw transactions, NOT normal use.\n"
 
             "\nResult:\n"
@@ -222,11 +222,11 @@ UniValue setaccount(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "setaccount \"galileladdress\" \"account\"\n"
+            "setaccount \"salvageaddress\" \"account\"\n"
             "\nSets the account associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"galileladdress\"  (string, required) The galilel address to be associated with an account.\n"
+            "1. \"salvageaddress\"  (string, required) The salvage address to be associated with an account.\n"
             "2. \"account\"         (string, required) The account to assign the address to.\n"
 
             "\nExamples:\n" +
@@ -236,7 +236,7 @@ UniValue setaccount(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GALI address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SVG address");
 
 
     string strAccount;
@@ -263,11 +263,11 @@ UniValue getaccount(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "getaccount \"galileladdress\"\n"
+            "getaccount \"salvageaddress\"\n"
             "\nReturns the account associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"galileladdress\"  (string, required) The galilel address for account lookup.\n"
+            "1. \"salvageaddress\"  (string, required) The salvage address for account lookup.\n"
 
             "\nResult:\n"
             "\"accountname\"        (string) the account address\n"
@@ -279,7 +279,7 @@ UniValue getaccount(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GALI address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SVG address");
 
     string strAccount;
     map<CTxDestination, CAddressBookData>::iterator mi = pwalletMain->mapAddressBook.find(address.Get());
@@ -301,7 +301,7 @@ UniValue getaddressesbyaccount(const UniValue& params, bool fHelp)
 
             "\nResult:\n"
             "[                     (json array of string)\n"
-            "  \"galileladdress\"  (string) a galilel address associated with the given account\n"
+            "  \"salvageaddress\"  (string) a salvage address associated with the given account\n"
             "  ,...\n"
             "]\n"
 
@@ -339,7 +339,7 @@ void SendMoney(const CTxDestination& address, CAmount nValue, CWalletTx& wtxNew,
         throw JSONRPCError(RPC_WALLET_ERROR, strError);
     }
 
-    // Parse GALI address
+    // Parse SVG address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     // Create and send the transaction
@@ -359,13 +359,13 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendtoaddress \"galileladdress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddress \"salvageaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"galileladdress\"  (string, required) The galilel address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in GALI to send. eg 0.1\n"
+            "1. \"salvageaddress\"  (string, required) The salvage address to send to.\n"
+            "2. \"amount\"      (numeric, required) The amount in SVG to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -384,7 +384,7 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GALI address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SVG address");
 
     // Amount
     CAmount nAmount = AmountFromValue(params[1]);
@@ -407,13 +407,13 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendtoaddressix \"galileladdress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddressix \"salvageaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"galileladdress\"  (string, required) The galilel address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in GALI to send. eg 0.1\n"
+            "1. \"salvageaddress\"  (string, required) The salvage address to send to.\n"
+            "2. \"amount\"      (numeric, required) The amount in SVG to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -432,7 +432,7 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GALI address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SVG address");
 
     // Amount
     CAmount nAmount = AmountFromValue(params[1]);
@@ -464,8 +464,8 @@ UniValue listaddressgroupings(const UniValue& params, bool fHelp)
             "[\n"
             "  [\n"
             "    [\n"
-            "      \"galileladdress\",     (string) The galilel address\n"
-            "      amount,                 (numeric) The amount in GALI\n"
+            "      \"salvageaddress\",     (string) The salvage address\n"
+            "      amount,                 (numeric) The amount in SVG\n"
             "      \"account\"             (string, optional) The account\n"
             "    ]\n"
             "    ,...\n"
@@ -501,12 +501,12 @@ UniValue signmessage(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "signmessage \"galileladdress\" \"message\"\n"
+            "signmessage \"salvageaddress\" \"message\"\n"
             "\nSign a message with the private key of an address" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"galileladdress\"  (string, required) The galilel address to use for the private key.\n"
+            "1. \"salvageaddress\"  (string, required) The salvage address to use for the private key.\n"
             "2. \"message\"         (string, required) The message to create a signature of.\n"
 
             "\nResult:\n"
@@ -556,15 +556,15 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw std::runtime_error(
-            "getreceivedbyaddress \"galileladdress\" ( minconf )\n"
-            "\nReturns the total amount received by the given galileladdress in transactions with at least minconf confirmations.\n"
+            "getreceivedbyaddress \"salvageaddress\" ( minconf )\n"
+            "\nReturns the total amount received by the given salvageaddress in transactions with at least minconf confirmations.\n"
 
             "\nArguments:\n"
-            "1. \"galileladdress\"  (string, required) The galilel address for transactions.\n"
+            "1. \"salvageaddress\"  (string, required) The salvage address for transactions.\n"
             "2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount   (numeric) The total amount in GALI received at this address.\n"
+            "amount   (numeric) The total amount in SVG received at this address.\n"
 
             "\nExamples:\n"
             "\nThe amount from transactions with at least 1 confirmation\n" +
@@ -578,10 +578,10 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
-    // galilel address
+    // salvage address
     CBitcoinAddress address = CBitcoinAddress(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GALI address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SVG address");
     CScript scriptPubKey = GetScriptForDestination(address.Get());
     if (!IsMine(*pwalletMain, scriptPubKey))
         throw JSONRPCError(RPC_WALLET_ERROR, "Address not found in wallet");
@@ -620,7 +620,7 @@ UniValue getreceivedbyaccount(const UniValue& params, bool fHelp)
             "2. minconf          (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in GALI received for this account.\n"
+            "amount              (numeric) The total amount in SVG received for this account.\n"
 
             "\nExamples:\n"
             "\nAmount received by the default account with at least 1 confirmation\n" +
@@ -709,7 +709,7 @@ UniValue getbalance(const UniValue& params, bool fHelp)
             "3. includeWatchonly (bool, optional, default=false) Also include balance in watchonly addresses (see 'importaddress')\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in GALI received for this account.\n"
+            "amount              (numeric) The total amount in SVG received for this account.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the server across all accounts\n" +
@@ -792,7 +792,7 @@ UniValue movecmd(const UniValue& params, bool fHelp)
             "\nArguments:\n"
             "1. \"fromaccount\"   (string, required) The name of the account to move funds from. May be the default account using \"\".\n"
             "2. \"toaccount\"     (string, required) The name of the account to move funds to. May be the default account using \"\".\n"
-            "3. amount            (numeric, required) Quantity of GALI to move between accounts.\n"
+            "3. amount            (numeric, required) Quantity of SVG to move between accounts.\n"
             "4. minconf           (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"       (string, optional) An optional comment, stored in the wallet only.\n"
 
@@ -800,9 +800,9 @@ UniValue movecmd(const UniValue& params, bool fHelp)
             "true|false           (boolean) true if successful.\n"
 
             "\nExamples:\n"
-            "\nMove 0.01 GALI from the default account to the account named tabby\n" +
+            "\nMove 0.01 SVG from the default account to the account named tabby\n" +
             HelpExampleCli("move", "\"\" \"tabby\" 0.01") +
-            "\nMove 0.01 GALI from timotei to akiko with a comment\n" +
+            "\nMove 0.01 SVG from timotei to akiko with a comment\n" +
             HelpExampleCli("move", "\"timotei\" \"akiko\" 0.01 1 \"happy birthday!\"") +
             "\nAs a json rpc call\n" +
             HelpExampleRpc("move", "\"timotei\", \"akiko\", 0.01, 1, \"happy birthday!\""));
@@ -856,15 +856,15 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 3 || params.size() > 6)
         throw runtime_error(
-            "sendfrom \"fromaccount\" \"togalileladdress\" amount ( minconf \"comment\" \"comment-to\" )\n"
-            "\nSent an amount from an account to a galilel address.\n"
+            "sendfrom \"fromaccount\" \"tosalvageaddress\" amount ( minconf \"comment\" \"comment-to\" )\n"
+            "\nSent an amount from an account to a salvage address.\n"
             "The amount is a real and is rounded to the nearest 0.00000001." +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. \"fromaccount\"       (string, required) The name of the account to send funds from. May be the default account using \"\".\n"
-            "2. \"togalileladdress\"  (string, required) The galilel address to send funds to.\n"
-            "3. amount                (numeric, required) The amount in GALI. (transaction fee is added on top).\n"
+            "2. \"tosalvageaddress\"  (string, required) The salvage address to send funds to.\n"
+            "3. amount                (numeric, required) The amount in SVG. (transaction fee is added on top).\n"
             "4. minconf               (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"           (string, optional) A comment used to store what the transaction is for. \n"
             "                                     This is not part of the transaction, just kept in your wallet.\n"
@@ -876,7 +876,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
             "\"transactionid\"        (string) The transaction id.\n"
 
             "\nExamples:\n"
-            "\nSend 0.01 GALI from the default account to the address, must have at least 1 confirmation\n" +
+            "\nSend 0.01 SVG from the default account to the address, must have at least 1 confirmation\n" +
             HelpExampleCli("sendfrom", "\"\" \"UjDM8Aw61soeAWRGQY9kcf1EDqyDjkpgSY\" 0.01") +
             "\nSend 0.01 from the tabby account to the given address, funds must have at least 6 confirmations\n" +
             HelpExampleCli("sendfrom", "\"tabby\" \"UjDM8Aw61soeAWRGQY9kcf1EDqyDjkpgSY\" 0.01 6 \"donation\" \"seans outpost\"") +
@@ -888,7 +888,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
     string strAccount = AccountFromValue(params[0]);
     CBitcoinAddress address(params[1].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GALI address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SVG address");
     CAmount nAmount = AmountFromValue(params[2]);
     int nMinDepth = 1;
     if (params.size() > 3)
@@ -926,7 +926,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
             "1. \"fromaccount\"         (string, required) The account to send the funds from, can be \"\" for the default account\n"
             "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
             "    {\n"
-            "      \"address\":amount   (numeric) The galilel address is the key, the numeric amount in GALI is the value\n"
+            "      \"address\":amount   (numeric) The salvage address is the key, the numeric amount in SVG is the value\n"
             "      ,...\n"
             "    }\n"
             "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -965,7 +965,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
     BOOST_FOREACH(const string& name_, keys) {
         CBitcoinAddress address(name_);
         if (!address.IsValid())
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid GALI address: ")+name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid SVG address: ")+name_);
 
         if (setAddress.count(address))
             throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+name_);
@@ -1007,20 +1007,20 @@ UniValue addmultisigaddress(const UniValue& params, bool fHelp)
         throw runtime_error(
             "addmultisigaddress nrequired [\"key\",...] ( \"account\" )\n"
             "\nAdd a nrequired-to-sign multisignature address to the wallet.\n"
-            "Each key is a GALI address or hex-encoded public key.\n"
+            "Each key is a SVG address or hex-encoded public key.\n"
             "If 'account' is specified, assign address to that account.\n"
 
             "\nArguments:\n"
             "1. nrequired        (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-            "2. \"keysobject\"   (string, required) A json array of galilel addresses or hex-encoded public keys\n"
+            "2. \"keysobject\"   (string, required) A json array of salvage addresses or hex-encoded public keys\n"
             "     [\n"
-            "       \"address\"  (string) galilel address or hex-encoded public key\n"
+            "       \"address\"  (string) salvage address or hex-encoded public key\n"
             "       ...,\n"
             "     ]\n"
             "3. \"account\"      (string, optional) An account to assign the addresses to.\n"
 
             "\nResult:\n"
-            "\"galileladdress\"  (string) A galilel address associated with the keys.\n"
+            "\"salvageaddress\"  (string) A salvage address associated with the keys.\n"
 
             "\nExamples:\n"
             "\nAdd a multisig address from 2 addresses\n" +
@@ -1192,7 +1192,7 @@ UniValue listreceivedbyaddress(const UniValue& params, bool fHelp)
             "    \"involvesWatchonly\" : \"true\",    (bool) Only returned if imported addresses were involved in transaction\n"
             "    \"address\" : \"receivingaddress\",  (string) The receiving address\n"
             "    \"account\" : \"accountname\",       (string) The account of the receiving address. The default account is \"\".\n"
-            "    \"amount\" : x.xxx,                  (numeric) The total amount in GALI received by the address\n"
+            "    \"amount\" : x.xxx,                  (numeric) The total amount in SVG received by the address\n"
             "    \"confirmations\" : n                (numeric) The number of confirmations of the most recent transaction included\n"
             "    \"bcconfirmations\" : n              (numeric) The number of blockchain confirmations of the most recent transaction included\n"
             "  }\n"
@@ -1344,17 +1344,17 @@ UniValue listtransactions(const UniValue& params, bool fHelp)
             "  {\n"
             "    \"account\":\"accountname\",       (string) The account name associated with the transaction. \n"
             "                                                It will be \"\" for the default account.\n"
-            "    \"address\":\"galileladdress\",    (string) The galilel address of the transaction. Not present for \n"
+            "    \"address\":\"salvageaddress\",    (string) The salvage address of the transaction. Not present for \n"
             "                                                move transactions (category = move).\n"
             "    \"category\":\"send|receive|move\", (string) The transaction category. 'move' is a local (off blockchain)\n"
             "                                                transaction between accounts, and not associated with an address,\n"
             "                                                transaction id or block. 'send' and 'receive' transactions are \n"
             "                                                associated with an address, transaction id and block details\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in GALI. This is negative for the 'send' category, and for the\n"
+            "    \"amount\": x.xxx,          (numeric) The amount in SVG. This is negative for the 'send' category, and for the\n"
             "                                         'move' category for moves outbound. It is positive for the 'receive' category,\n"
             "                                         and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in GALI. This is negative and only available for the \n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in SVG. This is negative and only available for the \n"
             "                                         'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and \n"
             "                                         'receive' category of transactions.\n"
@@ -1539,12 +1539,12 @@ UniValue listsinceblock(const UniValue& params, bool fHelp)
             "{\n"
             "  \"transactions\": [\n"
             "    \"account\":\"accountname\",       (string) The account name associated with the transaction. Will be \"\" for the default account.\n"
-            "    \"address\":\"galileladdress\",    (string) The galilel address of the transaction. Not present for move transactions (category = move).\n"
+            "    \"address\":\"salvageaddress\",    (string) The salvage address of the transaction. Not present for move transactions (category = move).\n"
             "    \"category\":\"send|receive\",     (string) The transaction category. 'send' has negative amounts, 'receive' has positive amounts.\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in GALI. This is negative for the 'send' category, and for the 'move' category for moves \n"
+            "    \"amount\": x.xxx,          (numeric) The amount in SVG. This is negative for the 'send' category, and for the 'move' category for moves \n"
             "                                          outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in GALI. This is negative and only available for the 'send' category of transactions.\n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in SVG. This is negative and only available for the 'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"bcconfirmations\" : n,    (numeric) The number of blockchain confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"blockhash\": \"hashvalue\",     (string) The block hash containing the transaction. Available for 'send' and 'receive' category of transactions.\n"
@@ -1624,7 +1624,7 @@ UniValue gettransaction(const UniValue& params, bool fHelp)
 
             "\nResult:\n"
             "{\n"
-            "  \"amount\" : x.xxx,        (numeric) The transaction amount in GALI\n"
+            "  \"amount\" : x.xxx,        (numeric) The transaction amount in SVG\n"
             "  \"confirmations\" : n,     (numeric) The number of confirmations\n"
             "  \"bcconfirmations\" : n,   (numeric) The number of blockchain confirmations\n"
             "  \"blockhash\" : \"hash\",  (string) The block hash\n"
@@ -1636,9 +1636,9 @@ UniValue gettransaction(const UniValue& params, bool fHelp)
             "  \"details\" : [\n"
             "    {\n"
             "      \"account\" : \"accountname\",  (string) The account name involved in the transaction, can be \"\" for the default account.\n"
-            "      \"address\" : \"galileladdress\",   (string) The galilel address involved in the transaction\n"
+            "      \"address\" : \"salvageaddress\",   (string) The salvage address involved in the transaction\n"
             "      \"category\" : \"send|receive\",    (string) The category, either 'send' or 'receive'\n"
-            "      \"amount\" : x.xxx                  (numeric) The amount in GALI\n"
+            "      \"amount\" : x.xxx                  (numeric) The amount in SVG\n"
             "      \"vout\" : n,                       (numeric) the vout value\n"
             "    }\n"
             "    ,...\n"
@@ -1759,7 +1759,7 @@ UniValue walletpassphrase(const UniValue& params, bool fHelp)
         throw runtime_error(
             "walletpassphrase \"passphrase\" timeout ( anonymizeonly )\n"
             "\nStores the wallet decryption key in memory for 'timeout' seconds.\n"
-            "This is needed prior to performing transactions related to private keys such as sending GALIs\n"
+            "This is needed prior to performing transactions related to private keys such as sending SVGs\n"
 
             "\nArguments:\n"
             "1. \"passphrase\"     (string, required) The wallet passphrase\n"
@@ -1924,10 +1924,10 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
             "\nExamples:\n"
             "\nEncrypt you wallet\n" +
             HelpExampleCli("encryptwallet", "\"my pass phrase\"") +
-            "\nNow set the passphrase to use the wallet, such as for signing or sending GALIs\n" +
+            "\nNow set the passphrase to use the wallet, such as for signing or sending SVGs\n" +
             HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
             "\nNow we can so something like sign\n" +
-            HelpExampleCli("signmessage", "\"galileladdress\" \"test message\"") +
+            HelpExampleCli("signmessage", "\"salvageaddress\" \"test message\"") +
             "\nNow lock the wallet again by removing the passphrase\n" +
             HelpExampleCli("walletlock", "") +
             "\nAs a json rpc call\n" +
@@ -1958,7 +1958,7 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
     // slack space in .dat files; that is bad if the old data is
     // unencrypted private keys. So:
     StartShutdown();
-    return "wallet encrypted; galilel server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
+    return "wallet encrypted; salvage server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
 }
 
 UniValue lockunspent(const UniValue& params, bool fHelp)
@@ -1968,7 +1968,7 @@ UniValue lockunspent(const UniValue& params, bool fHelp)
             "lockunspent unlock [{\"txid\":\"txid\",\"vout\":n},...]\n"
             "\nUpdates list of temporarily unspendable outputs.\n"
             "Temporarily lock (unlock=false) or unlock (unlock=true) specified transaction outputs.\n"
-            "A locked transaction output will not be chosen by automatic coin selection, when spending GALIs.\n"
+            "A locked transaction output will not be chosen by automatic coin selection, when spending SVGs.\n"
             "Locks are stored in memory only. Nodes start with zero locked outputs, and the locked output list\n"
             "is always cleared (by virtue of process exit) when a node stops or fails.\n"
             "Also see the listunspent call\n"
@@ -2097,7 +2097,7 @@ UniValue settxfee(const UniValue& params, bool fHelp)
             "\nSet the transaction fee per kB.\n"
 
             "\nArguments:\n"
-            "1. amount         (numeric, required) The transaction fee in GALI/kB rounded to the nearest 0.00000001\n"
+            "1. amount         (numeric, required) The transaction fee in SVG/kB rounded to the nearest 0.00000001\n"
 
             "\nResult\n"
             "true|false        (boolean) Returns true if successful\n"
@@ -2125,12 +2125,12 @@ UniValue getwalletinfo(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"walletversion\": xxxxx,     (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,         (numeric) the total GALI balance of the wallet\n"
+            "  \"balance\": xxxxxxx,         (numeric) the total SVG balance of the wallet\n"
             "  \"txcount\": xxxxxxx,         (numeric) the total number of transactions in the wallet\n"
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated\n"
             "  \"unlocked_until\": ttt,      (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n"
-            "  \"paytxfee\": x.xxxx,         (numeric) the transaction fee configuration, set in GALI/kB\n"
+            "  \"paytxfee\": x.xxxx,         (numeric) the transaction fee configuration, set in SVG/kB\n"
             "}\n"
 
             "\nExamples:\n" +
@@ -2267,7 +2267,7 @@ UniValue autocombinerewards(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || (fEnable && params.size() != 2) || params.size() > 2)
         throw runtime_error(
             "autocombinerewards enable ( threshold )\n"
-            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same GALI address\n"
+            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same SVG address\n"
             "When autocombinerewards runs it will create a transaction, and therefore will be subject to transaction fees.\n"
 
             "\nArguments:\n"
@@ -2476,7 +2476,7 @@ UniValue multisend(const UniValue& params, bool fHelp)
             "The MultiSend transaction is sent when the staked coins mature (100 confirmations)\n"
             "****************************************************************\n"
             "TO CREATE OR ADD TO THE MULTISEND VECTOR:\n"
-            "multisend <GALI Address> <percent>\n"
+            "multisend <SVG Address> <percent>\n"
             "This will add a new address to the MultiSend vector\n"
             "Percent is a whole number 1 to 100.\n"
             "****************************************************************\n"
@@ -2495,7 +2495,7 @@ UniValue multisend(const UniValue& params, bool fHelp)
     string strAddress = params[0].get_str();
     CBitcoinAddress address(strAddress);
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GALI address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SVG address");
     if (std::stoi(params[1].get_str().c_str()) < 0)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, expected valid percentage");
     if (pwalletMain->IsLocked())
@@ -2540,11 +2540,11 @@ UniValue getzerocoinbalance(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw runtime_error(
             "getzerocoinbalance\n"
-            "\nReturn the wallet's total zGALI balance.\n" +
+            "\nReturn the wallet's total zSVG balance.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
-            "amount         (numeric) Total zGALI balance.\n"
+            "amount         (numeric) Total zSVG balance.\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getzerocoinbalance", "") + HelpExampleRpc("getzerocoinbalance", ""));
@@ -2568,7 +2568,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 2)
         throw runtime_error(
             "listmintedzerocoins (fVerbose) (fMatureOnly)\n"
-            "\nList all zGALI mints in the wallet.\n" +
+            "\nList all zSVG mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -2586,7 +2586,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
             "  {\n"
             "    \"serial hash\": \"xxx\",   (string) Mint serial hash in hex format.\n"
             "    \"version\": n,   (numeric) Zerocoin version number.\n"
-            "    \"zGALI ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
+            "    \"zSVG ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
             "    \"denomination\": n,   (numeric) Coin denomination.\n"
             "    \"confirmations\": n   (numeric) Number of confirmations.\n"
             "  }\n"
@@ -2606,7 +2606,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
     EnsureWalletIsUnlocked(true);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    set<CMintMeta> setMints = pwalletMain->zgaliTracker->ListMints(true, fMatureOnly, true);
+    set<CMintMeta> setMints = pwalletMain->zsvgTracker->ListMints(true, fMatureOnly, true);
 
     int nBestHeight = chainActive.Height();
 
@@ -2617,7 +2617,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
             UniValue objMint(UniValue::VOBJ);
             objMint.push_back(Pair("serial hash", m.hashSerial.GetHex()));  // Serial hash
             objMint.push_back(Pair("version", m.nVersion));                 // Zerocoin version
-            objMint.push_back(Pair("zGALI ID", m.hashPubcoin.GetHex()));     // PubCoin
+            objMint.push_back(Pair("zSVG ID", m.hashPubcoin.GetHex()));     // PubCoin
             int denom = libzerocoin::ZerocoinDenominationToInt(m.denom);
             objMint.push_back(Pair("denomination", denom));                 // Denomination
             int nConfirmations = (m.nHeight && nBestHeight > m.nHeight) ? nBestHeight - m.nHeight : 0;
@@ -2659,7 +2659,7 @@ UniValue listzerocoinamounts(const UniValue& params, bool fHelp)
     EnsureWalletIsUnlocked(true);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    set<CMintMeta> setMints = pwalletMain->zgaliTracker->ListMints(true, true, true);
+    set<CMintMeta> setMints = pwalletMain->zsvgTracker->ListMints(true, true, true);
 
     std::map<libzerocoin::CoinDenomination, CAmount> spread;
     for (const auto& denom : libzerocoin::zerocoinDenomList)
@@ -2683,7 +2683,7 @@ UniValue listspentzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw runtime_error(
             "listspentzerocoins\n"
-            "\nList all the spent zGALI mints in the wallet.\n" +
+            "\nList all the spent zSVG mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -2715,11 +2715,11 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
             "mintzerocoin amount ( utxos )\n"
-            "\nMint the specified zGALI amount\n" +
+            "\nMint the specified zSVG amount\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. amount      (numeric, required) Enter an amount of GALI to convert to zGALI\n"
+            "1. amount      (numeric, required) Enter an amount of SVG to convert to zSVG\n"
             "2. utxos       (string, optional) A json array of objects.\n"
             "                   Each object needs the txid (string) and vout (numeric)\n"
             "  [\n"
@@ -2763,7 +2763,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
 
     int64_t nTime = GetTimeMillis();
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zGALI is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zSVG is currently disabled due to maintenance.");
 
     EnsureWalletIsUnlocked(true);
 
@@ -2826,7 +2826,7 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 5 || params.size() < 4)
         throw runtime_error(
             "spendzerocoin amount mintchange minimizechange securitylevel ( \"address\" )\n"
-            "\nSpend zGALI to a GALI address.\n" +
+            "\nSpend zSVG to a SVG address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -2857,8 +2857,8 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in GALI.\n"
-            "      \"address\": \"xxx\"         (string) GALI address or \"zerocoinmint\" for reminted change.\n"
+            "      \"value\": amount,         (numeric) Value in SVG.\n"
+            "      \"address\": \"xxx\"         (string) SVG address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
             "  ]\n"
@@ -2871,19 +2871,19 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zGALI is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zSVG is currently disabled due to maintenance.");
 
     EnsureWalletIsUnlocked();
 
     CAmount nAmount = AmountFromValue(params[0]);   // Spending amount
-    bool fMintChange = params[1].get_bool();        // Mint change to zGALI
+    bool fMintChange = params[1].get_bool();        // Mint change to zSVG
     bool fMinimizeChange = params[2].get_bool();    // Minimize change
     int nSecurityLevel = params[3].get_int();       // Security level
     std::string address_str = params.size() > 4 ? params[4].get_str() : "";
 
     vector<CZerocoinMint> vMintsSelected;
 
-    return DoZgaliSpend(nAmount, fMintChange, fMinimizeChange, nSecurityLevel, vMintsSelected, address_str);
+    return DoZsvgSpend(nAmount, fMintChange, fMinimizeChange, nSecurityLevel, vMintsSelected, address_str);
 }
 
 
@@ -2892,7 +2892,7 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
             "spendzerocoinmints mints_list (\"address\") \n"
-            "\nSpend zGALI mints to a GALI address.\n" +
+            "\nSpend zSVG mints to a SVG address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -2915,8 +2915,8 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in GALI.\n"
-            "      \"address\": \"xxx\"         (string) GALI address or \"zerocoinmint\" for reminted change.\n"
+            "      \"value\": amount,         (numeric) Value in SVG.\n"
+            "      \"address\": \"xxx\"         (string) SVG address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
             "  ]\n"
@@ -2929,7 +2929,7 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zGALI is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zSVG is currently disabled due to maintenance.");
 
     std::string address_str = "";
     if (params.size() > 1) {
@@ -2968,11 +2968,11 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
         nAmount += mint.GetDenominationAsAmount();
     }
 
-    return DoZgaliSpend(nAmount, false, true, 100, vMintsSelected, address_str);
+    return DoZsvgSpend(nAmount, false, true, 100, vMintsSelected, address_str);
 }
 
 
-extern UniValue DoZgaliSpend(const CAmount nAmount, bool fMintChange, bool fMinimizeChange, const int nSecurityLevel, vector<CZerocoinMint>& vMintsSelected, std::string address_str)
+extern UniValue DoZsvgSpend(const CAmount nAmount, bool fMintChange, bool fMinimizeChange, const int nSecurityLevel, vector<CZerocoinMint>& vMintsSelected, std::string address_str)
 {
     int64_t nTimeStart = GetTimeMillis();
     CBitcoinAddress address = CBitcoinAddress(); // Optional sending address. Dummy initialization here.
@@ -2983,7 +2983,7 @@ extern UniValue DoZgaliSpend(const CAmount nAmount, bool fMintChange, bool fMini
     if(address_str != "") { // Spend to supplied destination address
         address = CBitcoinAddress(address_str);
         if(!address.IsValid())
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid GALI address");
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SVG address");
         fSuccess = pwalletMain->SpendZerocoin(nAmount, nSecurityLevel, wtx, receipt, vMintsSelected, fMintChange, fMinimizeChange, &address);
     } else                   // Spend to newly generated local address
         fSuccess = pwalletMain->SpendZerocoin(nAmount, nSecurityLevel, wtx, receipt, vMintsSelected, fMintChange, fMinimizeChange);
@@ -3064,8 +3064,8 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzGALITracker* zgaliTracker = pwalletMain->zgaliTracker.get();
-    set<CMintMeta> setMints = zgaliTracker->ListMints(false, false, true);
+    CzSVGTracker* zsvgTracker = pwalletMain->zsvgTracker.get();
+    set<CMintMeta> setMints = zsvgTracker->ListMints(false, false, true);
     vector<CMintMeta> vMintsToFind(setMints.begin(), setMints.end());
     vector<CMintMeta> vMintsMissing;
     vector<CMintMeta> vMintsToUpdate;
@@ -3076,14 +3076,14 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
     // update the meta data of mints that were marked for updating
     UniValue arrUpdated(UniValue::VARR);
     for (CMintMeta meta : vMintsToUpdate) {
-        zgaliTracker->UpdateState(meta);
+        zsvgTracker->UpdateState(meta);
         arrUpdated.push_back(meta.hashPubcoin.GetHex());
     }
 
     // delete any mints that were unable to be located on the blockchain
     UniValue arrDeleted(UniValue::VARR);
     for (CMintMeta mint : vMintsMissing) {
-        zgaliTracker->Archive(mint);
+        zsvgTracker->Archive(mint);
         arrDeleted.push_back(mint.hashPubcoin.GetHex());
     }
 
@@ -3117,8 +3117,8 @@ UniValue resetspentzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzGALITracker* zgaliTracker = pwalletMain->zgaliTracker.get();
-    set<CMintMeta> setMints = zgaliTracker->ListMints(false, false, false);
+    CzSVGTracker* zsvgTracker = pwalletMain->zsvgTracker.get();
+    set<CMintMeta> setMints = zsvgTracker->ListMints(false, false, false);
     list<CZerocoinSpend> listSpends = walletdb.ListSpentCoins();
     list<CZerocoinSpend> listUnconfirmedSpends;
 
@@ -3140,7 +3140,7 @@ UniValue resetspentzerocoin(const UniValue& params, bool fHelp)
     for (CZerocoinSpend spend : listUnconfirmedSpends) {
         for (auto& meta : setMints) {
             if (meta.hashSerial == GetSerialHash(spend.GetSerial())) {
-                zgaliTracker->SetPubcoinNotUsed(meta.hashPubcoin);
+                zsvgTracker->SetPubcoinNotUsed(meta.hashPubcoin);
                 walletdb.EraseZerocoinSpendSerialEntry(spend.GetSerial());
                 RemoveSerialFromDB(spend.GetSerial());
                 UniValue obj(UniValue::VOBJ);
@@ -3222,7 +3222,7 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"include_spent\"        (bool, required) Include mints that have already been spent\n"
-            "2. \"denomination\"         (integer, optional) Export a specific denomination of zGALI\n"
+            "2. \"denomination\"         (integer, optional) Export a specific denomination of zSVG\n"
 
             "\nResult:\n"
             "[                   (array of json object)\n"
@@ -3234,8 +3234,8 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
             "    \"t\": \"txid\",    (string) The txid that the coin was minted in\n"
             "    \"h\": n,         (numeric) The height the tx was added to the blockchain\n"
             "    \"u\": used,      (boolean) Whether the mint has been spent\n"
-            "    \"v\": version,   (numeric) The version of the zGALI\n"
-            "    \"k\": \"privkey\"  (string) The zGALI private key (V2+ zGALI only)\n"
+            "    \"v\": version,   (numeric) The version of the zSVG\n"
+            "    \"k\": \"privkey\"  (string) The zSVG private key (V2+ zSVG only)\n"
             "  }\n"
             "  ,...\n"
             "]\n"
@@ -3254,8 +3254,8 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
     if (params.size() == 2)
         denomination = libzerocoin::IntToZerocoinDenomination(params[1].get_int());
 
-    CzGALITracker* zgaliTracker = pwalletMain->zgaliTracker.get();
-    set<CMintMeta> setMints = zgaliTracker->ListMints(!fIncludeSpent, false, false);
+    CzSVGTracker* zsvgTracker = pwalletMain->zsvgTracker.get();
+    set<CMintMeta> setMints = zsvgTracker->ListMints(!fIncludeSpent, false, false);
 
     UniValue jsonList(UniValue::VARR);
     for (const CMintMeta& meta : setMints) {
@@ -3305,7 +3305,7 @@ UniValue importzerocoins(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"added\": n,        (numeric) The quantity of zerocoin mints that were added\n"
-            "  \"value\": amount    (numeric) The total zGALI value of zerocoin mints that were added\n"
+            "  \"value\": amount    (numeric) The total zSVG value of zerocoin mints that were added\n"
             "}\n"
 
             "\nExamples\n" +
@@ -3369,7 +3369,7 @@ UniValue importzerocoins(const UniValue& params, bool fHelp)
         CZerocoinMint mint(denom, bnValue, bnRandom, bnSerial, fUsed, nVersion, &privkey);
         mint.SetTxHash(txid);
         mint.SetHeight(nHeight);
-        pwalletMain->zgaliTracker->Add(mint, true);
+        pwalletMain->zsvgTracker->Add(mint, true);
         count++;
         nValue += libzerocoin::ZerocoinDenominationToAmount(denom);
     }
@@ -3385,7 +3385,7 @@ UniValue reconsiderzerocoins(const UniValue& params, bool fHelp)
     if(fHelp || !params.empty())
         throw runtime_error(
             "reconsiderzerocoins\n"
-            "\nCheck archived zGALI list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived zSVG list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -3431,30 +3431,30 @@ UniValue reconsiderzerocoins(const UniValue& params, bool fHelp)
     return arrRet;
 }
 
-UniValue setzgaliseed(const UniValue& params, bool fHelp)
+UniValue setzsvgseed(const UniValue& params, bool fHelp)
 {
     if(fHelp || params.size() != 1)
         throw runtime_error(
-            "setzgaliseed \"seed\"\n"
-            "\nSet the wallet's deterministic zgali seed to a specific value.\n" +
+            "setzsvgseed \"seed\"\n"
+            "\nSet the wallet's deterministic zsvg seed to a specific value.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"seed\"        (string, required) The deterministic zgali seed.\n"
+            "1. \"seed\"        (string, required) The deterministic zsvg seed.\n"
 
             "\nResult\n"
             "\"success\" : b,  (boolean) Whether the seed was successfully set.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("setzgaliseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5") +
-            HelpExampleRpc("setzgaliseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5"));
+            HelpExampleCli("setzsvgseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5") +
+            HelpExampleRpc("setzsvgseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5"));
 
     EnsureWalletIsUnlocked();
 
     uint256 seed;
     seed.SetHex(params[0].get_str());
 
-    CzGALIWallet* zwallet = pwalletMain->getZWallet();
+    CzSVGWallet* zwallet = pwalletMain->getZWallet();
     bool fSuccess = zwallet->SetMasterSeed(seed, true);
     if (fSuccess)
         zwallet->SyncWithChain();
@@ -3465,23 +3465,23 @@ UniValue setzgaliseed(const UniValue& params, bool fHelp)
     return ret;
 }
 
-UniValue getzgaliseed(const UniValue& params, bool fHelp)
+UniValue getzsvgseed(const UniValue& params, bool fHelp)
 {
     if(fHelp || !params.empty())
         throw runtime_error(
-            "getzgaliseed\n"
-            "\nCheck archived zGALI list to see if any mints were added to the blockchain.\n" +
+            "getzsvgseed\n"
+            "\nCheck archived zSVG list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult\n"
-            "\"seed\" : s,  (string) The deterministic zGALI seed.\n"
+            "\"seed\" : s,  (string) The deterministic zSVG seed.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("getzgaliseed", "") + HelpExampleRpc("getzgaliseed", ""));
+            HelpExampleCli("getzsvgseed", "") + HelpExampleRpc("getzsvgseed", ""));
 
     EnsureWalletIsUnlocked();
 
-    CzGALIWallet* zwallet = pwalletMain->getZWallet();
+    CzSVGWallet* zwallet = pwalletMain->getZWallet();
     uint256 seed = zwallet->GetMasterSeed();
 
     UniValue ret(UniValue::VOBJ);
@@ -3495,12 +3495,12 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 2)
         throw runtime_error(
             "generatemintlist\n"
-            "\nShow mints that are derived from the deterministic zGALI seed.\n" +
+            "\nShow mints that are derived from the deterministic zSVG seed.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"  : n,  (numeric) Which sequential zGALI to start with.\n"
-            "2. \"range\"  : n,  (numeric) How many zGALI to generate.\n"
+            "1. \"count\"  : n,  (numeric) Which sequential zSVG to start with.\n"
+            "2. \"range\"  : n,  (numeric) How many zSVG to generate.\n"
 
             "\nResult:\n"
             "[\n"
@@ -3520,7 +3520,7 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
 
     int nCount = params[0].get_int();
     int nRange = params[1].get_int();
-    CzGALIWallet* zwallet = pwalletMain->zwalletMain;
+    CzSVGWallet* zwallet = pwalletMain->zwalletMain;
 
     UniValue arrRet(UniValue::VARR);
     for (int i = nCount; i < nCount + nRange; i++) {
@@ -3539,28 +3539,28 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
     return arrRet;
 }
 
-UniValue dzgalistate(const UniValue& params, bool fHelp) {
+UniValue dzsvgstate(const UniValue& params, bool fHelp) {
     if (fHelp || params.size() != 0)
         throw runtime_error(
-                "dzgalistate\n"
-                        "\nThe current state of the mintpool of the deterministic zGALI wallet.\n" +
+                "dzsvgstate\n"
+                        "\nThe current state of the mintpool of the deterministic zSVG wallet.\n" +
                 HelpRequiringPassphrase() + "\n"
 
                         "\nExamples\n" +
                 HelpExampleCli("mintpoolstatus", "") + HelpExampleRpc("mintpoolstatus", ""));
 
-    CzGALIWallet* zwallet = pwalletMain->zwalletMain;
+    CzSVGWallet* zwallet = pwalletMain->zwalletMain;
     UniValue obj(UniValue::VOBJ);
     int nCount, nCountLastUsed;
     zwallet->GetState(nCount, nCountLastUsed);
-    obj.push_back(Pair("dzgali_count", nCount));
+    obj.push_back(Pair("dzsvg_count", nCount));
     obj.push_back(Pair("mintpool_count", nCountLastUsed));
 
     return obj;
 }
 
 
-void static SearchThread(CzGALIWallet* zwallet, int nCountStart, int nCountEnd)
+void static SearchThread(CzSVGWallet* zwallet, int nCountStart, int nCountEnd)
 {
     LogPrintf("%s: start=%d end=%d\n", __func__, nCountStart, nCountEnd);
     CWalletDB walletDB(pwalletMain->strWalletFile);
@@ -3577,7 +3577,7 @@ void static SearchThread(CzGALIWallet* zwallet, int nCountStart, int nCountEnd)
             CBigNum bnSerial;
             CBigNum bnRandomness;
             CKey key;
-            zwallet->SeedToZGALI(zerocoinSeed, bnValue, bnSerial, bnRandomness, key);
+            zwallet->SeedToZSVG(zerocoinSeed, bnValue, bnSerial, bnRandomness, key);
 
             uint256 hashPubcoin = GetPubCoinHash(bnValue);
             zwallet->AddToMintPool(make_pair(hashPubcoin, i), true);
@@ -3590,21 +3590,21 @@ void static SearchThread(CzGALIWallet* zwallet, int nCountStart, int nCountEnd)
     }
 }
 
-UniValue searchdzgali(const UniValue& params, bool fHelp)
+UniValue searchdzsvg(const UniValue& params, bool fHelp)
 {
     if(fHelp || params.size() != 3)
         throw runtime_error(
-            "searchdzgali\n"
-            "\nMake an extended search for deterministically generated zGALI that have not yet been recognized by the wallet.\n" +
+            "searchdzsvg\n"
+            "\nMake an extended search for deterministically generated zSVG that have not yet been recognized by the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"       (numeric) Which sequential zGALI to start with.\n"
-            "2. \"range\"       (numeric) How many zGALI to generate.\n"
+            "1. \"count\"       (numeric) Which sequential zSVG to start with.\n"
+            "2. \"range\"       (numeric) How many zSVG to generate.\n"
             "3. \"threads\"     (numeric) How many threads should this operation consume.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("searchdzgali", "1, 100, 2") + HelpExampleRpc("searchdzgali", "1, 100, 2"));
+            HelpExampleCli("searchdzsvg", "1, 100, 2") + HelpExampleRpc("searchdzsvg", "1, 100, 2"));
 
     EnsureWalletIsUnlocked();
 
@@ -3618,9 +3618,9 @@ UniValue searchdzgali(const UniValue& params, bool fHelp)
 
     int nThreads = params[2].get_int();
 
-    CzGALIWallet* zwallet = pwalletMain->zwalletMain;
+    CzSVGWallet* zwallet = pwalletMain->zwalletMain;
 
-    boost::thread_group* dzgaliThreads = new boost::thread_group();
+    boost::thread_group* dzsvgThreads = new boost::thread_group();
     int nRangePerThread = nRange / nThreads;
 
     int nPrevThreadEnd = nCount - 1;
@@ -3628,12 +3628,12 @@ UniValue searchdzgali(const UniValue& params, bool fHelp)
         int nStart = nPrevThreadEnd + 1;;
         int nEnd = nStart + nRangePerThread;
         nPrevThreadEnd = nEnd;
-        dzgaliThreads->create_thread(boost::bind(&SearchThread, zwallet, nStart, nEnd));
+        dzsvgThreads->create_thread(boost::bind(&SearchThread, zwallet, nStart, nEnd));
     }
 
-    dzgaliThreads->join_all();
+    dzsvgThreads->join_all();
 
-    zwallet->RemoveMintsFromPool(pwalletMain->zgaliTracker->GetSerialHashes());
+    zwallet->RemoveMintsFromPool(pwalletMain->zsvgTracker->GetSerialHashes());
     zwallet->SyncWithChain(false);
 
     //todo: better response

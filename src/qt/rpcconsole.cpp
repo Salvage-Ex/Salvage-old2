@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -291,7 +291,7 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent, Qt::WindowSystemMenuHi
     ui->openSSLVersion->setText(SSLeay_version(SSLEAY_VERSION));
 #ifdef ENABLE_WALLET
     std::string strPathCustom = GetArg("-backuppath", "");
-    std::string strzGALIPathCustom = GetArg("-zgalibackuppath", "");
+    std::string strzSVGPathCustom = GetArg("-zsvgbackuppath", "");
     int nCustomBackupThreshold = GetArg("-custombackupthreshold", DEFAULT_CUSTOMBACKUPTHRESHOLD);
 
     if(!strPathCustom.empty()) {
@@ -300,13 +300,13 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent, Qt::WindowSystemMenuHi
         ui->wallet_custombackuppath->show();
     }
 
-    if(!strzGALIPathCustom.empty()) {
-        ui->wallet_customzgalibackuppath->setText(QString::fromStdString(strzGALIPathCustom));
-        ui->wallet_customzgalibackuppath_label->setVisible(true);
-        ui->wallet_customzgalibackuppath->setVisible(true);
+    if(!strzSVGPathCustom.empty()) {
+        ui->wallet_customzsvgbackuppath->setText(QString::fromStdString(strzSVGPathCustom));
+        ui->wallet_customzsvgbackuppath_label->setVisible(true);
+        ui->wallet_customzsvgbackuppath->setVisible(true);
     }
 
-    if((!strPathCustom.empty() || !strzGALIPathCustom.empty()) && nCustomBackupThreshold > 0) {
+    if((!strPathCustom.empty() || !strzSVGPathCustom.empty()) && nCustomBackupThreshold > 0) {
         ui->wallet_custombackupthreshold->setText(QString::fromStdString(std::to_string(nCustomBackupThreshold)));
         ui->wallet_custombackupthreshold_label->setVisible(true);
         ui->wallet_custombackupthreshold->setVisible(true);
@@ -634,7 +634,7 @@ void RPCConsole::clear()
         "td.cmd-error { color: red; } "
         "b { color: #006060; } ");
 
-    message(CMD_REPLY, (tr("Welcome to the Galilel RPC console.") + "<br>" +
+    message(CMD_REPLY, (tr("Welcome to the Salvage RPC console.") + "<br>" +
                            tr("Use up and down arrows to navigate history, and <b>Ctrl-L</b> to clear screen.") + "<br>" +
                            tr("Type <b>help</b> for an overview of available commands.")),
         true);

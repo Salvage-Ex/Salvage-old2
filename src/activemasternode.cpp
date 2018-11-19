@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -14,7 +14,7 @@
 #include "spork.h"
 
 //
-// Bootup the Masternode, look for a 15000 GALI input and register on the network
+// Bootup the Masternode, look for a 15000 SVG input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

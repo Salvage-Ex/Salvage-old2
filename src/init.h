@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -14,7 +14,7 @@
 
 class CScheduler;
 class CWallet;
-class CzGALIWallet;
+class CzSVGWallet;
 
 namespace boost
 {
@@ -22,7 +22,7 @@ class thread_group;
 } // namespace boost
 
 extern CWallet* pwalletMain;
-extern CzGALIWallet* zwalletMain;
+extern CzSVGWallet* zwalletMain;
 
 void StartShutdown();
 bool ShutdownRequested();

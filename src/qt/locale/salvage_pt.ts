@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços GALI para onde enviar pagamentos. Confira sempre o montante e os endereços de destino antes de enviar moedas.</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços SVG para onde enviar pagamentos. Confira sempre o montante e os endereços de destino antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços GALI onde receber pagamentos. Recomenda-se o uso de um novo endereço para cada transacção.</translation>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços SVG onde receber pagamentos. Recomenda-se o uso de um novo endereço para cada transacção.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>Galilel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GALIs from being stolen by malware infecting your computer.</source>
-        <translation>Galilel encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas GALIs contra roubo por malware infectando seu computador.</translation>
+        <source>Salvage will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>Salvage encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas SVGs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Tem certeza que deseja encriptar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GALI&lt;/b&gt;!</source>
-        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA GALI&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
+        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA SVG&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -666,8 +666,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The GALI address to sign the message with</source>
-        <translation>Um endereço GALI para assinar a mensagem</translation>
+        <source>The SVG address to sign the message with</source>
+        <translation>Um endereço SVG para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -698,12 +698,12 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this GALI address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço GALI.</translation>
+        <source>Sign the message to prove you own this SVG address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço SVG.</translation>
     </message>
     <message>
-        <source>The GALI address the message was signed with</source>
-        <translation>O endereço GALI que foi assinado com</translation>
+        <source>The SVG address the message was signed with</source>
+        <translation>O endereço SVG que foi assinado com</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -901,10 +901,10 @@
     </message>
     </context>
 <context>
-    <name>ZGaliControlDialog</name>
+    <name>ZSvgControlDialog</name>
     </context>
 <context>
-    <name>galilel-core</name>
+    <name>salvage-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>
@@ -1250,8 +1250,8 @@
         <translation>Carteira esta bloqueada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Galilel Core to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o Galilel Core para completar.</translation>
+        <source>Wallet needed to be rewritten: restart Salvage Core to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o Salvage Core para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

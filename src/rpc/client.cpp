@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -141,9 +141,9 @@ static const CRPCConvertParam vRPCConvertParams[] =
         {"getspentzerocoinamount", 1},
         {"generatemintlist", 0},
         {"generatemintlist", 1},
-        {"searchdzgali", 0},
-        {"searchdzgali", 1},
-        {"searchdzgali", 2},
+        {"searchdzsvg", 0},
+        {"searchdzsvg", 1},
+        {"searchdzsvg", 2},
         {"getaccumulatorvalues", 0},
         {"getfeeinfo", 0}
     };

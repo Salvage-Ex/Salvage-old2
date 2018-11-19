@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun GALI osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun SVG osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun GALI osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun SVG osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Galilel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GALIs from being stolen by malware infecting your computer.</source>
-        <translation>Galilel sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella GALIien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Salvage will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>Salvage sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella SVGien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GALI&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki GALIisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki SVGisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -565,16 +565,16 @@
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>GALI Ydin</translation>
+        <source>Salvage Core</source>
+        <translation>SVG Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a GALI address</source>
-        <translation>Lähetä kolikkoja GALI osoitteeseen</translation>
+        <source>Send coins to a SVG address</source>
+        <translation>Lähetä kolikkoja SVG osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and galilel: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja galilel: URIja)</translation>
+        <source>Request payments (generates QR codes and salvage: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja salvage: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -585,24 +585,24 @@
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About Galilel Core</source>
-        <translation>Galilel Core &amp;ytimestä</translation>
+        <source>&amp;About Salvage Core</source>
+        <translation>Salvage Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about Galilel Core</source>
-        <translation>Näytä tietoja GALI Ytimestä</translation>
+        <source>Show information about Salvage Core</source>
+        <translation>Näytä tietoja SVG Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for GALI</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja GALI:lle</translation>
+        <source>Modify configuration options for SVG</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja SVG:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your GALI addresses to prove you own them</source>
+        <source>Sign messages with your SVG addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified GALI addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä GALI osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified SVG addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä SVG osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -633,8 +633,8 @@
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a GALI: URI or payment request</source>
-        <translation>Avaa GALI: URI tai pyydä maksua</translation>
+        <source>Open a SVG: URI or payment request</source>
+        <translation>Avaa SVG: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -645,12 +645,12 @@
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Galilel Core help message to get a list with possible Galilel command-line options</source>
-        <translation>Näytä GALI Ydin apuviesti saadaksesi lista mahdollisista Galilel komentolinja komennoista.</translation>
+        <source>Show the Salvage Core help message to get a list with possible Salvage command-line options</source>
+        <translation>Näytä SVG Ydin apuviesti saadaksesi lista mahdollisista Salvage komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>Galilel Core client</source>
-        <translation>GALI Ydin asiakasohjelma</translation>
+        <source>Salvage Core client</source>
+        <translation>SVG Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -908,8 +908,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Galilel Core</source>
-        <translation>GALI Ydin</translation>
+        <source>Salvage Core</source>
+        <translation>SVG Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -927,12 +927,12 @@
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Galilel Core.</source>
-        <translation>Tervetuloa GALI Ytimeen.</translation>
+        <source>Welcome to Salvage Core.</source>
+        <translation>Tervetuloa SVG Ytimeen.</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>GALI Ydin</translation>
+        <source>Salvage Core</source>
+        <translation>SVG Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1128,32 +1128,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 15000 GALI</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 15000 GALI</translation>
+        <source>Use 2 separate masternodes to mix funds up to 15000 SVG</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 15000 SVG</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 15000 GALI</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 15000 GALI</translation>
+        <source>Use 8 separate masternodes to mix funds up to 15000 SVG</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 15000 SVG</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 GALI to anonymize 15000 GALI</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 GALI anonymoidaksesi 15000 GALI</translation>
+        <source>This option is the quickest and will cost about ~0.025 SVG to anonymize 15000 SVG</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 SVG anonymoidaksesi 15000 SVG</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 GALI to anonymize 15000 GALI</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 GALI anonymoidaksesi 15000 GALI</translation>
+        <source>This option is moderately fast and will cost about 0.05 SVG to anonymize 15000 SVG</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 SVG anonymoidaksesi 15000 SVG</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 GALI per 15000 GALI you anonymize.</source>
-        <translation>0.1 per 15000 GALI, jotka anonymisoit.</translation>
+        <source>0.1 SVG per 15000 SVG you anonymize.</source>
+        <translation>0.1 per 15000 SVG, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1202,12 +1202,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start GALI after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä GALI kun kirjaudut sisään.</translation>
+        <source>Automatically start SVG after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä SVG kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start GALI on system login</source>
-        <translation>&amp;Aloita GALI järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start SVG on system login</source>
+        <translation>&amp;Aloita SVG järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1226,12 +1226,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting GALI.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting SVG.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the Galilel network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä Galilel verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the Salvage network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä Salvage verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1535,8 +1535,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the GALI debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa GALI debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the SVG debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa SVG debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1647,8 +1647,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the GALI RPC console.</source>
-        <translation>Tervetuloa GALI RPC konsoliin.</translation>
+        <source>Welcome to the SVG RPC console.</source>
+        <translation>Tervetuloa SVG RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1686,12 +1686,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Galilel network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Galilel verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Salvage network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Salvage verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Galilel network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Galilel verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Salvage network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Salvage verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1887,8 +1887,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 GALI</source>
-        <translation>0 GALI</translation>
+        <source>0 SVG</source>
+        <translation>0 SVG</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1963,8 +1963,8 @@ Please check the address and try again.</source>
         <translation>Kopioi taksa</translation>
     </message>
     <message>
-        <source>Warning: Invalid GALI address</source>
-        <translation>Varoitus: Virheellinen GALI osoite</translation>
+        <source>Warning: Invalid SVG address</source>
+        <translation>Varoitus: Virheellinen SVG osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2014,8 +2014,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The GALI address to send the payment to</source>
-        <translation>GALI osoite johon maksu lähetetään</translation>
+        <source>The SVG address to send the payment to</source>
+        <translation>SVG osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2057,8 +2057,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Galilel Core is shutting down...</source>
-        <translation>Galilel core sammuu...</translation>
+        <source>Salvage Core is shutting down...</source>
+        <translation>Salvage core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2076,8 +2076,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The GALI address to sign the message with</source>
-        <translation>GALI osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The SVG address to sign the message with</source>
+        <translation>SVG osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2108,16 +2108,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this GALI address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän GALI osoitteen</translation>
+        <source>Sign the message to prove you own this SVG address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän SVG osoitteen</translation>
     </message>
     <message>
-        <source>The GALI address the message was signed with</source>
-        <translation>GALI osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The SVG address the message was signed with</source>
+        <translation>SVG osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified GALI address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla GALI osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified SVG address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla SVG osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2199,8 +2199,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Galilel Core</source>
-        <translation>GALI Ydin</translation>
+        <source>Salvage Core</source>
+        <translation>SVG Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2219,8 +2219,8 @@ Please check the address and try again.</source>
         <translation>PIVX Core kehittäjät</translation>
     </message>
     <message>
-        <source>The Galilel Core developers</source>
-        <translation>Galilel Core kehittäjät</translation>
+        <source>The Salvage Core developers</source>
+        <translation>Salvage Core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2515,14 +2515,14 @@ Please check the address and try again.</source>
     </message>
 </context>
 <context>
-    <name>ZGaliControlDialog</name>
+    <name>ZSvgControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>galilel-core</name>
+    <name>salvage-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2572,8 +2572,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Galilel Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Galilel Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Salvage Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Salvage Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

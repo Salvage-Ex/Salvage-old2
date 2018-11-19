@@ -62,12 +62,12 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Voici vos adresses GALI pour envoyer des paiements.  Assurez-vous de toujours vérifier le montant et l'adresse de réception avant d'envoyer les jetons</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Voici vos adresses SVG pour envoyer des paiements.  Assurez-vous de toujours vérifier le montant et l'adresse de réception avant d'envoyer les jetons</translation>
     </message>
     <message>
-        <source>These are your GALI addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Voici vos adresses GALI pour les réceptions de vos paiments. Il est recommandé d'utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Voici vos adresses SVG pour les réceptions de vos paiments. Il est recommandé d'utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>Galilel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GALIs from being stolen by malware infecting your computer.</source>
-        <translation>Galilel va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos GALIs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>Salvage will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>Salvage va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos SVGs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Êtes-vous sûr de vouloir crypter votre portefeuille?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GALI&lt;/b&gt;!</source>
-        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS GALI&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
+        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS SVG&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>Enter a GALI Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Entrez une adresse GALI que vous voulez chiffrer en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur chiffrer pour calculer le chiffrage de la clé privée.</translation>
+        <source>Enter a SVG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Entrez une adresse SVG que vous voulez chiffrer en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur chiffrer pour calculer le chiffrage de la clé privée.</translation>
     </message>
     <message>
-        <source>The GALI address to encrypt</source>
-        <translation>L'adresse GALI à chiffrer</translation>
+        <source>The SVG address to encrypt</source>
+        <translation>L'adresse SVG à chiffrer</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this GALI address</source>
-        <translation>Chiffrer la clef privée pour cette adresse GALI</translation>
+        <source>Encrypt the private key for this SVG address</source>
+        <translation>Chiffrer la clef privée pour cette adresse SVG</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Afficher l'historique de transaction</translation>
     </message>
     <message>
-        <source>Privacy Actions for zGALI</source>
-        <translation>Actions confidentielles pour zGALI</translation>
+        <source>Privacy Actions for zSVG</source>
+        <translation>Actions confidentielles pour zSVG</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -645,16 +645,16 @@
         <translation>Onglets de la barre d'outils</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
-        <source>Send coins to a GALI address</source>
-        <translation>Envoyer des pièces à une adresse GALI</translation>
+        <source>Send coins to a SVG address</source>
+        <translation>Envoyer des pièces à une adresse SVG</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and galilel: URIs)</source>
-        <translation>Requêtes de paiements (Génère des QR codes et des URIs GALI)</translation>
+        <source>Request payments (generates QR codes and salvage: URIs)</source>
+        <translation>Requêtes de paiements (Génère des QR codes et des URIs SVG)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -669,24 +669,24 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Galilel Core</source>
-        <translation>A &amp;propos de Galilel Core</translation>
+        <source>&amp;About Salvage Core</source>
+        <translation>A &amp;propos de Salvage Core</translation>
     </message>
     <message>
-        <source>Show information about Galilel Core</source>
-        <translation>Afficher les information concernant Galilel Core</translation>
+        <source>Show information about Salvage Core</source>
+        <translation>Afficher les information concernant Salvage Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for GALI</source>
-        <translation>Modifier les options de configuration pour GALI</translation>
+        <source>Modify configuration options for SVG</source>
+        <translation>Modifier les options de configuration pour SVG</translation>
     </message>
     <message>
-        <source>Sign messages with your GALI addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse GALI pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your SVG addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse SVG pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified GALI addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse GALI spécifiée</translation>
+        <source>Verify messages to ensure they were signed with specified SVG addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse SVG spécifiée</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Ouvrir le fichier de configuration de Masternode</translation>
     </message>
     <message>
-        <source>Open a GALI: URI or payment request</source>
-        <translation>Ouvrir un GALI: URI ou requête de paiement</translation>
+        <source>Open a SVG: URI or payment request</source>
+        <translation>Ouvrir un SVG: URI ou requête de paiement</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Fenêtre de Explorateur de Bloc</translation>
     </message>
     <message>
-        <source>Show the Galilel Core help message to get a list with possible Galilel command-line options</source>
-        <translation>Afficher les message d'aide de Galilel Core pour avoir les options pour ligne de commande</translation>
+        <source>Show the Salvage Core help message to get a list with possible Salvage command-line options</source>
+        <translation>Afficher les message d'aide de Salvage Core pour avoir les options pour ligne de commande</translation>
     </message>
     <message>
-        <source>Galilel Core client</source>
-        <translation>Galilel Core client</translation>
+        <source>Salvage Core client</source>
+        <translation>Salvage Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Galilel network</source>
-        <translation><numerusform>connexion(s) active(s) au réseau Galilel</numerusform><numerusform>connexion(s) active(s) au réseau Galilel</numerusform></translation>
+        <source>%n active connection(s) to Salvage network</source>
+        <translation><numerusform>connexion(s) active(s) au réseau Salvage</numerusform><numerusform>connexion(s) active(s) au réseau Salvage</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -876,8 +876,8 @@ Adresse : %4
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (galilel.conf).</source>
-        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (galilel.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (salvage.conf).</source>
+        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (salvage.conf).</translation>
     </message>
 </context>
 <context>
@@ -1114,8 +1114,8 @@ Adresse : %4
         <translation>Ce label devient rouge si l'un des destinataires reçoit un montant inférieur à %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ugali per input.</source>
-        <translation>Peut varier de +/- %1 ugali par entrée.</translation>
+        <source>Can vary +/- %1 usvg per input.</source>
+        <translation>Peut varier de +/- %1 usvg par entrée.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1165,8 +1165,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid GALI address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse GALI valide</translation>
+        <source>The entered address "%1" is not a valid SVG address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse SVG valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1211,16 +1211,16 @@ Adresse : %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Galilel Core</source>
-        <translation>A propos de Galilel Core</translation>
+        <source>About Salvage Core</source>
+        <translation>A propos de Salvage Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1262,12 +1262,12 @@ Adresse : %4
         <translation>Bienvenu</translation>
     </message>
     <message>
-        <source>Welcome to Galilel Core.</source>
-        <translation>Bienvenue à Galilel Core</translation>
+        <source>Welcome to Salvage Core.</source>
+        <translation>Bienvenue à Salvage Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Galilel Core will store its data.</source>
-        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où Galilel Core va stocker ses données.</translation>
+        <source>As this is the first time the program is launched, you can choose where Salvage Core will store its data.</source>
+        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où Salvage Core va stocker ses données.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1278,8 +1278,8 @@ Adresse : %4
         <translation>Utiliser un répertoire spécifique de données </translation>
     </message>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1416,12 +1416,12 @@ Adresse : %4
         <translation>Saisir l'adresse à laquelle envoyer</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other GALI addresses after it matures.
-To Add: enter percentage to give and GALI address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SVG addresses after it matures.
+To Add: enter percentage to give and SVG address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>L'Envoi-multiple vous perment d'envoyer automatiquement jusqu'à 100% de vos récompenses Stake ou Masternode à une liste d'adresses GALI  après leur maturité.
-Pour ajouter: entrez le pourcentage à donner et l'adresse GALI à ajouter au vecteur d'Envoi-multiple.
+        <translation>L'Envoi-multiple vous perment d'envoyer automatiquement jusqu'à 100% de vos récompenses Stake ou Masternode à une liste d'adresses SVG  après leur maturité.
+Pour ajouter: entrez le pourcentage à donner et l'adresse SVG à ajouter au vecteur d'Envoi-multiple.
 Pour supprimer: Entrez l'adresse à effacer et appuyez sur Supprimer.
 L'Envoi-multiple ne sera activé que si vous avez cliqué sur Activer</translation>
     </message>
@@ -1640,8 +1640,8 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Adresse / Montant:</translation>
     </message>
     <message>
-        <source>Add destinations to send GALI to</source>
-        <translation>Ajouter des destinations pour envoyer GALI</translation>
+        <source>Add destinations to send SVG to</source>
+        <translation>Ajouter des destinations pour envoyer SVG</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1727,48 +1727,48 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Veuillez sélectionner un niveau de confidentialité.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 15000 GALI</source>
-        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 15000 GALI</translation>
+        <source>Use 2 separate masternodes to mix funds up to 15000 SVG</source>
+        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 15000 SVG</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 15000 GALI</source>
-        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 15000 GALI</translation>
+        <source>Use 8 separate masternodes to mix funds up to 15000 SVG</source>
+        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 15000 SVG</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utiliser 16 masternodes différents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 GALI to anonymize 15000 GALI</source>
-        <translation>Cette option est la plus rapide, et coutera ~0.025 GALI pour anonymiser 15000 GALI</translation>
+        <source>This option is the quickest and will cost about ~0.025 SVG to anonymize 15000 SVG</source>
+        <translation>Cette option est la plus rapide, et coutera ~0.025 SVG pour anonymiser 15000 SVG</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 GALI to anonymize 15000 GALI</source>
-        <translation>Cette option est moyennement rapide, et coutera 0.05 GALI pour anonymiser 15000 GALI</translation>
+        <source>This option is moderately fast and will cost about 0.05 SVG to anonymize 15000 SVG</source>
+        <translation>Cette option est moyennement rapide, et coutera 0.05 SVG pour anonymiser 15000 SVG</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Il s'agit de l'option la plus lente est la plus sécurisé. Utiliser l'anonymat maximum coutera</translation>
     </message>
     <message>
-        <source>0.1 GALI per 15000 GALI you anonymize.</source>
-        <translation>0.1 GALI par 15000 GALI vous anonymisez.</translation>
+        <source>0.1 SVG per 15000 SVG you anonymize.</source>
+        <translation>0.1 SVG par 15000 SVG vous anonymisez.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Configuration de l'Obfuscation</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening GALI's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à base (%1 et 2 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration GALI.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>L'Obfuscation a été réglé avec succès à base (%1 et 2 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration SVG.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening GALI's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à élevé (%1 et 8 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration GALI.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>L'Obfuscation a été réglé avec succès à élevé (%1 et 8 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration SVG.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening GALI's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à maximum (%1 et 16 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration GALI.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>L'Obfuscation a été réglé avec succès à maximum (%1 et 16 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration SVG.</translation>
     </message>
 </context>
 <context>
@@ -1821,8 +1821,8 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>SI vous désactivez la dépense de la monnaire non confirmée, la monnaie rendue sur une transaction &lt;br/&gt;ne peut pas être utilisée tant que celle-ci n'a pas reçue au moins une confirmation &lt;br/&gt;Ceci implique également la manière dont votre solde est calculé.</translation>
     </message>
     <message>
-        <source>Automatically open the GALI client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquement le port du client GALI sur le routeur. Ceci fonctionne uniquement si votre routeur prend en charge UPnP et que celui-ci est activé.</translation>
+        <source>Automatically open the SVG client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir automatiquement le port du client SVG sur le routeur. Ceci fonctionne uniquement si votre routeur prend en charge UPnP et que celui-ci est activé.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1841,12 +1841,12 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start GALI after logging in to the system.</source>
-        <translation>Démarrez GALI automatiquement après vous être connecté au système.</translation>
+        <source>Automatically start SVG after logging in to the system.</source>
+        <translation>Démarrez SVG automatiquement après vous être connecté au système.</translation>
     </message>
     <message>
-        <source>&amp;Start GALI on system login</source>
-        <translation>Démarrer GALI au démarrage système</translation>
+        <source>&amp;Start SVG on system login</source>
+        <translation>Démarrer SVG au démarrage système</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1873,46 +1873,46 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Réseau</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting GALI.</source>
-        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de GALI.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SVG.</source>
+        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de SVG.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/galilel-project/galilel-project-translations</source>
+https://www.transifex.com/salvage-project/salvage-project-translations</source>
         <translation>Langue manquante ou traduction incomplète? Aidez-nous à traduire ce projet ici:
-https://www.transifex.com/galilel-project/galilel-project-translations</translation>
+https://www.transifex.com/salvage-project/salvage-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Répertorier les port utilisant UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of GALI units to zGALI</source>
-        <translation>Activé l'auto-monnayage de GALI unités en zGALI</translation>
+        <source>Enable automatic minting of SVG units to zSVG</source>
+        <translation>Activé l'auto-monnayage de SVG unités en zSVG</translation>
     </message>
     <message>
-        <source>Enable zGALI Automint</source>
-        <translation>Activé ZGALI Auto-monnayage</translation>
+        <source>Enable zSVG Automint</source>
+        <translation>Activé ZSVG Auto-monnayage</translation>
     </message>
     <message>
-        <source>Percentage of incoming GALI which get automatically converted to zGALI via Zerocoin Protocol (min: 10%)</source>
-        <translation>Pourcentage des GALI entrants qui seront automatiquement convertis en zGALI via le protocole Zerocoin (min. 10%)</translation>
+        <source>Percentage of incoming SVG which get automatically converted to zSVG via Zerocoin Protocol (min: 10%)</source>
+        <translation>Pourcentage des SVG entrants qui seront automatiquement convertis en zSVG via le protocole Zerocoin (min. 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zGALI</source>
-        <translation>Pourcentage de zGALI auto-monnayé</translation>
+        <source>Percentage of autominted zSVG</source>
+        <translation>Pourcentage de zSVG auto-monnayé</translation>
     </message>
     <message>
-        <source>Preferred Automint zGALI Denomination</source>
-        <translation>Dénomination préférée d'auto-monnayage zGALI</translation>
+        <source>Preferred Automint zSVG Denomination</source>
+        <translation>Dénomination préférée d'auto-monnayage zSVG</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Seuil de partage du Stake</translation>
     </message>
     <message>
-        <source>Connect to the Galilel network through a SOCKS5 proxy.</source>
-        <translation>Se connetcer au réseau Galilel via un proxy SOCKS5.</translation>
+        <source>Connect to the Salvage network through a SOCKS5 proxy.</source>
+        <translation>Se connetcer au réseau Salvage via un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2066,8 +2066,8 @@ https://www.transifex.com/galilel-project/galilel-project-translations</translat
         <translation>Solde total, incluant les pièces indisponibles.</translation>
     </message>
     <message>
-        <source>GALI Balance</source>
-        <translation>Solde de GALI</translation>
+        <source>SVG Balance</source>
+        <translation>Solde de SVG</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2090,18 +2090,18 @@ https://www.transifex.com/galilel-project/galilel-project-translations</translat
         <translation>Solde courant bloqué dans des adresses témoin</translation>
     </message>
     <message>
-        <source>Your current GALI balance, unconfirmed and immature transactions included</source>
-        <translation>Votre solde GALI actuel, incluant les transactions non confirmées et immatures</translation>
+        <source>Your current SVG balance, unconfirmed and immature transactions included</source>
+        <translation>Votre solde SVG actuel, incluant les transactions non confirmées et immatures</translation>
     </message>
     <message>
-        <source>zGALI Balance</source>
-        <translation>Solde de zGALI</translation>
+        <source>zSVG Balance</source>
+        <translation>Solde de zSVG</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zGALI are spendable.</source>
+These zSVG are spendable.</source>
         <translation>Maturité: plus de 20 confirmations et plus de 1 monnayer de la même dénomination après sa frappe.
-Ces zGALI sont dépensables.</translation>
+Ces zSVG sont dépensables.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2110,8 +2110,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmé, mais moins de 1 monnayer de la même dénomination après sa frappe</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Galilel network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau Galilel après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Salvage network after a connection is established, but this process has not completed yet.</source>
+        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau Salvage après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2154,8 +2154,8 @@ Immature: confirmé, mais moins de 1 monnayer de la même dénomination après s
         <translation>Dépensable:</translation>
     </message>
     <message>
-        <source>Locked GALI or Masternode collaterals. These are excluded from zGALI minting.</source>
-        <translation>GALI Verrouillé ou Masternode collatéraux. Ceux-ci sont exclus de la monnayage zGALI.</translation>
+        <source>Locked SVG or Masternode collaterals. These are excluded from zSVG minting.</source>
+        <translation>SVG Verrouillé ou Masternode collatéraux. Ceux-ci sont exclus de la monnayage zSVG.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2166,8 +2166,8 @@ Immature: confirmé, mais moins de 1 monnayer de la même dénomination après s
         <translation>Non confirmé:</translation>
     </message>
     <message>
-        <source>Your current zGALI balance, unconfirmed and immature zGALI included.</source>
-        <translation>Votre solde courant zGALI, incluant les zGALI non confirmés et immatures.</translation>
+        <source>Your current zSVG balance, unconfirmed and immature zSVG included.</source>
+        <translation>Votre solde courant zSVG, incluant les zSVG non confirmés et immatures.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2178,10 +2178,10 @@ Immature: confirmé, mais moins de 1 monnayer de la même dénomination après s
         <translation>désynchronisé</translation>
     </message>
     <message>
-        <source>Current percentage of zGALI.
+        <source>Current percentage of zSVG.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Le pourcentage actuel de zGALI.
+        <translation>Le pourcentage actuel de zSVG.
 Si Auto-monnayage est activé, ce pourcentage sera réglé autour du pourcentage Auto-monnayage configuré (par défaut = 10%).</translation>
     </message>
     <message>
@@ -2189,14 +2189,14 @@ Si Auto-monnayage est activé, ce pourcentage sera réglé autour du pourcentage
         <translation>Auto-monnayage est actuellement activé et mis à</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in galilel.conf.</source>
-        <translation>Pour désactiver Auto-monnayage, ajoutez 'enablezeromint = 0' dans galilel.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in salvage.conf.</source>
+        <translation>Pour désactiver Auto-monnayage, ajoutez 'enablezeromint = 0' dans salvage.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in galilel.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in salvage.conf</source>
         <translation>Auto-monnayage est actuellement désactivé.
-Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1' dans le fichier galilel.conf</translation>
+Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1' dans le fichier salvage.conf</translation>
     </message>
 </context>
 <context>
@@ -2222,12 +2222,12 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Adresse de paiement invalide %1</translation>
     </message>
     <message>
-        <source>Cannot start galilel: click-to-pay handler</source>
-        <translation>Impossible de démarrer galilel: gestionnaire click-to-pay</translation>
+        <source>Cannot start salvage: click-to-pay handler</source>
+        <translation>Impossible de démarrer salvage: gestionnaire click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid GALI address or malformed URI parameters.</source>
-        <translation>L'URI ne peut pas être analysée! Cela peut être dû à une adresse GALI invalide ou à des paramètres URI incorrectes.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SVG address or malformed URI parameters.</source>
+        <translation>L'URI ne peut pas être analysée! Cela peut être dû à une adresse SVG invalide ou à des paramètres URI incorrectes.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2312,8 +2312,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Actions Zerocoin:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Galilel network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau Galilel après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Salvage network after a connection is established, but this process has not completed yet.</source>
+        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau Salvage après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2324,8 +2324,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>0</translation>
     </message>
     <message>
-        <source>zGALI</source>
-        <translation>zGALI</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2336,8 +2336,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Disponible pour Monnayage:</translation>
     </message>
     <message>
-        <source>0.000 000 00 GALI</source>
-        <translation>0.000 000 00 GALI</translation>
+        <source>0.000 000 00 SVG</source>
+        <translation>0.000 000 00 SVG</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2376,16 +2376,16 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>CONFIDENTIALITÉ</translation>
     </message>
     <message>
-        <source>Enter an amount of GALI to convert to zGALI</source>
-        <translation>Entrez un montant de GALI à convertir en zGALI</translation>
+        <source>Enter an amount of SVG to convert to zSVG</source>
+        <translation>Entrez un montant de SVG à convertir en zSVG</translation>
     </message>
     <message>
-        <source>zGALI Control</source>
-        <translation>Contrôle zGALI</translation>
+        <source>zSVG Control</source>
+        <translation>Contrôle zSVG</translation>
     </message>
     <message>
-        <source>zGALI Selected:</source>
-        <translation>zGALI sélectionné:</translation>
+        <source>zSVG Selected:</source>
+        <translation>zSVG sélectionné:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2400,24 +2400,24 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Dépenser Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zGALI for spending</source>
-        <translation>zGALI disponibles (matures et dépensables) pour dépenser</translation>
+        <source>Available (mature and spendable) zSVG for spending</source>
+        <translation>zSVG disponibles (matures et dépensables) pour dépenser</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Solde disponible:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zGALI for spending
+        <source>Available (mature and spendable) zSVG for spending
 
-zGALI are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>ZGALI disponible (mature et utilisable) pour les dépenses
+zSVG are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>ZSVG disponible (mature et utilisable) pour les dépenses
 
-Les zGALI sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 monnayent de même dénomination après ils était monnayer</translation>
+Les zSVG sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 monnayent de même dénomination après ils était monnayer</translation>
     </message>
     <message>
-        <source>0 zGALI</source>
-        <translation>0 zGALI</translation>
+        <source>0 zSVG</source>
+        <translation>0 zSVG</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2436,8 +2436,8 @@ Les zGALI sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 mo
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The GALI address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>L'adresse GALI à laquelle nevoyer le paiement. Créé un paiement à vous même lorsque ce champs est vide.</translation>
+        <source>The SVG address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>L'adresse SVG à laquelle nevoyer le paiement. Créé un paiement à vous même lorsque ce champs est vide.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2488,8 +2488,8 @@ Les zGALI sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 mo
         <translation>Statistiques Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zGALI</source>
-        <translation>Solde total incluant les zGALI non confirmés et immatures</translation>
+        <source>Total Balance including unconfirmed and immature zSVG</source>
+        <translation>Solde total incluant les zSVG non confirmés et immatures</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2510,24 +2510,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmé, mais moins de 1 monnayer de la même dénomination après sa frappe</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zGALI minting.
+        <source>Show the current status of automatic zSVG minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to galilel.conf
-- disable: add 'enablezeromint=0' to galilel.conf
+- enable: add 'enablezeromint=1' to salvage.conf
+- disable: add 'enablezeromint=0' to salvage.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zGALI
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSVG
 
 </source>
-        <translation>Afficher l'état actuel de monnayage automatique zGALI.
+        <translation>Afficher l'état actuel de monnayage automatique zSVG.
 
 Pour changer le statut (redémarrage requis):
-- enable: ajoute 'enablezeromint = 1' au fichier galilel.conf
-- disable: ajoute 'enablezeromint = 0' au fichier galilel.conf
+- enable: ajoute 'enablezeromint = 1' au fichier salvage.conf
+- disable: ajoute 'enablezeromint = 0' au fichier salvage.conf
 
 Pour changer le pourcentage (pas de redémarrage requis):
-- menu Paramètres-&gt; Options-&gt; Pourcentage de zGALI auto-monnayé
+- menu Paramètres-&gt; Options-&gt; Pourcentage de zSVG auto-monnayé
 
 </translation>
     </message>
@@ -2724,12 +2724,12 @@ Maximum allowed: </source>
 Maximum autorisé:</translation>
     </message>
     <message>
-        <source>zGALI Spend #: </source>
-        <translation>Dépense zGALI #:</translation>
+        <source>zSVG Spend #: </source>
+        <translation>Dépense zSVG #:</translation>
     </message>
     <message>
-        <source>zGALI Mint</source>
-        <translation>Monnayer zGALI</translation>
+        <source>zSVG Mint</source>
+        <translation>Monnayer zSVG</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2744,12 +2744,12 @@ Maximum autorisé:</translation>
         <translation>Pourcentage cible configuré: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zGALI is currently disabled due to maintenance.</source>
-        <translation>zGALI est actuellement désactivé pour cause de maintenance.</translation>
+        <source>zSVG is currently disabled due to maintenance.</source>
+        <translation>zSVG est actuellement désactivé pour cause de maintenance.</translation>
     </message>
     <message>
-        <source>zGALI is currently undergoing maintenance.</source>
-        <translation>zGALI est actuellement en cours de maintenance.</translation>
+        <source>zSVG is currently undergoing maintenance.</source>
+        <translation>zSVG est actuellement en cours de maintenance.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2836,8 +2836,8 @@ Maximum autorisé:</translation>
         <translation>Monnayez réussi</translation>
     </message>
     <message>
-        <source> zGALI in </source>
-        <translation>zGALI dans</translation>
+        <source> zSVG in </source>
+        <translation>zSVG dans</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2860,8 +2860,8 @@ Maximum autorisé:</translation>
         <translation>Aucune adresse 'Payer à' de fournie, création d'un paiement local</translation>
     </message>
     <message>
-        <source>Invalid GALI Address</source>
-        <translation>Adresse GALI incorrecte</translation>
+        <source>Invalid SVG Address</source>
+        <translation>Adresse SVG incorrecte</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2892,13 +2892,13 @@ Maximum autorisé:</translation>
         <translation>Confirmer l'envoi des pièces</translation>
     </message>
     <message>
-        <source>Version 1 zGALI require a security level of 100 to successfully spend.</source>
-        <translation>La version 1 de zGALI requiert un niveau de sécurité de 100 pour les dépenser.
+        <source>Version 1 zSVG require a security level of 100 to successfully spend.</source>
+        <translation>La version 1 de zSVG requiert un niveau de sécurité de 100 pour les dépenser.
 </translation>
     </message>
     <message>
-        <source>Failed to spend zGALI</source>
-        <translation>Échec de la dépense de zGALI</translation>
+        <source>Failed to spend zSVG</source>
+        <translation>Échec de la dépense de zSVG</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2958,8 +2958,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a GALI address (e.g. %1)</source>
-        <translation>Entrez uen adresse GALI (par ex. %1)</translation>
+        <source>Enter a SVG address (e.g. %1)</source>
+        <translation>Entrez uen adresse SVG (par ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3096,7 +3096,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Chaîne de bloc</translation>
     </message>
     <message>
-        <source>Open the GALI debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the SVG debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Ouvrir le fichier journal de déboguage depuis le répertoire de données courant. Cela peut prendre quelques minutes pour les fichier journaux volumineux.</translation>
     </message>
     <message>
@@ -3232,8 +3232,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Chemin du répertoire de sauvegarde personnalisé:</translation>
     </message>
     <message>
-        <source>Custom zGALI Backup Path:</source>
-        <translation>Chemin du répertoire de sauvegarde zGALI personnalisé:</translation>
+        <source>Custom zSVG Backup Path:</source>
+        <translation>Chemin du répertoire de sauvegarde zSVG personnalisé:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3312,8 +3312,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Sortie:</translation>
     </message>
     <message>
-        <source>Welcome to the GALI RPC console.</source>
-        <translation>Bienvenue sur la console GALI RPC.</translation>
+        <source>Welcome to the SVG RPC console.</source>
+        <translation>Bienvenue sur la console SVG RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3439,16 +3439,16 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Un label Un optionnel à associer à la nouvelle adresse de réception.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Galilel network.</source>
-        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux Galilel.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Salvage network.</source>
+        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux Salvage.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>RECEVOIR</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Galilel network.</source>
-        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. &lt;br /&gt; Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux Galilel.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Salvage network.</source>
+        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. &lt;br /&gt; Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux Salvage.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3676,8 +3676,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Taille UTXO:</translation>
     </message>
     <message>
-        <source>0 GALI</source>
-        <translation>0 GALI</translation>
+        <source>0 SVG</source>
+        <translation>0 SVG</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3728,8 +3728,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Pièces automatiquement sélectionnées</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for GALI transactions than the network can process.</source>
-        <translation>Payer les frais minimum est convenable tant qu'il y a moins de volume de transactions que d'espace dans les blocs. &lt;br /&gt; Mais sachez que cela peut aboutir à une transaction qui ne se confirmera jamais lorsqu'il y aura plus de transactions GALI que le réseau ne peut en traiter.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SVG transactions than the network can process.</source>
+        <translation>Payer les frais minimum est convenable tant qu'il y a moins de volume de transactions que d'espace dans les blocs. &lt;br /&gt; Mais sachez que cela peut aboutir à une transaction qui ne se confirmera jamais lorsqu'il y aura plus de transactions SVG que le réseau ne peut en traiter.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3776,8 +3776,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Ajouter un destinataire</translation>
     </message>
     <message>
-        <source>Anonymized GALI</source>
-        <translation>GALI anonymisé</translation>
+        <source>Anonymized SVG</source>
+        <translation>SVG anonymisé</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3824,8 +3824,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>L'outil de séparation de bloc ne fonctionne pas avec les adresses multiples. Réessayez.</translation>
     </message>
     <message>
-        <source>Warning: Invalid GALI address</source>
-        <translation>Attention: adresse GALI invalide</translation>
+        <source>Warning: Invalid SVG address</source>
+        <translation>Attention: adresse SVG invalide</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -3919,8 +3919,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The GALI address to send the payment to</source>
-        <translation>L'adresse GALI à laquelle envoyer le paiement</translation>
+        <source>The SVG address to send the payment to</source>
+        <translation>L'adresse SVG à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3981,8 +3981,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Signer le message</translation>
     </message>
     <message>
-        <source>The GALI address to sign the message with</source>
-        <translation>L'adresse GALI avec laquelle signer le message</translation>
+        <source>The SVG address to sign the message with</source>
+        <translation>L'adresse SVG avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4009,16 +4009,16 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this GALI address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse GALI</translation>
+        <source>Sign the message to prove you own this SVG address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse SVG</translation>
     </message>
     <message>
-        <source>The GALI address the message was signed with</source>
-        <translation>L'adresse GALI avec laquelle le message a été signé</translation>
+        <source>The SVG address the message was signed with</source>
+        <translation>L'adresse SVG avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified GALI address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse GALI renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified SVG address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse SVG renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4080,8 +4080,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Galilel Core</source>
-        <translation>Galilel Core</translation>
+        <source>Salvage Core</source>
+        <translation>Salvage Core</translation>
     </message>
     </context>
 <context>
@@ -4152,40 +4152,40 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Reçu via Obfuscation</translation>
     </message>
     <message>
-        <source>GALI Stake</source>
-        <translation>GALI Stake</translation>
+        <source>SVG Stake</source>
+        <translation>SVG Stake</translation>
     </message>
     <message>
-        <source>zGALI Stake</source>
-        <translation>zGALI Stake</translation>
+        <source>zSVG Stake</source>
+        <translation>zSVG Stake</translation>
     </message>
     <message>
-        <source>Converted GALI to zGALI</source>
-        <translation>GALI converti en zGALI</translation>
+        <source>Converted SVG to zSVG</source>
+        <translation>SVG converti en zSVG</translation>
     </message>
     <message>
-        <source>Spent zGALI</source>
-        <translation>zGALI dépensés</translation>
+        <source>Spent zSVG</source>
+        <translation>zSVG dépensés</translation>
     </message>
     <message>
-        <source>Received GALI from zGALI</source>
-        <translation>GALI reçu depuis zGALI</translation>
+        <source>Received SVG from zSVG</source>
+        <translation>SVG reçu depuis zSVG</translation>
     </message>
     <message>
-        <source>Minted Change as zGALI from zGALI Spend</source>
-        <translation>Monnaie rendue à partir d'une dépense zGALI frappée comme zGALI </translation>
+        <source>Minted Change as zSVG from zSVG Spend</source>
+        <translation>Monnaie rendue à partir d'une dépense zSVG frappée comme zSVG </translation>
     </message>
     <message>
-        <source>Converted zGALI to GALI</source>
-        <translation>zGALI converti en GALI</translation>
+        <source>Converted zSVG to SVG</source>
+        <translation>zSVG converti en SVG</translation>
     </message>
     <message>
-        <source>Anonymous (zGALI Transaction)</source>
-        <translation>Anonyme (transaction zGALI)</translation>
+        <source>Anonymous (zSVG Transaction)</source>
+        <translation>Anonyme (transaction zSVG)</translation>
     </message>
     <message>
-        <source>Anonymous (zGALI Stake)</source>
-        <translation>Anonyme (zGALI Stake)</translation>
+        <source>Anonymous (zSVG Stake)</source>
+        <translation>Anonyme (zSVG Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4343,12 +4343,12 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Une erreur est survenue lors de la tentative de sauvegarde de l'historique de transaction vers %1.</translation>
     </message>
     <message>
-        <source>Received GALI from zGALI</source>
-        <translation>GALI reçu depuis zGALI</translation>
+        <source>Received SVG from zSVG</source>
+        <translation>SVG reçu depuis zSVG</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zGALI</source>
-        <translation>Dépense Zerocoin, monnaie rendue en zGALI</translation>
+        <source>Zerocoin Spend, Change in zSVG</source>
+        <translation>Dépense Zerocoin, monnaie rendue en zSVG</translation>
     </message>
     </context>
 <context>
@@ -4388,7 +4388,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
 </context>
 <context>
-    <name>ZGaliControlDialog</name>
+    <name>ZSvgControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantité </translation>
@@ -4398,19 +4398,19 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>0</translation>
     </message>
     <message>
-        <source>zGALI</source>
-        <translation>zGALI</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     </context>
 <context>
-    <name>galilel-core</name>
+    <name>salvage-core</name>
     <message>
-        <source>Enable or disable staking functionality for GALI inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées GALI (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for SVG inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées SVG (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zGALI inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées zGALI (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for zSVG inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées zSVG (0-1, par défaut: %u)</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -4461,8 +4461,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Erreur de chargement du fichier wallet.dat: Portefeuille corrompu</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Galilel Core</source>
-        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du Galilel core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Salvage Core</source>
+        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du Salvage core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4880,8 +4880,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Synchronisation des sporks ...</translation>
     </message>
     <message>
-        <source>Syncing zGALI wallet...</source>
-        <translation>Synchronisation du portefeuille zGALI ...</translation>
+        <source>Syncing zSVG wallet...</source>
+        <translation>Synchronisation du portefeuille zSVG ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5028,8 +5028,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Nom d'utilisateur pour les connections JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zGALI</source>
-        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zGALI</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSVG</source>
+        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zSVG</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -5044,8 +5044,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Vérification du portefeuille...</translation>
     </message>
     <message>
-        <source>Version 1 zGALI require a security level of 100 to successfully spend.</source>
-        <translation>La version 1 de zGALI requiert un niveau de sécurité de 100 pour les dépenser.
+        <source>Version 1 zSVG require a security level of 100 to successfully spend.</source>
+        <translation>La version 1 de zSVG requiert un niveau de sécurité de 100 pour les dépenser.
 </translation>
     </message>
     <message>
@@ -5053,8 +5053,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Le portefeuille est vérouillé.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Galilel Core to complete</source>
-        <translation>Le portefeuille doit être réécrit: redémarrez Galilel Core pour terminer</translation>
+        <source>Wallet needed to be rewritten: restart Salvage Core to complete</source>
+        <translation>Le portefeuille doit être réécrit: redémarrez Salvage Core pour terminer</translation>
     </message>
     <message>
         <source>Wallet options:</source>

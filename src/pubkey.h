@@ -2,13 +2,13 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_PUBKEY_H
-#define GALI_PUBKEY_H
+#ifndef SVG_PUBKEY_H
+#define SVG_PUBKEY_H
 
 #include "hash.h"
 #include "serialize.h"
@@ -266,4 +266,4 @@ public:
     ~ECCVerifyHandle();
 };
 
-#endif // GALI_PUBKEY_H
+#endif // SVG_PUBKEY_H

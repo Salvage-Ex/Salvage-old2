@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Galilel"
-            VALUE "FileDescription",    "Galilel Core (OSS GUI client for Galilel)"
+            VALUE "CompanyName",        "Salvage"
+            VALUE "FileDescription",    "Salvage Core (OSS GUI client for Salvage)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "galilel-qt"
+            VALUE "InternalName",       "salvage-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "galilel-qt.exe"
-            VALUE "ProductName",        "Galilel Core"
+            VALUE "OriginalFilename",   "salvage-qt.exe"
+            VALUE "ProductName",        "Salvage Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

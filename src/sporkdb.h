@@ -1,11 +1,11 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_CSPORKDB_H
-#define GALI_CSPORKDB_H
+#ifndef SVG_CSPORKDB_H
+#define SVG_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -27,4 +27,4 @@ public:
 };
 
 
-#endif //GALI_CSPORKDB_H
+#endif //SVG_CSPORKDB_H

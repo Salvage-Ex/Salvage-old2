@@ -1,11 +1,11 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GALI_ZGALIWALLET_H
-#define GALI_ZGALIWALLET_H
+#ifndef SVG_ZSVGWALLET_H
+#define SVG_ZSVGWALLET_H
 
 #include <map>
 #include "libzerocoin/Coin.h"
@@ -15,7 +15,7 @@
 
 class CDeterministicMint;
 
-class CzGALIWallet
+class CzSVGWallet
 {
 private:
     uint256 seedMaster;
@@ -24,13 +24,13 @@ private:
     CMintPool mintPool;
 
 public:
-    CzGALIWallet(std::string strWalletFile);
+    CzSVGWallet(std::string strWalletFile);
 
     void AddToMintPool(const std::pair<uint256, uint32_t>& pMint, bool fVerbose);
     bool SetMasterSeed(const uint256& seedMaster, bool fResetCount = false);
     uint256 GetMasterSeed() { return seedMaster; }
     void SyncWithChain(bool fGenerateMintPool = true);
-    void GenerateDeterministicZGALI(libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly = false);
+    void GenerateDeterministicZSVG(libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly = false);
     void GenerateMint(const uint32_t& nCount, const libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint);
     void GetState(int& nCount, int& nLastGenerated);
     bool RegenerateMint(const CDeterministicMint& dMint, CZerocoinMint& mint);
@@ -41,10 +41,10 @@ public:
     bool IsInMintPool(const CBigNum& bnValue) { return mintPool.Has(bnValue); }
     void UpdateCount();
     void Lock();
-    void SeedToZGALI(const uint512& seed, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key);
+    void SeedToZSVG(const uint512& seed, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key);
 
 private:
     uint512 GetZerocoinSeed(uint32_t n);
 };
 
-#endif //GALI_ZGALIWALLET_H
+#endif //SVG_ZSVGWALLET_H

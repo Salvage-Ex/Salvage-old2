@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Galilel developers
+// Copyright (c) 2018-2018 The Salvage developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -121,15 +121,15 @@ public:
         pchMessageStart[3] = 0x54;
         vAlertPubKey = ParseHex("98306db20be5c53b93678e2e41c9def7af38197280c65e813f682adf2ed501ac186022562dbdf2ce3204d07432660fb61ecad8e78b6b8d39c568fb892db8ecb736");
         nDefaultPort = 36001;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // GALI starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // SVG starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // GALI: 1 day
-        nTargetSpacing = 1 * 60;  // GALI: 1 minute
+        nTargetTimespan = 1 * 60; // SVG: 1 day
+        nTargetSpacing = 1 * 60;  // SVG: 1 minute
         nMaturity = 99;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 25000000 * COIN;
@@ -159,7 +159,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "Galilel Coin Start @ Friday, 25. May 2018 04:00:00 GMT.";
+        const char* pszTimestamp = "Salvage Coin Start @ Friday, 25. May 2018 04:00:00 GMT.";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -178,10 +178,10 @@ public:
         assert(hashGenesisBlock == uint256("0x00000a15f1dd0b452c85b89d7e8a2968205e19550b1c2f12909367a04afc2855"));
         assert(genesis.hashMerkleRoot == uint256("0x1dd81cdda448e9346a94f82e0d6c9fa7a876b59124da4dc49b66531d3ef11822"));
 
-        vSeeds.push_back(CDNSSeedData("seed1.galilel.cloud", "seed1.galilel.cloud")); // 1st DNS Seeder from mbroemme
-        vSeeds.push_back(CDNSSeedData("seed2.galilel.cloud", "seed2.galilel.cloud")); // 2nd DNS Seeder from mbroemme
-        vSeeds.push_back(CDNSSeedData("seed3.galilel.cloud", "seed3.galilel.cloud")); // 3rd DNS Seeder from mbroemme
-        vSeeds.push_back(CDNSSeedData("seed4.galilel.cloud", "seed4.galilel.cloud")); // 4th DNS Seeder from mbroemme
+        vSeeds.push_back(CDNSSeedData("seed1.salvage.cloud", "seed1.salvage.cloud")); // 1st DNS Seeder from mbroemme
+        vSeeds.push_back(CDNSSeedData("seed2.salvage.cloud", "seed2.salvage.cloud")); // 2nd DNS Seeder from mbroemme
+        vSeeds.push_back(CDNSSeedData("seed3.salvage.cloud", "seed3.salvage.cloud")); // 3rd DNS Seeder from mbroemme
+        vSeeds.push_back(CDNSSeedData("seed4.salvage.cloud", "seed4.salvage.cloud")); // 4th DNS Seeder from mbroemme
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 68);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 16);
@@ -221,7 +221,7 @@ public:
         nRequiredAccumulation = 1;
         nDefaultSecurityLevel = 100; // full security level for accumulators
         nZerocoinHeaderVersion = 4; // block headers must be this version once zerocoin is active
-        nZerocoinRequiredStakeDepth = 240; //The required confirmations for a zgali to be stakable
+        nZerocoinRequiredStakeDepth = 240; //The required confirmations for a zsvg to be stakable
 
         nBudget_Fee_Confirmations = 6; // number of confirmations for the finalization fee
     }
@@ -253,8 +253,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // GALI: 1 day
-        nTargetSpacing = 1 * 60;  // GALI: 1 minute
+        nTargetTimespan = 1 * 60; // SVG: 1 day
+        nTargetSpacing = 1 * 60;  // SVG: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -282,19 +282,19 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        vSeeds.push_back(CDNSSeedData("seed1.testnet.galilel.cloud", "seed1.testnet.galilel.cloud"));
-        vSeeds.push_back(CDNSSeedData("seed2.testnet.galilel.cloud", "seed2.testnet.galilel.cloud"));
-        vSeeds.push_back(CDNSSeedData("seed3.testnet.galilel.cloud", "seed3.testnet.galilel.cloud"));
-        vSeeds.push_back(CDNSSeedData("seed4.testnet.galilel.cloud", "seed4.testnet.galilel.cloud"));
+        vSeeds.push_back(CDNSSeedData("seed1.testnet.salvage.cloud", "seed1.testnet.salvage.cloud"));
+        vSeeds.push_back(CDNSSeedData("seed2.testnet.salvage.cloud", "seed2.testnet.salvage.cloud"));
+        vSeeds.push_back(CDNSSeedData("seed3.testnet.salvage.cloud", "seed3.testnet.salvage.cloud"));
+        vSeeds.push_back(CDNSSeedData("seed4.testnet.salvage.cloud", "seed4.testnet.salvage.cloud"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);  // Testnet galilel addresses start with 'a'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);  // Testnet galilel script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);  // Testnet salvage addresses start with 'a'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);  // Testnet salvage script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 193);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet Galilel BIP32 pubkeys start with 'DRKV'
+        // Testnet Salvage BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Galilel BIP32 prvkeys start with 'DRKP'
+        // Testnet Salvage BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Galilel BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet Salvage BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -340,8 +340,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // GALI: 1 day
-        nTargetSpacing = 1 * 60;        // GALI: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // SVG: 1 day
+        nTargetSpacing = 1 * 60;        // SVG: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1527217410;
         genesis.nBits = 0x207fffff;

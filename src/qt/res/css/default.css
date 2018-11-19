@@ -737,13 +737,13 @@ QWidget#PrivacyDialog QLabel {
   border: 0px solid #000;
 }
 
-QWidget#PrivacyDialog QLabel#zGALILabel {
+QWidget#PrivacyDialog QLabel#zSVGLabel {
   font-size: 14px;
   color: #ffffff;
   background-color: #795548;
 }
 
-QWidget#PrivacyDialog QLabel#oGALILabel {
+QWidget#PrivacyDialog QLabel#oSVGLabel {
   font-size: 14px;
   color: #ffffff;
   background-color: #795548;
@@ -878,12 +878,12 @@ QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScroll
   border: 0;
 }
 
-/* About Galilel Dialog */
-QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Galilel Contents */
+/* About Salvage Dialog */
+QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Salvage Contents */
   margin-left: 10px;
 }
 
-QDialog#AboutDialog QLabel#label_2 { /* Margin for About Galilel text */
+QDialog#AboutDialog QLabel#label_2 { /* Margin for About Salvage text */
   margin-right: 10px;
 }
 
@@ -913,7 +913,7 @@ QLabel#labelOverviewHeaderRight {
   background-repeat: no-repeat;
 }
 
-QWidget .QFrame#frame_Header { /* Header with Page-Title and Galilel-image */
+QWidget .QFrame#frame_Header { /* Header with Page-Title and Salvage-image */
   min-width: 400px;
   background-color: #ffffff;
 }
@@ -961,7 +961,7 @@ QWidget .QFrame#frame_Balances > .QLabel {
   /* min-height: 30px; */
 }
 
-QWidget .QFrame#frame_Balances .QLabel#label_5 { /* GALI Balances Label */
+QWidget .QFrame#frame_Balances .QLabel#label_5 { /* SVG Balances Label */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   min-width: 160px;
   background-color: transparent;
@@ -1085,7 +1085,7 @@ QWidget .QFrame#frame_Balances .QLabel#labelWatchTotal { /* Watch-only Total Bal
   margin-left: 16px;
 }
 
-QWidget .QFrame#frame_Balances .QLabel#labelLockedBalanceText { /* Available zGALI Label */
+QWidget .QFrame#frame_Balances .QLabel#labelLockedBalanceText { /* Available zSVG Label */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   min-width: 160px;
   color: #d7ccc8;
@@ -1095,7 +1095,7 @@ QWidget .QFrame#frame_Balances .QLabel#labelLockedBalanceText { /* Available zGA
   font-size: 12px;
 }
 
-QWidget .QFrame#frame_Balances .QLabel#labelLockedBalance { /* Available zGALI Balance */
+QWidget .QFrame#frame_Balances .QLabel#labelLockedBalance { /* Available zSVG Balance */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   font-size: 12px;
   font-weight: bold;
@@ -1103,7 +1103,7 @@ QWidget .QFrame#frame_Balances .QLabel#labelLockedBalance { /* Available zGALI B
   margin-left: 0px;
 }
 
-QWidget .QFrame#frame_Balances .QLabel#labelWatchLocked { /* Available zGALI Balance */
+QWidget .QFrame#frame_Balances .QLabel#labelWatchLocked { /* Available zSVG Balance */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   font-size: 12px;
   margin-left: 16px;
@@ -1122,7 +1122,7 @@ QWidget .QFrame#frame_ZerocoinBalances .QLabel#label_5z_3 { /* Zerocoin Balance 
   padding-right: 5px;
 }
 
-QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceText { /* Available zGALI Label */
+QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceText { /* Available zSVG Label */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   min-width: 160px;
   color: #d7ccc8;
@@ -1132,7 +1132,7 @@ QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceText { /* Available 
   font-size: 12px;
 }
 
-QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalance { /* Available zGALI Balance */
+QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalance { /* Available zSVG Balance */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   font-size: 12px;
   font-weight: bold;
@@ -1140,7 +1140,7 @@ QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalance { /* Available zGAL
   margin-left: 0px;
 }
 
-QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceUnconfirmedText { /* Unconfirmed zGALI Label */
+QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceUnconfirmedText { /* Unconfirmed zSVG Label */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   min-width: 160px;
   color: #d7ccc8;
@@ -1150,7 +1150,7 @@ QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceUnconfirmedText { /*
   font-size: 12px;
 }
 
-QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceUnconfirmed { /* Unconfirmed zGALI Balance */
+QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceUnconfirmed { /* Unconfirmed zSVG Balance */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   font-size: 12px;
   font-weight: bold;
@@ -1158,7 +1158,7 @@ QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceUnconfirmed { /* Unc
   margin-left: 0px;
 }
 
-QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceMatureText { /* Mature zGALI Label */
+QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceMatureText { /* Mature zSVG Label */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   min-width: 160px;
   color: #d7ccc8;
@@ -1168,7 +1168,7 @@ QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceMatureText { /* Matu
   font-size: 12px;
 }
 
-QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceMature { /* Mature zGALI Balance */
+QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceMature { /* Mature zSVG Balance */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   font-size: 12px;
   font-weight: bold;
@@ -1176,7 +1176,7 @@ QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceMature { /* Mature z
   margin-left: 0px;
 }
 
-QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceImmatureText { /* Immature zGALI Label */
+QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceImmatureText { /* Immature zSVG Label */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   min-width: 160px;
   color: #d7ccc8;
@@ -1186,7 +1186,7 @@ QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceImmatureText { /* Im
   font-size: 12px;
 }
 
-QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceImmature { /* Immature zGALI Balance */
+QWidget .QFrame#frame_ZerocoinBalances .QLabel#labelzBalanceImmature { /* Immature zSVG Balance */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   font-size: 12px;
   font-weight: bold;
@@ -1205,7 +1205,7 @@ QWidget .QFrame#frame_CombinedBalances .QLabel#label_5z { /* Combined Balance La
   padding-right: 5px;
 }
 
-QWidget .QFrame#frame_CombinedBalances .QLabel#labelBalanceTextz { /* Available GALI Label */
+QWidget .QFrame#frame_CombinedBalances .QLabel#labelBalanceTextz { /* Available SVG Label */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   min-width: 160px;
   color: #d7ccc8;
@@ -1215,14 +1215,14 @@ QWidget .QFrame#frame_CombinedBalances .QLabel#labelBalanceTextz { /* Available 
   font-size: 12px;
 }
 
-QWidget .QFrame#frame_CombinedBalances .QLabel#labelBalancez { /* Available GALI Balance */
+QWidget .QFrame#frame_CombinedBalances .QLabel#labelBalancez { /* Available SVG Balance */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   font-size: 26px;
   font-weight: normal;
   color: #d7ccc8;
 }
 
-QWidget .QFrame#frame_CombinedBalances .QLabel#labelzBalanceTextz { /* Available zGALI Label */
+QWidget .QFrame#frame_CombinedBalances .QLabel#labelzBalanceTextz { /* Available zSVG Label */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   min-width: 160px;
   color: #d7ccc8;
@@ -1232,7 +1232,7 @@ QWidget .QFrame#frame_CombinedBalances .QLabel#labelzBalanceTextz { /* Available
   font-size: 12px;
 }
 
-QWidget .QFrame#frame_CombinedBalances .QLabel#labelzBalancez { /* Available zGALI Balance */
+QWidget .QFrame#frame_CombinedBalances .QLabel#labelzBalancez { /* Available zSVG Balance */
   qproperty-alignment: 'AlignVCenter | AlignLeft';
   font-size: 12px;
   font-weight: bold;
@@ -1550,7 +1550,7 @@ QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::seperator {
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::indicator { /* Coin Control Widget Checkbox */
 }
 
-QDialog#ZGaliControlDialog .QTreeWidget#treeWidget { /* zGALI Control Widget Container */
+QDialog#ZSvgControlDialog .QTreeWidget#treeWidget { /* zSVG Control Widget Container */
   outline: 0px;
   background-color: #ffffff;
   border: 1px solid #333;

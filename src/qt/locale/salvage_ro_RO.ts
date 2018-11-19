@@ -189,9 +189,9 @@
     </message>
     </context>
 <context>
-    <name>ZGaliControlDialog</name>
+    <name>ZSvgControlDialog</name>
     </context>
 <context>
-    <name>galilel-core</name>
+    <name>salvage-core</name>
     </context>
 </TS>

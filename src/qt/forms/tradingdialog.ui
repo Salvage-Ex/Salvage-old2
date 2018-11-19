@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="GALISupply">
+    <widget class="QLabel" name="SVGSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="GALIDemand">
+    <widget class="QLabel" name="SVGDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyGALI">
+    <widget class="QPushButton" name="BuySVG">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,10 +442,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy GALI</string>
+      <string>Buy SVG</string>
      </property>
      <property name="icon">
-      <iconset resource="../galilel.qrc">
+      <iconset resource="../salvage.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>GALI</string>
+      <string>SVG</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>GALI</string>
+      <string>SVG</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputGALI">
+    <widget class="QLineEdit" name="UnitsInputSVG">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellGALIBTN">
+    <widget class="QPushButton" name="SellSVGBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,10 +1751,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell GALI</string>
+      <string>Sell SVG</string>
      </property>
      <property name="icon">
-      <iconset resource="../galilel">
+      <iconset resource="../salvage">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>GALI Available:</string>
+         <string>SVG Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="GALIAvailableLabel">
+       <widget class="QLabel" name="SVGAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelGALI">
+       <widget class="QLabel" name="labelSVG">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>GALI</string>
+         <string>SVG</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="GALIBalanceLabel">
+    <widget class="QLabel" name="SVGBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>GALI Balance:</string>
+      <string>SVG Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="GALIAvailableLabel_2">
+    <widget class="QLabel" name="SVGAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>GALI Available:</string>
+      <string>SVG Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,10 +2832,10 @@
       </font>
      </property>
      <property name="text">
-      <string>GALI Pending:</string>
+      <string>SVG Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="GALIPendingLabel">
+    <widget class="QLabel" name="SVGPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex GALI Deposit Address:</string>
+      <string>Bittrex SVG Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2941,10 +2941,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate GALI Deposit Address</string>
+      <string>Generate SVG Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../galilel.qrc">
+      <iconset resource="../salvage.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertGali">
+     <widget class="QPushButton" name="btnConvertSvg">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../galilel.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../salvage.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../galilel.qrc">
+      <iconset resource="../salvage.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../galilel.qrc"/>
+  <include location="../salvage.qrc"/>
  </resources>
  <connections/>
 </ui>
