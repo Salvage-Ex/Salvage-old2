@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/Salvage
+url=https://github.com/Salvage-ex
 proc=2
 mem=2000
 lxc=true
@@ -39,7 +39,7 @@ version        Version number, commit, or branch to build. If building a commit 
 
 Options:
 -c|--commit    Indicate that the version argument is for a commit or branch
--u|--url    Specify the URL of the repository. Default is https://github.com/Salvage
+-u|--url    Specify the URL of the repository. Default is https://github.com/Salvage-ex
 -v|--verify     Verify the gitian build
 -b|--build    Do a gitian build
 -s|--sign    Make signed binaries for Windows and Mac OSX

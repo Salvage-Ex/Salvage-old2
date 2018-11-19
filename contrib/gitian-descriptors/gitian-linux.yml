@@ -32,7 +32,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/Salvage.git"
+- "url": "https://github.com/Salvage-ex/Salvage.git"
   "dir": "salvage"
 files: []
 script: |
