@@ -10,7 +10,7 @@ The seeds compiled into the release are created from mbroemmes' DNS seed data,
 like this:
 
 ```
-curl -s https://seed.galilel.cloud/galilel-mainnet.txt > seeds_main.txt
+curl -s https://seed.salvage.cloud/salvage-mainnet.txt > seeds_main.txt
 python3 makeseeds.py < seeds_main.txt > nodes_main.txt
 python3 generate-seeds.py . > ../../src/chainparamsseeds.h
 ```

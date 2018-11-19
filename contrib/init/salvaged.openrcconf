@@ -1,25 +1,25 @@
-# /etc/conf.d/galileld: config file for /etc/init.d/galileld
+# /etc/conf.d/salvaged: config file for /etc/init.d/salvaged
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/galilel/galilel.conf"
+#BITCOIND_CONFIGFILE="/etc/salvage/salvage.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/galileld"
+#BITCOIND_PIDDIR="/var/run/salvaged"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/galileld.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/salvaged.pid"
 
-# Where to write galileld data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/galileld"
+# Where to write salvaged data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/salvaged"
 
-# User and group to own galileld process
-#BITCOIND_USER="galilel"
-#BITCOIND_GROUP="galilel"
+# User and group to own salvaged process
+#BITCOIND_USER="salvage"
+#BITCOIND_GROUP="salvage"
 
-# Path to galileld executable
-#BITCOIND_BIN="/usr/bin/galileld"
+# Path to salvaged executable
+#BITCOIND_BIN="/usr/bin/salvaged"
 
-# Nice value to run galileld under
+# Nice value to run salvaged under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

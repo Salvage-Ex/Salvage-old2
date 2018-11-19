@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/galilel-config.h \
+           src/salvage-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/galilel-config.h \
+           src/config/salvage-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -332,7 +332,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/galilel.moc \
+           src/qt/salvage.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -373,9 +373,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/galilel-cli.cpp \
-           src/galilel-tx.cpp \
-           src/galilel.cpp \
+           src/salvage-cli.cpp \
+           src/salvage-tx.cpp \
+           src/salvage.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -470,8 +470,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/galilel.cpp \
-           src/qt/galilelstrings.cpp \
+           src/qt/salvage.cpp \
+           src/qt/salvagestrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -549,7 +549,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_galilel.cpp \
+           src/test/test_salvage.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -640,21 +640,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/galilel.qrc src/qt/galilel_locale.qrc
+RESOURCES += src/qt/salvage.qrc src/qt/salvage_locale.qrc
 
-TRANSLATIONS += src/qt/locale/galilel_bg.ts \
-                src/qt/locale/galilel_de.ts \
-                src/qt/locale/galilel_en.ts \
-                src/qt/locale/galilel_es.ts \
-                src/qt/locale/galilel_fi.ts \
-                src/qt/locale/galilel_fr.ts \
-                src/qt/locale/galilel_it.ts \
-                src/qt/locale/galilel_ja.ts \
-                src/qt/locale/galilel_pl.ts \
-                src/qt/locale/galilel_pt.ts \
-                src/qt/locale/galilel_ru.ts \
-                src/qt/locale/galilel_sk.ts \
-                src/qt/locale/galilel_sv.ts \
-                src/qt/locale/galilel_vi.ts \
-                src/qt/locale/galilel_zh_CN.ts \
-                src/qt/locale/galilel_zh_TW.ts
+TRANSLATIONS += src/qt/locale/salvage_bg.ts \
+                src/qt/locale/salvage_de.ts \
+                src/qt/locale/salvage_en.ts \
+                src/qt/locale/salvage_es.ts \
+                src/qt/locale/salvage_fi.ts \
+                src/qt/locale/salvage_fr.ts \
+                src/qt/locale/salvage_it.ts \
+                src/qt/locale/salvage_ja.ts \
+                src/qt/locale/salvage_pl.ts \
+                src/qt/locale/salvage_pt.ts \
+                src/qt/locale/salvage_ru.ts \
+                src/qt/locale/salvage_sk.ts \
+                src/qt/locale/salvage_sv.ts \
+                src/qt/locale/salvage_vi.ts \
+                src/qt/locale/salvage_zh_CN.ts \
+                src/qt/locale/salvage_zh_TW.ts

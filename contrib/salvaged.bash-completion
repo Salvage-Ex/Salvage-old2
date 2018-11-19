@@ -1,15 +1,15 @@
-# bash programmable completion for galileld(1) and galilel-qt(1)
+# bash programmable completion for salvaged(1) and salvage-qt(1)
 # Copyright (c) 2012-2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-_galileld() {
+_salvaged() {
     local cur prev words=() cword
-    local galileld
+    local salvaged
 
-    # save and use original argument to invoke galileld for -help
+    # save and use original argument to invoke salvaged for -help
     # it might not be in $PATH
-    galileld="$1"
+    salvaged="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -33,7 +33,7 @@ _galileld() {
             # only parse -help if sensible
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
                 local helpopts
-                helpopts=$($galileld -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($salvaged -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
                 COMPREPLY=( $( compgen -W "$helpopts" -- "$cur" ) )
             fi
 
@@ -45,7 +45,7 @@ _galileld() {
             ;;
     esac
 } &&
-complete -F _galileld galileld galilel-qt
+complete -F _salvaged salvaged salvage-qt
 
 # Local variables:
 # mode: shell-script

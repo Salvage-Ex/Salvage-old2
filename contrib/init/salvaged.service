@@ -5,19 +5,19 @@
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/galilel/galilel.conf
+# /etc/salvage/salvage.conf
 
 [Unit]
-Description=Galilel daemon
+Description=Salvage daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/galileld -daemon -conf=/etc/galilel/galilel.conf -pid=/run/galileld/galileld.pid
-# Creates /run/galileld owned by galilel
-RuntimeDirectory=galileld
-User=galilel
+ExecStart=/usr/bin/salvaged -daemon -conf=/etc/salvage/salvage.conf -pid=/run/salvaged/salvaged.pid
+# Creates /run/salvaged owned by salvage
+RuntimeDirectory=salvaged
+User=salvage
 Type=forking
-PIDFile=/run/galileld/galileld.pid
+PIDFile=/run/salvaged/salvaged.pid
 Restart=on-failure
 
 # Hardening measures

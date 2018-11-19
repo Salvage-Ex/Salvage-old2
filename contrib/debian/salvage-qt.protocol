@@ -1,6 +1,6 @@
 [Protocol]
-exec=galilel-qt '%u'
-protocol=galilel
+exec=salvage-qt '%u'
+protocol=salvage
 input=none
 output=none
 helper=true

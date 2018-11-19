@@ -9,7 +9,7 @@ Depends on [jsonrpc](http://json-rpc.org/).
 
 ```
 spendfrom.py --from=FROMADDRESS1[,FROMADDRESS2] --to=TOADDRESS --amount=amount \
-             --fee=fee --datadir=/path/to/.galilel --testnet --dry_run
+             --fee=fee --datadir=/path/to/.salvage --testnet --dry_run
 ```
 
 With no arguments, outputs a list of amounts associated with addresses.
@@ -20,7 +20,7 @@ With arguments, sends coins received by the `FROMADDRESS` addresses to the
 ## Notes
 
 * You may explicitly specify how much fee to pay (a fee more than 1% of the
-  amount will fail, though, to prevent galilel-losing accidents). Spendfrom may
+  amount will fail, though, to prevent salvage-losing accidents). Spendfrom may
   fail if it thinks the transaction would never be confirmed (if the amount
   being sent is too small, or if the transaction is too many bytes for the
   fee).

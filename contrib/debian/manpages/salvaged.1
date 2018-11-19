@@ -1,19 +1,19 @@
-.TH GALILELD "1" "October 2018" "galileld 2.0.0.0"
+.TH SALVAGED "1" "October 2018" "salvaged 2.0.0.0"
 .SH NAME
-galileld \- an open-source Proof-of-Stake digital crypto currency
+salvaged \- an open-source Proof-of-Stake digital crypto currency
 .SH SYNOPSIS
-galileld [options] <command> [params]
+salvaged [options] <command> [params]
 .TP
-galileld [options] help <command> \- Get help for a command
+salvaged [options] help <command> \- Get help for a command
 .SH DESCRIPTION
-This manual page documents the galileld program. Galilel is an open-source Proof-of-Stake digital crypto currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
+This manual page documents the salvaged program. Salvage is an open-source Proof-of-Stake digital crypto currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
 
-Galilel can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the Galilel system money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
+Salvage can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the Salvage system money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
 
 .SH OPTIONS
 .TP
 \fB\-conf=\fR<file>
-Specify configuration file (default: galilel.conf)
+Specify configuration file (default: salvage.conf)
 .TP
 \fB\-gen\fR
 Generate coins
@@ -70,14 +70,14 @@ This help message
 \fBbackupwallet 'destination'\fR
 Safely copies *wallet.dat* to 'destination', which can be a directory or a path with filename.
 .TP
-\fBgetaccount 'galileladdress'\fR
+\fBgetaccount 'salvageaddress'\fR
 Returns the account associated with the given address.
 .TP
-\fBsetaccount 'galileladdress' ['account']\fR
+\fBsetaccount 'salvageaddress' ['account']\fR
 Sets the ['account'] associated with the given address. ['account'] may be omitted to remove an address from ['account'].
 .TP
 \fBgetaccountaddress 'account'\fR
-Returns a new galilel address for 'account'.
+Returns a new salvage address for 'account'.
 .TP
 \fBgetaddressesbyaccount 'account'\fR
 Returns the list of addresses associated with the given 'account'.
@@ -98,7 +98,7 @@ Returns the number of connections to other nodes.
 Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
 .TP
 \fBgetgenerate\fR
-Returns boolean true if server is trying to generate GALI, false otherwise.
+Returns boolean true if server is trying to generate SVG, false otherwise.
 .TP
 \fBsetgenerate 'generate' ['genproclimit']\fR
 Generation is limited to ['genproclimit'] processors, \-1 is unlimited.
@@ -110,13 +110,13 @@ Returns a recent hashes per second performance measurement while generating.
 Returns an object containing server information.
 .TP
 \fBgetnewaddress 'account'\fR
-Returns a new galilel address for receiving payments. If 'account' is specified (recommended), it is added to the address book so payments received with the address will be credited to 'account'.
+Returns a new salvage address for receiving payments. If 'account' is specified (recommended), it is added to the address book so payments received with the address will be credited to 'account'.
 .TP
 \fBgetreceivedbyaccount 'account' ['minconf=1']\fR
 Returns the total amount received by addresses associated with 'account' in transactions with at least ['minconf'] confirmations.
 .TP
-\fBgetreceivedbyaddress 'galileladdress' ['minconf=1']\fR
-Returns the total amount received by 'galileladdress' in transactions with at least ['minconf'] confirmations.
+\fBgetreceivedbyaddress 'salvageaddress' ['minconf=1']\fR
+Returns the total amount received by 'salvageaddress' in transactions with at least ['minconf'] confirmations.
 .TP
 \fBgettransaction 'txid'\fR
 Returns information about a specific transaction, given hexadecimal transaction ID.
@@ -165,26 +165,26 @@ Returns a list of the last ['count'] transactions for 'account' \- for all accou
 \fBmove <'fromaccount'> <'toaccount'> <'amount'> ['minconf=1'] ['comment']\fR
 Moves funds between accounts.
 .TP
-\fBsendfrom* <'account'> <'galileladdress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
-Sends amount from account's balance to 'galileladdress'. This method will fail if there is less than amount GALI with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
+\fBsendfrom* <'account'> <'salvageaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
+Sends amount from account's balance to 'salvageaddress'. This method will fail if there is less than amount SVG with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
 .TP
-\fBsendtoaddress 'galileladdress' 'amount' ['comment'] ['comment-to']\fR
-Sends amount from the server's available balance to 'galileladdress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
+\fBsendtoaddress 'salvageaddress' 'amount' ['comment'] ['comment-to']\fR
+Sends amount from the server's available balance to 'salvageaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
 .TP
 \fBstop\fR
-Stops the galilel server.
+Stops the salvage server.
 .TP
-\fBvalidateaddress 'galileladdress'\fR
-Checks that 'galileladdress' looks like a proper Galilel address. Returns an object containing:
+\fBvalidateaddress 'salvageaddress'\fR
+Checks that 'salvageaddress' looks like a proper Salvage address. Returns an object containing:
 
     "isvalid" : true or false.
     "ismine"  : true if the address is in the server's wallet.
-    "address" : galileladdress.
+    "address" : salvageaddress.
 
     *note: ismine and address are only returned if the address is valid.
 
 .SH "SEE ALSO"
-galilel.conf(5)
+salvage.conf(5)
 .SH AUTHOR
 This manual page was written by Micah Anderson <micah@debian.org> for the Debian system (but may be used by others). Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 3 or any later version published by the Free Software Foundation.
 

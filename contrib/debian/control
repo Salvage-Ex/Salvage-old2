@@ -1,4 +1,4 @@
-Source: galilel
+Source: salvage
 Section: utils
 Priority: optional
 Maintainer: Jonas Smedegaard <dr@jones.dk> ***TODO***
@@ -22,14 +22,14 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: https://galilel.cloud
-Vcs-Git: git://github.com/Galilel-Project/galilel.git
-Vcs-Browser: https://github.com/Galilel-Project/galilel
+Homepage: https://salvage.cloud
+Vcs-Git: git://github.com/Salvage.git
+Vcs-Browser: https://github.com/Salvage
 
-Package: galileld
+Package: salvaged
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Galilel Coin (GALI) is an open-source Proof-of-Stake
+Description: Salvage Coin (SVG) is an open-source Proof-of-Stake
  digital crypto currency for fast (using SwiftX), private (Zerocoin
  protocol) and secure microtransactions. Our main goal is to create
  a decentralized fully secure and anonymous network to run
@@ -41,13 +41,13 @@ Description: Galilel Coin (GALI) is an open-source Proof-of-Stake
  Full transaction history is stored locally at each client. This
  requires 1+ GB of space, slowly growing.
  .
- This package provides the daemon, galileld, and the CLI tool
- galilel-cli to interact with the daemon.
+ This package provides the daemon, salvaged, and the CLI tool
+ salvage-cli to interact with the daemon.
 
-Package: galilel-qt
+Package: salvage-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Galilel Coin (GALI) is an open-source Proof-of-Stake
+Description: Salvage Coin (SVG) is an open-source Proof-of-Stake
  digital crypto currency for fast (using SwiftX), private (Zerocoin
  protocol) and secure microtransactions. Our main goal is to create
  a decentralized fully secure and anonymous network to run
@@ -59,4 +59,4 @@ Description: Galilel Coin (GALI) is an open-source Proof-of-Stake
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides Galilel-Qt, a GUI for Galilel based on Qt.
+ This package provides Salvage-Qt, a GUI for Salvage based on Qt.

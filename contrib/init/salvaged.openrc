@@ -2,26 +2,26 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/galilel/.galilel" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/galilel/.galilel"
+if [ -d "/var/lib/salvage/.salvage" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/salvage/.salvage"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/galileld"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/salvaged"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/galilel/galilel.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/galileld}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/galileld.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/salvage/salvage.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/salvaged}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/salvaged.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-galilel}
-BITCOIND_GROUP=${BITCOIND_GROUP:-galilel}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/galileld}
+BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-salvage}
+BITCOIND_GROUP=${BITCOIND_GROUP:-salvage}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/salvaged}
 BITCOIND_NICE=${BITCOIND_NICE:-${NICELEVEL:-0}}
 BITCOIND_OPTS="${BITCOIND_OPTS:-${BITCOIN_OPTS}}"
 
-name="Galilel Core Daemon"
-description="Galilel crypto-currency p2p network daemon"
+name="Salvage Core Daemon"
+description="Salvage crypto-currency p2p network daemon"
 
-command="/usr/bin/galileld"
+command="/usr/bin/salvaged"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -71,7 +71,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run galileld."
+		eerror "ERROR: You must set a secure rpcpassword to run salvaged."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -84,7 +84,7 @@ checkconfig()
 		eerror "It is recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Galilel Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Salvage Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

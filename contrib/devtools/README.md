@@ -19,7 +19,7 @@ For example:
 ```
 
 (in any git repository) will help you merge pull request #3077 for the
-Galilel-Project/galilel repository.
+Salvage repository.
 
 What it does:
 
@@ -37,18 +37,18 @@ GPG signatures, that even a compromised GitHub couldn't mess with the sources.
 
 ### Setup
 
-Configuring the github-merge tool for the Galilel repository is done in the
+Configuring the github-merge tool for the Salvage repository is done in the
 following way:
 
 ```
-git config githubmerge.repository Galilel-Project/galilel
+git config githubmerge.repository Salvage
 git config githubmerge.testcmd "make -j4 check" (adapt to whatever you want to use for testing)
 git config --global user.signingkey mykeyid (if you want to GPG sign)
 ```
 
 ## optimize-pngs.py
 
-A script to optimize png files in the Galilel repository (requires pngcrush).
+A script to optimize png files in the Salvage repository (requires pngcrush).
 
 ## fix-copyright-headers.py
 
@@ -104,10 +104,10 @@ If there are 'unsupported' symbols, the return value will be 1 a list like this
 will be printed:
 
 ```
-.../64/test_galilel: symbol memcpy from unsupported version GLIBC_2.14
-.../64/test_galilel: symbol __fdelt_chk from unsupported version GLIBC_2.15
-.../64/test_galilel: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
-.../64/test_galilel: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
+.../64/test_salvage: symbol memcpy from unsupported version GLIBC_2.14
+.../64/test_salvage: symbol __fdelt_chk from unsupported version GLIBC_2.15
+.../64/test_salvage: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
+.../64/test_salvage: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
 ```
 
 ## update-translations.py

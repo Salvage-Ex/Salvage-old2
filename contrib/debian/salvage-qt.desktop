@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Salvage
+Comment=Salvage P2P Cryptocurrency
+Comment[fr]=Salvage, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Salvage, eşten eşe kriptografik sanal para birimi
+Exec=salvage-qt %u
+Terminal=false
+Type=Application
+Icon=salvage128
+MimeType=x-scheme-handler/salvage;
+Categories=Office;Finance;
