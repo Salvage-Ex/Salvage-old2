@@ -1,0 +1,8 @@
+*.a
+*.o
+*.la
+*.lo
+*.Po
+*.Plo
+.deps
+.dirstamp
