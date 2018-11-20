@@ -159,7 +159,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "Salvage Coin Start @ Friday, 25. May 2018 04:00:00 GMT.";
+        const char* pszTimestamp = "Galilel Coin Start @ Friday, 25. May 2018 04:00:00 GMT.";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -178,10 +178,10 @@ public:
         assert(hashGenesisBlock == uint256("0x00000a15f1dd0b452c85b89d7e8a2968205e19550b1c2f12909367a04afc2855"));
         assert(genesis.hashMerkleRoot == uint256("0x1dd81cdda448e9346a94f82e0d6c9fa7a876b59124da4dc49b66531d3ef11822"));
 
-        vSeeds.push_back(CDNSSeedData("seed1.salvage.cloud", "seed1.salvage.cloud")); // 1st DNS Seeder from mbroemme
-        vSeeds.push_back(CDNSSeedData("seed2.salvage.cloud", "seed2.salvage.cloud")); // 2nd DNS Seeder from mbroemme
-        vSeeds.push_back(CDNSSeedData("seed3.salvage.cloud", "seed3.salvage.cloud")); // 3rd DNS Seeder from mbroemme
-        vSeeds.push_back(CDNSSeedData("seed4.salvage.cloud", "seed4.salvage.cloud")); // 4th DNS Seeder from mbroemme
+        vSeeds.push_back(CDNSSeedData("seed1.galilel.cloud", "seed1.galilel.cloud")); // 1st DNS Seeder from mbroemme
+        vSeeds.push_back(CDNSSeedData("seed2.galilel.cloud", "seed2.galilel.cloud")); // 2nd DNS Seeder from mbroemme
+        vSeeds.push_back(CDNSSeedData("seed3.galilel.cloud", "seed3.galilel.cloud")); // 3rd DNS Seeder from mbroemme
+        vSeeds.push_back(CDNSSeedData("seed4.galilel.cloud", "seed4.galilel.cloud")); // 4th DNS Seeder from mbroemme
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 68);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 16);
