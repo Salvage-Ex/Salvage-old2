@@ -149,8 +149,8 @@ QTabBar::tab:hover:!selected {
 }
 
 QWidget {
-  selection-background-color: #bbb9b9; /* Object highlight color */
-  selection-color: #fff;
+  selection-background-color: #f2f2f2; /* Object highlight color */
+  selection-color: #000;
   outline: 0px; /* Remove Annoying Focus Rectangle */
 }
 
@@ -193,7 +193,7 @@ QLabel { /* Base Text Size & Color */
 }
 
 .QValidatedLineEdit:!focus {
-  color: #bbb9b9;
+  color: #000000;
   background-color: #e7e7e7;
 }
 
@@ -203,7 +203,7 @@ QLabel { /* Base Text Size & Color */
 }
 
 .QTextEdit:!focus {
-  color: #bbb9b9;
+  color: #000000;
   background-color: #e7e7e7;
 }
 
@@ -224,7 +224,7 @@ QPushButton { /* Global Button Style */
   background-color: #dbdbdb;
   border-width: 1px;
   border-style: outset;
-  border-color: blue;
+  border-color: #0000ff;
   border-radius: 2px;
   color: #5f5f5f;
   font-size: 12px;
@@ -240,7 +240,7 @@ QPushButton { /* Global Button Style */
 QPushButton:hover {
   background-color: qlineargradient(y1:0, y2: 1, stop: 0 #dbdbdb, stop: 0.12 #dbdbdb, stop: 0.121 #ebebeb, stop: 0.88 #ebebeb, stop: 0.881 #dbdbdb, stop: 1 #dbdbdb);
   color: #0f0f0f;
-  border-color: red;
+  border-color: #ff0000;
 }
 
 QPushButton:focus {
@@ -250,7 +250,7 @@ QPushButton:focus {
 
 QPushButton:pressed {
   background-color: #dbdbdb;
-  border: 1px solid blue;
+  border: 1px solid #0000ff;
   background-color: qlineargradient(y1:0, y2: 1, stop: 0 #ebebeb, stop: 0.12 #ebebeb, stop: 0.121 #dbdbdb, stop: 0.88 #dbdbdb, stop: 0.881 #ebebeb, stop: 1 #ebebeb);
 }
 
@@ -276,7 +276,7 @@ QSpinBox::down-button:hover {
 }
 
 QComboBox { /* Dropdown Menus */
-  border: 1px solid #bbb9b9;
+  border: 1px solid #0000ff;
   padding: 3px 5px 3px 5px;
   background: #fcfcfc;
   min-height: 25px;
@@ -405,8 +405,8 @@ QHeaderView { /* Table Header */
 
 QHeaderView::section { /* Table Header Sections */
   qproperty-alignment: center;
-  background-color: #bbb9b9;
-  color: #fff;
+  background-color: #f2f2f2;
+  color: #000000;
   min-height: 25px;
   font-weight: bold;
   font-size: 11px;
@@ -446,8 +446,8 @@ QTableView::item { /* Table Item */
 }
 
 QTableView::item:selected { /* Table Item Selected */
-  background-color: #bbb9b9;
-  color: #fff;
+  background-color: #f2f2f2;
+  color: #000000;
 }
 
 QTableWidget { /* Table Background */
@@ -472,20 +472,20 @@ QScrollBar { /* Scroll Bar */
 
 QScrollBar:vertical { /* Vertical Scroll Bar Attributes */
   border: 0px;
-  background: #bbb9b9;
+  background: #f2f2f2;
   width: 18px;
   margin: 18px 0px 18px 0px;
 }
 
 QScrollBar:horizontal { /* Horizontal Scroll Bar Attributes */
   border: 0;
-  background: #bbb9b9;
+  background: #f2f2f2;
   height: 18px;
   margin: 0px 18px 0px 18px;
 }
 
 QScrollBar::handle:vertical { /* Scroll Bar Slider - vertical */
-  background: #bbb9b9;
+  background: #f2f2f2;
   min-height: 10px;
 }
 
@@ -495,7 +495,7 @@ QScrollBar::handle:vertical:pressed { /* Scroll Bar Slider - vertical */
 }
 
 QScrollBar::handle:horizontal { /* Scroll Bar Slider - horizontal */
-  background: #bbb9b9;
+  background: #f2f2f2;
   min-width: 10px;
 }
 
@@ -576,7 +576,7 @@ QSlider::sub-page:horizontal {
 }
 
 QSlider::add-page:horizontal {
-  background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #bbb9b9, stop: 1 #a1887f);
+  background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #bbb9b9, stop: 1 #f2f2f2);
   border: 1px solid #333;
   height: 10px;
   border-radius: 4px;
@@ -741,14 +741,14 @@ QWidget#PrivacyDialog QLabel {
 
 QWidget#PrivacyDialog QLabel#zSVGLabel {
   font-size: 14px;
-  color: #ffffff;
-  background-color: #bbb9b9;
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
 QWidget#PrivacyDialog QLabel#oSVGLabel {
   font-size: 14px;
-  color: #ffffff;
-  background-color: #bbb9b9;
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
 QWidget#PrivacyDialog QPushButton {
@@ -862,7 +862,7 @@ QDialog#RPCConsole QPushButton#clearButton { /* Console Clear Button */
 }
 
 QDialog#RPCConsole .QGroupBox #line { /* Network In Line */
-  background-color: #bbb9b9;
+  background-color: #f2f2f2;
 }
 
 QDialog#RPCConsole .QGroupBox #line_2 { /* Network Out Line */
@@ -1521,8 +1521,8 @@ QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item {
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item:selected { /* Coin Control Item (selected) */
-  background-color: #bbb9b9;
-  color: #fff;
+  background-color: #f2f2f2;
+  color: #000;
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item:checked { /* Coin Control Item (checked) */
