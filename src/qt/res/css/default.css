@@ -198,7 +198,7 @@ QLabel { /* Base Text Size & Color */
 }
 
 .QLineEdit:!focus {
-  color: #bbb9b9;
+  color: #000000;
   background-color: #e7e7e7;
 }
 
@@ -221,12 +221,12 @@ QLabel { /* Base Text Size & Color */
 /***************************** Global Qt Objects ***********************************************************/
 
 QPushButton { /* Global Button Style */
-  background-color: #bbb9b9; 
+  background-color: #dbdbdb;
   border-width: 1px;
   border-style: outset;
-  border-color: #333333;
+  border-color: blue;
   border-radius: 2px;
-  color: #ffffff;
+  color: #5f5f5f;
   font-size: 12px;
   font-weight: bold;
   padding-left: 25px;
@@ -238,7 +238,9 @@ QPushButton { /* Global Button Style */
 }
 
 QPushButton:hover {
-  background-color: qlineargradient(y1:0, y2: 1, stop: 0 #ffffff, stop: 0.1 #ffffff, stop: 0.101 #8d6e63, stop: 0.9 #8d6e63, stop: 0.901 #ffffff, stop: 1 #ffffff);
+  background-color: qlineargradient(y1:0, y2: 1, stop: 0 #dbdbdb, stop: 0.12 #dbdbdb, stop: 0.121 #ebebeb, stop: 0.88 #ebebeb, stop: 0.881 #dbdbdb, stop: 1 #dbdbdb);
+  color: #0f0f0f;
+  border-color: red;
 }
 
 QPushButton:focus {
@@ -247,9 +249,9 @@ QPushButton:focus {
 }
 
 QPushButton:pressed {
-  background-color: #bbb9b9;
-  border: 1px solid #000000;
-  background-color: qlineargradient(y1:0, y2: 1, stop: 0 #00ff00, stop: 0.1 #00ff00, stop: 0.101 #8d6e63, stop: 0.9 #8d6e63, stop: 0.901 #00ff00, stop: 1 #00ff00);
+  background-color: #dbdbdb;
+  border: 1px solid blue;
+  background-color: qlineargradient(y1:0, y2: 1, stop: 0 #ebebeb, stop: 0.12 #ebebeb, stop: 0.121 #dbdbdb, stop: 0.88 #dbdbdb, stop: 0.881 #ebebeb, stop: 1 #ebebeb);
 }
 
 /* Special handling for statusbar-icons (which are partly QPushButtons) */
@@ -1341,7 +1343,7 @@ QDialog#SendCoinsDialog .QFrame#frameCoinControl .QWidget#widgetCoinControl > .Q
   padding: 2px;
 }
 
-/* QDialog#SendCoinsDialog .QFrame#frameCoinControl .QCheckBox#checkBoxCoinControlChange { /* Custom Change Label */ 
+/* QDialog#SendCoinsDialog .QFrame#frameCoinControl .QCheckBox#checkBoxCoinControlChange { /* Custom Change Label */
 /* QDialog#SendCoinsDialog .QFrame#frameCoinControl .QValidatedLineEdit#lineEditCoinControlChange { /* Custom Change Address */
 /* QDialog#SendCoinsDialog .QFrame#frameCoinControl .QValidatedLineEdit#lineEditCoinControlChange:!focus { /* Custom Change Address */
 /* QDialog#SendCoinsDialog .QFrame#frameCoinControl .QLineEdit#splitBlockLineEdit { */
@@ -1629,7 +1631,7 @@ QLabel#transactionSumLabel { /* Example of setObjectName for widgets without nam
   color: #333333;
   font-weight: bold;
 }
- 
+
 QLabel#transactionSum { /* Example of setObjectName for widgets without name */
   color: #333333;
 }
