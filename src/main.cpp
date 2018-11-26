@@ -1813,6 +1813,49 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     return ret;
 }
 
+int64_t GetTreasuryPayment(int nHeight, int64_t blockValue, bool isZSVGStake)
+{
+    int64_t ret = 0;
+
+    if (nHeight <= Params().LAST_POW_BLOCK()) {
+       return 0;
+    }
+
+    // when zSVG is staked, no treasury.
+    if (isZSVGStake) {
+        return 0;
+    }
+
+    /* treasury rewards. Example of schema, for now fixed at 10% */
+    if (nHeight > 430000) {
+        ret = blockValue * 0.1;
+    } else if (nHeight > 340000) {
+        ret = blockValue * 0.1;
+    } else if (nHeight > 250000) {
+        ret = blockValue * 0.1;
+    } else if (nHeight > 205000) {
+        ret = blockValue * 0.1;
+    } else if (nHeight > 160000) {
+        ret = blockValue * 0.1;
+    } else if (nHeight > 100000) {
+        ret = blockValue * 0.1;
+    } else if (nHeight > 42000) {
+        ret = blockValue * 0.1;
+    } else if (nHeight > 22000) {
+        ret = blockValue * 0.1;
+    } else if (nHeight > 12000) {
+        ret = blockValue * 0.1;
+    } else if (nHeight > Params().LAST_POW_BLOCK()) {
+        ret = blockValue * 0.1;
+    } else if (nHeight > 1) {
+        ret = blockValue * 0.1;
+    } else if (nHeight == 1) {
+        ret = blockValue * 0.1;
+    }
+    
+	return ret;
+}
+
 bool IsInitialBlockDownload()
 {
     LOCK(cs_main);
