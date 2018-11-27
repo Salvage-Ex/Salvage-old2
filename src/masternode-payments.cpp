@@ -313,6 +313,16 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
     CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue, 0, fZSVGStake);
+    CAmount treasuryPayment = GetTreasuryPayment(pindexPrev->nHeight, blockValue, fZSVGStake);
+
+    // TODO !!!!
+	CBitcoinAddress addressTreasury;
+    if (!addressTreasury.SetString("<treasury address from chainparam>")) {
+        LogPrintf("CMasternodePayments::FillBlockPayee - Invalid Treasury address\n");
+        treasuryPayment = 0;
+    }
+
+    CScript payeeTreasury = GetScriptForDestination(addressTreasury.Get());
 
     if (hasPayment) {
         if (fProofOfStake) {
@@ -328,12 +338,27 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 
             //subtract mn payment from the stake reward
             if (!txNew.vout[1].IsZerocoinMint())
-                txNew.vout[i - 1].nValue -= masternodePayment;
+                txNew.vout[i - 1].nValue -= (masternodePayment + treasuryPayment);
+
+            if (treasuryPayment > 0) {
+                i = txNew.vout.size();
+                txNew.vout.resize(i + 1);
+                txNew.vout[i].scriptPubKey = payeeTreasury;
+                txNew.vout[i].nValue = treasuryPayment;
+            }
         } else {
-            txNew.vout.resize(2);
+            unsigned int i = (treasuryPayment > 0 ? 3 : 2);
+
+            txNew.vout.resize(i);
             txNew.vout[1].scriptPubKey = payee;
             txNew.vout[1].nValue = masternodePayment;
-            txNew.vout[0].nValue = blockValue - masternodePayment;
+
+            if (treasuryPayment > 0) {
+                txNew.vout[2].scriptPubKey = payeeTreasury;
+                txNew.vout[2].nValue = treasuryPayment;
+            }
+
+            txNew.vout[0].nValue = blockValue - (masternodePayment + treasuryPayment);
         }
 
         CTxDestination address1;
@@ -341,6 +366,10 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         CBitcoinAddress address2(address1);
 
         LogPrint("masternode","Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), address2.ToString().c_str());
+
+        if (treasuryPayment > 0) {
+            LogPrint("masternode", "Treasury payment of %s to %s\n", FormatMoney(treasuryPayment).c_str(), addressTreasury.ToString().c_str());
+        }
     }
 }
 

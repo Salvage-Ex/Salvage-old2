@@ -227,6 +227,8 @@ double ConvertBitsToDouble(unsigned int nBits);
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZSVGStake);
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake);
 
+int64_t GetTreasuryPayment(int nHeight, int64_t blockValue, bool isZSVGStake);
+
 bool ActivateBestChain(CValidationState& state, CBlock* pblock = NULL, bool fAlreadyChecked = false);
 CAmount GetBlockValue(int nHeight);
 
