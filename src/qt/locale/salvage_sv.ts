@@ -5066,8 +5066,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Du måste specifiera en masternodeprivkey i konfigurationen. Var vänlig se dokumentationen för hjälp.</translation>
     </message>
     <message>
-        <source>(36001 could be used only on mainnet)</source>
-        <translation>(36001 kunde endast användas på mainnet)</translation>
+        <source>(16999 could be used only on mainnet)</source>
+        <translation>(16999 kunde endast användas på mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5078,8 +5078,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>(standard: 1)</translation>
     </message>
     <message>
-        <source>(must be 36001 for mainnet)</source>
-        <translation>(måste vara 36001 för mainnet)</translation>
+        <source>(must be 16999 for mainnet)</source>
+        <translation>(måste vara 16999 för mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

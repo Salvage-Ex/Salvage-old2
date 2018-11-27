@@ -6,3 +6,4 @@
 *.Plo
 .deps
 .dirstamp
+.vscode/*

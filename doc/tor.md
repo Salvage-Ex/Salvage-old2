@@ -41,7 +41,7 @@ An example how to start the client if the Tor proxy is running on local host on
 port 9050 and only allows .onion nodes to connect:
 
 ```
-./salvaged -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=nvvgnxdfnlwdgbdn.onion:36001
+./salvaged -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=nvvgnxdfnlwdgbdn.onion:16999
 ```
 
 In a typical situation, this suffices to run behind a Tor proxy:
@@ -63,7 +63,7 @@ SOCKSPolicy accept 127.0.0.1/8
 Log notice file /var/log/tor/notices.log
 ControlPort 9051
 HiddenServiceDir /var/lib/tor/dnet/
-HiddenServicePort 989 127.0.0.1:36001
+HiddenServicePort 989 127.0.0.1:16999
 HiddenServiceStatistics 0
 ORPort 9001
 LongLivedPorts 989
@@ -73,7 +73,7 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be
-equal to your salvaged's P2P listen port (36001 by default).
+equal to your salvaged's P2P listen port (16999 by default).
 
 ```
 -externalip=X   You can tell salvage about its publicly reachable addressi
@@ -100,7 +100,7 @@ In a typical situation, where you're only reachable via Tor, this should
 suffice:
 
 ```
-./salvaged -proxy=127.0.0.1:9050 -externalip=nvvgnxdfnlwdgbdn.onion:36001 -listen
+./salvaged -proxy=127.0.0.1:9050 -externalip=nvvgnxdfnlwdgbdn.onion:16999 -listen
 ```
 
 (obviously, replace the Onion address with your own). If you don't care too
@@ -111,23 +111,23 @@ additionally specify:
 ./salvaged ... -discover
 ```
 
-and open port 36001 on your firewall (or use -upnp).
+and open port 16999 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
 ```
-./salvaged -onion=127.0.0.1:9050 -externalip=nvvgnxdfnlwdgbdn.onion:36001 -discover
+./salvaged -onion=127.0.0.1:9050 -externalip=nvvgnxdfnlwdgbdn.onion:16999 -discover
 ```
 
 ### List of known Salvage Tor relays
 
 ```
-nvvgnxdfnlwdgbdn.onion:36001
-6bj7tcfi5ehv3far.onion:36001
-6g6mvsxdxbepeat7.onion:36001
-g5katg5hkj5xvmda.onion:36001
-nrnxauprjfnm6ugr.onion:36001
-v6edtkyoqqmriit2.onion:36001
-crxuxcibrbuhxuzk.onion:36001
+nvvgnxdfnlwdgbdn.onion:16999
+6bj7tcfi5ehv3far.onion:16999
+6g6mvsxdxbepeat7.onion:16999
+g5katg5hkj5xvmda.onion:16999
+nrnxauprjfnm6ugr.onion:16999
+v6edtkyoqqmriit2.onion:16999
+crxuxcibrbuhxuzk.onion:16999
 ```

@@ -281,7 +281,7 @@ UniValue masternodeconnect(const UniValue& params, bool fHelp)
             "1. \"address\"     (string, required) IP or net address to connect to\n"
 
             "\nExamples:\n" +
-            HelpExampleCli("masternodeconnect", "\"192.168.0.6:36001\"") + HelpExampleRpc("masternodeconnect", "\"192.168.0.6:36001\""));
+            HelpExampleCli("masternodeconnect", "\"192.168.0.6:16999\"") + HelpExampleRpc("masternodeconnect", "\"192.168.0.6:16999\""));
 
     std::string strAddress = params[0].get_str();
 

@@ -121,8 +121,8 @@ alias ipaddress:port masternode_private_key collateral_output collateral_output_
 Example:
 
 ```
-mn01 127.0.0.1:36001 7VnWEzUvVuwAiPwGjHeCzoqyacKQuuRPUftS5iBonJcmi2smjJR 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
-mn02 127.0.0.2:36001 7VPxA81mPeiNGwrsqewUSt3Px3AL17B8KQc23K2HRPH9UFBSKCM aa9f1034d973377a5e733272c3d0eced1de22555ad45d6b24abadff8087948d4 0 UUr5nDmykhun1HWM7mJAqLVeLzoGtx19dX:25
+mn01 127.0.0.1:16999 7VnWEzUvVuwAiPwGjHeCzoqyacKQuuRPUftS5iBonJcmi2smjJR 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
+mn02 127.0.0.2:16999 7VPxA81mPeiNGwrsqewUSt3Px3AL17B8KQc23K2HRPH9UFBSKCM aa9f1034d973377a5e733272c3d0eced1de22555ad45d6b24abadff8087948d4 0 UUr5nDmykhun1HWM7mJAqLVeLzoGtx19dX:25
 ```
 
 ## What about the salvage.conf file?

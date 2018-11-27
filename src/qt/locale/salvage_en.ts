@@ -6591,8 +6591,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>(36001 could be used only on mainnet)</source>
-        <translation type="unfinished">(36001 could be used only on mainnet)</translation>
+        <source>(16999 could be used only on mainnet)</source>
+        <translation type="unfinished">(16999 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6606,7 +6606,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 36001 for mainnet)</source>
+        <source>(must be 16999 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

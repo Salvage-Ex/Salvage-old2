@@ -3732,8 +3732,8 @@ https://www.transifex.com/salvage-project/salvage-project-translations</translat
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(36001 could be used only on mainnet)</source>
-        <translation>(36001 could be used only on mainnet)</translation>
+        <source>(16999 could be used only on mainnet)</source>
+        <translation>(16999 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3744,8 +3744,8 @@ https://www.transifex.com/salvage-project/salvage-project-translations</translat
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 36001 for mainnet)</source>
-        <translation>(deve ser 36001 para mainnet)</translation>
+        <source>(must be 16999 for mainnet)</source>
+        <translation>(deve ser 16999 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>

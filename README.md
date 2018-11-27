@@ -34,8 +34,8 @@ Electrum client.
 * Consensus Algorithm: PoS + zPoS Hybrid
 * Block Size: 2 MB
 * Block Time: 60 Seconds (Re-targeting every block)
-* RPC Port: 36002
-* P2P Port: 36001
+* RPC Port: 16998
+* P2P Port: 16999
 * Type: PoW / PoS / zPoS / MN
 * Minimum Staking Age: 2 Hours
 * Maturity: 120 confirmations

@@ -241,10 +241,10 @@ QT_TRANSLATE_NOOP("salvage-core", ""
 QT_TRANSLATE_NOOP("salvage-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("salvage-core", "(36001 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("salvage-core", "(16999 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("salvage-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("salvage-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("salvage-core", "(must be 36001 for mainnet)"),
+QT_TRANSLATE_NOOP("salvage-core", "(must be 16999 for mainnet)"),
 QT_TRANSLATE_NOOP("salvage-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("salvage-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("salvage-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
