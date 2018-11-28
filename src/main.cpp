@@ -1760,30 +1760,40 @@ int64_t GetBlockValue(int nHeight)
     int64_t nSubsidy = 0;
 
     /* block rewards. */
-    if (nHeight > 430000) {
-        nSubsidy = 4.5 * COIN;
-    } else if (nHeight > 340000) {
-        nSubsidy = 9 * COIN;
-    } else if (nHeight > 250000) {
-        nSubsidy = 13.5 * COIN;
-    } else if (nHeight > 205000) {
-        nSubsidy = 25 * COIN;
-    } else if (nHeight > 160000) {
-        nSubsidy = 50 * COIN;
-    } else if (nHeight > 100000) {
-        nSubsidy = 60 * COIN;
-    } else if (nHeight > 42000) {
-        nSubsidy = 70 * COIN;
-    } else if (nHeight > 22000) {
-        nSubsidy = 80 * COIN;
-    } else if (nHeight > 12000) {
-        nSubsidy = 90 * COIN;
-    } else if (nHeight > Params().LAST_POW_BLOCK()) {
-        nSubsidy = 100 * COIN;
-    } else if (nHeight > 1) {
+    if( nHeight >= 1971000 ) {
         nSubsidy = 1 * COIN;
+    } else if (nHeight >= 1839600) {
+        nSubsidy = 2.5 * COIN;
+    } else if (nHeight >=  1708200 ) {
+        nSubsidy = 5 * COIN;
+    } else if (nHeight >=  1576800) {
+        nSubsidy = 10 * COIN;
+    } else if (nHeight >= 1445400) {
+        nSubsidy = 15 * COIN;
+    } else if (nHeight >= 1314000)) {
+        nSubsidy = 20 * COIN;
+    } else if (nHeight >= 1182600  {
+        nSubsidy = 25 * COIN;
+    } else if (nHeight >= 1051200) {
+        nSubsidy = 30 * COIN;
+    } else if (nHeight >= 919800) {
+        nSubsidy = 35 * COIN;
+    } else if (nHeight >= 788400) {
+        nSubsidy = 30 * COIN;
+    } else if (nHeight >= 657000) {
+        nSubsidy = 25 * COIN;
+    } else if (nHeight >= 525600 ) {
+        nSubsidy = 20 * COIN;
+    } else if (nHeight >= 394200) {
+        nSubsidy = 15 * COIN;
+    } else if (nHeight >= )262800 {
+        nSubsidy = 10 * COIN;
+    } else if (nHeight >= 131400
+        nSubsidy = 5 * COIN;
+    } else if (nHeight > 1) {
+        nSubsidy = 2.5 * COIN;
     } else if (nHeight == 1) {
-        nSubsidy = 220000 * COIN;
+        nSubsidy = 6570000 * COIN; //pre-mine mostly will got to swaps
     }
 
     return nSubsidy;
