@@ -1761,39 +1761,29 @@ int64_t GetBlockValue(int nHeight)
 
     /* block rewards. */
     if( nHeight >= 1971000 ) {
-        nSubsidy = 1 * COIN;
-    } else if (nHeight >= 1839600) {
-        nSubsidy = 2.5 * COIN;
-    } else if (nHeight >=  1708200 ) {
-        nSubsidy = 5 * COIN;
-    } else if (nHeight >=  1576800) {
         nSubsidy = 10 * COIN;
-    } else if (nHeight >= 1445400) {
+    } else if (nHeight >= 591300) {
+        nSubsidy = 20 * COIN;
+    } else if (nHeight >= 525600) {
         nSubsidy = 15 * COIN;
-    } else if (nHeight >= 1314000)) {
-        nSubsidy = 20 * COIN;
-    } else if (nHeight >= 1182600  {
-        nSubsidy = 25 * COIN;
-    } else if (nHeight >= 1051200) {
-        nSubsidy = 30 * COIN;
-    } else if (nHeight >= 919800) {
-        nSubsidy = 35 * COIN;
-    } else if (nHeight >= 788400) {
-        nSubsidy = 30 * COIN;
-    } else if (nHeight >= 657000) {
-        nSubsidy = 25 * COIN;
-    } else if (nHeight >= 525600 ) {
-        nSubsidy = 20 * COIN;
+    } else if (nHeight >= 459900) {
+        nSubsidy = 10 * COIN;
     } else if (nHeight >= 394200) {
-        nSubsidy = 15 * COIN;
-    } else if (nHeight >= )262800 {
-        nSubsidy = 10 * COIN;
-    } else if (nHeight >= 131400
+        nSubsidy = 7.5 * COIN;
+    } else if (nHeight >= 328500 ) {
         nSubsidy = 5 * COIN;
-    } else if (nHeight > 1) {
+    } else if (nHeight >= 262800) {
+        nSubsidy = 3 * COIN;
+    } else if (nHeight >= )197100 {
         nSubsidy = 2.5 * COIN;
+    } else if (nHeight >= 131400
+        nSubsidy = 2 * COIN;
+    } else if (nHeight >= 65700
+        nSubsidy = 1.5 * COIN;
+    } else if (nHeight > 1) {
+        nSubsidy = 1 * COIN;
     } else if (nHeight == 1) {
-        nSubsidy = 6570000 * COIN; //pre-mine mostly will got to swaps
+        nSubsidy = 6142950 * COIN; //pre-mine mostly will got to swaps
     }
 
     return nSubsidy;
