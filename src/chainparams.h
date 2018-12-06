@@ -101,6 +101,7 @@ public:
     std::string ObfuscationPoolDummyAddress() const { return strObfuscationPoolDummyAddress; }
     int64_t StartMasternodePayments() const { return nStartMasternodePayments; }
     int64_t Budget_Fee_Confirmations() const { return nBudget_Fee_Confirmations; }
+    CAmount GetRequiredMNCollateral() const { return nRequiredMNCollateral; }
 
     CBaseChainParams::Network NetworkID() const { return networkID; }
 
@@ -183,6 +184,7 @@ protected:
     int nZerocoinStartHeight;
     int nZerocoinStartTime;
     int nZerocoinRequiredStakeDepth;
+    CAmount nRequiredMNCollateral;
 
     int nBlockEnforceSerialRange;
     int nBlockRecalculateAccumulators;

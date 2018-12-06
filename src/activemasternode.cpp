@@ -14,7 +14,7 @@
 #include "spork.h"
 
 //
-// Bootup the Masternode, look for a 15000 SVG input and register on the network
+// Bootup the Masternode, look for a 10000 SVG input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {
@@ -458,7 +458,7 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode()
 
     // Filter
     BOOST_FOREACH (const COutput& out, vCoins) {
-        if (out.tx->vout[out.i].nValue == 15000 * COIN) { //exactly
+        if (out.tx->vout[out.i].nValue == Params().GetRequiredMNCollateral()) { //exactly 10,000 coin collateral
             filteredCoins.push_back(out);
         }
     }

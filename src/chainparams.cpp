@@ -131,6 +131,7 @@ public:
         nMaturity = 99;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 25000000 * COIN;
+        nRequiredMNCollateral = 10000 * COIN; //Requires 10,000 coin for masternde collateral 
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1000;
@@ -264,6 +265,8 @@ public:
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197;
         nMaxMoneyOut = 25000000 * COIN;
+        nRequiredMNCollateral = 10000 * COIN; //Requires 10,000 coin for masternde collateral 
+        
         nZerocoinStartHeight = 250;
         nZerocoinStartTime = 1541797200;		/* Fri Nov  9 21:00:00 UTC 2018 */
         nBlockEnforceSerialRange = 2147483646;		/* (disabled) Enforce serial range starting this block */
