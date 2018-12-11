@@ -126,7 +126,7 @@ public:
     int Zerocoin_Block_LastGoodCheckpoint() const { return nBlockLastGoodCheckpoint; }
     int Zerocoin_StartTime() const { return nZerocoinStartTime; }
     int Block_Enforce_Invalid() const { return nBlockEnforceInvalidUTXO; }
-    int Zerocoin_Block_V2_Start() const { return nBlockZerocoinV2; }
+    int Zerocoin_Block_V2_Start() const { return nZerocoinStartHeight; } //used to be nBlockZerocoinV2, but why since it's the same value
     CAmount InvalidAmountFiltered() const { return nInvalidAmountFiltered; };
 
 protected:

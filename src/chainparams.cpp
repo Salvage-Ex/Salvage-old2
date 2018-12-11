@@ -136,7 +136,7 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1000;
         nModifierUpdateBlock = 1;
-        nZerocoinStartHeight = 250000;           //Check how the block and time works
+        nZerocoinStartHeight = 1001;           //Check how the block and time works
         nZerocoinStartTime = 1543611600;		/* Fri Nov 30 21:00:00 UTC 2018 */
         nBlockEnforceSerialRange = 2147483646;		/* (disabled) Enforce serial range starting this block */
         nBlockRecalculateAccumulators = 2147483646;	/* (disabled) Trigger a recalculation of accumulators */
@@ -144,7 +144,7 @@ public:
         nBlockLastGoodCheckpoint = 2147483646;		/* (disabled) Last valid accumulator checkpoint */
         nBlockEnforceInvalidUTXO = 2147483646;		/* (disabled) Start enforcing the invalid UTXO's */
         nInvalidAmountFiltered = 0;			/* Amount of invalid coins filtered through exchanges, that should be considered valid */
-        nBlockZerocoinV2 = 2147483646;			/* (disabled) The block that zerocoin v2 becomes active - roughly Sat Dec 15 08:00:00 UTC 2018 */
+        nBlockZerocoinV2 = 1001;			/* (disabled) The block that zerocoin v2 becomes active - roughly Sat Dec 15 08:00:00 UTC 2018 */
         nEnforceNewSporkKey = 1527822208;		/* Fri Jun  1 05:03:28 CEST 2018: sporks signed after must use the new spork key */
         nRejectOldSporkKey = 1528427008;		/* Fri Jun  8 05:03:28 CEST 2018: after that reject old spork key */
 
@@ -267,7 +267,7 @@ public:
         nMaxMoneyOut = 25000000 * COIN;
         nRequiredMNCollateral = 10000 * COIN; //Requires 10,000 coin for masternde collateral 
         
-        nZerocoinStartHeight = 250;
+        nZerocoinStartHeight = 501;
         nZerocoinStartTime = 1541797200;		/* Fri Nov  9 21:00:00 UTC 2018 */
         nBlockEnforceSerialRange = 2147483646;		/* (disabled) Enforce serial range starting this block */
         nBlockRecalculateAccumulators = 2147483646;	/* (disabled) Trigger a recalculation of accumulators */
@@ -275,7 +275,7 @@ public:
         nBlockLastGoodCheckpoint = 2147483646;		/* (disabled) Last valid accumulator checkpoint */
         nBlockEnforceInvalidUTXO = 2147483646;		/* (disabled) Start enforcing the invalid UTXO's */
         nInvalidAmountFiltered = 0;			/* Amount of invalid coins filtered through exchanges, that should be considered valid */
-        nBlockZerocoinV2 = 2147483646;			/* (disabled) The block that zerocoin v2 becomes active */
+        nBlockZerocoinV2 = 501			/* (disabled) The block that zerocoin v2 becomes active */
         nEnforceNewSporkKey = 1540760400;		/* Sun Oct 28 21:00:00 UTC 2018: sporks signed after must use the new spork key */
         nRejectOldSporkKey = 1541325600;		/* Sun Nov  4 21:00:00 UTC 2018: after that reject old spork key */
 
