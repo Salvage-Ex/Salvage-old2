@@ -188,13 +188,12 @@ public:
         vSeeds.push_back(CDNSSeedData("seed9.salvageproject.org", "seed9.salvageproject.org")); // 9th DNS Seed 
 
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 68);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 16);
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 193);
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
-        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x6d).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);		// Start with 'S' from https://en.bitcoin.it/wiki/List_of_address_prefixes
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 65);		// Start with 'T' from https://en.bitcoin.it/wiki/List_of_address_prefixes
+        base58Prefixes[SECRET_KEY]     = std::vector<unsigned char>(1, 193);
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3F)(0x46)(0x25)(0x37).convert_to_container<std::vector<unsigned char> >(); // Start with 'SVGP'
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3F)(0x46)(0x25)(0x3F).convert_to_container<std::vector<unsigned char> >(); // Start with 'SVGS'
+        base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x92)(0xf0).convert_to_container<std::vector<unsigned char> >(); // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md 109 	0x8000006d
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
@@ -294,15 +293,12 @@ public:
         vSeeds.push_back(CDNSSeedData("seed3t.salvageproject.org", "seed3t.salvageproject.org"));
         vSeeds.push_back(CDNSSeedData("seed4t.salvageproject.org", "seed4t.salvageproject.org"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);  // Testnet salvage addresses start with 'a'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);  // Testnet salvage script addresses start with '8' or '9'
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 193);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet Salvage BIP32 pubkeys start with 'DRKV'
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Salvage BIP32 prvkeys start with 'DRKP'
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Salvage BIP44 coin type is '1' (All coin's testnet default)
-        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);	// Start with 's' from https://en.bitcoin.it/wiki/List_of_address_prefixes
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 127);	// start with 't' from https://en.bitcoin.it/wiki/List_of_address_prefixes
+        base58Prefixes[SECRET_KEY]     = std::vector<unsigned char>(1, 193);
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3F)(0x46)(0x25)(0x41).convert_to_container<std::vector<unsigned char> >(); // Start with 'SVGT'
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3F)(0x46)(0x25)(0x44).convert_to_container<std::vector<unsigned char> >(); // Start with 'SVGU'
+        base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >(); // Testnet Salvage BIP44 coin type is '1' (All coin's testnet default)
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
