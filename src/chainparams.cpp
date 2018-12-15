@@ -117,7 +117,7 @@ public:
         pchMessageStart[1] = 0xc3;
         pchMessageStart[2] = 0x15;
         pchMessageStart[3] = 0x54;
-        vAlertPubKey = ParseHex("04801fc7f9fb1dea0660fd5448a7e16feca056e762d2da6f64a0b7262a04ac76a5dedef072ae9daada2f2d3080bfcb3861b91b73ad6ceaf2c0ab1f87416f19252d");
+        vAlertPubKey = ParseHex("04307320ddf6bb1f1847ed4814515742bda9bb10415ce492f669a7ea7c4590e520b60febafd3a84b3c5528a303017bde0a88bbc7b78eee117ee6c4ba6f7c9e4a7a");
         nDefaultPort = 16999;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // SVG starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
@@ -207,7 +207,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04323d68746d48c4360caa85b40fb8536c729d03c9c3dd8258dda0f5945a0eeaed8ec2bbdb8a8ddb84502763c0cf8c6bfb1838faa660a5d0ea066711d6038e0e2c";
+        strSporkKey = "04dd67348b812cc21e43ea9d88517df604b05876330ef325435d29950fb77240da168231abeba65d0ecdecfd4632e821a271c279b9e571dff54039d9fba0fd6284";
         //strSporkKeyOld = "0478c3e932fbe183b2f665de937866cb1cfc5ed4b0bf733b72286f265ffc03ff52dfd669fbb3f77d630e5393da65c721a9a891d2c4c6aa515dfd25ffe545582357";
 
         strObfuscationPoolDummyAddress = "SYuYowBAuCLdgSUDEvFp9CGzK2isZXHN7r";
@@ -253,7 +253,7 @@ public:
         pchMessageStart[1] = 0x64;
         pchMessageStart[2] = 0x54;
         pchMessageStart[3] = 0x65;
-        vAlertPubKey = ParseHex("0464036395ef1dceec79404ca837b7ca46a586b6f676fbcd200ee61d3111a0d3a041181ee516ce402087daec9ff22bcf197420c9de1db500cbd18598bd2b40fb52");
+        vAlertPubKey = ParseHex("04abac66ae10ca99a58d2bf464ed97328c69a5c96ddaacae797c595990c86e01d4c9f16d490d047dac06a24c36e1575e6f6ee5e49f3677df12e85ae1ed9c37fa88");
         nDefaultPort = 17888;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
@@ -312,7 +312,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "047b28193ff31a5234504edfe29f5cf9cd3bc99e916a7bc694b954b7c997a8eca6254cc1a560174bcb23e0461aa552cc47437087d7ebab552ec9679a7823983fc9";
+        strSporkKey = "04bb4cc355d8b119f89b3cf9353f2c9e50fbea04276cdd97f4d7a6a9eaeec929e232d4a45431e28a45df5ed5a96162ece24f3b398adfc03544239fd33465d5620f";
         //strSporkKeyOld = "04363509d5c65f5a9ca7ceedad4887007ae85469d249a6f566b788504ee5e105bcf1bbc515f49a7aac3bceb8864bb2ba84bebd92c66ff9022309e2bfbd5f70d11f";
         
 		strObfuscationPoolDummyAddress = "sVf63d2gveDQ2AC2CqoW11ZfD7jpqTPzVN";
