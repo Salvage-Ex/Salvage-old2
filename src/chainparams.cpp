@@ -170,7 +170,7 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1535069268;
-        genesis.nBits = 0x207fffff;
+        genesis.nBits = 0x1e0fffff;
         genesis.nNonce = 3271076;
 
         hashGenesisBlock = genesis.GetHash();
@@ -209,7 +209,9 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "04323d68746d48c4360caa85b40fb8536c729d03c9c3dd8258dda0f5945a0eeaed8ec2bbdb8a8ddb84502763c0cf8c6bfb1838faa660a5d0ea066711d6038e0e2c";
         //strSporkKeyOld = "0478c3e932fbe183b2f665de937866cb1cfc5ed4b0bf733b72286f265ffc03ff52dfd669fbb3f77d630e5393da65c721a9a891d2c4c6aa515dfd25ffe545582357";
-        strObfuscationPoolDummyAddress = "sejss9knA6c3EATnuraxmZvWBfUYkw2cqW";
+
+        strObfuscationPoolDummyAddress = "SYuYowBAuCLdgSUDEvFp9CGzK2isZXHN7r";
+
         nStartMasternodePayments = 1525192183; // Tue May  1 18:29:43 CEST 2018
 
         /** Zerocoin */
@@ -312,8 +314,10 @@ public:
         nPoolMaxTransactions = 2;
         strSporkKey = "047b28193ff31a5234504edfe29f5cf9cd3bc99e916a7bc694b954b7c997a8eca6254cc1a560174bcb23e0461aa552cc47437087d7ebab552ec9679a7823983fc9";
         //strSporkKeyOld = "04363509d5c65f5a9ca7ceedad4887007ae85469d249a6f566b788504ee5e105bcf1bbc515f49a7aac3bceb8864bb2ba84bebd92c66ff9022309e2bfbd5f70d11f";
-        strObfuscationPoolDummyAddress = "sMPC3oo2a3L8z63LAmPJtqmX4SwJ3tMt5a";
-        nStartMasternodePayments = 1540587600; // Fri Oct 26 21:00:00 UTC 2018
+        
+		strObfuscationPoolDummyAddress = "sVf63d2gveDQ2AC2CqoW11ZfD7jpqTPzVN";
+        
+		nStartMasternodePayments = 1540587600; // Fri Oct 26 21:00:00 UTC 2018
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
     }
@@ -346,13 +350,18 @@ public:
         nTargetTimespan = 24 * 60 * 60; // SVG: 1 day
         nTargetSpacing = 2 * 60;        // SVG: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1527217410;
-        genesis.nBits = 0x207fffff;
-        genesis.nNonce = 7;
+        nDefaultPort = 17555;
+
+        genesis.hashPrevBlock = 0;
+        genesis.hashMerkleRoot = genesis.BuildMerkleTree();
+        genesis.nVersion = 1;
+        genesis.nTime = 1535069268;
+        genesis.nBits = 0x1e0fffff;
+        genesis.nNonce = 3271076;
 
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 17555;
-        assert(hashGenesisBlock == uint256("0x7efc7852063bf1df9faa80bcc5a2572a3be0e975d4c35fc7ba82b16b1693052d"));
+        assert(hashGenesisBlock == uint256("0x0000049e70db758199bca1a530c68ea0162558b42abba1f60a60d0991ff60314"));
+        assert(genesis.hashMerkleRoot == uint256("827768506cc21bf011726794ec9a605829591df56847317bf7a3e458328ffc00"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
