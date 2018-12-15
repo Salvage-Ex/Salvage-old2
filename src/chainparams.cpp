@@ -170,7 +170,7 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1535069268;
-        genesis.nBits = 0x504365055;
+        genesis.nBits = 0x207fffff;
         genesis.nNonce = 3271076;
 
         hashGenesisBlock = genesis.GetHash();
@@ -275,7 +275,7 @@ public:
         nBlockLastGoodCheckpoint = 2147483646;		/* (disabled) Last valid accumulator checkpoint */
         nBlockEnforceInvalidUTXO = 2147483646;		/* (disabled) Start enforcing the invalid UTXO's */
         nInvalidAmountFiltered = 0;			/* Amount of invalid coins filtered through exchanges, that should be considered valid */
-        nBlockZerocoinV2 = 501			/* (disabled) The block that zerocoin v2 becomes active */
+        nBlockZerocoinV2 = 501;     		/* (disabled) The block that zerocoin v2 becomes active */
         nEnforceNewSporkKey = 1540760400;		/* Sun Oct 28 21:00:00 UTC 2018: sporks signed after must use the new spork key */
         nRejectOldSporkKey = 1541325600;		/* Sun Nov  4 21:00:00 UTC 2018: after that reject old spork key */
 

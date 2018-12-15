@@ -1967,7 +1967,7 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
                 if (nCoinType == ONLY_DENOMINATED) {
                     found = IsDenominatedAmount(pcoin->vout[i].nValue);
                 } else if (nCoinType == ONLY_NOT15000IFMN) {
-                    found = !(fMasterNode && pcoin->vout[i].nValue == Params().GetRequiredMNCollateral();
+                    found = !(fMasterNode && pcoin->vout[i].nValue == Params().GetRequiredMNCollateral());
                 } else if (nCoinType == ONLY_NONDENOMINATED_NOT15000IFMN) {
                     if (IsCollateralAmount(pcoin->vout[i].nValue)) continue; // do not use collateral amounts
                     found = !IsDenominatedAmount(pcoin->vout[i].nValue);
