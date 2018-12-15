@@ -1853,7 +1853,7 @@ int64_t GetTreasuryPayment(int nHeight, int64_t blockValue, bool isZSVGStake)
         ret = blockValue * 0.1;
     }
     
-	return ret;
+    return ret;
 }
 
 bool IsInitialBlockDownload()
@@ -5325,17 +5325,18 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             return false;
         }
 
-        // SVG: We use certain sporks during IBD, so check to see if they are
-        // available. If not, ask the first peer connected for them.
-        bool fMissingSporks = !pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
-                !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&
-                !pSporkDB->SporkExists(SPORK_16_ZEROCOIN_MAINTENANCE_MODE);
-
-        if (fMissingSporks || !fRequestedSporksIDB){
-            LogPrintf("asking peer for sporks\n");
-            pfrom->PushMessage("getsporks");
-            fRequestedSporksIDB = true;
-        }
+        // ** // SVG: We use certain sporks during IBD, so check to see if they are
+        // ** // available. If not, ask the first peer connected for them.
+        // ** bool fMissingSporks = 
+        // **         !pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
+        // **         !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&
+        // **         !pSporkDB->SporkExists(SPORK_16_ZEROCOIN_MAINTENANCE_MODE);
+        // ** 
+        // ** if (fMissingSporks || !fRequestedSporksIDB){
+        // **     LogPrintf("asking peer for sporks\n");
+        // **     pfrom->PushMessage("getsporks");
+        // **     fRequestedSporksIDB = true;
+        // ** }
 
         int64_t nTime;
         CAddress addrMe;
@@ -6112,15 +6113,15 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         pfrom->fRelayTxes = true;
     }
 
-
     else if (strCommand == "reject") {
-        if (fDebug) {
-            try {
-                string strMsg;
-                unsigned char ccode;
-                string strReason;
-                vRecv >> LIMITED_STRING(strMsg, CMessageHeader::COMMAND_SIZE) >> ccode >> LIMITED_STRING(strReason, MAX_REJECT_MESSAGE_LENGTH);
+        string strMsg;
+        unsigned char ccode;
+        string strReason;
+		
+        try {
+            vRecv >> LIMITED_STRING(strMsg, CMessageHeader::COMMAND_SIZE) >> ccode >> LIMITED_STRING(strReason, MAX_REJECT_MESSAGE_LENGTH);
 
+            if (fDebug) {
                 ostringstream ss;
                 ss << strMsg << " code " << itostr(ccode) << ": " << strReason;
 
@@ -6130,9 +6131,22 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                     ss << ": hash " << hash.ToString();
                 }
                 LogPrint("net", "Reject %s\n", SanitizeString(ss.str()));
-            } catch (std::ios_base::failure& e) {
-                // Avoid feedback loops by preventing reject messages from triggering a new reject message.
-                LogPrint("net", "Unparseable reject message received\n");
+            }
+        } catch (std::ios_base::failure& e) {
+            // Avoid feedback loops by preventing reject messages from triggering a new reject message.
+            LogPrint("net", "Unparseable reject message received\n");
+        }
+        
+        // If I receive a REJECT_OBSOLETE reason I check the current Protocol Version
+        if( ccode == REJECT_OBSOLETE )
+        {
+            if( PROTOCOL_VERSION < ActiveProtocol() )
+            {
+                // My node is too old
+                LogPrintf("Your node is too old (%d), you MUST upgrade to protocol version %d, exiting...", PROTOCOL_VERSION, ActiveProtocol());
+                StartShutdown();
+            } else {
+                // If my node is not too old probably my sporks are not updated
             }
         }
     } else {
@@ -6156,15 +6170,19 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 //       it was the one which was commented out
 int ActiveProtocol()
 {
-    // SPORK_14 is used for 70716 (v1.0.0+), commented out now.
-    //if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
-    //        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-
-    // SPORK_15 was used for 70718 (v3.0.0+).
+    int activeProt = MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
+    
     if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-
-    return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
+    {
+        activeProt = MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_2;
+    } else {
+        if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
+        {
+            activeProt = MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_1;
+        }
+    }
+    
+    return activeProt;
 }
 
 // requires LOCK(cs_vRecvMsg)
