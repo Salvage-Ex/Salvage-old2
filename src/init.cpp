@@ -599,6 +599,8 @@ std::string LicenseInfo()
            "\n" +
            FormatParagraph(_("This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.")) +
            "\n";
+           FormatParagraph(_("This software contains some icons derived and designed by Gregor Cresnar from Flaticon.")) +
+           "\n";
 }
 
 static void BlockNotifyCallback(const uint256& hashNewTip)
