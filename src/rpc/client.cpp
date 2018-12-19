@@ -145,6 +145,7 @@ static const CRPCConvertParam vRPCConvertParams[] =
         {"searchdzsvg", 1},
         {"searchdzsvg", 2},
         {"getaccumulatorvalues", 0},
+        {"calculateaccumulatorvalues", 0},
         {"getfeeinfo", 0}
     };
 
