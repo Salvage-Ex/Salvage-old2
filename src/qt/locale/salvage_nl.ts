@@ -2558,7 +2558,7 @@ zSVG zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 m
         <translation>Totale Saldi, inclusief onbevestigde en onvolwassen zSVG</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation>Totale Zerocoin Saldi:</translation>
     </message>
     <message>

@@ -2492,7 +2492,7 @@ Les zSVG sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 mon
         <translation>Solde total incluant les zSVG non confirmés et immatures</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation>Solde total Zerocoin:</translation>
     </message>
     <message>

@@ -15,8 +15,8 @@
 #   success/failure.
 #
 #   If EXTRA-FLAGS is defined, it is added to the linker's default flags
-#   when the check is done.  The check is thus made with the flags: "LDFLAGS
-#   EXTRA-FLAGS FLAG".  This can for example be used to force the linker to
+#   when the check is done. The check is thus made with the flags: "LDFLAGS
+#   EXTRA-FLAGS FLAG". This can for example be used to force the linker to
 #   issue an error when a bad flag is given.
 #
 #   INPUT gives an alternative input source to AC_LINK_IFELSE.

@@ -2557,7 +2557,7 @@ zSVG er modne, når de har mere end 20 bekræftelser OG mere end 2 minutter med 
         <translation>Samlet saldo inklusive ubekræftede og umodne zSVG</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation>Samlet Zerocoin Balance:</translation>
     </message>
     <message>

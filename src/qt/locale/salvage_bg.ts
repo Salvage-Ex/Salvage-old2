@@ -2546,7 +2546,7 @@ zSVG са узрели, тогава когато имат повече от 20 
         <translation>Обща Наличност включеително непотвърдените и неузрели zSVG</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation>Обща Zeroicoin наличност:</translation>
     </message>
     <message>

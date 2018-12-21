@@ -41,7 +41,7 @@ install *python-zmq*, though this is not necessary for daemon operation.
 ## Enabling
 
 By default, the ZeroMQ feature is automatically compiled in if the necessary
-prerequisites are found.  To disable, use --disable-zmq during the *configure*
+prerequisites are found. To disable, use --disable-zmq during the *configure*
 step of building salvaged:
 
 ```

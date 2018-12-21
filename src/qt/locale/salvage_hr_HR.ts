@@ -2558,7 +2558,7 @@ zSVG su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominac
         <translation>Ukupni saldo uključujući nepotvrđeni i nedovršeni zSVG</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation>Ukupno Zerocoin Stanje:</translation>
     </message>
     <message>

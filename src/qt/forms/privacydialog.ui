@@ -261,7 +261,7 @@
                               <string>Total Balance including unconfirmed and immature zSVG</string>
                              </property>
                              <property name="text">
-                              <string>Total Zerocoin  Balance:</string>
+                              <string>Total Zerocoin Balance:</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1222,7 +1222,7 @@ zSVG are mature when they have more than 20 confirmations AND more than 2 mints 
                            <string>Total Balance including unconfirmed and immature zSVG</string>
                           </property>
                           <property name="text">
-                           <string>Total Zerocoin  Balance:</string>
+                           <string>Total Zerocoin Balance:</string>
                           </property>
                           <property name="alignment">
                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>

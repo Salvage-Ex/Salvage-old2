@@ -9,14 +9,14 @@
 # DESCRIPTION
 #
 #   Check whether the given FLAG works with the current language's
-#   preprocessor or gives an error.  (Warnings, however, are ignored)
+#   preprocessor or gives an error. (Warnings, however, are ignored)
 #
 #   ACTION-SUCCESS/ACTION-FAILURE are shell commands to execute on
 #   success/failure.
 #
 #   If EXTRA-FLAGS is defined, it is added to the preprocessor's default
-#   flags when the check is done.  The check is thus made with the flags:
-#   "CPPFLAGS EXTRA-FLAGS FLAG".  This can for example be used to force the
+#   flags when the check is done. The check is thus made with the flags:
+#   "CPPFLAGS EXTRA-FLAGS FLAG". This can for example be used to force the
 #   preprocessor to issue an error when a bad flag is given.
 #
 #   INPUT gives an alternative input source to AC_PREPROC_IFELSE.

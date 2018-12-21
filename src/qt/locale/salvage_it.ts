@@ -2044,7 +2044,7 @@ Gli zSVG sono maturi quando hanno più di 20 conferme E più di 2 conii della st
         <translation>Saldo totale inclusi zSVG non confermati e non maturi</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation>Saldo totale Zerocoin:</translation>
     </message>
     <message>

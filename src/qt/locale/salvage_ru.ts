@@ -2557,7 +2557,7 @@ zSVG are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation>Общий баланс, включая неподтвержденные и незрелые zSVG</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation>Общий баланс Zerocoin:</translation>
     </message>
     <message>

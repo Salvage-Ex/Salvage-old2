@@ -2342,7 +2342,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Bendras balansas, įskaitant nepatvirtintą ir nesubrendusį zSVG</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation>Visas Zerocoin Balansas:</translation>
     </message>
     <message>

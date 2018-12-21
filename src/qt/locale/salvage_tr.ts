@@ -2477,8 +2477,8 @@ zSVG, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhep
         <translation>Doğrulanmamış ve olgunlaşmamış zSVG dahil toplam bakiye</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
-        <translation>Total Zerocoin  Bakiye:</translation>
+        <source>Total Zerocoin Balance:</source>
+        <translation>Total Zerocoin Bakiye:</translation>
     </message>
     <message>
         <source>Denominations with value 1:</source>

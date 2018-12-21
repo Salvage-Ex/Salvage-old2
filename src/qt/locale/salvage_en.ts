@@ -3259,7 +3259,7 @@ zSVG are mature when they have more than 20 confirmations AND more than 2 mints 
     </message>
     <message>
         <location line="-35"/>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

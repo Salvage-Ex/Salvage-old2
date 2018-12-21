@@ -2042,7 +2042,7 @@ https://www.transifex.com/salvage-project/salvage-project-translations</translat
         <translation>Balanço Total incluindo não confirmadas e imaturas zSVG</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation>Balanço Total Zerocoin:</translation>
     </message>
     <message>

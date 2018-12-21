@@ -2557,7 +2557,7 @@ zSVG는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 �
         <translation>승인중이거나, 생성중인 제로코인도 포함된 전체 잔액입니다.</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation>제로코인 잔액 :</translation>
     </message>
     <message>

@@ -2549,7 +2549,7 @@ zSVG sind ausgereift wenn sie mehr als 20 Bestätigungen und mehr als 2 Prägung
         <translation>Totales Guthaben, einschließlich unbestätigter und unreifer zSVG</translation>
     </message>
     <message>
-        <source>Total Zerocoin  Balance:</source>
+        <source>Total Zerocoin Balance:</source>
         <translation>Totales Zerocoin Guthaben:</translation>
     </message>
     <message>
