@@ -480,7 +480,7 @@ bool GetAccumulatorValue(int& nHeight, const libzerocoin::CoinDenomination denom
     return true;
 }
 
-bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator, AccumulatorWitness& witness, int nSecurityLevel, int& nMintsAdded, string& strError, CBlockIndex* pindexCheckpoint)
+bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator, AccumulatorWitness& witness, int nSecurityLevel, int& nMintsAdded, bool& isBrokenChecksum, string& strError, CBlockIndex* pindexCheckpoint)
 {
     LogPrint("zero", "%s: generating\n", __func__);
     int nLockAttempts = 0;
@@ -553,11 +553,22 @@ bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator
 
             bnAccValue = 0;
             uint256 nCheckpointSpend = chainActive[pindex->nHeight + 10]->nAccumulatorCheckpoint;
-            if (!GetAccumulatorValueFromDB(nCheckpointSpend, coin.getDenomination(), bnAccValue) || bnAccValue == 0)
-                return error("%s : failed to find checksum in database for accumulator", __func__);
+            
+            // Use it only after Zerocoin v2 starting height.
+            if (pindex->nHeight >= Params().Zerocoin_Block_V2_Start()) {
+                if (!GetAccumulatorValueFromDB(nCheckpointSpend, coin.getDenomination(), bnAccValue) || bnAccValue == 0)
+                    return error("%s : failed to find checksum in database for accumulator", __func__);
 
-            accumulator.setValue(bnAccValue);
+                accumulator.setValue(bnAccValue);
+            }
+
             break;
+        }
+
+        // Add Zerocoin v1 mints to accumulator.
+        if (pindex->nHeight >= Params().Zerocoin_StartHeight() && pindex->nHeight < Params().Zerocoin_Block_V2_Start()) {
+            isBrokenChecksum = true;
+            AddBlockMintsToAccumulator(coin, nHeightMintAdded, pindex, &accumulator, false);
         }
 
         nMintsAdded += AddBlockMintsToAccumulator(coin, nHeightMintAdded, pindex, &witnessAccumulator, true);

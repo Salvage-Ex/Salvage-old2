@@ -976,8 +976,9 @@ bool CheckZerocoinSpend(const CTransaction& tx, bool fVerifySignature, CValidati
         if (newSpend.getTxOutHash() != hashTxOut)
             return state.DoS(100, error("Zerocoinspend does not use the same txout that was used in the SoK"));
 
-        // Skip signature verification during initial block download
-        if (fVerifySignature) {
+        // Skip signature verification during initial block download and until Zerocoin v2 starting height.
+        //May not need this conditional at all if we start ZerocoinV2 from beginning. 
+        if (fVerifySignature && chainActive.Height() >= Params().Zerocoin_Block_V2_Start()) {
             //see if we have record of the accumulator used in the spend tx
             CBigNum bnAccumulatorValue = 0;
             if (!zerocoinDB->ReadAccumulatorValue(newSpend.getAccumulatorChecksum(), bnAccumulatorValue)) {
@@ -2559,7 +2560,7 @@ bool UpdateZSVGSupply(const CBlock& block, CBlockIndex* pindex)
     std::list<libzerocoin::CoinDenomination> listSpends = ZerocoinSpendListFromBlock(block, fFilterInvalid);
 
     // Initialize zerocoin supply to the supply from previous block
-    if (pindex->pprev && pindex->pprev->GetBlockHeader().nVersion > 3) {
+    if (pindex->pprev && pindex->pprev->GetBlockHeader().nVersion > 2) {
         for (auto& denom : zerocoinDenomList) {
             pindex->mapZerocoinSupply.at(denom) = pindex->pprev->mapZerocoinSupply.at(denom);
         }
