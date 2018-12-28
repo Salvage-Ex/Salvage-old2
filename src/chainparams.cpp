@@ -137,6 +137,7 @@ public:
         nLastPOWBlock = 1000;
         nModifierUpdateBlock = 1;
         nZerocoinStartHeight = 1001;           //Check how the block and time works
+        nBlockFirstGoodChecksum = 1001;		/* First block with valid Zerocoin checksums ***May need to be updated after first block*/
         nZerocoinStartTime = 1543611600;		/* Fri Nov 30 21:00:00 UTC 2018 */
         nBlockEnforceSerialRange = 2147483646;		/* (disabled) Enforce serial range starting this block */
         nBlockRecalculateAccumulators = 2147483646;	/* (disabled) Trigger a recalculation of accumulators */
@@ -270,7 +271,8 @@ public:
         
         nZerocoinStartHeight = 501;
         nZerocoinStartTime = 1541797200;		/* Fri Nov  9 21:00:00 UTC 2018 */
-        nBlockEnforceSerialRange = 2147483646;		/* (disabled) Enforce serial range starting this block */
+        nBlockFirstGoodChecksum = 501;		/* First block with valid Zerocoin checksums */
+        nBlockEnforceSerialRange = 501;		/* Enforce serial range starting this block */
         nBlockRecalculateAccumulators = 2147483646;	/* (disabled) Trigger a recalculation of accumulators */
         nBlockFirstFraudulent = 2147483646;		/* (disabled) First block that bad serials emerged */
         nBlockLastGoodCheckpoint = 2147483646;		/* (disabled) Last valid accumulator checkpoint */

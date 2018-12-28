@@ -238,6 +238,12 @@ bool CalculateAccumulatorCheckpoint(int nHeight, uint256& nCheckpoint, Accumulat
         return true;
     }
 
+       // Skip broken checkpoint range.
+    if (nHeight < Params().Zerocoin_Block_FirstGoodChecksum()) {
+        nCheckpoint = 0;
+        return true;
+    }
+
     //the checkpoint is updated every ten blocks, return current active checkpoint if not update block
     if (nHeight % 10 != 0) {
         nCheckpoint = chainActive[nHeight - 1]->nAccumulatorCheckpoint;
@@ -461,9 +467,11 @@ bool GetAccumulatorValue(int& nHeight, const libzerocoin::CoinDenomination denom
 
     //Every situation except for about 20 blocks should use this method
     uint256 nCheckpointBeforeMint = chainActive[nHeight]->nAccumulatorCheckpoint;
-    if (nHeight > Params().Zerocoin_Block_V2_Start() + 20)
-        return GetAccumulatorValueFromDB(nCheckpointBeforeMint, denom, bnAccValue);
-
+    if (nHeight > Params().Zerocoin_Block_V2_Start() + 20){
+        if (nHeight >= Params().Zerocoin_Block_FirstGoodChecksum()){
+            return GetAccumulatorValueFromDB(nCheckpointBeforeMint, denom, bnAccValue);
+        }
+    }
     int nHeightCheckpoint = 0;
     AccumulatorCheckpoints::Checkpoint checkpoint = AccumulatorCheckpoints::GetClosestCheckpoint(nHeight, nHeightCheckpoint);
     if (nHeightCheckpoint < 0) {
@@ -554,8 +562,8 @@ bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator
             bnAccValue = 0;
             uint256 nCheckpointSpend = chainActive[pindex->nHeight + 10]->nAccumulatorCheckpoint;
             
-            // Use it only after Zerocoin v2 starting height.
-            if (pindex->nHeight >= Params().Zerocoin_Block_V2_Start()) {
+            // Skip broken checkpoint range.
+            if (pindex->nHeight >= Params().Zerocoin_Block_FirstGoodChecksum()) {
                 if (!GetAccumulatorValueFromDB(nCheckpointSpend, coin.getDenomination(), bnAccValue) || bnAccValue == 0)
                     return error("%s : failed to find checksum in database for accumulator", __func__);
 
@@ -565,8 +573,8 @@ bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator
             break;
         }
 
-        // Add Zerocoin v1 mints to accumulator.
-        if (pindex->nHeight >= Params().Zerocoin_StartHeight() && pindex->nHeight < Params().Zerocoin_Block_V2_Start()) {
+        // Skip broken checkpoint range.
+        if (pindex->nHeight >= Params().Zerocoin_StartHeight() && pindex->nHeight < Params().Zerocoin_Block_FirstGoodChecksum()){
             isBrokenChecksum = true;
             AddBlockMintsToAccumulator(coin, nHeightMintAdded, pindex, &accumulator, false);
         }
