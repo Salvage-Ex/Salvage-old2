@@ -980,7 +980,7 @@ bool CheckZerocoinSpend(const CTransaction& tx, bool fVerifySignature, CValidati
         // Get block height of transaction
         CBigNum bnActualSerial = newSpend.getCoinSerialNumber();
         uint256 txHash;
-        int nHeight;
+        int nHeight = 0;
         if (zerocoinDB->ReadCoinSpend(bnActualSerial, txHash)) {
             CTransaction txMinted;
             uint256 hashBlock;
