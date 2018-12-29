@@ -144,7 +144,6 @@ public:
         nBlockFirstFraudulent = 2147483646;		/* (disabled) First block that bad serials emerged */
         nBlockLastGoodCheckpoint = 2147483646;		/* (disabled) Last valid accumulator checkpoint */
         nBlockEnforceInvalidUTXO = 2147483646;		/* (disabled) Start enforcing the invalid UTXO's */
-        nInvalidAmountFiltered = 0;			/* Amount of invalid coins filtered through exchanges, that should be considered valid */
         nBlockZerocoinV2 = 1001;			/* (disabled) The block that zerocoin v2 becomes active - roughly Sat Dec 15 08:00:00 UTC 2018 */
         nEnforceNewSporkKey = 1527822208;		/* Fri Jun  1 05:03:28 CEST 2018: sporks signed after must use the new spork key */
         nRejectOldSporkKey = 1528427008;		/* Fri Jun  8 05:03:28 CEST 2018: after that reject old spork key */
@@ -277,7 +276,6 @@ public:
         nBlockFirstFraudulent = 2147483646;		/* (disabled) First block that bad serials emerged */
         nBlockLastGoodCheckpoint = 2147483646;		/* (disabled) Last valid accumulator checkpoint */
         nBlockEnforceInvalidUTXO = 2147483646;		/* (disabled) Start enforcing the invalid UTXO's */
-        nInvalidAmountFiltered = 0;			/* Amount of invalid coins filtered through exchanges, that should be considered valid */
         nBlockZerocoinV2 = 501;     		/* The block that zerocoin v2 becomes active */
         nEnforceNewSporkKey = 1540760400;		/* Sun Oct 28 21:00:00 UTC 2018: sporks signed after must use the new spork key */
         nRejectOldSporkKey = 1541325600;		/* Sun Nov  4 21:00:00 UTC 2018: after that reject old spork key */
