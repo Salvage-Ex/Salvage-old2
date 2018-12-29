@@ -913,7 +913,7 @@ std::string CBudgetManager::GetRequiredPaymentsString(int nBlockHeight)
 
 CAmount CBudgetManager::GetTotalBudget(int nHeight)
 {
-
+    //Check if this will interfer with Zio's Treasury code
     /* get block value and calculate from that. */
     CAmount nSubsidy = 0;
 

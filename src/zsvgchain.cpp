@@ -208,7 +208,7 @@ void FindMints(std::vector<CMintMeta> vMintsToFind, std::vector<CMintMeta>& vMin
 
 int GetZerocoinStartHeight()
 {
-    return Params().Zerocoin_StartHeight();
+    return Params().Zerocoin_Block_V2_Start();
 }
 
 bool GetZerocoinMint(const CBigNum& bnPubcoin, uint256& txHash)
@@ -263,11 +263,11 @@ std::string ReindexZerocoinDB()
 
     uiInterface.ShowProgress(_("Reindexing zerocoin database..."), 0);
 
-    CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
+    CBlockIndex* pindex = chainActive[Params().Zerocoin_Block_V2_Start()];
     std::vector<std::pair<libzerocoin::CoinSpend, uint256> > vSpendInfo;
     std::vector<std::pair<libzerocoin::PublicCoin, uint256> > vMintInfo;
     while (pindex) {
-        uiInterface.ShowProgress(_("Reindexing zerocoin database..."), std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) / (double)(chainActive.Height() - Params().Zerocoin_StartHeight()) * 100))));
+        uiInterface.ShowProgress(_("Reindexing zerocoin database..."), std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_Block_V2_Start()) / (double)(chainActive.Height() - Params().Zerocoin_Block_V2_Start()) * 100))));
 
         if (pindex->nHeight % 1000 == 0)
             LogPrintf("Reindexing zerocoin : block %d...\n", pindex->nHeight);

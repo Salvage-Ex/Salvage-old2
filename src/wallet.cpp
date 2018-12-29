@@ -1455,7 +1455,7 @@ int CWallet::ScanForWalletTransactions(CBlockIndex* pindexStart, bool fUpdate)
 
         // no need to read and scan block, if block was created before
         // our wallet birthday (as adjusted for block time variability)
-        while (pindex && nTimeFirstKey && (pindex->GetBlockTime() < (nTimeFirstKey - 7200)) && pindex->nHeight <= Params().Zerocoin_StartHeight())
+        while (pindex && nTimeFirstKey && (pindex->GetBlockTime() < (nTimeFirstKey - 7200)) && pindex->nHeight <= Params().Zerocoin_Block_V2_Start())
             pindex = chainActive.Next(pindex);
 
         ShowProgress(_("Rescanning..."), 0); // show rescan progress in GUI as dialog or on splashscreen, if -rescan on startup
@@ -1474,7 +1474,7 @@ int CWallet::ScanForWalletTransactions(CBlockIndex* pindexStart, bool fUpdate)
             }
 
             //If this is a zapwallettx, need to readd zsvg
-            if (fCheckZSVG && pindex->nHeight >= Params().Zerocoin_StartHeight()) {
+            if (fCheckZSVG && pindex->nHeight >= Params().Zerocoin_Block_V2_Start()) {
                 list<CZerocoinMint> listMints;
                 BlockToZerocoinMintList(block, listMints, true);
 

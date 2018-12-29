@@ -57,7 +57,7 @@ CBlockIndex* CZSvgStake::GetIndexFrom()
     else
         nHeightChecksum = GetChecksumHeightFromSpend();
 
-    if (nHeightChecksum < Params().Zerocoin_StartHeight() || nHeightChecksum > chainActive.Height()) {
+    if (nHeightChecksum < Params().Zerocoin_Block_V2_Start() || nHeightChecksum > chainActive.Height()) {
         pindexFrom = nullptr;
     } else {
         //note that this will be a nullptr if the height DNE
@@ -136,6 +136,14 @@ bool CZSvgStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nT
     if (!pwallet->DatabaseMint(dMint))
         return error("%s: failed to database the staked zSVG", __func__);
 
+    //Enable this code if we want to enable and support zPOS
+    // Make zSVG mint amount dependent from current block reward
+    /*CAmount blockValue = GetBlockValue(chainActive.Height() + 1);
+    CAmount masternodePayment = GetMasternodePayment(chainActive.Height() + 1, blockValue, 0, true);
+
+    for (unsigned int i = 0; i < ((blockValue - masternodePayment) / COIN); i++) {*/
+
+    //Comment the below for statement if enabling zPOS
     for (unsigned int i = 0; i < 3; i++) {
         CTxOut out;
         CDeterministicMint dMintReward;

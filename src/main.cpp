@@ -1186,7 +1186,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
     if (GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE) && tx.ContainsZerocoins())
         return state.DoS(10, error("AcceptToMemoryPool : Zerocoin transactions are temporarily disabled for maintenance"), REJECT_INVALID, "bad-tx");
 
-    if (!CheckTransaction(tx, chainActive.Height() >= Params().Zerocoin_StartHeight(), true, state))
+    if (!CheckTransaction(tx, chainActive.Height() >= Params().Zerocoin_Block_V2_Start(), true, state))
         return state.DoS(100, error("AcceptToMemoryPool: : CheckTransaction failed"), REJECT_INVALID, "bad-tx");
 
     // Coinbase is only valid in a block, not as a loose transaction
@@ -1431,7 +1431,7 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
         *pfMissingInputs = false;
 
 
-    if (!CheckTransaction(tx, chainActive.Height() >= Params().Zerocoin_StartHeight(), true, state))
+    if (!CheckTransaction(tx, chainActive.Height() >= Params().Zerocoin_Block_V2_Start(), true, state))
         return error("AcceptableInputs: : CheckTransaction failed");
 
     // Coinbase is only valid in a block, not as a loose transaction
@@ -1815,16 +1815,18 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
         }
     }
 
-    if (nHeight > 205000) {
-        ret = blockValue * 0.7;
-    } else if (nHeight > 1) {
-        ret = blockValue * 0.6;
-    }
+    //Masternodes get 70% of Block Reward to inifinity
+    //if (nHeight > 205000) {
+    ret = blockValue * 0.7;
+    //} else if (nHeight > 1) {
+    //    ret = blockValue * 0.6;
+    //}
 
     // when zSVG is staked, equal payouts.
-    if (isZSVGStake) {
+    // Don't think we want this check with group
+    /*if (isZSVGStake) {
         ret = blockValue * 0.5;
-    }
+    }*/
 
     return ret;
 }
@@ -2384,7 +2386,7 @@ void ThreadScriptCheck()
 
 void RecalculateZSVGMinted()
 {
-    CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
+    CBlockIndex *pindex = chainActive[Params().Zerocoin_Block_V2_Start()];
     int nHeightEnd = chainActive.Height();
     while (true) {
         if (pindex->nHeight % 1000 == 0)
@@ -2411,7 +2413,7 @@ void RecalculateZSVGMinted()
 
 void RecalculateZSVGSpent()
 {
-    CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
+    CBlockIndex* pindex = chainActive[Params().Zerocoin_Block_V2_Start()];
     while (true) {
         if (pindex->nHeight % 1000 == 0)
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
@@ -2826,7 +2828,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
         RecalculateZSVGMinted();
         RecalculateZSVGSpent();
-        RecalculateSVGSupply(Params().Zerocoin_StartHeight());
+        RecalculateSVGSupply(Params().Zerocoin_Block_V2_Start());
     }
 
     //Track zSVG money supply in the block index
@@ -3764,7 +3766,7 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
         return state.DoS(50, error("CheckBlockHeader() : proof of work failed"),
             REJECT_INVALID, "high-hash");
 
-    // Version 4 header must be used after Params().Zerocoin_StartHeight(). And never before.
+    // Version 4 header must be used after Params().Zerocoin_Block_V2_Start(). And never before.
     if (block.GetBlockTime() > Params().Zerocoin_StartTime()) {
         if(block.nVersion < Params().Zerocoin_HeaderVersion())
             return state.DoS(50, error("CheckBlockHeader() : block version must be above 4 after ZerocoinStartHeight"),
